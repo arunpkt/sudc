@@ -36,6 +36,10 @@ header {
     padding-right: 0;
     padding-left: 0;
 }
+.logo {
+    /* vertical-align: middle; */
+    padding-top: 7%;
+}
 .logo a {
     display: inline-block;
 }
@@ -187,6 +191,7 @@ header {
 
 .sudc_menu .navbar-nav {
     float: right;
+    margin: 15px 15px;
 }
 
 .sudc_menu .nav>li:last-child>a {
@@ -1087,6 +1092,10 @@ section.quick-shop{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+section.quick-shop1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 section.quick-shop .col-md-4, section.quick-shop .col-sm-6, section.quick-shop .col-md-6 {
     padding-right: 0px;
     padding-left: 0px;
@@ -1121,7 +1130,7 @@ section.quick-shop .col-md-4, section.quick-shop .col-sm-6, section.quick-shop .
     padding: 5px;
 }
 .grid-arrival{
-   padding: 33px; 
+   padding: 5%; 
 }   
 .grid-arr:hover {
     border: 1px solid #E2E2E2;
@@ -1157,6 +1166,9 @@ section.quick-shop .col-md-4, section.quick-shop .col-sm-6, section.quick-shop .
 }
 .grid-arr .grid-arrival figure > a .grid-img img {
   width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .grid-arr .grid-arrival figure > a .grid-img + .grid-img {
   position: absolute;
@@ -1217,11 +1229,11 @@ a.fill-div {
 
 .search-sec {
     position: absolute;
-    top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
     border-radius: 0px;
     width: 100%;
+    height: 100%;
 }
 body {
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -1266,17 +1278,16 @@ ul.list-group.horizontal.main_search {
 .where_in {
     padding: 0;
 }
-}
-.marker_loc {
-}
-.sub_but {
-}
 main_search{
     padding: 0 0 0 0;
 }
 .no-border {
     border: 0;
     box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+.form-section .looking {
+  border: 2px solid #414141;   
+  background: #FFFFFF;      
 }
 .looking input {
     padding: 0px;
@@ -1288,6 +1299,10 @@ main_search{
     width: 100%;
     padding: 0;
 }
+.form-section .where_in {
+  border: 2px solid #414141;   
+  background: #FFFFFF;      
+}
 .where_in .input-group {
     width: 63%;
     padding: 0px;
@@ -1297,8 +1312,12 @@ main_search{
     border: none;
 }
 .where_in label {
-    width: 35%;
+    width: 36%;
     padding: 0 10px 0 10px;
+}
+.form-section .sub_but {
+  border: 2px solid #414141;   
+  background: #FFFFFF;      
 }
 .sub_but {
     width: 20%;
@@ -1338,11 +1357,96 @@ section.top_stores .view_more {
   margin: 50px auto;
 }
 .search-sec .form-section{
-	border: 2px solid #414141;
-}
-.search-sec .form-section { 
-  background-color: #FFFFFF;
+	
 }
 .search-sec .form-section .form-group{
     width: 100%;
+}
+
+/* Product carousal*/
+
+.carousel-inner { margin: auto; width: 90%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,
+.carousel-control.right {
+  background-image:none;
+}
+ 
+.glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  margin-top:-10px;
+  margin-left: -10px;
+  color: #444;
+}
+
+.carousel-inner {
+  a {
+    display:table-cell;
+    height: 180px;
+    width: 200px;
+    vertical-align: middle;
+  }
+  img {
+    max-height: 150px;
+    margin: auto auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+      left: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+      left: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+  }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+      left: 0;
+      -webkit-transform: translate3d(50%, 0, 0);
+      transform: translate3d(50%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+      left: 0;
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+  }
+}
+@media (min-width: 992px ) {
+  
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right {
+      left: 0;
+      -webkit-transform: translate3d(16.7%, 0, 0);
+      transform: translate3d(16.7%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left {
+      left: 0;
+      -webkit-transform: translate3d(-16.7%, 0, 0);
+      transform: translate3d(-16.7%, 0, 0);
+  }
+  
+}
+
+
+/*Budget store*/
+.budget_stores{
+  background-color: #e7e7e7;
+  margin: 20px 0;
+}
+.budget_stores h3{
+  margin: 40px 0;
+}
+.budget_stores .row {
+  margin: 40px 0;
 }
