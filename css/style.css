@@ -6,6 +6,7 @@
 body {
     /*font-family: 'Lato', sans-serif;*/
     font-family: 'Calibri', sans-serif;
+    font-size: 12px;
 }
 
 h1 {
@@ -31,15 +32,10 @@ header {
     transition: all 0.4s ease;
 }
 
-
-/*header.sticky_header {
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-	z-index: 999;
-}*/
-
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 .logo a {
     display: inline-block;
 }
@@ -1224,14 +1220,14 @@ a.fill-div {
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 960px;
     border-radius: 0px;
+    width: 100%;
 }
 body {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
-.header-carousal img{
-   width: 100%;
+.header-carousal {
+   position: relative;
 }
 .nopadding {
    padding: 0 !important;
@@ -1267,58 +1263,49 @@ ul.list-group:after {
 ul.list-group.horizontal.main_search {
     border: solid 10px #615d58;
 }
-li.list-group-item.looking {
-    width: 35%;
-    padding: 0px;
-}
-li.list-group-item.where_in {
-    width: 45%;
+.where_in {
     padding: 0;
 }
 }
-li.list-group-item.marker_loc {
-    width: 5%;
+.marker_loc {
 }
-li.list-group-item.sub_but {
-    width: 15%;
+.sub_but {
 }
-main_search.list-group-item {
+main_search{
     padding: 0 0 0 0;
 }
 .no-border {
     border: 0;
     box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
 }
-li.list-group-item.looking input {
-    width: 63%;
+.looking input {
     padding: 0px;
 }
-li.list-group-item.looking label {
-    width: 35%;
+.looking label {
     padding: 0 10px 0 10px;
 }
 .main_search .form-group {
     width: 100%;
     padding: 0;
 }
-li.list-group-item.where_in .input-group {
+.where_in .input-group {
     width: 63%;
     padding: 0px;
 }
-li.list-group-item.where_in .input-group .input-group-addon {
+.where_in .input-group .input-group-addon {
     background-color: transparent;
     border: none;
 }
-li.list-group-item.where_in label {
+.where_in label {
     width: 35%;
     padding: 0 10px 0 10px;
 }
-li.list-group-item.sub_but {
+.sub_but {
     width: 20%;
     height: auto;
     padding: 0 0 0 0;
 }
-li.list-group-item.sub_but .btn {
+.sub_but .btn {
     color: #000;
     background-color: #ffde01;
     width: 100%;
@@ -1349,4 +1336,13 @@ section.top_stores {
 }
 section.top_stores .view_more {
   margin: 50px auto;
+}
+.search-sec .form-section{
+	border: 2px solid #414141;
+}
+.search-sec .form-section { 
+  background-color: #FFFFFF;
+}
+.search-sec .form-section .form-group{
+    width: 100%;
 }
