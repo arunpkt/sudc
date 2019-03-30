@@ -64,7 +64,7 @@ header {
 }
 
 .contact_icon {
-   /* background-image: url(../images/email_icon.jpg);*/
+    /* background-image: url(../images/email_icon.jpg);*/
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 20px;
@@ -98,6 +98,9 @@ header {
     margin-right: 10px;
 }
 
+.sudc_menu .dropdown {
+    margin-right: 0px; 
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -151,7 +154,7 @@ header {
 /* Sayaputhiran Menu */
 
 .sudc_menu {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .sudc_menu .navbar {
@@ -191,7 +194,6 @@ header {
 
 .sudc_menu .navbar-nav {
     float: right;
-    margin: 15px 15px;
 }
 
 .sudc_menu .nav>li:last-child>a {
@@ -257,7 +259,7 @@ header.sticky_header {
 
 /*
 .text_slideshow .carousel-indicators {
-    bottom: -50px;
+bottom: -50px;
 }
 */
 
@@ -393,7 +395,7 @@ header.sticky_header {
 }
 
 @media screen and (max-width: 1550px) {
-    
+
 }
 
 @media screen and (max-width: 1450px) {
@@ -405,11 +407,11 @@ header.sticky_header {
 }
 
 @media screen and (max-width: 1200px) {
-  
+
 }
 
 @media screen and (max-width: 991px) {
-   
+
 }
 
 @media screen and (max-width: 767px) {
@@ -430,7 +432,7 @@ header.sticky_header {
     .navbar-toggle {
         top: -5px;
     }
-    
+
     .dropbtn {
         color: #000;
         font-size: 14px;
@@ -893,7 +895,7 @@ a.trans_blue img.white_arrow {
 }
 .carousel-caption {
     /* margin: -30px 342px 50px -100px; */
-    
+
     position: absolute;
     top: 31%;
     left: 22%;
@@ -918,31 +920,31 @@ ol.carousel-indicators {
     .carousel-inner>.item {
         height: 400px;
     }
-    
+
     .carousel-caption {
         top: 10%;
         left: 0;
         padding: 20px;
         width: 100%;
     }
-    
+
     ol.carousel-indicators {
         left: 18%;
     }
-    
+
     .donation_bg {
         height: 400px;
         background-size: cover;
     }
-    
+
     .donation_bg .bttn {
         width: 210px;
     }
-    
+
     .textcontent .btnwrap {
         padding: 18px 0;
     }
-    
+
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
     .banner .carousel-caption h2 {
@@ -955,16 +957,16 @@ ol.carousel-indicators {
         left: 5%;
         width: 50%;
     }
-    
+
     .banner .btnwrap {
         bottom: 55px;
         left: 5%;
     }
     .banner .carousel-caption h2 {
-            font-size: 16px;
+        font-size: 16px;
     }
-    
-    
+
+
 }
 @media only screen and (min-width:1280px) and (max-width:1600px) {
     .carousel-caption {
@@ -979,7 +981,7 @@ ol.carousel-indicators {
 }
 
 #myCarousel .active > img{
-     -webkit-transition: opacity 2s ease-in;
+    -webkit-transition: opacity 2s ease-in;
     -moz-transition: opacity 2s ease-in;
     -o-transition: opacity 2s ease-in;
     -ms-transition: opacity 2s ease-in;
@@ -1007,7 +1009,7 @@ ol.carousel-indicators {
     margin-bottom: 20px;
 }
 .pd20{
-   padding: 20px;
+    padding: 20px;
 }
 .pr20{
     padding-right: 20px!important;
@@ -1019,13 +1021,13 @@ ol.carousel-indicators {
     color: #8ab352;
 }
 .sudc_banner{
-  height: 430px; 
-  background-image: url(../images/banner.jpg);
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    height: 430px; 
+    background-image: url(../images/banner.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 section.geturcard_bg {
     background-color: #2298d0;
@@ -1042,7 +1044,8 @@ section.geturcard_bg span h3{
 }
 a#submenuhead {
     border: solid thin #000000;
-    padding: 10px 20px;
+    padding: 5px 20px;
+    margin: 7px 0 0 0;
     border-radius: 15px;
 }
 .bttn {
@@ -1130,7 +1133,7 @@ section.quick-shop .col-md-4, section.quick-shop .col-sm-6, section.quick-shop .
     padding: 5px;
 }
 .grid-arrival{
-   padding: 5%; 
+    padding: 5%; 
 }   
 .grid-arr:hover {
     border: 1px solid #E2E2E2;
@@ -1141,46 +1144,46 @@ section.quick-shop .col-md-4, section.quick-shop .col-sm-6, section.quick-shop .
     padding: 0em;
 }
 .grid-arr .grid-arrival figure {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0 0 20px 0;
-  width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    width: 100%;
 }
 .grid-arr .grid-arrival figure:hover .grid-img + .grid-img{
-  right: 100%;
+    right: 100%;
 }
 .grid-arr .grid-arrival figure > a {
-  display: block;
-  float: left;
-  width: 100%;
-  z-index: 1;
+    display: block;
+    float: left;
+    width: 100%;
+    z-index: 1;
 }
 .grid-arr .grid-arrival figure > a .grid-img {
-  width: 100%;
-  line-height: 0;
-  will-change: right;
-  -moz-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+    width: 100%;
+    line-height: 0;
+    will-change: right;
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 .grid-arr .grid-arrival figure > a .grid-img img {
-  width: 100%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 .grid-arr .grid-arrival figure > a .grid-img + .grid-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  -moz-transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
-  -o-transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
-  -webkit-transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
-  transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    -moz-transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
+    -o-transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
+    -webkit-transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
+    transition: right 0.7s cubic-bezier(0.75, 0, 0.175, 1), opacity 0.7s cubic-bezier(0.75, 0, 0.175, 1);
 }
 .grid-arr .grid-arrival figure > a .grid-img + .grid-img img {
-  max-width: none;
+    max-width: none;
 }
 
 .grid-product {
@@ -1206,7 +1209,7 @@ i.fa.fa-star.checked {
     color: #fcbb04;
 }
 .item_price{
- color: #7aae22;
+    color: #7aae22;
     margin-left: 10px;
 }
 .ends_in {
@@ -1236,22 +1239,22 @@ a.fill-div {
     height: 100%;
 }
 body {
-  font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 .header-carousal {
-   position: relative;
+    position: relative;
 }
 .nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .carousal_head{
     position: relative;
 }
 ul.list-group:after {
-  clear: both;
-  display: block;
-  content: "";
+    clear: both;
+    display: block;
+    content: "";
 }
 .list-group-item {
     float: left;
@@ -1266,7 +1269,7 @@ ul.list-group:after {
     color: #ffffff;
 }
 .category_list_hero .list-group-item a{
-   color: #ffffff;
+    color: #ffffff;
     text-decoration: underline;
 }
 .category_list_hero .list-group-item i{
@@ -1286,11 +1289,12 @@ main_search{
     box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
 }
 .form-section .looking {
-  border: 2px solid #414141;   
-  background: #FFFFFF;      
+    border: 2px solid #414141;   
+    background: #FFFFFF;      
 }
 .looking input {
     padding: 0px;
+    width: 76%!important;
 }
 .looking label {
     padding: 0 10px 0 10px;
@@ -1300,8 +1304,8 @@ main_search{
     padding: 0;
 }
 .form-section .where_in {
-  border: 2px solid #414141;   
-  background: #FFFFFF;      
+    border: 2px solid #414141;   
+    background: #FFFFFF;      
 }
 .where_in .input-group {
     width: 63%;
@@ -1316,8 +1320,8 @@ main_search{
     padding: 0 10px 0 10px;
 }
 .form-section .sub_but {
-  border: 2px solid #414141;   
-  background: #FFFFFF;      
+    border: 2px solid #414141;   
+    background: #FFFFFF;      
 }
 .sub_but {
     width: 20%;
@@ -1333,120 +1337,115 @@ section.top_stores .grid-arr{
     border: 1px solid #000000;
 }
 .grid-img {
-    height: 180px;
+    height: 130px;
 }
 .top_stores .description h6 {
     font-size: 1em;
     margin: 0.4em 0;
 }
 .top_stores .description h4 {
-    font-size: 2em;
+    font-size: 16px;
     margin: 0.4em 0;
     color: #86b140;
 }
 .top_stores .description a {
-    font-size: 1.4em
+    font-size: 12px;
 }
 .top_stores .description {
     margin-bottom: 25px;
 }
 section.top_stores {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 section.top_stores .view_more {
-  margin: 50px auto;
+    margin: 50px auto;
 }
 .search-sec .form-section{
-	
+
 }
 .search-sec .form-section .form-group{
     width: 100%;
 }
 
 /* Product carousal*/
-
-.carousel-inner { margin: auto; width: 90%; }
-.carousel-control 			 { width:  4%; }
-.carousel-control.left,
-.carousel-control.right {
-  background-image:none;
+.dealsOfDay .carousel {
+    margin: 50px auto;
+    padding: 0 70px;
 }
- 
-.glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-  margin-top:-10px;
-  margin-left: -10px;
-  color: #444;
+.dealsOfDay .carousel .item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
 }
-
-.carousel-inner {
-  a {
-    display:table-cell;
-    height: 180px;
-    width: 200px;
-    vertical-align: middle;
-  }
-  img {
-    max-height: 150px;
-    margin: auto auto;
-    max-width: 100%;
-  }
+.dealsOfDay .carousel .carousel-control {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
 }
-
-@media (max-width: 767px) {
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-      left: 0;
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-      left: 0;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-  }
-
+.dealsOfDay .carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
 }
-@media (min-width: 767px) and (max-width: 992px ) {
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-      left: 0;
-      -webkit-transform: translate3d(50%, 0, 0);
-      transform: translate3d(50%, 0, 0);
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-      left: 0;
-      -webkit-transform: translate3d(-50%, 0, 0);
-      transform: translate3d(-50%, 0, 0);
-  }
+.dealsOfDay .carousel .carousel-control.left i {
+    margin-left: -3px;
 }
-@media (min-width: 992px ) {
-  
-  .carousel-inner > .item.next,
-  .carousel-inner > .item.active.right {
-      left: 0;
-      -webkit-transform: translate3d(16.7%, 0, 0);
-      transform: translate3d(16.7%, 0, 0);
-  }
-  .carousel-inner > .item.prev,
-  .carousel-inner > .item.active.left {
-      left: 0;
-      -webkit-transform: translate3d(-16.7%, 0, 0);
-      transform: translate3d(-16.7%, 0, 0);
-  }
-  
+.dealsOfDay .carousel .carousel-control.left i {
+    margin-right: -3px;
 }
-
+.dealsOfDay .carousel .carousel-indicators {
+    bottom: -50px;
+}
+.dealsOfDay .carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: transparent;
+}
+.dealsOfDay .carousel-indicators li {	
+    background: rgba(0, 0, 0, 0.2);
+}
+.dealsOfDay .carousel-indicators li.active {	
+    background: rgba(0, 0, 0, 0.6);
+}
 
 /*Budget store*/
 .budget_stores{
-  background-color: #e7e7e7;
-  margin: 20px 0;
+    background-color: #e7e7e7;
+    margin: 20px 0;
 }
 .budget_stores h3{
-  margin: 40px 0;
+    margin: 40px 0;
 }
 .budget_stores .row {
-  margin: 40px 0;
+    margin: 40px 0;
+}
+.footer_top .got_question p{
+    font-size: 12ox;
+    color: #9c9b9b;
+}
+.footer_top .got_question h3{
+    font-weight: 700;
+    color: #FFFFCC;
+    
+}
+.footer_top .contact_info h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: none;
+    color: rgba(255, 255, 255);
+    
+}
+.footer_top .contact_info p {
+    
 }
