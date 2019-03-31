@@ -6,10 +6,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/owl.carousel.min.css" />
         <link rel="stylesheet" href="css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -20,59 +20,54 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="top_header text-right">
+                        <a href="/phone.html">Customer care : <span class="ph_green">+123456</span> </a>
+                        <a href="/faq.html" class="">FAQ</a>
+                        <a href="#" class="search-icon" onclick="toggle('search-filter');"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <div class="search-filter" id="search-filter" style="display:none;">
+                            <div class="search-filter-in"> <input type="text" class="form-control" placeholder="Search your term here..."> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-8">
                         <div class="logo">
                             <a href="index.html"><img src="images/logo.jpg" alt="Logo" class="img-responsive" /></a>
                         </div>
                     </div>
-                    <div class="col-md-9 col-sm-8 col-xs-12">
-                        <div class="text-right">
-                            <div class="top_header">
-                                <a href="/phone.html">Customer care : <span class="ph_green">+123456</span> </a>
-                                <a href="/faq.html" class="">FAQ</a>
-                                <a href="/faq.html" class="">Download App</a>
-                                <a href="/faq.html" class="">Business owner</a>
-                                <a href="#" class="search-icon" onclick="toggle('search-filter');"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                <div class="search-filter" id="search-filter" style="display:none;">
-                                    <div class="search-filter-in"> <input type="text" class="form-control" placeholder="Search your term here..."> </div>
-                                </div>
-                            </div>
-
-                            <div class="sudc_menu">
-                                <nav class="navbar navbar-default">
-                                    <div class="container-fluid">
-                                        <div class="navbar-header"> 
-                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">	
-                                                <span class="sr-only">Toggle navigation</span>	
-                                                <span class="icon-bar"></span>					
-                                                <span class="icon-bar"></span>						
-                                                <span class="icon-bar"></span>						
-                                            </button> 
-                                        </div>
-                                        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                                            <ul class="nav navbar-nav">
-                                                <li class="active"><a href="index.html">Products & shops</a></li>
-                                                <li><a href="aboutsudc.html">About SUDC card</a></li>
-                                                <li><a href="Membership.html">Membership</a></li>
-                                                <li class="dropdown">
-                                                    <a href="login.html" class="dropdown-toggle login_reg" id="submenuhead" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                        Login/Register
-                                                        <i class="far fa-user"></i>
-                                                        <i class="fas fa-chevron-down"></i>
-                                                    </a>
-                                                    <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="submenucotent">
-                                                        <li><a href="login.html">Login</a></li>
-                                                        <li><a href="register.html">Register</a></li>
-                                                        <li><a href="unique.html">user profile</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!--/.nav-collapse -->
+                    <div class="col-md-9 col-sm-9">
+                        <div class="sudc_menu">
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <div class="navbar-header"> 
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">	
+                                            <span class="sr-only">Toggle navigation</span>	
+                                            <span class="icon-bar"></span>					
+                                            <span class="icon-bar"></span>						
+                                            <span class="icon-bar"></span>						
+                                        </button> 
                                     </div>
-                                    <!--/.container-fluid -->
-                                </nav>
-                            </div>
+                                    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="index.html">Products & shops</a></li>
+                                            <li><a href="aboutsudc.html">About SUDC card</a></li>
+                                            <li><a href="Membership.html">Membership</a></li>
+                                            <li class="dropdown">
+                                                <a href="login.html" class="dropdown-toggle login_reg" id="submenuhead" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                    Login/Register
+                                                    <i class="far fa-user"></i>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="submenucotent">
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="register.html">Register</a></li>
+                                                    <li><a href="unique.html">user profile</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--/.nav-collapse -->
+                                </div>
+                                <!--/.container-fluid -->
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -82,14 +77,8 @@
         <!--Main seach bar / Hero section-->
         <section class="header-carousal"> 
 
-            <div class="container-fluid">
-                <div id="heroCarousal" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#heroCarousal" data-slide-to="0" class="active"></li>
-                        <li data-target="#heroCarousal" data-slide-to="1"></li>
-                        <li data-target="#heroCarousal" data-slide-to="2"></li>
-                    </ol>
+            <div class="container">
+                <div id="heroCarousal" class="carousel slide heroCarousal" data-interval="60000" data-ride="carousel">
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
@@ -109,7 +98,7 @@
                 <div class="search-sec">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12 col-sm-12">
+                            <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="form-section">
                                         <form action="#" method="post" class="form-inline">
@@ -117,13 +106,13 @@
                                             <!--<div class="col-lg-12">-->
                                             <!--<div class="row">-->
                                             <!-- <ul class="list-group horizontal main_search">-->
-                                            <div class="col-md-5 col-sm-12">
+                                            <div class="col-md-5 col-sm-12 col-xs-12">
                                                 <div class="form-group looking">
                                                     <label for="search">I'm looking for</label>
                                                     <input type="text" class="form-control no-border" id="search" placeholder="Enter your search" />
                                                 </div>
                                             </div>
-                                            <div class="col-md-5 col-sm-12">
+                                            <div class="col-md-5 col-sm-12 col-xs-12">
                                                 <div class="form-group where_in">
                                                     <label for="search">Show me where in</label>
                                                     <div class="input-group">
@@ -132,7 +121,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 col-sm-6">
+                                            <div class="col-md-2 col-sm-6 col-xs-6">
                                                 <div class="form-group sub_but">
                                                     <button type="submit" class="btn">Find me shop</button>
                                                 </div>
@@ -142,13 +131,18 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12 col-sm-12">
-                                        <ul class="list-group horizontal category_list_hero">
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <ul class="list-group horizontal category_list_hero main_categries">
                                             <li class="list-group-item"><a href=""><i class="fas fa-utensils"></i>Restarents</a></li>
                                             <li class="list-group-item"><a href=""><i class="fas fa-shopping-cart"></i>Shopping</a></li>
                                             <li class="list-group-item"><a href=""><i class="fas fa-shopping-cart"></i>Beauty and Spa</a></li>
                                             <li class="list-group-item"><a href=""><i class="fas fa-utensils"></i>Automotive</a></li>
                                             <li class="list-group-item"><a href=""><i class="fas fa-utensils"></i>Home service</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12">
+                                        <ul class="list-group horizontal category_list_hero">
                                             <li class="list-group-item pull-right"><a href=""><i class="fas fa-utensils"></i>Advanced search</a></li>
                                         </ul>
                                     </div>
@@ -161,11 +155,11 @@
         </section>    
 
         <!-- Get your card -->
-        <section class="geturcard_bg">
+        <section class="geturcard_bg arima">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 getCard">
-                        <span><h3>Don't have an SUDC card yet?</h3></span>
+                    <div class="col-md-12 col-sm-12 col-xs-12 getCard">
+                        <span><h3 class="">Don't have an SUDC card yet?</h3></span>
                         <a href="#" class="bttn yellow_black">Get Your card now</a>
                     </div>
                 </div>
@@ -173,19 +167,19 @@
         </section>
 
         <!-- Ad section1 -->
-        <section class="quick-shop1">
+        <section class="quick-shop1 mob_padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#"><img src="images/AD-1.jpg" class="img-responsive" /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#"><img src="images/AD-2.jpg" class="img-responsive" /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#"><img src="images/AD-3.jpg" class="img-responsive" /></a>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
                         <a href="#"><img src="images/AD-3.jpg" class="img-responsive" /></a>
                     </div>
                 </div>
@@ -195,7 +189,7 @@
         <!-- Trendy items -->
         <section class="trndy_items">
             <div class="container">
-                <h2 class="text-center">Trending Items</h2>
+                <h2 class="text-center alegreya">TRENDING ITEMS</h2>
                 <ul class="trndy_items_list list-inline text-center">
                     <li><a href="#">POPULAR</a></li>
                     <li class="active">NEW ARRIVALS</li>
@@ -204,8 +198,8 @@
                 </ul>
 
                 <div class="row">
-                    <div class="arrivals-grids text-center">
-                        <div class="col-md-2 col-md-offset-1 arrival-grid">
+                    <div class="arrivals-grids">
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                             <div class="grid-arr">
                                 <div class="grid-arrival">
                                     <figure>		
@@ -218,19 +212,16 @@
                                 </div>
 
                                 <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
                                     <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
+                                        <span>4.3<i class="fa fa-star checked"></i></span>
                                     </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                    <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 arrival-grid">
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                             <div class="grid-arr">
                                 <div class="grid-arrival">
                                     <figure>		
@@ -243,19 +234,16 @@
                                 </div>
 
                                 <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
                                     <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
+                                        <span>4.3<i class="fa fa-star checked"></i></span>
                                     </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                    <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 arrival-grid">
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                             <div class="grid-arr">
                                 <div class="grid-arrival">
                                     <figure>		
@@ -268,19 +256,15 @@
                                 </div>
 
                                 <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
                                     <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
+                                        <span>4.3<i class="fa fa-star checked"></i></span>
                                     </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                    <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 arrival-grid">
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                             <div class="grid-arr">
                                 <div class="grid-arrival">
                                     <figure>		
@@ -293,19 +277,16 @@
                                 </div>
 
                                 <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
                                     <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
+                                        <span>4.3<i class="fa fa-star checked"></i></span>
                                     </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                    <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 arrival-grid">
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                             <div class="grid-arr">
                                 <div class="grid-arrival">
                                     <figure>		
@@ -318,39 +299,56 @@
                                 </div>
 
                                 <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
                                     <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
+                                        <span>4.3<i class="fa fa-star checked"></i></span>
                                     </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                    <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <div class="block">
+                                        <span>4.3<i class="fa fa-star checked"></i></span>
+                                    </div>
+                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                    <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+
                                 </div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
-
-                <div class="col-md-2 center-block"><a class="bttn white_black">View more+</a></div>
             </div>
         </section>
 
 
         <!-- Ad section -->
-        <section class="quick-shop">
+        <section class="quick-shop mob_padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-sm-10 center-block text-center">
-                        <div class="col-md-3 col-sm-6">
+                    <div class="col-md-12 col-sm-12 col-xs-12 center-block text-center">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
                             <a href="#"><img src="images/AD-4.jpg" class="img-responsive" /></a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
                             <a href="#"><img src="images/AD-5.jpg" class="img-responsive" /></a>
                         </div>
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
                             <a href="#"><img src="images/AD-6.jpg" class="img-responsive" /></a>
                         </div>
                     </div>
@@ -362,23 +360,813 @@
         <!--Deal of the day-->
         <section class="dealsOfDay">
             <div class="container">
-                <h2 class="text-center">DEALS OF THE DAY</h2>
+                <h2 class="text-center alegreya">DEALS OF THE DAY</h2>
 
                 <h4 class="text-center ends_in">Ends in 58:26:52</h4>
-
-                <ul class="trndy_items_list list-inline text-center">
-                    <li><a href="#">POPULAR</a></li>
-                    <li class="active">NEW ARRIVALS</li>
-                    <li><a href="#">SPECIAL OFFERS</a></li>
-                    <li><a href="#">BEST SELLERS</a></li>
-                </ul>
 
                 <div class="row">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0"> 
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
                             <div class="item carousel-item active">
-                                <div class="col-md-2 col-md-offset-1 col-xs-12 arrival-grid">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-6 col-xs-12 hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>					
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                <i class="far fa-chevron-circle-left"></i>
+                            </a>
+                            <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                                <i class="far fa-chevron-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ad section3 -->
+        <section class="quick-shop_3 mob_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <a href="#"><img src="images/AD7.jpg" class="img-responsive" /></a>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <a href="#"><img src="images/AD8.jpg" class="img-responsive" /></a>
+                        <div class="row mt10">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#"><img src="images/AD9.jpg" class="img-responsive" /></a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#"><img src="images/AD10.jpg" class="img-responsive" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Top stores -->
+        <section class="top_stores mob_padding">
+            <div class="container">
+                <h2 class="text-center alegreya">TOP STORES</h2>
+
+                <div class="row">
+                    <div class="arrivals-grids text-center">
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <h6>Was 25% now</h6>
+                                    <h4>5.0% Cash back</h4>
+                                    <a href="#">See all hotel coupons</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <h6>Was 25% now</h6>
+                                    <h4>5.0% Cash back</h4>
+                                    <a href="#">See all hotel coupons</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <h6>Was 25% now</h6>
+                                    <h4>5.0% Cash back</h4>
+                                    <a href="#">See all hotel coupons</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <h6>Was 25% now</h6>
+                                    <h4>5.0% Cash back</h4>
+                                    <a href="#">See all hotel coupons</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <h6>Was 25% now</h6>
+                                    <h4>5.0% Cash back</h4>
+                                    <a href="#">See all hotel coupons</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                            <div class="grid-arr">
+                                <div class="grid-arrival">
+                                    <figure>		
+                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                            <div class="grid-img">
+                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                            </div>		
+                                        </a>		
+                                    </figure>	
+                                </div>
+
+                                <div class="description">
+                                    <h6>Was 25% now</h6>
+                                    <h4>5.0% Cash back</h4>
+                                    <a href="#">See all hotel coupons</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Budget stores -->
+        <section class="budget_stores mob_padding">
+            <div class="container">
+                <h2 class="text-center alegreya">BUDGET STORES</h2>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#"><img src="images/Budget%20store1.jpg" class="img-responsive" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#"><img src="images/Budget%20store2.jpg" class="img-responsive" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#"><img src="images/Budget%20store3.jpg" class="img-responsive" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#"><img src="images/Budget%20store4.jpg" class="img-responsive" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category of the month  -->
+        <section class="top_category">
+            <div class="container">
+                <h2 class="text-center alegreya">TOP CATEGORIS OF THE MONTH</h2>
+
+                <div class="row">
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0"> 
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 hidden-sm hidden-xs arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <div class="block">
+                                                <span>4.3<i class="fa fa-star checked"></i></span>
+                                            </div>
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-6 col-xs-12 hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>					
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12  hidden-sm hidden-xs arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <div class="block">
+                                                    <span>4.3<i class="fa fa-star checked"></i></span>
+                                                </div>
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control left carousel-control-prev" href="#myCarousel2" data-slide="prev">
+                                <i class="far fa-chevron-circle-left"></i>
+                            </a>
+                            <a class="carousel-control right carousel-control-next" href="#myCarousel2" data-slide="next">
+                                <i class="far fa-chevron-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Customer speaks -->
+        <section class="customer_speaks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+                        <div class="customer_pod">
+                            <h3>CUSTOMER SPEAKS</h3>
+                            <img src="images/Customerspeak.jpg" class="img-responsive"/>
+                            <p class="blockquote">"Sudu site give me the formal guidens to the buy the products of my own taste"</p>
+                            <a href="#">View reviews</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="app_store_pod">
+                            <div class="row">
+                                <div class="col-md-7 col-xs-12">
+                                    <div class="app_logo_pod">
+                                        <h1>STORES ARE IN YOUR POCKET</h1>
+                                        <p>Fast, simple, easy and it will take 2 minutes to download</p>
+                                        <img class="img-responsive" src="images/mobile%20logo.png" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xs-12">
+                                    <div class="mobile_logo_pod">
+                                        <!--<img class="img-responsive" src="images/Mobile%20app%20image.png" />--> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category of the month  -->
+        <section class="categoryMonth">
+            <div class="container">
+                <h2 class="text-center alegreya">RECENTLY VIEWED</h2>
+
+                <div class="row">
+                    <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0"> 
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                     <div class="grid-arr">
                                         <div class="grid-arrival">
                                             <figure>		
@@ -399,12 +1187,12 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
-                                            <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-md-2 col-xs-12 arrival-grid">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                     <div class="grid-arr">
                                         <div class="grid-arrival">
                                             <figure>		
@@ -425,11 +1213,36 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
-                                            <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2 col-xs-12 arrival-grid">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                                    <div class="grid-arr">
+                                        <div class="grid-arrival">
+                                            <figure>		
+                                                <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                    <div class="grid-img">
+                                                        <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                    </div>		
+                                                </a>		
+                                            </figure>	
+                                        </div>
+
+                                        <div class="description">
+                                            <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                            <div class="block">
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                     <div class="grid-arr">
                                         <div class="grid-arrival">
                                             <figure>		
@@ -450,11 +1263,11 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
-                                            <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2 col-xs-12 arrival-grid">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                     <div class="grid-arr">
                                         <div class="grid-arrival">
                                             <figure>		
@@ -475,11 +1288,11 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
-                                            <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-2 col-xs-12 arrival-grid">
+                                <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                     <div class="grid-arr">
                                         <div class="grid-arrival">
                                             <figure>		
@@ -500,14 +1313,14 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </div>
-                                            <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                            <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item carousel-item">
                                 <div class="row">
-                                    <div class="col-md-2 col-md-offset-1 col-xs-12 arrival-grid">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                         <div class="grid-arr">
                                             <div class="grid-arrival">
                                                 <figure>		
@@ -528,12 +1341,12 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
-                                                <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-2 col-xs-12 arrival-grid">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                         <div class="grid-arr">
                                             <div class="grid-arrival">
                                                 <figure>		
@@ -554,11 +1367,36 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
-                                                <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2 col-xs-12 arrival-grid">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
+                                        <div class="grid-arr">
+                                            <div class="grid-arrival">
+                                                <figure>		
+                                                    <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
+                                                        <div class="grid-img">
+                                                            <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
+                                                        </div>		
+                                                    </a>		
+                                                </figure>	
+                                            </div>
+
+                                            <div class="description">
+                                                <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
+                                                <div class="block">
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                         <div class="grid-arr">
                                             <div class="grid-arrival">
                                                 <figure>		
@@ -579,11 +1417,11 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
-                                                <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2 col-xs-12 arrival-grid">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                         <div class="grid-arr">
                                             <div class="grid-arrival">
                                                 <figure>		
@@ -604,11 +1442,11 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
-                                                <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                             </div>
                                         </div>					
                                     </div>
-                                    <div class="col-md-2 col-xs-12 arrival-grid">
+                                    <div class="col-md-2 col-sm-6 col-xs-12 arrival-grid">
                                         <div class="grid-arr">
                                             <div class="grid-arrival">
                                                 <figure>		
@@ -629,482 +1467,23 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
-                                                <p><del>$100.00</del><em class="item_price">$70.00</em></p>
+                                                <p><del>$100.00</del><span class="item_price">$70.00</span></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Carousel controls -->
-                            <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <a class="carousel-control left carousel-control-prev" href="#myCarousel1" data-slide="prev">
                                 <i class="far fa-chevron-circle-left"></i>
                             </a>
-                            <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <a class="carousel-control right carousel-control-next" href="#myCarousel1" data-slide="next">
                                 <i class="far fa-chevron-circle-right"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-2 center-block"><a href="#" class="bttn white_black fill-div">View more+</a></div>
                 </div>
 
-            </div>
-        </section>
-
-        <!-- Ad section3 -->
-        <section class="quick-shop_3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <a href="#"><img src="images/AD7.jpg" class="img-responsive" /></a>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <a href="#"><img src="images/AD8.jpg" class="img-responsive" /></a>
-                        <div class="row mt10">
-                            <div class="col-md-6 col-sm-12">
-                                <a href="#"><img src="images/AD9.jpg" class="img-responsive" /></a>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <a href="#"><img src="images/AD10.jpg" class="img-responsive" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Top stores -->
-        <section class="top_stores">
-            <div class="container">
-                <h2 class="text-center">TOP STORES</h2>
-
-                <div class="row">
-                    <div class="arrivals-grids text-center">
-                        <div class="col-md-2 col-sm-12 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6>Was 25% now</h6>
-                                    <h4>5.0% Cash back</h4>
-                                    <a href="#">See all hotel coupons</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6>Was 25% now</h6>
-                                    <h4>5.0% Cash back</h4>
-                                    <a href="#">See all hotel coupons</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6>Was 25% now</h6>
-                                    <h4>5.0% Cash back</h4>
-                                    <a href="#">See all hotel coupons</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6>Was 25% now</h6>
-                                    <h4>5.0% Cash back</h4>
-                                    <a href="#">See all hotel coupons</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6>Was 25% now</h6>
-                                    <h4>5.0% Cash back</h4>
-                                    <a href="#">See all hotel coupons</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6>Was 25% now</h6>
-                                    <h4>5.0% Cash back</h4>
-                                    <a href="#">See all hotel coupons</a>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-2 center-block view_more"><a href="#" class="bttn white_black fill-div">View more+</a></div>
-            </div>
-        </section>
-
-        <!-- Budget stores -->
-        <section class="budget_stores">
-            <div class="container">
-                <h3 class="text-center">TOP STORES</h3>
-
-                <div class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <a href="#"><img src="images/Budget%20store1.jpg" class="img-responsive" /></a>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <a href="#"><img src="images/Budget%20store2.jpg" class="img-responsive" /></a>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <a href="#"><img src="images/Budget%20store3.jpg" class="img-responsive" /></a>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <a href="#"><img src="images/Budget%20store4.jpg" class="img-responsive" /></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Category of the month  -->
-        <section class="trndy_items">
-            <div class="container">
-                <h2 class="text-center">Top categories of month</h2>
-
-                <div class="row">
-                    <div class="arrivals-grids text-center">
-                        <div class="col-md-2 col-md-offset-1 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-2 center-block"><a class="bttn white_black">View more+</a></div>
-            </div>
-        </section>
-        
-          <!-- Category of the month  -->
-        <section class="trndy_items">
-            <div class="container">
-                <h2 class="text-center">Recently viewed</h2>
-
-                <div class="row">
-                    <div class="arrivals-grids text-center">
-                        <div class="col-md-2 col-md-offset-1 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 arrival-grid">
-                            <div class="grid-arr">
-                                <div class="grid-arrival">
-                                    <figure>		
-                                        <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-                                            <div class="grid-img">
-                                                <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
-                                            </div>		
-                                        </a>		
-                                    </figure>	
-                                </div>
-
-                                <div class="description">
-                                    <h6><a href="#">Samsung 2.0 gaming console i7,8GB</a></h6>
-                                    <div class="block">
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star checked"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <p><del>$100.00</del><em class="item_price">$70.00</em></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-2 center-block"><a class="bttn white_black">View more+</a></div>
             </div>
         </section>
 
@@ -1116,10 +1495,10 @@
                     <div class="col-md-4 col-sm-6 footer_height">
                         <img src="images/footer_logo.png" alt="" class="img-responsive" />
                         <div class="row got_question">
-                            <div class="col-md-3 col-sm-6">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
                                 <img src="images/Call%20icon.png" alt="" height="400" class="img-responsive" />
                             </div>
-                            <div class="col-md-9 col-sm-12">
+                            <div class="col-md-9 col-sm-9 col-xs-9">
                                 <p>Have got question? Call us 24/7.</p>
                                 <h3>97914-73952</h3>
                             </div>
@@ -1137,7 +1516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-2 footer_height">
+                    <div class="col-md-2 col-sm-4 footer_height">
                         <h4>About SUDC card</h4>
                         <ul>
                             <li class="active"><a href="#">About SUDC card</a></li>
@@ -1147,7 +1526,7 @@
                             <li><a href="causes.html">Member's testimonials</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-2 footer_height">
+                    <div class="col-md-2 col-sm-4 footer_height">
                         <h4>Company</h4>
                         <ul>
                             <li class="active"><a href="index.html">About company</a></li>
@@ -1157,7 +1536,7 @@
                             <li><a href="causes.html">Site map</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-2 footer_height">
+                    <div class="col-md-2 col-sm-4 footer_height">
                         <h4>SUDC business</h4>
                         <ul>
                             <li class="active"><a href="index.html">SUDC business</a></li>
@@ -1167,7 +1546,7 @@
                             <li><a href="causes.html">Merchant's benifits</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-sm-2 footer_height">
+                    <div class="col-md-2 col-sm-4 footer_height">
                         <h4>Poloicy info</h4>
                         <ul class="mb20">
                             <li class="active"><a href="index.html">Privacy policy</a></li>
