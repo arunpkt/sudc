@@ -1546,8 +1546,9 @@ h2.text-center.alegreya::before {
 .header_title img {
     vertical-align: super;
 }
-
-
+.show_mobile{
+    display: none;
+}
 
 
 
