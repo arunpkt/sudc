@@ -22,14 +22,20 @@ $(document).ready(function() {
         });
     });
     //Sticky header
+    
     $(window).scroll(function() {
         if ($(window).scrollTop() >= 100) {
             $('header').addClass('sticky_header');
-            $('.top_header').hide();
+            $('.show_mobile').hide(); 
+            $('.hide_mobile').hide();
         }
         else {
             $('header').removeClass('sticky_header');
-            $('.top_header').show();
+            if(width < 768){
+               $('.show_mobile').show(); 
+            } else {
+                $('.hide_mobile').show();
+            }
         }
     });
 });
