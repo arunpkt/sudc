@@ -1587,6 +1587,12 @@ h2.text-center.alegreya::before {
 }
 
 @media screen and (max-width: 991px) {
+    .nav>li>a {
+      padding: 10px 10px;
+    }
+    .grid-arrival {
+      height: 200px;
+    }
     header {
         padding-bottom: 0;
     }
