@@ -1550,9 +1550,20 @@ h2.text-center.alegreya::before {
     display: none;
 }
 
-
-
-
+/* About the card  */
+.about_the_card {
+    width: 100%;
+}
+.about_the_card h1{
+    color: #FFFFFF;
+}
+.about_the_card_img {
+    background-image: url(../images/About%20us.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
