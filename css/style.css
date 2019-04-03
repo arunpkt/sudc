@@ -1587,11 +1587,19 @@ h2.text-center.alegreya::before {
 }
 
 @media screen and (max-width: 991px) {
+    
+    .logo {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
+        width: 65%;
+    }
     .nav>li>a {
-      padding: 10px 10px;
+        padding: 10px 10px;
     }
     .grid-arrival {
-      height: 200px;
+        height: 200px;
     }
     header {
         padding-bottom: 0;
@@ -1681,13 +1689,14 @@ h2.text-center.alegreya::before {
     .footer_top p {
         padding-right: 0;
     }
-    .search-sec { 
-        top: 56%;
+    .search-sec {
+        top: 72%;
+        left: 50%;
         padding: 25px;
     }
     .heroCarousal {
         position: relative;
-        height: 400px;
+        height: 309px;
     }
     .heroCarousal .carousel-inner>.item>img {
         height: 310px;
@@ -1699,7 +1708,7 @@ h2.text-center.alegreya::before {
         margin: 20.5px -15px;
     }
     .grid-arr .grid-arrival figure > a .grid-img img {
-        width: 26%;
+        width: 50%;
     }
     .looking input {
         /*width: 100%!important;*/
@@ -1718,8 +1727,11 @@ h2.text-center.alegreya::before {
         margin-bottom: 10px;
         margin-top: 20px;
     }
+    .sticky_header .logo img {
+        margin-top: 0px;
+    }
     .logo img {
-        max-width: 86%;
+        max-width: 100%;
     }
     .sudc_menu {
         margin-top: 0px;
@@ -1751,7 +1763,7 @@ h2.text-center.alegreya::before {
         text-align: center;
     }
     a#submenuhead {
-      padding: 5px 5px;
+        padding: 5px 5px;
     }
     a#submenuhead .fa-user{
         display: none;
@@ -1978,7 +1990,7 @@ h2.text-center.alegreya::before {
 
 }/*max-width: 767px*/
 @media screen and (max-width:480px) {
-	.top_stores .grid-arr .grid-arrival figure > a .grid-img img {
+    .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
         width: 60%;
     }
     .logo {
