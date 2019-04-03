@@ -1684,7 +1684,7 @@ h2.text-center.alegreya::before {
         height: 400px;
     }
     .heroCarousal .carousel-inner>.item>img {
-        height: 400px;
+        height: 310px;
     }
     .sudc_menu .navbar-nav {
         float: left;
@@ -1696,11 +1696,14 @@ h2.text-center.alegreya::before {
         width: 50%;
     }
     .looking input {
-        width: 100%!important;
+        /*width: 100%!important;*/
     }
     .where_in .input-group {
-        width: 100%;
+        width: 75%;
         padding: 0px;
+    }
+    .search-sec .input-group-addon {
+        padding: 6px 3px; 
     }
     .grid-arr .grid-arrival figure > a .grid-img {
         height: 100%;
@@ -1729,6 +1732,22 @@ h2.text-center.alegreya::before {
         height: 450px;
     }
     .main_categries {
+        display: none;
+    }
+    .horizontal.category_list_hero {
+        margin-top: 10px;
+        float: left;
+    }
+    .where_in label {
+        width: 24%;
+    }
+    .description {
+        text-align: center;
+    }
+    a#submenuhead {
+      padding: 5px 5px;
+    }
+    a#submenuhead .fa-user{
         display: none;
     }
 }/*991*/
