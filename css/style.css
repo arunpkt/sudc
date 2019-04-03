@@ -1699,7 +1699,7 @@ h2.text-center.alegreya::before {
         margin: 20.5px -15px;
     }
     .grid-arr .grid-arrival figure > a .grid-img img {
-        width: 50%;
+        width: 26%;
     }
     .looking input {
         /*width: 100%!important;*/
@@ -1951,7 +1951,7 @@ h2.text-center.alegreya::before {
         text-align: center;
     }
     .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
-        width: 92%;
+        width: 35%;
     }
     .app_logo_pod img {
         margin: 25px auto 9px 0px;
@@ -1978,6 +1978,9 @@ h2.text-center.alegreya::before {
 
 }/*max-width: 767px*/
 @media screen and (max-width:480px) {
+	.top_stores .grid-arr .grid-arrival figure > a .grid-img img {
+        width: 60%;
+    }
     .logo {
         margin-top: -21px;
     }
