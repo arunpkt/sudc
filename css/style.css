@@ -1565,6 +1565,8 @@ h2.text-center.alegreya::before {
 
 
 
+
+
 /* Device */
 @media screen and (max-width:480px) {
     .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
@@ -1629,7 +1631,7 @@ h2.text-center.alegreya::before {
         margin-top: 10px;
     }
     .logo img {
-        margin-bottom: 10px;
+        margin-top: 30px;
     }
     .banner img {
         opacity: 0.1;
@@ -1749,11 +1751,11 @@ h2.text-center.alegreya::before {
         float: left;
     }
     header.sticky_header {
-        padding-top: 20px;
+        padding-top: 12px;
     }
     .getCard a.bttn {
         font-size: 14px;
-        margin-left: 17px;
+        margin-left: 20px;
     }
     .header_title img{
         display: none;
@@ -1775,6 +1777,9 @@ h2.text-center.alegreya::before {
     }
 }/*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .sticky_header img {
+        margin-top: 15px;
+    }
     .logo {
         margin-top: -21px;
     }
@@ -1992,7 +1997,7 @@ h2.text-center.alegreya::before {
     }
 }/*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
-    
+
     .logo {
         margin-top: 15px;
         margin-left: 5px;
@@ -2054,9 +2059,6 @@ h2.text-center.alegreya::before {
     .text_slideshow .item h2 {
         font-size: 14px;
         margin-top: 10px;
-    }
-    .logo img {
-        margin-bottom: 10px;
     }
     .banner img {
         opacity: 0.1;
@@ -2129,14 +2131,12 @@ h2.text-center.alegreya::before {
         height: 100%;
     }
     .logo img {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         margin-top: 20px;
+        max-width: 100%;
     }
     .sticky_header .logo img {
-        margin-top: 0px;
-    }
-    .logo img {
-        max-width: 100%;
+        margin-top: 9px;
     }
     .sudc_menu {
         margin-top: 0px;
@@ -2194,10 +2194,3 @@ h2.text-center.alegreya::before {
 @media screen and (max-width: 1200px) {
 
 }
-
-
-
-
-
-}/*max-width: 767px*/
-
