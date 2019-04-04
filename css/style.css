@@ -1584,10 +1584,10 @@ h2.text-center.alegreya::before {
 .menu_other_pages .looking label {
     width: 26%!important;
 }
-.menu_other_pages .form-section .looking,.form-section .where_in,.form-section .sub_but{
+.menu_other_pages .form-section .looking, .menu_other_pages .form-section .where_in, .menu_other_pages.form-section .sub_but{
     border:0;
 }
-.menu_other_pages .where_in label,.looking label{
+.menu_other_pages .where_in label, .menu_other_pages  .looking label{
     padding:10px 10px 0 10px;
     line-height: 32px;
 }
