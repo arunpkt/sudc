@@ -1584,15 +1584,14 @@ h2.text-center.alegreya::before {
 .menu_other_pages .looking label {
     width: 26%!important;
 }
-.menu_other_pages .form-section .looking, .menu_other_pages .form-section .where_in, .menu_other_pages.form-section .sub_but{
+.menu_other_pages .form-section .looking, .menu_other_pages .form-section .where_in, .menu_other_pages .form-section .sub_but{
     border:0;
 }
 .menu_other_pages .where_in label, .menu_other_pages  .looking label{
-    padding:10px 10px 0 10px;
-    line-height: 32px;
+    padding:0px 10px 0 10px;
 }
 .menu_other_pages .btn{
-    padding:14px 12px 11px;
+  
 }
 .menu_other_pages .section.brd_crmb {
     padding: 20px 20px 0;
@@ -1630,13 +1629,59 @@ p.about_card_description {
 }
 
 
+/* Submenu */
 
-
-
-
+section.submenu {
+    background-color: #000000;
+}
+.submenu .nav-tabs {
+    border-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.submenu .nav-tabs>li.active>a {
+    color: #DDDDDD;
+    background-color: #000000; 
+    border: 0; 
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #9cc756;
+}
+.submenu .nav-tabs>li.active>a:hover {
+    color: #1f9cd7;
+    background-color: #000000; 
+    border: 0; 
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #9cc756;
+}
+.submenu .nav-tabs>li>a {
+    color: #DDDDDD;
+    cursor: default;
+    background-color: #000000; 
+    border: 0; 
+}
+.submenu .nav-tabs>li > a:hover {
+    color: #1f9cd7;
+    background-color: #000000; 
+    border: 0; 
+}
+.submenu .nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+    margin-right: 20px;
+}
 
 /* Device */
 @media screen and (max-width:480px) {
+    .submenu ul.nav {
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
     .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
         width: 60%;
     }
@@ -1845,6 +1890,14 @@ p.about_card_description {
     }
 }/*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .submenu ul.nav {
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
     .sticky_header img {
         margin-top: 15px;
     }
