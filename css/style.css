@@ -1338,6 +1338,55 @@ section.top_stores .view_more {
     border-radius: 50%;
     border-color: transparent;
 }
+
+/* Directors */
+.directors .carousel{
+    margin: 10px auto;
+    padding: 0 10px;
+}
+.directors .carousel .item {
+    min-height: 330px;
+    /* text-align: center;*/
+    overflow: hidden;
+}
+.directors .carousel .carousel-control{
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+}
+.directors .carousel .carousel-control i{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: none;
+    font-weight: bold;
+}
+.directors .carousel .carousel-control.left i{
+    margin-left: -3px;
+}
+.directors .carousel .carousel-control.left i{
+    margin-right: -3px;
+}
+.directors .carousel .carousel-indicators{
+    bottom: -50px;
+}
+.directors .carousel-indicators li, .directors .carousel-indicators li.active{
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+
+
 .dealsOfDay .carousel-indicators li, .trndy_items .carousel-indicators li {	
     background: rgba(0, 0, 0, 0.2);
 }
@@ -1591,7 +1640,7 @@ h2.text-center.alegreya::before {
     padding:0px 10px 0 10px;
 }
 .menu_other_pages .btn{
-  
+
 }
 .menu_other_pages .section.brd_crmb {
     padding: 20px 20px 0;
@@ -1671,6 +1720,44 @@ section.submenu {
     margin-bottom: -1px;
     margin-right: 20px;
 }
+.directors {
+    background-color: #e7e7e7;
+    margin-top: 70px;
+    text-align: center;
+}
+.directors h2 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.directors h3 {
+    margin-top: 10px;
+    margin-top: 10px;
+}
+.directors .grid-arr .grid-arrival figure > a .grid-img img {
+    width: 100%;
+}
+.directors .grid-img {
+    height: 252px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Device */
 @media screen and (max-width:480px) {
