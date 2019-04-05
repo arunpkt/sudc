@@ -1,11 +1,4 @@
-.search-sec {
-    position: static;
-    left: auto;
-    transform: none;
-    border-radius: 0px;
-    width: 100%;
-    height: 100%;
-}
+
 .looking label {
    
     width: 26%!important;
@@ -178,17 +171,6 @@ i.icon-twitter:before:hover{background: red}
 i{color:#8e8c8c;}
 
 
-
-/*search section*/
-.search-sec .col-md-offset-1{margin-left:0}
-.search-sec .col-md-10{width:100%;}
-.search-sec .form-section .form-group{font-size:20px}
-.sub_but .btn{font-size:20px;padding:8px;}
-.where_in .input-group{width:69%;}
-.where_in label{width:30%}
-
-
-
 /*breadcrumb*/
 /*.brd_crmb .breadcrumb{padding:8px 0}*/
 .breadcrumb>.active{font-weight: 600;color:#000;}
@@ -278,8 +260,6 @@ section.brd_crmb{padding-left:0;padding-right:0}
 .sudc_menu .navbar{margin-top:40px}
 
 /*search*/
-.search-sec{padding:0;}
-.search-sec .col-xs-6,.where_in .input-group{width:100%}
 .cust-selc{width:100%;max-width:100%}
 .h3, h3{font-size:24px}
 .no-border{width:80%;background: transparent;}
@@ -313,7 +293,6 @@ p.pad_r_l {
     .clse,.filter_ico{display:none}
     .no_padding_left{padding-left:15px}
 .col-md-2.col-sm-4.col-xs-12.no_padding_left.filters{padding-right:0;padding-left:15px }
-.search-sec .form-section .form-group{font-size: 16px}
 
 }
  

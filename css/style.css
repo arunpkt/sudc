@@ -2492,6 +2492,9 @@ section.submenu {
     .submenu .col-md-8 {
         width: 83.666667%;
     }
+    .directors .grid-img {
+        height: 193px;
+    }
 }
 
 }/* 1024 */
