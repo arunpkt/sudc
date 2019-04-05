@@ -1727,19 +1727,29 @@ section.submenu {
 }
 .directors h2 {
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
-.directors h3 {
+.directors .description h3 {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+.directors .description p {
     margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737373;
 }
 .directors .grid-arr .grid-arrival figure > a .grid-img img {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
 }
 .directors .grid-img {
-    height: 252px;
+    height: 323px;
 }
-
+.directors .grid-arrival {
+    padding: 0;
+}
 
 
 
@@ -1761,6 +1771,34 @@ section.submenu {
 
 /* Device */
 @media screen and (max-width:480px) {
+    .about_the_card h1 {
+        top: 38%;
+    }
+    p.about_card_description {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .about_the_card_img {
+        height: 130px;
+        background-color: #796f6f;
+        background-image: none;
+    }
+    .directors {
+        margin-top: 30px;
+    }
+    .directors h2 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .about_the_card_img h1{
+        font-size: 24px;
+    }
+    .about_the_card_img img {
+        display: none;
+    }
+    .about_the_card_wrapper {
+        padding: 28px 20px 10px 20px;
+    }
     .submenu ul.nav {
         list-style: none;
         display: flex;
@@ -1977,6 +2015,36 @@ section.submenu {
     }
 }/*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+
+    .about_the_card h1 {
+        top: 38%;
+    }
+    p.about_card_description {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .about_the_card_img {
+        height: 130px;
+        background-color: #796f6f;
+        background-image: none;
+    }
+    .directors {
+        margin-top: 30px;
+    }
+    .directors h2 {
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .about_the_card_img h1{
+        font-size: 24px;
+    }
+    .about_the_card_img img {
+        display: none;
+    }
+    .about_the_card_wrapper {
+        padding: 28px 20px 10px 20px;
+    }
+
     .submenu ul.nav {
         list-style: none;
         display: flex;
@@ -2205,6 +2273,27 @@ section.submenu {
     }
 }/*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
+    .directors  .grid-arrival {
+        height: auto;
+    }
+    .directors {
+        margin-top: 70px;
+        padding-bottom: 30px;
+    }
+    .directors h2 {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    p.about_card_description {
+        font-size: 16px;
+        padding-top: 30px;
+    }
+    .about_the_card_wrapper {
+        padding: 50px 15px 0px 20px;
+    }
+    .menu_other_pages  .form-group {
+        margin-top: 10px;
+    }
 
     .logo {
         margin-top: 15px;
@@ -2382,6 +2471,30 @@ section.submenu {
         display: none;
     }
 }/*991*/
+
+@media screen and (min-width : 992px) and (max-width: 1024px) and (orientation:landscape) {
+    .about_the_card h1 {
+        top: 40%;
+    }
+    .menu_other_pages .looking label {
+        width: 32%!important;
+    }
+    .looking input {
+        padding: 0px;
+        width: 66%!important;
+    }
+    .where_in label {
+        width: 39%;
+    }
+    .where_in .input-group {
+        width: 60%;
+    }
+    .submenu .col-md-8 {
+        width: 83.666667%;
+    }
+}
+
+}/* 1024 */
 
 @media screen and (max-width: 1700px) {
 
