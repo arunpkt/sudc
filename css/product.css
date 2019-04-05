@@ -171,7 +171,7 @@ i{color:#8e8c8c;}
 /*filters*/
 .filters .accordion{margin-top:50px}
 .filters .accordion .card{margin-bottom:40px}
-.prc_rte{border:1px solid #ddd;font-size:14px;padding:10px;text-align: center;}
+.prc_rte{border:1px solid #ddd;font-size:14px;padding:10px;text-align: center;margin: 20px 23px;}
 li.vwmre a {
     text-align: center;
     width: 100%;
