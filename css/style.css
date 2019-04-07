@@ -1662,7 +1662,7 @@ p.about_card_head {
 }
 p.about_card_description {
     font-size: 16px;
-    padding-top: 40px;
+    padding-top: 15px;
 }
 .product_count_wrapper {
     margin-top: 30px;
@@ -1724,6 +1724,7 @@ section.submenu {
     background-color: #e7e7e7;
     margin-top: 70px;
     text-align: center;
+    padding-bottom: 35px;
 }
 .directors h2 {
     margin-top: 70px;
@@ -1750,27 +1751,85 @@ section.submenu {
 .directors .grid-arrival {
     padding: 0;
 }
+.how_it_works {
+    margin-bottom: 50px;
+}
+.member_head{
+    display: block;
+    width: 100%;
+    float: left; 
+    margin-bottom: 10px;
+}
 
+.left_price {
+    float: left;
+}
+.right_price {
+    float: right;
+    margin-top: 15px;
+}
+.right_price .btn {
+    color: #000;
+    background-color: #ffde01;
+    width: 100%;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.right_price .btn:hover {
+    color: #ffde01;
+    background-color: #000;
+}
+.left_price h3 {
+    color: #1f9cd7;
+    font-size: 20px;
+    font-weight: 500;
+}
+.left_price h2 {
+    font-size: 26px;
+    font-weight: 600;
+    MARGIN-TOP: 10px;
+}
+.member_area p.about_card_description {
+    font-size: 16px;
+    padding-top: 5px;
+}
+.member_area {
+    margin-top: 60px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.benifit_item {
+    font-size: 16px;
+}
+.customer_benifits_head {
+    margin-top: 40px;
+    margin-bottom: 40px;
+       padding-left: 30px;
+    list-style-image: url(../images/list_style_green.png);
+}
+.customer_benifits_head li p {
+    margin-left: 15px;
+}
 
 /* Device */
 @media screen and (max-width:480px) {
+    .menu_other_pages .btn > span {
+        display: none;
+    }
+    .search-sec .col-xs-2 {
+        padding: 0;
+    }
+    .menu_other_pages .btn:before {
+        content: "Q";
+    }
+    .menu_other_pages  .col-xs-10 {
+        padding-right: 0;
+    }
+    .submit_col {
+        width: 12%;
+    }
+
     .about_the_card h1 {
         top: 38%;
     }
@@ -1909,7 +1968,7 @@ section.submenu {
     }
     .search-sec { 
         top: 56%;
-        padding: 25px;
+        padding: 0 5px 0 5px;;
     }
     .heroCarousal {
         position: relative;
@@ -2015,6 +2074,21 @@ section.submenu {
     }
 }/*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .menu_other_pages .btn > span {
+        display: none;
+    }
+    .search-sec .col-xs-2 {
+        padding: 0;
+    }
+    .menu_other_pages .btn:before {
+        content: "Q";
+    }
+    .menu_other_pages  .col-xs-10 {
+        padding-right: 0;
+    }
+    .submit_col {
+        width: 14%;
+    }
 
     .about_the_card h1 {
         top: 38%;
@@ -2155,7 +2229,7 @@ section.submenu {
     }
     .search-sec { 
         top: 56%;
-        padding: 25px;
+        padding: 0 5px 0 5px;
     }
     .heroCarousal {
         position: relative;
