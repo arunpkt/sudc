@@ -1848,6 +1848,7 @@ h2.text-center.alegreya::before {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 400;
+    font-size: 35px;
 }
 
 .about_the_card_img {
@@ -2069,15 +2070,70 @@ section.submenu {
 .customer_benifits_head {
     margin-top: 40px;
     margin-bottom: 40px;
-       padding-left: 30px;
+    padding-left: 30px;
     list-style-image: url(../images/list_style_green.png);
 }
 .customer_benifits_head li p {
     margin-left: 15px;
 }
+.customer_testimonial .panel.panel-default {
+    margin-top: 30px;
+}
+.customer_testimonial .panel.panel-default h2 {
+    font-size: 22px;
+}
+
+.customer_testimonial .panel.panel-default p {
+    font-size: 18px;
+}
+
+.reviewPod {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.reviewPod img {
+    width: 10%;
+}
+
+.reviewPod .reviw_body{
+    color: #7e8082;
+    margin-top: 15px;
+}
+p.writtenBy {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+img.line{
+    width: 80%;
+    margin: 0 auto;
+}
+.view_more a {
+    background-color: #b0c2c8;
+    color: #000;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Device */
 @media screen and (max-width:480px) {
+    .reviewPod img {
+        width: 30%;
+    }
     .menu_other_pages .btn > span {
         display: none;
     }
@@ -2119,7 +2175,7 @@ section.submenu {
     }
 
     .about_the_card_img h1 {
-        font-size: 24px;
+        font-size: 17px;
     }
 
     .about_the_card_img img {
@@ -2409,6 +2465,12 @@ section.submenu {
 
 /*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .member_area {
+        margin-top: 40px;
+    }
+    .reviewPod img {
+        width: 30%;
+    }
     .menu_other_pages .btn > span {
         display: none;
     }
@@ -2754,6 +2816,9 @@ section.submenu {
 
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
+    .member_area {
+        margin-top: 30px;
+    }
     .directors .grid-arrival {
         height: auto;
     }
