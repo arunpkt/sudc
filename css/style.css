@@ -2028,7 +2028,7 @@ section.submenu {
     padding: 0;
 }
 .how_it_works {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .member_head{
     display: block;
@@ -2042,7 +2042,7 @@ section.submenu {
 }
 .right_price {
     float: right;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .right_price .btn {
     color: #000;
@@ -2072,7 +2072,7 @@ section.submenu {
     padding-top: 5px;
 }
 .member_area {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .benifit_item {
@@ -2091,13 +2091,26 @@ section.submenu {
     margin-top: 30px;
 }
 .customer_testimonial .panel.panel-default h2 {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .customer_testimonial .panel.panel-default p {
     font-size: 18px;
 }
 
+.customer_testimonial .panel-default>.panel-heading {
+    background-color: #e5ebef;
+
+}
+.customer_testimonial .panel-heading a{
+    text-decoration: underline;
+    color: #2298d0;
+}
+
+.customer_testimonial .panel-default {
+    border: #c9dae2 solid 1px;
+}
 .reviewPod {
     margin-top: 30px;
     margin-bottom: 45px;
@@ -2142,6 +2155,18 @@ img.line{
 
 /* Device */
 @media screen and (max-width:480px) {
+    .form-group.where_in, .form-group.sub_but{
+        margin-bottom: 0;
+    }
+    .form-group.looking {
+        margin-bottom: 8px;
+    }
+    .submenu .nav-tabs > li > a {
+        padding: 10px 15px;
+    }
+    section.menu_other_pages .container {
+        padding: 5px 3px;
+    }
     .reviewPod img {
         width: 30%;
     }
@@ -2160,18 +2185,29 @@ img.line{
     .submit_col {
         width: 12%;
     }
-
-    .about_the_card h1 {
-        top: 38%;
+    .right_price {
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
-
+    .about_the_card h1 {
+        top: 25%;
+        left: 70%;
+    }
+    .about_the_card h1 {
+        width: 100%;
+    }
+    .about_the_card.testimonial h1 {
+        top: 25%;
+        left: 60%;
+    }
     p.about_card_description {
         font-size: 16px;
         padding-top: 20px;
     }
 
     .about_the_card_img {
-        height: 130px;
+        height: 70px;
         background-color: #796f6f;
         background-image: none;
     }
@@ -2186,7 +2222,7 @@ img.line{
     }
 
     .about_the_card_img h1 {
-        font-size: 17px;
+        font-size: 24px;
     }
 
     .about_the_card_img img {
