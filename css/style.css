@@ -1848,7 +1848,7 @@ h2.text-center.alegreya::before {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 400;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .about_the_card_img {
@@ -1883,7 +1883,7 @@ h2.text-center.alegreya::before {
 
 .menu_other_pages .where_in label,
 .menu_other_pages .looking label {
-    padding: 0px 10px 0 10px;
+    padding: 0px 10px 0 20px;
 }
 
 .menu_other_pages .btn {}
@@ -1899,7 +1899,7 @@ section.menu_other_pages .container {
 
 p.about_card_head {
     color: #002038;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     font-weight: 600;
 }
@@ -1965,6 +1965,11 @@ section.submenu {
     cursor: default;
     background-color: #000000;
     border: 0;
+    padding: 10px 80px;
+}
+.submenu .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .submenu .nav-tabs > li > a:hover {
@@ -1973,10 +1978,15 @@ section.submenu {
     border: 0;
 }
 
+.submenu .nav-tabs > li:first-child {
+    float: left;
+    margin-bottom: -1px;
+    /* margin-left: 0px;*/
+}
 .submenu .nav-tabs > li {
     float: left;
     margin-bottom: -1px;
-    margin-right: 20px;
+    /* margin-left: 100px;*/
 }
 
 .directors {
@@ -1989,6 +1999,7 @@ section.submenu {
 .directors h2 {
     margin-top: 70px;
     margin-bottom: 0px;
+    font-size: 34px;
 }
 
 .directors .description h3 {
@@ -2010,7 +2021,7 @@ section.submenu {
 }
 
 .directors .grid-img {
-    height: 323px;
+    height: 300px;
 }
 
 .directors .grid-arrival {
