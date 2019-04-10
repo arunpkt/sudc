@@ -1978,7 +1978,7 @@ p.about_card_description {
 
 .submenu .nav-tabs > li > a:hover {
     color: #1f9cd7;
-   /*background-color: rgba(0,0,0,0.4);*/
+    /*background-color: rgba(0,0,0,0.4);*/
     border: 0;
 }
 
@@ -2027,7 +2027,7 @@ p.about_card_description {
     padding: 0;
 }
 .directors .grid-arr:hover {
-     transform: none; 
+    transform: none; 
 }
 .how_it_works {
     margin-bottom: 70px;
@@ -2157,14 +2157,14 @@ img.line{
 
 /* Device */
 @media screen and (max-width:480px) {
+    .submenu .nav-tabs > li {
+        width: 100%;
+    }
     .form-group.where_in, .form-group.sub_but{
         margin-bottom: 0;
     }
     .form-group.looking {
         margin-bottom: 8px;
-    }
-    .submenu .nav-tabs > li  {
-        width: 20%;
     }
     section.menu_other_pages .container {
         padding: 5px 3px;
@@ -2193,15 +2193,19 @@ img.line{
         margin-bottom: 20px;
     }
     .about_the_card h1 {
-        top: 25%;
-        left: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     .about_the_card h1 {
-        width: 100%;
+        /*width: 100%;*/
     }
     .about_the_card.testimonial h1 {
-        top: 25%;
-        left: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
     }
     p.about_card_description {
         font-size: 16px;
@@ -2209,7 +2213,7 @@ img.line{
     }
 
     .about_the_card_img {
-        height: 70px;
+        height: 110px;
         background-color: #796f6f;
         background-image: none;
     }
