@@ -1536,7 +1536,7 @@ section.top_stores .view_more {
 .directors .carousel .carousel-control i {
     font-size: 30px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     display: inline-block;
     margin: -16px 0 0 0;
     z-index: 5;
@@ -1932,8 +1932,11 @@ p.about_card_description {
 
 /* Submenu */
 
-section.submenu {
-    background-color: #000000;
+.submenu {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .submenu .nav-tabs {
@@ -1944,7 +1947,7 @@ section.submenu {
 
 .submenu .nav-tabs > li.active > a {
     color: #DDDDDD;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.4);
     border: 0;
     border-bottom-style: solid;
     border-bottom-width: 4px;
@@ -1953,7 +1956,7 @@ section.submenu {
 
 .submenu .nav-tabs > li.active > a:hover {
     color: #1f9cd7;
-    background-color: #000000;
+    /*background-color: rgba(0,0,0,0.4);*/
     border: 0;
     border-bottom-style: solid;
     border-bottom-width: 4px;
@@ -1962,10 +1965,11 @@ section.submenu {
 
 .submenu .nav-tabs > li > a {
     color: #DDDDDD;
-    cursor: default;
-    background-color: #000000;
+    /*cursor: default;
+    background-color: #000000;*/
+    background-color: rgba(0,0,0,0.4);
     border: 0;
-    padding: 10px 80px;
+    text-align: center;
 }
 .submenu .col-md-12 {
     padding-left: 0;
@@ -1974,19 +1978,14 @@ section.submenu {
 
 .submenu .nav-tabs > li > a:hover {
     color: #1f9cd7;
-    background-color: #000000;
+   /*background-color: rgba(0,0,0,0.4);*/
     border: 0;
 }
 
-.submenu .nav-tabs > li:first-child {
-    float: left;
-    margin-bottom: -1px;
-    /* margin-left: 0px;*/
-}
 .submenu .nav-tabs > li {
     float: left;
     margin-bottom: -1px;
-    /* margin-left: 100px;*/
+    width: 20%;
 }
 
 .directors {
@@ -2026,6 +2025,9 @@ section.submenu {
 
 .directors .grid-arrival {
     padding: 0;
+}
+.directors .grid-arr:hover {
+     transform: none; 
 }
 .how_it_works {
     margin-bottom: 70px;
@@ -2161,8 +2163,8 @@ img.line{
     .form-group.looking {
         margin-bottom: 8px;
     }
-    .submenu .nav-tabs > li > a {
-        padding: 10px 15px;
+    .submenu .nav-tabs > li  {
+        width: 20%;
     }
     section.menu_other_pages .container {
         padding: 5px 3px;
