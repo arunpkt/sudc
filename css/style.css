@@ -2192,8 +2192,8 @@ img.line{
     }
     .right_price {
         float: left;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        float: right;
+        margin-top: 25px;
     }
     .about_the_card h1 {
         top: 50%;
@@ -2231,7 +2231,7 @@ img.line{
     }
 
     .about_the_card_img h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .about_the_card_img img {
