@@ -2180,7 +2180,9 @@ img.line{
         padding: 0;
     }
     .menu_other_pages .btn:before {
-        content: "Q";
+        font-family: "Font Awesome 5 Free";
+        content: "\f002";
+        font-size: 12px;
     }
     .menu_other_pages  .col-xs-10 {
         padding-right: 0;
