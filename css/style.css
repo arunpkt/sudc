@@ -2158,6 +2158,9 @@ img.line{
 
 /* Device */
 @media screen and (max-width:480px) {
+    .how_it_works {
+        margin-bottom: 40px;
+    }
     .submenu .nav-tabs > li {
         width: 100%;
     }
@@ -2192,9 +2195,17 @@ img.line{
     }
     .right_price {
         float: left;
-        float: right;
-        margin-top: 25px;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
+    .left_price {
+        float: left;
+        width: 100%;
+    }
+    .search-sec .container>.row{
+        margin: 0;
+    }
+
     .about_the_card h1 {
         top: 50%;
         left: 50%;
@@ -2521,6 +2532,7 @@ img.line{
 
 /*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+
     .member_area {
         margin-top: 40px;
     }
@@ -2544,7 +2556,7 @@ img.line{
     }
 
     .about_the_card h1 {
-        top: 38%;
+        top: 50%;
     }
 
     p.about_card_description {
@@ -2553,7 +2565,7 @@ img.line{
     }
 
     .about_the_card_img {
-        height: 130px;
+        height: 90px;
         background-color: #796f6f;
         background-image: none;
     }
@@ -2872,6 +2884,13 @@ img.line{
 
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
+    .menu_other_pages .looking input {
+        width: 75% !important;
+        padding-left: 13px;
+    }
+    .menu_other_pages .looking label {
+        width: 24% !important;
+    }
     .about_the_card h1 {
         width: 100%;
         text-align: center;
