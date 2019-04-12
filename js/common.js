@@ -22,7 +22,7 @@ $(document).ready(function() {
         });
     });
     //Sticky header
-    
+
     $(window).scroll(function() {
         if ($(window).scrollTop() >= 100) {
             $('header').addClass('sticky_header');
@@ -32,7 +32,7 @@ $(document).ready(function() {
         else {
             $('header').removeClass('sticky_header');
             if(width < 768){
-               $('.show_mobile').show(); 
+                $('.show_mobile').show(); 
             } else {
                 $('.hide_mobile').show();
             }
@@ -41,7 +41,14 @@ $(document).ready(function() {
 });
 //Toggle search terms
 function toggle(id){
-  $("#" + id).toggle();
+    $("#" + id).toggle();
+}
+//Function to scroll to active element in sub menu
+function scrollToActiveSubmenu() {
+    var width = $(this).width();
+    if(width <= 776) {
+        $('.submenu ul.nav').animate({scrollLeft: $('.submenu li.active').position().left}, 500);  
+    }
 }
 
 
