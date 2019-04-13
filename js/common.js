@@ -3,8 +3,15 @@ $(document).ready(function() {
     var heightcalc = Math.round(($('.banner').outerHeight() - $('.text_slideshow').height()) / 2);
     $('.text_slideshow').css('top', heightcalc + 'px');
 
-    //            backtotop script
+    //backtotop script
     $(".upar").hide();
+    var numCol = 6;
+
+    if(width <= 767) {
+        numCol = 1;
+    } else if(width > 767 && width <= 991 ) {
+        numCol = 2;       
+    }
 
     $(function() {
         $(window).scroll(function() {
@@ -38,6 +45,27 @@ $(document).ready(function() {
             }
         }
     });
+
+    //For recently viewed item carousal
+    $('#myCarousel1 .item').each(function () {
+        if(numCol > 1){
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 3; i <= numCol; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        }
+    });
+
 });
 //Toggle search terms
 function toggle(id){
