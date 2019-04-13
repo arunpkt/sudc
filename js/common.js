@@ -7,10 +7,13 @@ $(document).ready(function() {
     $(".upar").hide();
     var numCol = 6;
 
+    var width = $(this).width();
     if(width <= 767) {
         numCol = 1;
     } else if(width > 767 && width <= 991 ) {
         numCol = 2;       
+    } else {
+       numCol = 6; 
     }
 
     $(function() {
@@ -42,26 +45,6 @@ $(document).ready(function() {
                 $('.show_mobile').show(); 
             } else {
                 $('.hide_mobile').show();
-            }
-        }
-    });
-
-    //For recently viewed item carousal
-    $('#myCarousel1 .item').each(function () {
-        if(numCol > 1){
-            var next = $(this).next();
-            if (!next.length) {
-                next = $(this).siblings(':first');
-            }
-            next.children(':first-child').clone().appendTo($(this));
-
-            for (var i = 3; i <= numCol; i++) {
-                next = next.next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-
-                next.children(':first-child').clone().appendTo($(this));
             }
         }
     });
