@@ -327,6 +327,11 @@ header.sticky_header {
     position: fixed;
     width: 100%;
     z-index: 999;
+    padding-bottom: 0;
+}
+header.sticky_header .logo {
+    width: 80%;
+    margin-top: 10px;
 }
 
 .text_slideshow .carousel {
@@ -1718,7 +1723,11 @@ section.top_stores .view_more {
     color: #FFFFFF;
 
 }
-
+.footer_top .contact_info p.phone {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
 .footer_top .contact_info h4 {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -1727,8 +1736,19 @@ section.top_stores .view_more {
 
 }
 
-.footer_top .contact_info p {}
-
+.footer_top .contact_info p {
+    margin-bottom: 10px;
+    color: #9c9b9b;
+}
+.footer_top .contact_info p i {
+    margin-right: 20px;
+}
+.footer_top .social_icons {
+    margin-top: 20px;
+}
+.footer_top .social_icons a{
+    margin-right: 10px;
+}
 .category_list_hero a:hover {
     color: #109fc6;
 }
@@ -1877,6 +1897,7 @@ h2.text-center.alegreya::before {
 
 .header_title h2 {
     padding: 0 20px 0 20px;
+    font-size: 40px;
 }
 
 .header_title img {
