@@ -2264,6 +2264,12 @@ img.line{
 
 /* Device */
 @media screen and (max-width:480px) {
+    .sticky_header .sudc_menu {
+        margin-top: 0px;
+    }
+    .sticky_header .sudc_menu .navbar {
+        margin-top: 0px;
+    }
     .upar {
         width: 30px;
         height: 30px;
@@ -2281,7 +2287,7 @@ img.line{
         margin-bottom: 0;
     }
     .form-group.looking {
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
     section.menu_other_pages .container {
         padding: 5px 3px;
@@ -2411,7 +2417,7 @@ img.line{
     }
 
     .top_header {
-        margin: 10px 30px 5px 0;
+        margin: 10px 15px 5px 0;
     }
 
     a.search-icon {
@@ -2518,11 +2524,14 @@ img.line{
 
     .header-carousal .heroCarousal {
         position: relative;
-        height: 230px;
+        height: 200px;
         background-color: #5f5959;
     }
-    .search-sec .form-group.where_in, .search-sec .form-group.sub_but {
-        margin-bottom: 10px; 
+    .search-sec .form-group.where_in {
+        margin-bottom: 5px; 
+    }
+    .search-sec .form-group.sub_but{
+        margin-bottom: 0px;  
     }
     .heroCarousal .carousel-inner > .item > img {
         height: 400px;
@@ -2563,7 +2572,7 @@ img.line{
     }
 
     .app_store_pod {
-        height: 560px;
+        height: 650px;
     }
 
     .looking label {
@@ -2619,18 +2628,26 @@ img.line{
     }
 
     header.sticky_header {
-        padding-top: 12px;
+        padding-top: 5px;
     }
-
+    header.sticky_header .logo {
+        width: 80%;
+        margin-top: 0px;
+    }
+    header.sticky_header .logo img {
+        margin-top: 0px;
+    }
     .getCard a.bttn {
         font-size: 14px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .header_title img {
         display: none;
     }
-
+    .header_title h2 {
+        font-size: 25px;
+    }
     .description {
         text-align: center;
     }
