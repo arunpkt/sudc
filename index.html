@@ -1871,7 +1871,7 @@
             autoSelect: true
         });
         $.get("/getEmployee", function(data){
-            $("#name").typeahead({ source:data });
+            $("#search").typeahead({ source:data });
         },'json');
 
     </script>
