@@ -1359,7 +1359,7 @@ main_search {
     box-shadow: none;
     /* You may want to include this as bootstrap applies these styles too */
 }
-.search-sec .form-section {
+.header-carousal .search-sec .form-section {
     width: 100%;
     display: inline-block;
     border: 5px solid rgba(0, 0, 0, 0.3);
