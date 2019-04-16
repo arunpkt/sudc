@@ -190,10 +190,10 @@
                                 <a data-toggle="modal" data-target="#signUpModal">sign up </a>
                             </div>
                         </div>
-                        <div class="modal-body">				  
+                        <div class="modal-body signup-modal-body">				  
 
-                            <div class="row">							
-                                <div class="col-md-6  col-xs-12 mx-auto login-modal">
+                            <div class="row">				
+                                <div class="col-md-6  col-xs-12 mx-auto login-modal" id="loginModel">
                                     <div class="form-group">
                                         <input type="text" id="name" class="form-control" required>
                                         <label class="form-control-placeholder" for="name">Name</label>
@@ -203,10 +203,22 @@
                                         <label class="form-control-placeholder" for="password">Password</label>
                                     </div>
                                     <!--forgot -->
-                                    <a href="#" class="btn-forgot" onclick="forgot('forgotClick');">forgot password ?</a>
+                                    <a href="#" class="btn-forgot" onclick="openForgotPassword();">forgot password ?</a>
                                     <div class="form-group">
                                         <input type="submit" class="btn btn-block btn-primary" value="Login" />
                                     </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12 retrieve-password login-modal" id="forgetModel" style="display: none;">
+                                    <h4 class="text-uppercase">Forgot Password?</h4>
+                                    <p>Enter your email address and we will send you a link to reset your password.</p>
+                                    <form method="POST" id="form-forget-password" action="">
+                                        <div class="form-group">
+                                            <label for="forget-email" class="form-control-placeholder">Email</label>
+                                            <input type="email" name="email" id="forget-email" class="form-control " data-rule="email">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary password-reset">EMAIL RESET LINK</button>
+                                        <button type="button" class="btn btn-filled cancel cancel-forget-password" onclick="openLogin();">CANCEL</button>
+                                    </form>
                                 </div>
                                 <span class="border-or">OR</span>
                                 <div class="col-sm-6 col-xs-12 signup-other mx-auto" >

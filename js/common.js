@@ -13,7 +13,7 @@ $(document).ready(function() {
     } else if(width > 767 && width <= 991 ) {
         numCol = 2;       
     } else {
-       numCol = 6; 
+        numCol = 6; 
     }
 
     $(function() {
@@ -48,13 +48,13 @@ $(document).ready(function() {
             }
         }
     });
-	//modal
-	$('#loginModal').on('shown.bs.modal', function () {	
-		$('#signUpModal').modal('hide')
-	})
-	$('#signUpModal').on('shown.bs.modal', function () {
-		$('#loginModal').modal('hide')
-	})
+    //modal
+    $('#loginModal').on('shown.bs.modal', function () {	
+        $('#signUpModal').modal('hide')
+    })
+    $('#signUpModal').on('shown.bs.modal', function () {
+        $('#loginModal').modal('hide')
+    })
 
 });
 //Toggle search terms
@@ -68,121 +68,129 @@ function scrollToActiveSubmenu() {
     }
 }
 
-	if (typeof jQuery === "undefined") {
-		  throw new Error("jQuery required");
-		}
+//Forgot password
+function openForgotPassword() {
+  $("#forgetModel").show();
+  $("#loginModel").hide();
+}
+function openLogin() {
+  $("#forgetModel").hide();
+  $("#loginModel").show();
+}
+if (typeof jQuery === "undefined") {
+    throw new Error("jQuery required");
+}
 
-		+(function($) {
-		  "use strict";
++(function($) {
+    "use strict";
 
-		  // SEARCHBAR CLASS DEFINITION
-		  // =========================
+    // SEARCHBAR CLASS DEFINITION
+    // =========================
 
-		  var backdrop = ".searchbar-backdrop";
-		  var toggle = '[data-toggle="searchbar"]';
-		  var Searchbar = function(element) {
-			$(element).on("click.mr.searchbar", this.toggle);
-		  };
+    var backdrop = ".searchbar-backdrop";
+    var toggle = '[data-toggle="searchbar"]';
+    var Searchbar = function(element) {
+        $(element).on("click.mr.searchbar", this.toggle);
+    };
 
-		  Searchbar.VERSION = "1.0.0";
+    Searchbar.VERSION = "1.0.0";
 
-		  Searchbar.prototype.toggle = function(e) {
-			var $this = $(this);
+    Searchbar.prototype.toggle = function(e) {
+        var $this = $(this);
 
-			if ($this.is(".disabled, :disabled")) return;
+        if ($this.is(".disabled, :disabled")) return;
 
-			var $parent = getParent($this);
-			var isActive =
-			  $parent.hasClass("open") || (typeof isXS == "function" && isXS());
+        var $parent = getParent($this);
+        var isActive =
+            $parent.hasClass("open") || (typeof isXS == "function" && isXS());
 
-			if (!isActive) {
-			  clearMenus();
-			  if (
-				"ontouchstart" in document.documentElement &&
-				!$parent.closest(".navbar-nav").length
-			  ) {
-				// if mobile we use a backdrop because click events don't delegate
-				$('<div class="searchbar-backdrop"/>')
-				  .insertAfter($(this))
-				  .on("click", clearMenus);
-			  }
+        if (!isActive) {
+            clearMenus();
+            if (
+                "ontouchstart" in document.documentElement &&
+                !$parent.closest(".navbar-nav").length
+            ) {
+                // if mobile we use a backdrop because click events don't delegate
+                $('<div class="searchbar-backdrop"/>')
+                    .insertAfter($(this))
+                    .on("click", clearMenus);
+            }
 
-			  var relatedTarget = { relatedTarget: this };
-			  $parent.trigger((e = $.Event("show.mr.searchbar", relatedTarget)));
+            var relatedTarget = { relatedTarget: this };
+            $parent.trigger((e = $.Event("show.mr.searchbar", relatedTarget)));
 
-			  if (e.isDefaultPrevented()) return;
-			  e.preventDefault();
+            if (e.isDefaultPrevented()) return;
+            e.preventDefault();
 
-			  $parent.find("input").trigger("focus");
+            $parent.find("input").trigger("focus");
 
-			  $parent.toggleClass("open").trigger("shown.mr.searchbar", relatedTarget);
+            $parent.toggleClass("open").trigger("shown.mr.searchbar", relatedTarget);
 
-			  return false;
-			}
-		  };
+            return false;
+        }
+    };
 
-		  function clearMenus(e) {
-			if (e && e.which === 3) return;
-			$(backdrop).remove();
-			$(toggle).each(function() {
-			  var $parent = getParent($(this));
-			  var relatedTarget = { relatedTarget: this };
-			  if (!$parent.hasClass("open")) return;
-			  $parent.trigger((e = $.Event("hide.mr.searchbar", relatedTarget)));
-			  if (e.isDefaultPrevented()) return;
-			  $parent.removeClass("open").trigger("hidden.mr.searchbar", relatedTarget);
-			});
-		  }
+    function clearMenus(e) {
+        if (e && e.which === 3) return;
+        $(backdrop).remove();
+        $(toggle).each(function() {
+            var $parent = getParent($(this));
+            var relatedTarget = { relatedTarget: this };
+            if (!$parent.hasClass("open")) return;
+            $parent.trigger((e = $.Event("hide.mr.searchbar", relatedTarget)));
+            if (e.isDefaultPrevented()) return;
+            $parent.removeClass("open").trigger("hidden.mr.searchbar", relatedTarget);
+        });
+    }
 
-		  function getParent($this) {
-			var selector = $this.attr("data-target");
+    function getParent($this) {
+        var selector = $this.attr("data-target");
 
-			if (!selector) {
-			  return $this.parents("form");
-			}
+        if (!selector) {
+            return $this.parents("form");
+        }
 
-			var $parent = selector && $(selector);
+        var $parent = selector && $(selector);
 
-			return $parent && $parent.length ? $parent : $this.parent();
-		  }
+        return $parent && $parent.length ? $parent : $this.parent();
+    }
 
-		  // SEARCHBAR PLUGIN DEFINITION
-		  // ==========================
+    // SEARCHBAR PLUGIN DEFINITION
+    // ==========================
 
-		  function Plugin(option) {
-			return this.each(function() {
-			  var $this = $(this);
-			  var data = $this.data("mr.searchbar");
+    function Plugin(option) {
+        return this.each(function() {
+            var $this = $(this);
+            var data = $this.data("mr.searchbar");
 
-			  if (!data) $this.data("mr.searchbar", (data = new Searchbar(this)));
-			  if (typeof option == "string") data[option].call($this);
-			});
-		  }
+            if (!data) $this.data("mr.searchbar", (data = new Searchbar(this)));
+            if (typeof option == "string") data[option].call($this);
+        });
+    }
 
-		  var old = $.fn.searchbar;
+    var old = $.fn.searchbar;
 
-		  $.fn.searchbar = Plugin;
-		  $.fn.searchbar.Constructor = Searchbar;
+    $.fn.searchbar = Plugin;
+    $.fn.searchbar.Constructor = Searchbar;
 
-		  // SEARCHBAR NO CONFLICT
-		  // ====================
+    // SEARCHBAR NO CONFLICT
+    // ====================
 
-		  $.fn.searchbar.noConflict = function() {
-			$.fn.searchbar = old;
-			return this;
-		  };
+    $.fn.searchbar.noConflict = function() {
+        $.fn.searchbar = old;
+        return this;
+    };
 
-		  // APPLY TO STANDARD SEARCHBAR ELEMENTS
-		  // ===================================
+    // APPLY TO STANDARD SEARCHBAR ELEMENTS
+    // ===================================
 
-		  $(document)
-			.on("click.mr.searchbar.data-api", clearMenus)
-			.on("click.mr.searchbar.data-api", ".searchbar", function(e) {
-			  e.stopPropagation();
-			})
-			//.on('focus.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle) // this causes the focus event to trigger twice
-			.on("click.mr.searchbar.data-api", toggle, Searchbar.prototype.toggle);
-		})(jQuery);
+    $(document)
+        .on("click.mr.searchbar.data-api", clearMenus)
+        .on("click.mr.searchbar.data-api", ".searchbar", function(e) {
+        e.stopPropagation();
+    })
+    //.on('focus.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle) // this causes the focus event to trigger twice
+        .on("click.mr.searchbar.data-api", toggle, Searchbar.prototype.toggle);
+})(jQuery);
 
 
- 
