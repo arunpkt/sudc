@@ -2627,6 +2627,9 @@ p.signup-policy {
 
 /* Device */
 @media screen and (max-width:480px) {
+    .modal-content .modal-body {
+        padding: 0px 50px; 
+    }
     .signup-modal-body .retrieve-password {
         border-right: 0px solid #ebebeb;
         padding: 20px 20px 30px 20px;
@@ -3078,6 +3081,19 @@ p.signup-policy {
 
 /*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .sticky_header {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .header-carousal .form-section .sub_but {
+        margin-bottom: 0px;  
+    }
+    .header-carousal .form-group {
+        margin-bottom: 5px;
+    }
+    .header-carousal .search-sec .container > .row{
+        margin: 0;
+    } 
     .border-or {
         display: none;
     }
@@ -3156,8 +3172,8 @@ p.signup-policy {
         margin-top: 15px;
     }
 
-    .logo {
-        margin-top: -21px;
+    header.sticky_header .logo {
+        margin-top: 0px;
     }
 
     .logo img {
@@ -3181,7 +3197,7 @@ p.signup-policy {
     }
 
     .top_header {
-        margin: 10px 30px 5px 0;
+        margin: 10px 15px 5px 0;
     }
 
     a.search-icon {
@@ -3231,7 +3247,8 @@ p.signup-policy {
     }
 
     .logo img {
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        width: 65%;
     }
 
     .banner img {
@@ -3288,7 +3305,7 @@ p.signup-policy {
 
     .heroCarousal {
         position: relative;
-        height: 310px;
+        height: 210px;
         background-color: #5f5959;
     }
 
@@ -3387,7 +3404,7 @@ p.signup-policy {
     }
 
     header.sticky_header {
-        padding-top: 20px;
+        padding-top: 0px;
     }
 
     .getCard a.bttn {
@@ -3436,6 +3453,9 @@ p.signup-policy {
 
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
+    .sign-option .signup-other {
+        min-height: 200px;
+    }
     .border-or {
         display: none;
     }
@@ -3785,6 +3805,7 @@ p.signup-policy {
 /*991*/
 
 @media screen and (min-width : 992px) and (max-width: 1024px) and (orientation:landscape) {
+
     .about_the_card h1 {
         top: 40%;
     }
