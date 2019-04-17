@@ -10,7 +10,7 @@ section.brd_crmb {
     font-size:18px;
     border-radius: 0;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .border-left {
@@ -198,7 +198,7 @@ span.rat_str {
 .icon-instagram:before,
 .icon-pinterest:before {
 
-background: #080000;
+    background: #080000;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -247,7 +247,7 @@ i {
     color: #a3a3a2;
 }
 
- 
+
 /*filters*/
 .filters .accordion {
     margin-top: 50px
@@ -262,6 +262,13 @@ i {
     font-size: 14px;
     padding: 10px;
     text-align: center;
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+.prc_rte:last-child {
+    float: right;
+    margin-right: 0px;
 }
 
 li.vwmre a {
@@ -420,7 +427,7 @@ h2.mt100.clk {
         margin-bottom: 20px;
     }
     p.pad_r_l{
-            margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .filters .accordion {
@@ -435,9 +442,9 @@ h2.mt100.clk {
         margin: 10px 0;
     }
 
- .col-md-2.col-sm-4.col-xs-12.no_padding_left.filters {
-    border-bottom: 1px solid #ddd;
-}
+    .col-md-2.col-sm-4.col-xs-12.no_padding_left.filters {
+        border-bottom: 1px solid #ddd;
+    }
 
     .cust-selc {
         width: 100%;
@@ -467,19 +474,19 @@ h2.mt100.clk {
         display: none
     }
     .sort select{
-        
-            margin-left: 8px;
-    padding-right: 0px
+
+        margin-left: 8px;
+        padding-right: 0px
     }
     .adrs.mt10{margin-top:0}
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
     .sort select {
-    margin-left: 8px;
-    padding-right: 15px;
-    width: 85%;
-}
+        margin-left: 8px;
+        padding-right: 15px;
+        width: 85%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -513,16 +520,16 @@ h2.mt100.clk {
         width: 80%;
         background: transparent;
     }
-.pad_r_l {
-    padding: 0 40px;
-    padding-right: 20px;
-}
-    
-  .sort select {
-    margin-left: 8px;
-    padding-right: 15px;
-    width: 88%;
-}   
+    .pad_r_l {
+        padding: 0 40px;
+        padding-right: 20px;
+    }
+
+    .sort select {
+        margin-left: 8px;
+        padding-right: 15px;
+        width: 88%;
+    }   
 }
 
 @media screen and (min-width: 768px) {
@@ -554,6 +561,6 @@ h2.mt100.clk {
         padding-left: 15px
     }
 
-    
-    
+
+
 }
