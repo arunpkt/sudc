@@ -33,9 +33,6 @@
         <script src="js/common.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
-
-
         <script>
             $( function() {
                 $( "#slider-range" ).slider({
@@ -57,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="top_header text-right show_mobile">
-                        <a href="/phone.html">Customer care : <span class="ph_green">+123456</span> </a>
+                        <a href="/phone.html">Customer care : <span class="ph_green">+123 4567 8901</span> </a>
                         <a href="/faq.html" class="">Business owner</a>
                         <a href="#" class="search-icon" onclick="toggle('search-filter');"><i class="fa fa-search" aria-hidden="true"></i></a>
                         <div class="search-filter" id="search-filter" style="display:none;">
@@ -72,31 +69,54 @@
                     </div>
                     <div class="col-md-9 col-sm-9">
                         <div class="top_header text-right hide_mobile">
-                            <a href="/phone.html">Customer care : <span class="ph_green">+123456</span> </a>
-                            <a href="/faq.html" class="class="hide_mobile"">FAQ</a>
+                            <a href="/phone.html">Customer care : <span class="ph_green">+123 4567 8901</span> </a>
+                            <a href="/faq.html" class="hide_mobile">FAQ</a>
                             <a href="/faq.html" class="hide_mobile">Download App</a>
                             <a href="/faq.html" class="">Business owner</a>
-                            <a href="#" class="search-icon" onclick="toggle('search-filter');"><i class="fa fa-search" aria-hidden="true"></i></a>
-                            <div class="search-filter" id="search-filter" style="display:none;">
-                                <div class="search-filter-in"> <input type="text" class="form-control" placeholder="Search your term here..."> </div>
+                            <div class="nav-search">
+                                <form class="search-form searchbar" role="search" id="hiddenSearchBox" action="" method="get">
+                                    <div class="input-group">
+                                        <input type="hidden" name="id" value="63">
+                                        <input type="search" name="keywords" class="form-control" placeholder="Search..">
+                                        <div class="input-group-btn">
+                                            <button type="submit" class="btn btn-default" data-toggle="searchbar" data-target="#hiddenSearchBox">
+                                                <i class="fas fa-search"></i> <span class="sr-only">Submit</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
+
+
                         <div class="sudc_menu">
                             <nav class="navbar navbar-default">
-                                <div class="container-fluid">
+                                <div class="container">
                                     <div class="navbar-header"> 
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" >	
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">	
                                             <span class="sr-only">Toggle navigation</span>	
                                             <span class="icon-bar"></span>					
                                             <span class="icon-bar"></span>						
                                             <span class="icon-bar"></span>						
                                         </button> 
                                     </div>
-                                    <div id="navbar" class="navbar-collapse collapse" style="height: 1px;">
+                                    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                                         <ul class="nav navbar-nav">
-                                            <li class="active"><a href="index.html">Products & shops</a></li>
-                                            <li><a href="aboutsudc.html">About SUDC card</a></li>
-                                            <li><a href="Membership.html">Membership</a></li>
+                                            <li class="active"><a href="shops.html">Products & shops</a></li>
+                                            <li><a href="about_card.html">About SUDC card</a></li>
+                                            <li><a href="membership.html">Membership</a></li>
+
+                                            <li class="dropdown">
+                                                <a href="" class="dropdown-toggle excess_menu" id="othersubmenuhead" data-toggle="dropdown" data-hover="dropdown" role="button">
+                                                    . . .  
+                                                </a>
+                                                <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="othersubmenuhead">
+                                                    <li><a href="product_lists.html">Product list</a></li>
+                                                    <li><a  href="shop_detail.html">Shop details</a></li>
+                                                    <li><a href="product_item.html">Product item</a></li>
+                                                </ul>
+                                            </li>
+
                                             <li class="dropdown">
                                                 <a href="login.html" class="dropdown-toggle login_reg" id="submenuhead" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                     Login/Register
@@ -104,9 +124,9 @@
                                                     <i class="fas fa-chevron-down"></i>
                                                 </a>
                                                 <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="submenucotent">
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="register.html">Register</a></li>
-                                                    <li><a href="unique.html">User profile</a></li>
+                                                    <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                                    <li><a data-toggle="modal" data-target="#signUpModal">Register</a></li>
+                                                    <li><a href="userprofile.html">User profile</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -119,6 +139,132 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content row  sign-option" style="height: auto;">
+                        <div class="modal-header signup-modal-head text-center">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4>sign up</h4>
+                            <div class="text-uppercase"> ALREADY REGISTERED? 
+                                <a data-toggle="modal" data-target="#loginModal">sign in </a>
+                            </div>
+                        </div>
+                        <div class="modal-body">				  
+
+                            <div class="row">							
+                                <div class="col-md-6  col-xs-12 mx-auto login-modal">
+                                    <div class="form-group">
+                                        <input type="text" id="firstname" class="form-control" required>
+                                        <label class="form-control-placeholder" for="firstname">First Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="lastname" class="form-control" required>
+                                        <label class="form-control-placeholder" for="lastname">Last Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="email" class="form-control" required>
+                                        <label class="form-control-placeholder" for="name">email</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="password" class="form-control" required>
+                                        <label class="form-control-placeholder" for="password">Password</label>
+                                    </div>	
+                                    <div class="btn-radio">
+                                        <!-- Male radio -->
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="o3" value="">
+                                                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                Male
+                                            </label>
+                                        </div>
+
+                                        <!-- Female radio -->
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="o3" value="" checked>
+                                                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                                Female
+                                            </label>
+                                        </div>
+                                    </div>						  
+                                    <div>
+                                        <p class="signup-policy">By Signing up you will agree Privacy Policy and Terms of Conditions.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-block btn-primary" value="SIGN UP" />
+                                    </div>
+                                </div>
+                                <span class="border-or">OR</span>
+                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
+                                    <div class="div-center-align">
+                                        <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> Sign in with google</a>
+                                        <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> Sign in with facebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- model / -->
+
+            <div class="modal fade" id="loginModal" tabindex="0" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content row signin-page" style="height: auto;">
+                        <div class="modal-header signup-modal-head text-center">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4>sign in</h4>
+                            <div class="text-uppercase"> not registered? 
+                                <a data-toggle="modal" data-target="#signUpModal">sign up </a>
+                            </div>
+                        </div>
+                        <div class="modal-body signup-modal-body">				  
+
+                            <div class="row">				
+                                <div class="col-md-6  col-xs-12 mx-auto login-modal" id="loginModel">
+                                    <div class="form-group">
+                                        <input type="text" id="name" class="form-control" required>
+                                        <label class="form-control-placeholder" for="name">Name</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="password" class="form-control" required>
+                                        <label class="form-control-placeholder" for="password">Password</label>
+                                    </div>
+                                    <!--forgot -->
+                                    <a href="#" class="btn-forgot" onclick="openForgotPassword();">forgot password ?</a>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-block btn-primary" value="LOGIN" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12 retrieve-password login-modal" id="forgetModel" style="display: none;">
+                                    <h4 class="text-uppercase">Forgot Password?</h4>
+                                    <p>Enter your email address and we will send you a link to reset your password.</p>
+                                    <form method="POST" id="form-forget-password" action="">
+                                        <div class="form-group">
+                                            <label for="forget-email" class="form-control-placeholder">Email</label>
+                                            <input type="email" name="email" id="forget-email" class="form-control " data-rule="email">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary password-reset">EMAIL RESET LINK</button>
+                                        <button type="button" class="btn btn-filled cancel cancel-forget-password" onclick="openLogin();">CANCEL</button>
+                                    </form>
+                                </div>
+                                <span class="border-or">OR</span>
+                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
+                                    <div class="div-center-align">
+                                        <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> sign in with google</a>
+                                        <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> sign in with facebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- model / -->
+
         </header>
 
         <section class="menu_other_pages">
@@ -561,7 +707,6 @@
 
 
         </div>
-        </div>
 
 
 
@@ -584,95 +729,81 @@
 
 
 
-    <!-- Category of the month  -->
+        <!-- Category of the month  -->
 
 
-    <!-- Footer -->
-    <footer class="footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 footer_height">
-                    <img src="images/footer_logo.png" alt="" class="img-responsive" />
-                    <div class="row got_question">
-                        <div class="col-md-3 col-sm-3 col-xs-3">
-                            <img src="images/Call%20icon.png" alt="" height="400" class="img-responsive" />
+        <!-- Footer -->
+        <footer class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 footer_height">
+                        <img src="images/footer_logo.png" alt="" class="img-responsive" />
+                        <div class="row contact_info">
+                            <div class="col-md-12 col-sm-12">
+                                <p class="address"><i class="fas fa-map-marker-alt"></i>29, Mannar street, Chennai - 600017</p>
+                                <p class="phone"><i class="fas fa-phone"></i>+123 4567 8901</p>
+                                <p class="email"><i class="fas fa-map-marker-alt"></i>support@sudc.com</p>
+                            </div>
                         </div>
-                        <div class="col-md-9 col-sm-9 col-xs-9">
-                            <p>Have got question? Call us 24/7.</p>
-                            <h3>97914-73952</h3>
-                        </div>
-                    </div>
-                    <div class="row contact_info">
-                        <div class="col-md-12 col-sm-12">
-                            <h4>Contact info</h4>
-                            <p>29, Mannar street, Chennai - 600017</p>
-                        </div>
-                    </div>
-                    <div class="row social_icons">
-                        <div class="col-md-12 col-sm-12">
-                            <a href="/phone.html"><img src="images/Social%20media%20icon.png" /></a>
+                        <div class="row social_icons">
+                            <div class="col-md-12 col-sm-12">
+                                <a href="https://www.twitter.com"><img src="images/twitter.png" /></a>
+                                <a href="https://plus.google.com"><img src="images/google_plus.png" /></a>
+                                <a href="https://www.facebook.com"><img src="images/facebook.png" /></a>
+                                <a href="https://www.youtube.com"><img src="images/youtube.png" /></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2 col-sm-4 footer_height">
-                    <h4>
-                        About SUDC card
-                    </h4>
-                    <ul>
-                        <li class="active">
-                            <a href="#">
-                                About SUDC card
-                            </a>
-                        </li>
-                        <li><a href="aboutus.html">How it works?</a>
-                        <li><a href="history.html">Memberships</a></li>
-                        <li><a href="mission.html">Member's benifits</a></li>
-                        <li><a href="causes.html">Member's testimonials</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-sm-4 footer_height">
-                    <h4>Company</h4>
-                    <ul>
-                        <li class="active"><a href="index.html">About company</a></li>
-                        <li><a href="aboutus.html">Core values</a>
-                        <li><a href="history.html">News and Events</a></li>
-                        <li><a href="mission.html">Careers</a></li>
-                        <li><a href="causes.html">Site map</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-sm-4 footer_height">
-                    <h4>SUDC business</h4>
-                    <ul>
-                        <li class="active"><a href="index.html">SUDC business</a></li>
-                        <li><a href="aboutus.html">Sell on SUDC</a>
-                        <li><a href="history.html">Advertise on SUDC</a></li>
-                        <li><a href="mission.html">Merchant's testimonials</a></li>
-                        <li><a href="causes.html">Merchant's benifits</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-sm-4 footer_height">
-                    <h4>Poloicy info</h4>
-                    <ul class="mb20">
-                        <li class="active"><a href="index.html">Privacy policy</a></li>
-                        <li><a href="aboutus.html">Terms of use</a>
-                        <li><a href="history.html">Terms of sale</a></li>
-                    </ul>
-                    <h4>Need help</h4>
-                    <ul>
-                        <li class="active"><a href="index.html">FAQ</a></li>
-                        <li><a href="aboutus.html">Contact us</a>
-                        <li><a href="history.html">Online query</a></li>
-                    </ul>
+                    <div class="col-md-2 col-sm-4 footer_height">
+                        <h4>About SUDC card</h4>
+                        <ul>
+                            <li class="active"><a href="about_card.html">About SUDC card</a></li>
+                            <li><a href="how_it_works.html">How it works?</a>
+                            <li><a href="membership.html">Memberships</a></li>
+                            <li><a href="customerbenfits.html">Member's benifits</a></li>
+                            <li><a href="testimonial.html">Member's testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4 footer_height">
+                        <h4>Company</h4>
+                        <ul>
+                            <li class="active"><a href="about_company.html">About company</a></li>
+                            <li><a href="core_value.html">Core values</a>
+                            <li><a href="news_events.html">News and Events</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="site_map.html">Site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4 footer_height">
+                        <h4>SUDC business</h4>
+                        <ul>
+                            <li class="active"><a href="index.html">SUDC business</a></li>
+                            <li><a href="sell_on_sudc.html">Sell on SUDC</a>
+                            <li><a href="advertise.html">Advertise on SUDC</a></li>
+                            <li><a href="merchant_testimonials.html">Merchant's testimonials</a></li>
+                            <li><a href="merchant_benifits.html">Merchant's benifits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4 footer_height">
+                        <h4>Poloicy info</h4>
+                        <ul class="mb20">
+                            <li class="active"><a href="index.html">Privacy policy</a></li>
+                            <li><a href="terms_of_use.html">Terms of use</a>
+                            <li><a href="terms_of_sale.html">Terms of sale</a></li>
+                        </ul>
+
+                        <h4>Need help</h4>
+                        <ul>
+                            <li class="active"><a href="index.html">FAQ</a></li>
+                            <li><a href="contact_us.html">Contact us</a>
+                            <li><a href="online_query.html">Online query</a></li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </footer>
-    <footer class="footer_bottom">
-        <div class="container">
-            <p>&copy;Sams ultimate discount card - All rights reserved</p>
-        </div>
-    </footer>
-    <div class="upar"></div>
+        </footer>
+        <div class="upar"></div>
 
 
 

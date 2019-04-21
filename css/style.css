@@ -326,7 +326,7 @@ header {
 header.sticky_header {
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
     padding-bottom: 0;
 }
 header.sticky_header .logo {
@@ -972,7 +972,7 @@ ol.carousel-indicators {
 
 section.geturcard_bg .container {
     background-color: #2298d0;
-    padding: 30px 10px;
+    padding: 30px 15px;
 }
 
 section.geturcard_bg a {
@@ -1282,6 +1282,10 @@ a.fill-div {
     padding: 0;
 }
 
+.top_stores .grid-img {
+    height: 110px;
+}
+
 .quick-shop_3 {
     margin-top: 60px;
 }
@@ -1302,7 +1306,10 @@ a.fill-div {
 .header-carousal {
     position: relative;
 }
-
+.header-carousal .container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
