@@ -569,6 +569,7 @@ bottom: -50px;
     background: #06b8e9;
     color: #FFF;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .tophead {
@@ -624,6 +625,7 @@ bottom: -50px;
     background: #06b8e9;
     color: #FFF;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 /*responsive design styles*/
@@ -642,6 +644,7 @@ a:hover.bttn.white_trans {
     background-color: transparent;
     text-decoration: none;
     border: solid 2px #ffffff;
+    transition: 0.5s;
 }
 
 a:hover.white_trans img.blue_arrow {
