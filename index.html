@@ -246,15 +246,15 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="images/banner.jpg" alt="banner1" class="img-responsive" >
+                            <img src="images/banner.jpg" alt="banner1" data-tablet-src="images/Banner%20768.jpg" class="img-responsive ipad" >
                         </div>
 
                         <div class="item">
-                            <img src="images/banner.jpg" alt="banner1" class="img-responsive" >
+                            <img src="images/banner.jpg" alt="banner1" data-tablet-src="images/Banner%20768.jpg" class="img-responsive ipad" >
                         </div>
 
                         <div class="item">
-                            <img src="images/banner.jpg" alt="banner1" class="img-responsive" >
+                            <img src="images/banner.jpg" alt="banner1" data-tablet-src="images/Banner%20768.jpg" class="img-responsive ipad" >
                         </div>
                     </div>
                 </div>
@@ -1885,6 +1885,6 @@
         $.get("/getEmployee", function(data){
             $("#search").typeahead({ source:data });
         },'json');
-
+        loadIpadImages();
     </script>
 </html>

@@ -3721,8 +3721,6 @@ p.signup-policy {
 
     .heroCarousal .carousel-inner > .item > img {
         height: 310px;
-        display: none;
-        background-image: url('../images/Banner%20768.jpg');
     }
 
     .sudc_menu .navbar-nav {

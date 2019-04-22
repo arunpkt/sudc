@@ -77,6 +77,15 @@ function openLogin() {
   $("#forgetModel").hide();
   $("#loginModel").show();
 }
+//Function to load images for Ipad 
+function loadIpadImages() {
+  $('img.ipad').each(function(i, element) {
+    var width = $(this).width();
+    if(width > 767 && width <= 991 ) {
+        $(this).attr("src", $(this).attr("data-tablet-src"))
+    }
+  });
+} 
 if (typeof jQuery === "undefined") {
     throw new Error("jQuery required");
 }
