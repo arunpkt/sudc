@@ -15,6 +15,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/common.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
+        <script src="js/jquery.mockjax.js"></script>
 
     </head>
 
@@ -1873,18 +1874,56 @@
         <div class="upar"></div>
     </body>
     <script>
-        var data = 
-            [{"id":"222","name":"sneha","employee_salary":"100000","employee_age":"23"},{"id":"223","name":"arpita","employee_salary":"40000","employee_age":"33"},{"id":"225","name":"pogi","employee_salary":"5646545","employee_age":"546"},{"id":"229","name":"eer","employee_salary":"0","employee_age":"0"},{"id":"232","name":"sdfadf","employee_salary":"0","employee_age":"0"},{"id":"234","name":"dfgdgd","employee_salary":"45","employee_age":"21"},{"id":"236","name":"nb","employee_salary":"0","employee_age":"0"},{"id":"237","name":"BHsdgygbfvr1bn","employee_salary":"0","employee_age":"0"},{"id":"238","name":"BHsdgygbfvr1bn","employee_salary":"0","employee_age":"0"},{"id":"239","name":"assa","employee_salary":"0","employee_age":"0"}];
+        // Mock an AJAX request
+        $.mockjax({
+            url: '/cities/list',
+            response: function() {
+                this.responseText = [
+                    {id: 1, name: 'Toronto'},
+                    {id: 2, name: 'Montreal'},
+                    {id: 3, name: 'New York'},
+                    {id: 4, name: 'Buffalo'},
+                    {id: 5, name: 'Boston'},
+                    {id: 6, name: 'Columbus'},
+                    {id: 7, name: 'Dallas'},
+                    {id: 8, name: 'Vancouver'},
+                    {id: 9, name: 'Seattle'},
+                    {id: 10, name: 'Los Angeles'}
+                ];
+            }
+        });
 
-
+        /*        var $input = $("#search");
+        $input.typeahead({
+            source: [],
+            items: 10,
+            scrollBar: false,
+            alignWidth: true,
+            menu: '<ul class="typeahead dropdown-menu"></ul>',
+            item: '<li><a href="#"></a></li>',
+            valueField: 'id',
+            displayField: 'name',
+            autoSelect: true,
+            onSelect: function () {
+            }
+        });
+            $.get("/cities/list", function(data){
+              $("#search").typeahead({ source:data });
+            },'json');
+        */
         var $input = $("#search");
         $input.typeahead({
-            source: data,
-            autoSelect: true
+            source: [],
+            autoSelect: true,
+            valueField: 'id',
+            displayField: 'name'
         });
-        $.get("/getEmployee", function(data){
-            $("#search").typeahead({ source:data });
-        },'json');
+        $("#search").keyup(function(){
+            $.get("/cities/list", function(data){
+                $("#search").typeahead({ source:data});
+            },'json');
+        });
+
         loadIpadImages();
     </script>
 </html>
