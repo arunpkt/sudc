@@ -41,12 +41,14 @@
                     max: 500,
                     values: [ 75, 300 ],
                     slide: function( event, ui ) {
-                        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                        $( "#amountStart" ).val( "$" + ui.values[ 0 ]);
+                        $( "#amountEnd" ).val( "$" + ui.values[ 1 ] );
                     }
                 });
-                $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                                   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-            } );
+                $( "#amountStart" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ));
+                $( "#amountEnd" ).val("$" + $( "#slider-range" ).slider( "values", 1 ));
+
+            });
         </script>
 
     </head>
@@ -429,7 +431,11 @@
                             <div id="collapsefive" class="collapse in" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div id="slider-range"></div>
-                                    <p class="mt20">   <input type="text" id="amount" class="prc_rte" readonly=""></p>
+                                    <p class="mt20">   
+
+                                        <input type="text" id="amountStart" class="prc_rte" readonly="">
+                                        <input type="text" id="amountEnd" class="prc_rte" readonly="">
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +472,7 @@
                                         <figure>        
                                             <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
                                                 <div class="grid-img">
-                                                    <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                    <img src="images/Trendy-1.jpg" class="img-responsive" alt="">
                                                 </div>      
                                             </a>        
                                         </figure>   
@@ -523,7 +529,7 @@
                                         <figure>        
                                             <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
                                                 <div class="grid-img">
-                                                    <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                    <img src="images/Trendy-3.jpg" class="img-responsive" alt="">
                                                 </div>      
                                             </a>        
                                         </figure>   
@@ -584,7 +590,7 @@
                                         <figure>        
                                             <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
                                                 <div class="grid-img">
-                                                    <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                    <img src="images/Trendy-4.jpg" class="img-responsive" alt="">
                                                 </div>      
                                             </a>        
                                         </figure>   
@@ -641,7 +647,7 @@
                                         <figure>        
                                             <a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
                                                 <div class="grid-img">
-                                                    <img src="images/Trendy-2.jpg" class="img-responsive" alt="">
+                                                    <img src="images/Trendy-5.jpg" class="img-responsive" alt="">
                                                 </div>      
                                             </a>        
                                         </figure>   
@@ -1427,7 +1433,7 @@
 
                 </div>
             </div>
-        </footer>
+        </footer> 
         <footer class="footer_bottom">
             <div class="container">
                 <p>&copy;Sams ultimate discount card - All rights reserved</p>

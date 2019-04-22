@@ -28,8 +28,8 @@
                         $( "#amountEnd" ).val( "$" + ui.values[ 1 ] );
                     }
                 });
-                $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                                   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+                $( "#amountStart" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ));
+                $( "#amountEnd" ).val("$" + $( "#slider-range" ).slider( "values", 1 ));
             } );
         </script>
     </head>
