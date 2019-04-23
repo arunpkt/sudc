@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <title>SUDC - Home</title>
         <meta charset="utf-8">
@@ -7,7 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/owl.carousel.min.css" />
         <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" /> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/product.css" />
@@ -22,33 +23,17 @@
             $(document).on('ready', function() {
 
                 $(".regular").slick({
-                    dots: false,
                     infinite: true,
                     slidesToShow: 4,
-                    slidesToScroll: 4
-                }); 
+                    slidesToScroll: 1
+                });
             });
         </script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/common.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-        <script>
-            $( function() {
-                $( "#slider-range" ).slider({
-                    range: true,
-                    min: 0,
-                    max: 500,
-                    values: [ 75, 300 ],
-                    slide: function( event, ui ) {
-                        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-                    }
-                });
-                $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                                   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-            } );
-        </script>
     </head>
+
     <body>
         <header>
             <div class="container">
@@ -92,13 +77,13 @@
                         <div class="sudc_menu">
                             <nav class="navbar navbar-default">
                                 <div class="container">
-                                    <div class="navbar-header"> 
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">	
-                                            <span class="sr-only">Toggle navigation</span>	
-                                            <span class="icon-bar"></span>					
-                                            <span class="icon-bar"></span>						
-                                            <span class="icon-bar"></span>						
-                                        </button> 
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
                                     </div>
                                     <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                                         <ul class="nav navbar-nav">
@@ -108,11 +93,11 @@
 
                                             <li class="dropdown">
                                                 <a href="" class="dropdown-toggle excess_menu" id="othersubmenuhead" data-toggle="dropdown" data-hover="dropdown" role="button">
-                                                    . . .  
+                                                    . . .
                                                 </a>
                                                 <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="othersubmenuhead">
                                                     <li><a href="product_lists.html">Product list</a></li>
-                                                    <li><a  href="shop_detail.html">Shop details</a></li>
+                                                    <li><a href="shop_detail.html">Shop details</a></li>
                                                     <li><a href="product_item.html">Product item</a></li>
                                                 </ul>
                                             </li>
@@ -147,13 +132,13 @@
                         <div class="modal-header signup-modal-head text-center">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4>sign up</h4>
-                            <div class="text-uppercase"> ALREADY REGISTERED? 
+                            <div class="text-uppercase"> ALREADY REGISTERED?
                                 <a data-toggle="modal" data-target="#loginModal">sign in </a>
                             </div>
                         </div>
-                        <div class="modal-body">				  
+                        <div class="modal-body">
 
-                            <div class="row">							
+                            <div class="row">
                                 <div class="col-md-6  col-xs-12 mx-auto login-modal">
                                     <div class="form-group">
                                         <input type="text" id="firstname" class="form-control" required>
@@ -170,7 +155,7 @@
                                     <div class="form-group">
                                         <input type="password" id="password" class="form-control" required>
                                         <label class="form-control-placeholder" for="password">Password</label>
-                                    </div>	
+                                    </div>
                                     <div class="btn-radio">
                                         <!-- Male radio -->
                                         <div class="radio">
@@ -189,7 +174,7 @@
                                                 Female
                                             </label>
                                         </div>
-                                    </div>						  
+                                    </div>
                                     <div>
                                         <p class="signup-policy">By Signing up you will agree Privacy Policy and Terms of Conditions.</p>
                                     </div>
@@ -198,7 +183,7 @@
                                     </div>
                                 </div>
                                 <span class="border-or">OR</span>
-                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
+                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto">
                                     <div class="div-center-align">
                                         <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> Sign in with google</a>
                                         <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> Sign in with facebook</a>
@@ -217,13 +202,13 @@
                         <div class="modal-header signup-modal-head text-center">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4>sign in</h4>
-                            <div class="text-uppercase"> not registered? 
+                            <div class="text-uppercase"> not registered?
                                 <a data-toggle="modal" data-target="#signUpModal">sign up </a>
                             </div>
                         </div>
-                        <div class="modal-body signup-modal-body">				  
+                        <div class="modal-body signup-modal-body">
 
-                            <div class="row">				
+                            <div class="row">
                                 <div class="col-md-6  col-xs-12 mx-auto login-modal" id="loginModel">
                                     <div class="form-group">
                                         <input type="text" id="name" class="form-control" required>
@@ -252,7 +237,7 @@
                                     </form>
                                 </div>
                                 <span class="border-or">OR</span>
-                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
+                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto">
                                     <div class="div-center-align">
                                         <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> sign in with google</a>
                                         <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> sign in with facebook</a>
@@ -325,411 +310,333 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <div class="row">
-                <div class="jumbotron">Escape Reliance Store</div>
+        <section class="store_name">
+            <div class="container">
+                <div class="row">
+                    <div class="jumbotron">Escape Reliance Store</div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container banr_link">
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-12 prd_link">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="tp_lnk"><a href="#">Flat 10% discount on Mobile Phones</a></div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 pull-right border-left">
-                        <a href="#">See more  products</a> 
-                        <span>
-                            <p class=""> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span> 66 Reviews</span> | <a href="#">Write reviews</a></p>
-                        </span>
-                    </div>
-
-
-                    <div class="row">
-
-                        <div class="dtl_img">
-                            <a href=""><img src="images/banner_shop_detail.jpg" class="img-responsive"></a>
+        <section class="shop_banner">
+            <div class="container banr_link">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-12 prd_link">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="tp_lnk"><a href="#">Flat 10% discount on Mobile Phones</a></div>
                         </div>
-
+                        <div class="col-md-6 col-sm-6 col-xs-12 pull-right border-left">
+                            <a href="#">See more products</a>
+                            <span>
+                                <p class="shop_det_rat_spa">
+                                    <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span> 66 Reviews</span> | <a href="#">Write reviews</a>
+                                </p>
+                            </span>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="dtl_img">
+                                <a href=""><img src="images/banner_shop_detail.jpg" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 mp_sec">
+                        <p class="pull-right"><a href="#">Get direction</a></p>
+                        <div class="dtl_img">
+                            <a href=""><img src="images/map.png" class="img-responsive"></a>
+                        </div>
+                        <div class="adrs mt10">
+                            <p><i class="icon-map-marker"></i> 180-182 Regent Street, London, W1B 5BT </p>
+                            <p><i class="icon-phone"></i> 123456 Lorem ipsum, or lipsum as it is sometimes known <a href="#"> <i class="icon-link"></i> </a></p>
+                            <p><i class="icon-link"></i> yourlink </p>
+                            <p class="pad_r_l mt10 soc_ic"> <span>Share on: <a href=""><i class="icon-facebook"></i></a> <a href=""><i class="icon-twitter"></i></a> <a href=""><i class="icon-instagram"></i></a> <a href=""><i class="icon-pinterest"></i></a></span></p>
+                        </div>
                     </div>
 
                 </div>
-
-                <div class="col-md-4 col-sm-4 col-xs-12 mp_sec">
-                    <p class="pull-right"><a href="#">Get direction</a></p>
-                    <div class="dtl_img">
-                        <a href=""><img src="images/map.png" class="img-responsive"></a>
-                    </div>
-                    <div class="adrs mt10">
-                        <p><i class="icon-map-marker"></i>  180-182 Regent Street, London, W1B 5BT  </p>
-                        <p><i class="icon-phone"></i> 123456 Lorem ipsum, or lipsum as it is sometimes known  <a href="#"> <i class="icon-link"></i> </a></p>
-                        <p><i class="icon-link"></i> yourlink                           </p>
-                        <p class="pad_r_l mt10 soc_ic"> <span>Share on: <a href=""><i class="icon-facebook"></i></a> <a href=""><i class="icon-twitter"></i></a> <a href=""><i class="icon-instagram"></i></a> <a href=""><i class="icon-pinterest"></i></a></span></p>
-                    </div>            
-                </div>  
-
             </div>
+        </section>
 
-        </div>
-
-
-
-
-
-        <div class="row">
-
+        <section class="shop_detail_ad1">
             <div class="container ad_link">
-
-                <a href=""><img src="images/ad.png" class="img-responsive"></a>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 mp_sec">
+                        <a href=""><img src="images/ad.png" class="img-responsive"></a>
+                    </div>
+                </div>
             </div>
-        </div>           
+        </section>
 
-        <div class="row">
-
+        <section class="shop_description">
             <div class="container abt_des">
-                <h3>About Expecia Stores</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h3>About Expecia Stores</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
             </div>
-        </div>           
+        </section>
 
-
-
-        <div class="row">
-            <div class="container rec_sec">
-                <h3>Recommended Reviews for Escape Reliance Store</h3>
+        <div class="container rec_sec">
+            <div class="row">
                 <!-- recom revw left sect -->
-                <div class="col-md-8 col-sm-8 col-xs-12 border-right">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <!-- search sec -->
-                            <div class="row tp_sr">
-                                <div class="col-md-9 col-sm-9 col-xs-12 ">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search for...">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button"><img src="images/sr_ic.png"></button>
-                                        </span>
-                                    </div><!-- /input-group -->
+                <div class="col-md-8 col-sm-12 col-xs-12 border-right">
+                    <h3>Recommended Reviews for Escape Reliance Store</h3>
+                    <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                        <!-- search sec -->
+                        <div class="tp_sr">
+                            <div class="col-md-9 col-sm-9 col-xs-12 ">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><img src="images/sr_ic.png"></button>
+                                    </span>
+                                </div><!-- /input-group -->
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 rc_drp">
+                                <div class="cust-selc pull-right">
+                                    <span class="grey">Sortby:</span>
+                                    <select class="custom-select custom-select-lg mb-3 no-border pull-right">
+                                        <option selected="">SUDC</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <!--  <i class="icon-angle-down"></i> -->
                                 </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12 rc_drp">
-                                    <div class="cust-selc pull-right">
-                                        <span class="grey">Sortby:</span>
-                                        <select class="custom-select custom-select-lg mb-3 no-border  pull-right">
-                                            <option selected="">SUDC</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                        <!--  <i class="icon-angle-down"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 usr_dtl">
+                        <!-- profile sec -->
+                        <div class="row pr_sr">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 pics">
+                                    <a href=""><img src="images/userpro.png" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 pics">
+                                    <p>Jasmine A.</p>
+                                    <p><img src="images/friends.png"> 57 friends</p>
+                                    <p><img src="images/str.png"> 2 reviews</p>
+                                    <p><img src="images/camera.png"> 3 Photos</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-12 rt_des_sec">
+                                <div class="adrs mt10 rttng">
+                                    <p class=""> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span></span> 10/12/18</p>
+
+                                </div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content.
+                                </p>
+                                <p class="font-weight-bold">
+                                    Was this review …?
+                                </p>
+                                <div class="rw_rslt">
+                                    <div class="usfl">
+                                        <img src="images/key.png" class="img-responsive"> <span>Key</span>
+                                    </div>
+                                    <div class="funy">
+                                        <img src="images/funny.png" class="img-responsive"> <span>Funny</span>
+                                    </div>
+                                    <div class="cool">
+                                        <img src="images/cool.png" class="img-responsive"><span>Cool</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 usr_dtl">
-                            <!-- profile sec -->
-                            <div class="row pr_sr">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-
-                                    <div class="col-md-6 col-sm-6 col-xs-12 pics">
-                                        <a href=""><img src="images/userpro.png" class="img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 pics">
-                                        <p>Jasmine A.</p>
-                                        <p><img src="images/friends.png"> 57 friends</p>
-                                        <p><img src="images/str.png"> 2 reviews</p>
-                                        <p><img src="images/camera.png"> 3 Photos</p>
-                                    </div>
-
-
-
-                                </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12 rt_des_sec">
-                                    <div class="adrs mt10 rttng">
-                                        <p class=""> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span></span>  10/12/18</p>
-
-                                    </div>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content.
-                                    </p>
-
-                                    <p>
-                                        Was this review …?
-                                    </p>
-
-                                    <div class="rw_rslt">
-                                        <div class="usfl">
-                                            <img src="images/key.png" class="img-responsive"> <span>Key</span>
-                                        </div>
-                                        <div class="funy">
-                                            <img src="images/funny.png" class="img-responsive"> <span>Funny</span>
-                                        </div>
-                                        <div class="cool">
-                                            <img src="images/cool.png" class="img-responsive"><span>Cool</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-12 col-sm-12 col-xs-12 usr_dtl">
-
-                            <!-- profile sec -->
-                            <div class="row pr_sr">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-
-                                    <div class="col-md-6 col-sm-6 col-xs-12 pics">
-                                        <a href=""><img src="images/userpro.png" class="img-responsive"></a>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 pics">
-                                        <p>Jasmine A.</p>
-                                        <p><img src="images/friends.png"> 57 friends</p>
-                                        <p><img src="images/str.png"> 2 reviews</p>
-                                        <p><img src="images/camera.png"> 3 Photos</p>
-                                    </div>
-
-
-
-                                </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12 rt_des_sec">
-                                    <div class="adrs mt10 rttng">
-                                        <p class=""> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span></span>  10/12/18</p>
-
-                                    </div>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content.
-                                    </p>
-
-                                    <p>
-                                        Was this review …?
-                                    </p>
-
-                                    <div class="rw_rslt">
-                                        <div class="usfl">
-                                            <img src="images/key.png" class="img-responsive"> <span>Key</span>
-                                        </div>
-                                        <div class="funy">
-                                            <img src="images/funny.png" class="img-responsive"> <span>Funny</span>
-                                        </div>
-                                        <div class="cool">
-                                            <img src="images/cool.png" class="img-responsive"><span>Cool</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-
-
-                            </div>
-
-
-
-                            <div class="row pagnt">
-                                <div class="col-md-3 col-sm-3 col-xs-12 numbr">Page 2 of 14 </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12">
-                                    <nav aria-label="Page navigation">
-                                        <ul class="pagination">
-                                            <li>
-                                                <a href="#" aria-label="Previous">
-                                                    <span aria-hidden="true" class="blue"><i class="icon-chevron-left"></i> Previous       </span>
-                                                </a>
-                                            </li>
-                                            <li><a href="#">1</a></li>
-                                            <li class="active"><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li>
-                                                <a href="#" aria-label="Next">
-                                                    <span aria-hidden="true" class="blue">Next <i class="icon-chevron-right"></i></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="row rslt fl btndrp">
-
-                                <div class="btn-group" role="group" aria-label="...">
-
-
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Lorem Ipsum is simply dummy text of the printing
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Dropdown link</a></li>
-                                            <li><a href="#">Dropdown link</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="row fl fw rltiv">
-
-                            <div class="jumbotron">Escape Reliance Store</div>
-                            <section class="regular slider">
-
-                                <div>
-                                    <img src="images/pr_img.png">
-                                </div>
-                                <div>
-                                    <img src="images/pr_img.png">
-                                </div>
-                                <div>
-                                    <img src="images/pr_img.png">
-                                </div>
-                                <div>
-                                    <img src="images/pr_img.png">
-                                </div>
-                                <div>
-                                    <img src="images/pr_img.png">
-                                </div>
-                                <div>
-                                    <img src="images/pr_img.png">
-                                </div>
-                            </section>
-
-
-
-
-
-
-
-
-                        </div>
-
-
-
-
-
-
-
-
-
                     </div>
 
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 usr_dtl">
+
+                        <!-- profile sec -->
+                        <div class="row pr_sr">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+
+                                <div class="col-md-6 col-sm-6 col-xs-12 pics">
+                                    <a href=""><img src="images/userpro.png" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 pics">
+                                    <p>Jasmine A.</p>
+                                    <p><img src="images/friends.png"> 57 friends</p>
+                                    <p><img src="images/str.png"> 2 reviews</p>
+                                    <p><img src="images/camera.png"> 3 Photos</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-12 rt_des_sec">
+                                <div class="adrs mt10 rttng">
+                                    <p class=""> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span></span> 10/12/18</p>
+                                </div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content.
+                                </p>
+
+                                <p class="font-weight-bold">
+                                    Was this review …?
+                                </p>
+
+                                <div class="rw_rslt">
+                                    <div class="usfl">
+                                        <img src="images/key.png" class="img-responsive"> <span>Key</span>
+                                    </div>
+                                    <div class="funy">
+                                        <img src="images/funny.png" class="img-responsive"> <span>Funny</span>
+                                    </div>
+                                    <div class="cool">
+                                        <img src="images/cool.png" class="img-responsive"><span>Cool</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pagnt">
+                            <div class="col-md-3 col-sm-3 col-xs-12 numbr">Page 2 of 14 </div>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true" class="blue"><i class="icon-chevron-left"></i> Previous </span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true" class="blue">Next <i class="icon-chevron-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="row rslt fl btndrp">
+
+                            <div class="btn-group" role="group" aria-label="...">
+
+
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        39 reviews are not not downloaded yet?
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Dropdown link</a></li>
+                                        <li><a href="#">Dropdown link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row fl fw rltiv">
+
+                        <div class="jumbotron">Escape Reliance Store</div>
+                        <section class="regular slider">
+                            <div>
+                                <img src="images/pr_img.png">
+                            </div>
+                            <div>
+                                <img src="images/pr_img.png">
+                            </div>
+                            <div>
+                                <img src="images/pr_img.png">
+                            </div>
+                            <div>
+                                <img src="images/pr_img.png">
+                            </div>
+                            <div>
+                                <img src="images/pr_img.png">
+                            </div>
+                            <div>
+                                <img src="images/pr_img.png">
+                            </div>
+                        </section>
+                    </div>
                 </div>
 
                 <!-- recom revw right sect -->
                 <div class="col-md-4 col-sm-4 col-xs-12 lstout">
-                    <div class="row rgt_sr">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="row">
-                                <div class="jumbotron">Escape Reliance Store</div>
-                            </div>
-
-                            <div class="row hrs">
-                                <div class="titl_brd">Hours</div>
-                                <ul>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li class="vwmre"> <a href="">View more category</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="row hrs">
-                                <div class="titl_brd">Hours</div>
-                                <ul>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li>Mon  10:00 am - 8:00 pm</li>
-                                    <li class="vwmre"> <a href="">View more category</a></li>
-                                </ul>
-                            </div>
-
-
-                            <div class="row hrs">
-                                <div class="titl_brd">Hours</div>
-
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-
-                                        <div class="col-md-4 col-sm-4 col-xs-12 pics">
-                                            <a href=""><img src="images/userpro.png" class="img-responsive"></a>
-                                        </div>
-                                        <div class="col-md-8 col-sm-8 col-xs-12 pics">
-                                            <p class="wdt"> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span></span>                      120 Reviews
-                                                10% Mobile Phones, Internet
-                                                Service providers, Mobile ...</p>
-
-                                        </div>
-
-
-
-                                    </div>
-
+                    <div class="container">
+                        <div class="row rgt_sr">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="well well-sm">
+                                    <h3>Escape Reliance Store</h3>
+                                    <i class="fas fa-clock"></i>
+                                    <span class="closed_hours">10:00 AM - 8:00 PM Closed</span>
                                 </div>
-
                             </div>
-
-
-                            <div class="row hrs">
-                                <div class="titl_brd">Hours</div>
-
-                                <a href="" class="lk">View more category</a> 
-
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row hrs">
+                                    <div class="titl_brd">Today</div>
+                                    <ul>
+                                        <li>Mon 10:00 am - 8:00 pm</li>
+                                        <li>Mon 10:00 am - 8:00 pm</li>
+                                        <li>Mon 10:00 am - 8:00 pm</li>
+                                        <li>Mon 10:00 am - 8:00 pm</li>
+                                        <li>Mon 10:00 am - 8:00 pm</li>
+                                        <li>Mon 10:00 am - 8:00 pm</li>
+                                        <li class="vwmre"> <a href="">View more category</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="row hrs">
-                                <div class="titl_brd">Hours</div>
-                                <ul>
-                                    <li><a href=""><img src="images/fork.png"> <span>Restaturants</span></a></li>
-                                    <li><a href=""><img src="images/wine.png"> <span>wine</span></a></li>
-                                    <li><a href=""><img src="images/shopping.png"> <span>Shopping</span></a></li>
+                            <!--                        <div class="col-md-12 col-sm-12 col-xs-12">
+<div class="row hrs">
+<div class="titl_brd">Hours</div>
+<ul>
+<li>Mon 10:00 am - 8:00 pm</li>
+<li>Mon 10:00 am - 8:00 pm</li>
+<li>Mon 10:00 am - 8:00 pm</li>
+<li>Mon 10:00 am - 8:00 pm</li>
+<li>Mon 10:00 am - 8:00 pm</li>
+<li>Mon 10:00 am - 8:00 pm</li>
+<li class="vwmre"> <a href="">View more category</a></li>
+</ul>
+</div>
+</div>-->
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row hrs">
+                                    <div class="titl_brd">Hours</div>
 
-                                </ul>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="col-md-4 col-sm-4 col-xs-12 pics">
+                                                <a href=""><img src="images/userpro.png" class="img-responsive"></a>
+                                            </div>
+                                            <div class="col-md-8 col-sm-8 col-xs-12 pics">
+                                                <p class="wdt"> <span class="rating"><span class="rat_str">4.3 <i class="icon-star"></i></span></span> 120 Reviews
+                                                    10% Mobile Phones, Internet
+                                                    Service providers, Mobile ...</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row hrs">
+                                    <div class="titl_brd">Hours</div>
+                                    <a href="" class="lk">View more category</a>
+                                </div>
+                                <div class="row hrs">
+                                    <div class="titl_brd">Hours</div>
+                                    <ul>
+                                        <li><a href=""><img src="images/fork.png"> <span>Restaturants</span></a></li>
+                                        <li><a href=""><img src="images/wine.png"> <span>wine</span></a></li>
+                                        <li><a href=""><img src="images/shopping.png"> <span>Shopping</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Category of the month  -->
 
 
         <!-- Footer -->
@@ -804,9 +711,5 @@
             </div>
         </footer>
         <div class="upar"></div>
-
-
-
-
     </body>
 </html>

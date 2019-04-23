@@ -59,7 +59,9 @@
 .wdt{width:50%; margin: 20px 0px;line-height: 2em}
 .prd_link span{display: inline-block;margin-left: 20px}
 .mp_sec .dtl_img{margin-top:20px}
-.container.ad_link{padding:0;}
+/*.container.ad_link{
+    padding:0;
+}*/
 .tp_sr input.form-control {
     padding: 24px 10px;
 }
@@ -68,8 +70,15 @@
     background: #ddd;
     line-height: 0;
 }
-.tp_sr .input-group-btn button.btn.btn-default img{width:25px;}
-.row.tp_sr .rc_drp .cust-selc{padding:5px}
+.tp_sr .input-group-btn button.btn.btn-default img{
+    width:25px;
+}
+.row.tp_sr .rc_drp .cust-selc{
+    padding:5px
+}
+.tp_sr .col-md-9 {
+  padding: 0;
+}
 .col-md-12.col-sm-12.col-xs-12.usr_dtl {
     margin-top: 20px;
     padding: 0;

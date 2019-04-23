@@ -1,5 +1,5 @@
 section.brd_crmb {
-    padding: 20px 20px 0;
+    padding: 10px 20px 0;
 }
 
 /*jumbotron section*/
@@ -7,7 +7,7 @@ section.brd_crmb {
 .container .jumbotron,
 .container-fluid .jumbotron {
     padding: 13px 35px;
-    font-size:18px;
+    font-size: 18px;
     border-radius: 0;
     font-weight: bold;
     margin-bottom: 0px;
@@ -133,12 +133,12 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 
 .title {
-    font-size:24px;
+    font-size: 24px;
     text-transform: uppercase;
 }
 
 .adrs {
-    font-size:14px;
+    font-size: 14px;
 }
 
 .adrs p i {
@@ -214,6 +214,7 @@ span.rat_str {
 .icon-pinterest:before:hover {
     background: #a1ce58
 }
+
 .soc_ic span {
     vertical-align: middle;
     display: inline-block;
@@ -241,7 +242,12 @@ i {
     font-weight: 600;
     color: #000;
 }
-.brd_crmb .breadcrumb{background:transparent;0px 15px 8px;margin-bottom:auto}
+
+.brd_crmb .breadcrumb {
+    background: transparent;
+    padding: 10px 0px;
+    margin-bottom: 0px
+}
 
 .breadcrumb-item a {
     color: #a3a3a2;
@@ -266,6 +272,7 @@ i {
     float: left;
     margin-right: 20px;
 }
+
 .prc_rte:last-child {
     float: right;
     margin-right: 0px;
@@ -289,6 +296,7 @@ li.vwmre a {
     padding-right: 15px;
     z-index: 1;
 }
+
 .sort select:before {
     content: "\f107";
     font-family: FontAwesome
@@ -297,6 +305,7 @@ li.vwmre a {
 .sort .icon-angle-down:before {
     content: "\f107";
 }
+
 i.icon-angle-down {
     position: absolute;
     right: 5px;
@@ -307,6 +316,7 @@ i.icon-angle-down {
 .sort span.grey {
     color: #888;
 }
+
 h2.mt100.clk {
     font-size: 24px;
 }
@@ -331,7 +341,7 @@ h2.mt100.clk {
 }
 
 .soc_ic {
-    margin-top:18px;
+    margin-top: 18px;
 }
 
 .no-border {
@@ -344,7 +354,7 @@ h2.mt100.clk {
 }
 
 .list_url h3 {
-    margin:30px 0 20px;
+    margin: 30px 0 20px;
 }
 
 .list_url ul li a {
@@ -357,7 +367,10 @@ h2.mt100.clk {
     font-size: 14px;
     line-height: 3;
 }
-.adrs.mt10{margin-top:10px;}
+
+.adrs.mt10 {
+    margin-top: 10px;
+}
 
 .comp-product-specs {
     background-color: #fff;
@@ -369,7 +382,8 @@ h2.mt100.clk {
     border: none
 }
 
-.comp-product-specs b,.comp-product-specs strong {
+.comp-product-specs b,
+.comp-product-specs strong {
     font-family: font-bold;
     font-size: 17px;
     color: #333
@@ -443,7 +457,7 @@ h2.mt100.clk {
     text-decoration: underline
 }
 
-.comp-product-specs .spec-body .dtls-li>span {
+.comp-product-specs .spec-body .dtls-li > span {
     display: table-cell
 }
 
@@ -466,14 +480,20 @@ h2.mt100.clk {
     color: #000
 }
 
-.comp-product-specs .spec-body .dtls-li a:hover,.comp-product-specs .spec-body .dtls-li a:active {
+.comp-product-specs .spec-body .dtls-li a:hover,
+.comp-product-specs .spec-body .dtls-li a:active {
     text-decoration: underline
 }
 
-.comp-product-specs .spec-body .dtls-li a.extLink:hover,.comp-product-specs .spec-body .dtls-li a.extLink:active {
+.comp-product-specs .spec-body .dtls-li a.extLink:hover,
+.comp-product-specs .spec-body .dtls-li a.extLink:active {
     text-decoration: none
 }
 
+.shop_det_rat_spa {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 
 
 
@@ -542,7 +562,7 @@ h2.mt100.clk {
     }
 
     .mt100 {
-        margin-top:10px
+        margin-top: 10px
     }
 
     .filters .accordion {
@@ -560,7 +580,8 @@ h2.mt100.clk {
     .adrs p {
         margin-bottom: 20px;
     }
-    p.pad_r_l{
+
+    p.pad_r_l {
         margin-bottom: 10px;
     }
 
@@ -607,12 +628,16 @@ h2.mt100.clk {
     .accordion {
         display: none
     }
-    .sort select{
+
+    .sort select {
 
         margin-left: 8px;
         padding-right: 0px
     }
-    .adrs.mt10{margin-top:0}
+
+    .adrs.mt10 {
+        margin-top: 0
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -654,6 +679,7 @@ h2.mt100.clk {
         width: 80%;
         background: transparent;
     }
+
     .pad_r_l {
         padding: 0 40px;
         padding-right: 20px;
@@ -663,7 +689,7 @@ h2.mt100.clk {
         margin-left: 8px;
         padding-right: 15px;
         width: 88%;
-    }   
+    }
 }
 
 @media screen and (min-width: 768px) {
