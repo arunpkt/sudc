@@ -1875,61 +1875,20 @@
         <div class="upar"></div>
     </body>
     <script>
-        // Mock an AJAX request
-        $.mockjax({
-            url: '/cities/list',
-            response: function() {
-                this.responseText = [
-                    {id: 1, name: 'Toronto'},
-                    {id: 2, name: 'Montreal'},
-                    {id: 3, name: 'New York'},
-                    {id: 4, name: 'Buffalo'},
-                    {id: 5, name: 'Boston'},
-                    {id: 6, name: 'Columbus'},
-                    {id: 7, name: 'Dallas'},
-                    {id: 8, name: 'Vancouver'},
-                    {id: 9, name: 'Seattle'},
-                    {id: 10, name: 'Los Angeles'}
-                ];
-            }
-        });
-
-        /*        var $input = $("#search");
-        $input.typeahead({
-            source: [],
-            items: 10,
-            scrollBar: false,
-            alignWidth: true,
-            menu: '<ul class="typeahead dropdown-menu"></ul>',
-            item: '<li><a href="#"></a></li>',
-            valueField: 'id',
-            displayField: 'name',
-            autoSelect: true,
-            onSelect: function () {
-            }
-        });
-            $.get("/cities/list", function(data){
-              $("#search").typeahead({ source:data });
-            },'json');
-        */
+        /*Auto complete script */
         var $input = $("#search");
         $input.typeahead({
             ajax: {
-                url: "/cities/list",
+                url: "http://dummy.restapiexample.com/api/v1/employees",
                 timeout: 500,
-                displayField: "name",
+                displayField: "employee_name",
                 valueField: 'id',
                 triggerLength: 1,
                 method: "get",
-                loadingClass: "loading-circle",
                 preDispatch: function (query) {
                     return {
-                        search: query
+                        string: query
                     }
-                },
-                preProcess: function (data) {
-                    // We good!
-                    return data;
                 }
             },
             valueField: 'id',
@@ -1941,13 +1900,6 @@
             alert('You selected <strong>' + item.value + '</strong>: <strong>' + item.text + '</strong>');
             $("#category").val(item.value);
         }
-        /*
-        $("#search").keyup(function(){
-            $.get("/cities/list", function(data){
-                $("#search").typeahead({ source:data});
-            },'json');
-        });
-*/
 
         loadIpadImages();
     </script>
