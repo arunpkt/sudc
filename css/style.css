@@ -106,20 +106,25 @@ header {
 .bttn {
     border-radius: 5px !important;
 }
-
+.container {
+    max-width: 1600px;
+    width: 100%;
+}
 .header-carousal .container {
     padding-right: 0;
     padding-left: 0;
+    max-width: 100%;
+}
+.header-carousal .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .m0 {
     margin: 0;
 }
 
-.container {
-    max-width: 1600px;
-    width: 100%;
-}
+
 
 .logo {
     margin-top: 20px;
@@ -976,10 +981,11 @@ ol.carousel-indicators {
 }
 
 section.geturcard_bg .container {
-    background-color: #2298d0;
     padding: 30px 15px;
 }
-
+section.geturcard_bg {
+    background-color: #2298d0;
+}
 section.geturcard_bg a {
     float: left;
 }
@@ -1299,7 +1305,7 @@ a.fill-div {
     margin: 20px auto 10px auto;
     vertical-align: middle;
     position: relative;
-    
+
 }
 .quick-shop_3 {
     margin-top: 60px;
