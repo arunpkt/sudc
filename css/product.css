@@ -6,7 +6,7 @@ section.brd_crmb {
 
 .container .jumbotron,
 .container-fluid .jumbotron {
-    padding: 13px 35px;
+    padding: 13px 15px;
     font-size: 18px;
     border-radius: 0;
     font-weight: bold;
@@ -129,7 +129,7 @@ input[type=checkbox]:checked:disabled + label:before {
     padding: 5px;
     font-size: 14px;
     position: relative;
-    max-width: 210px;
+    width: 90%;
 }
 
 .title {
@@ -494,7 +494,9 @@ h2.mt100.clk {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
+section.shop_banner {
+    margin-top: 20px;
+}
 
 
 

@@ -37,9 +37,13 @@
 .fl{float:left;}
 .row.rslt.fl {
     border-bottom: 1px solid #ddd;
-    padding: 20px 0;
+    padding: 10px 0;
     margin-bottom: 20px;
     width: 100%;
+    color: #8e8c8c;
+}
+.row.rslt.fl .btn-default{
+    color: #8e8c8c; 
 }
 .row.rgt_sr {
     width: 100%;
@@ -53,21 +57,68 @@
     padding-bottom: 8px;
     margin-bottom: 10px;
 }
-.hrs ul{padding:0;}
+.hrs ul{
+    padding:0;
+    margin-left: 10px;
+}
 .hrs ul li{padding:0;line-height:2em}
-.hrs ul li{list-style:none;margin:20px 0px}
-.wdt{width:50%; margin: 20px 0px;line-height: 2em}
+.hrs ul li{
+    list-style:none;
+    margin:10px 0px;
+}
+.hrs ul li span.day{
+    width: 20%;
+    float: left;
+}
+.hrs ul li span.tim{
+    width: 80%;
+    float: left;
+}
+.hrs ul li span.que{
+    width: 80%;
+    float: left;
+}
+.hrs ul li span.ans{
+    width: 20%;
+    float: left;
+}
+.hrs li.vwmre a {
+    margin-left: 0px;
+}
+.hrs_sec {
+    margin-top: 20px;  
+}
+.more_business_info, .other_items_nearby, .browse_nearby {
+    margin-top: 20px;
+}
+.other_items_nearby .lk, .browse_nearby .lk {
+    text-decoration: underline;
+}
+.browse_nearby .lk span {
+    margin-left: 10px;
+}
+.wdt{
+    margin: 10px 0px 5px;
+    line-height: 2em
+
+}
+.people_viewd_sec {
+    margin-top: 20px;
+}
+.people_als_vewd {
+    margin-top: 20px;
+}
 .prd_link span{display: inline-block;margin-left: 20px}
 .mp_sec .dtl_img{margin-top:20px}
 /*.container.ad_link{
-    padding:0;
+padding:0;
 }*/
 .tp_sr input.form-control {
     padding: 24px 10px;
 }
 .tp_sr .input-group-btn button.btn.btn-default {
-    padding: 10px 20px 9px;
-    background: #ddd;
+    padding: 10px 35px 9px;
+    background: #9c9898;
     line-height: 0;
 }
 .tp_sr .input-group-btn button.btn.btn-default img{
@@ -77,7 +128,7 @@
     padding:5px
 }
 .tp_sr .col-md-9 {
-  padding: 0;
+    padding: 0;
 }
 .col-md-12.col-sm-12.col-xs-12.usr_dtl {
     margin-top: 20px;
@@ -98,15 +149,20 @@
 
 .pagnt .pagination>li>a, .pagination>li>span{border:0;}
 
-.pagnt .pagination>li>a, .pagination>li>span{margin-left:40px}
+.pagnt .pagination>li>a, .pagination>li>span{
+    /* margin-left:40px*/
+}
 .icon-chevron-right:before,.icon-chevron-left:before{color:#337ab7;}
 .icon-chevron-right:before{margin-left:10px}
 .icon-chevron-left:before{margin-right:10px}
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{     background-color:transparent; 
-    border-bottom: 2px solid #337ab7!important;color:#337ab7}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{ 
+    background-color:transparent; 
+    border-bottom: 5px solid #337ab7!important;
+    color:#337ab7
+}
 .btndrp .btn-default{border:0;}
 
-.numbr{margin-top:35px}    
+.numbr{margin-top:27px}    
 
 .slider {
     width:100%;
@@ -133,7 +189,7 @@
 }
 
 .slick-active {
-    opacity: .5;
+    opacity: 1;
 }
 
 .slick-current {
@@ -143,6 +199,105 @@
 
 .tp_lnk {
     margin-top: 10px;
+    margin-left: 10px;
+}
+.shop_banner .tp_lnk a {
+    font-weight: 600;
+    font-size: 15px;
+}
+.shop_banner .shp_detl_se_more a, .shop_banner .mp_sec a {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.shop_banner .adrs {
+    font-size: 14px;
+    padding-left: 20px;
+}
+.shop_detail_ad1 {
+    margin-top: 15px;
+}
+.shop_description p{
+    color: #8e8c8c;
+}
+.grey{
+    color: #8e8c8c;
+}
+.shop_description h3{
+    font-weight: 800
+}
+.shop_description {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.people_viewed .description h6 a {
+    color: #1f9cd7;
+    font-weight: 600;
+}
+.people_viewed .description .block span {
+    width: 30%;
+    float: left;
+    margin: 5px 0;
+}
+.people_viewed .description .block p {
+    width: 50%;
+    float: left;
+    margin-left: 5px;
+}
+.open_close_tm {
+    height: 110px;
+}
+.open_close_tm h3 {
+    margin-top: 10px;
+}
+.open_close_tm i {
+    font-size: 40px;
+    float: left;
+}
+.open_close_tm div {
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+.shop_review {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.shop_review .rgt_sr {
+    padding-left: 10px;
+}
+.shop_review h3 { 
+    font-weight: 800
+}
+.shop_review .shp_rview_sec {
+    padding-right: 50px;
+}
+.shop_review .search_bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shop_review .rc_drp {
+    margin-top: 15px;
+}
+.shop_review .pagination {
+    margin: 15px 0 0;
+}
+.shop_review .pagination a {
+    color: #000;
+}
+p.grey.text-justify.rev_dtails {
+    margin-top: 20px;
+}
+p.font-weight-bold.grey.review_ques {
+    margin-top: 25px;
+    font-weight: 600;
+}
+.shop_review .rw_rslt{
+    margin-top: 10px;
+}
+.shop_review .row.pr_sr {
+    padding-bottom: 30px;
 }
 .col-md-6.col-sm-4.col-xs-12.pull-right.border-left {
     margin-bottom: 20px;
@@ -150,7 +305,10 @@
 .col-md-6.col-sm-4.col-xs-12.pull-right.border-left p {
     margin-bottom:0px;
 }
-.mp_sec p.pull-right{margin-top: 5px;margin-bottom: 24px}
+.mp_sec p.pull-right{
+    margin-top: 5px;
+    margin-bottom: 17px
+}
 .lk{margin:10px;float:left;width:100%;}
 
 

@@ -707,7 +707,9 @@ a:hover.trans_white img.white_arrow {
 a:hover {
     color: black;
 }
-
+.black {
+    color: black;
+}
 
 /*Blue white*/
 
