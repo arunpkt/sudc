@@ -1499,8 +1499,12 @@ main_search {
 section.top_stores .grid-arr {
     border: 1px solid #dcd9d9;
 }
-
-
+.bold {
+    font-weight: 600;
+}
+.filled {
+    color:#f4da7a!important;
+}
 .prodt_page .grid-img {
     min-height: 180px;
     max-height: 200px;

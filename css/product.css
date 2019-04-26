@@ -506,7 +506,9 @@ section.shop_banner {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
+.review_image img{
+    margin-right: 10px;
+}
 
 
 
