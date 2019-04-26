@@ -408,6 +408,7 @@ bottom: -50px;
 .footer_top img {
     max-width: 100%;
     margin-bottom: 30px;
+    margin-right: 10px;
     float: left;
 }
 
@@ -1269,7 +1270,7 @@ i.fa.fa-star.checked {
 
 .item_price {
     color: #7aae22;
-    margin-left: 10px;
+/*    margin-left: 10px;*/
     font-size: 14px;
     font-weight: 700;
 }
@@ -1294,6 +1295,15 @@ a.fill-div {
 
 .mt10 {
     margin-top: 25px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.slick-prev::before {
+    content: "<";
+}
+.slick-next::before {
+    content: ">";
 }
 
 .top_stores .grid-arr .grid-arrival figure > a .grid-img img {

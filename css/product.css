@@ -126,7 +126,7 @@ input[type=checkbox]:checked:disabled + label:before {
 
 .cust-selc {
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 5px 15px;
     font-size: 14px;
     position: relative;
     width: 90%;
@@ -144,7 +144,13 @@ input[type=checkbox]:checked:disabled + label:before {
 .adrs p i {
     margin-right: 20px
 }
-
+.adrs p i.no-mar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.adrs .cate {
+    margin-left: 30px;
+}
 span.rat_str {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -258,7 +264,9 @@ i {
 .filters .accordion {
     margin-top: 25px
 }
-
+.filters .accordion.mt100 {
+    margin-top: 44px
+}
 .filters .accordion .card {
     margin-bottom: 25px
 }
@@ -309,7 +317,7 @@ li.vwmre a {
 
 i.icon-angle-down {
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: 8px;
     z-index: -1;
 }
@@ -372,123 +380,8 @@ h2.mt100.clk {
 .adrs.mt10 {
     margin-top: 10px;
 }
-
-.comp-product-specs {
-    background-color: #fff;
-    padding: 15px 35px
-}
-
-.comp-product-specs .p-keyfeatures {
-    margin: 0;
-    border: none
-}
-
-.comp-product-specs b,
-.comp-product-specs strong {
-    font-family: font-bold;
-    font-size: 17px;
-    color: #333
-}
-
-.comp-product-specs.comp {
-    color: #000
-}
-
-.comp-product-specs .spec-title-wrp {
-    border-bottom: 1px dashed #e5e5e5;
-    cursor: pointer
-}
-
-.comp-product-specs .spec-section {
-    margin-bottom: 15px
-}
-
-.comp-product-specs .spec-section:last-child {
-    margin-bottom: 0
-}
-
-.comp-product-specs .spec-title {
-    font-size: 16px;
-    line-height: 20px;
-    padding: 10px 0 12px 0;
-    color: #333
-}
-
-.comp-product-specs .spec-title .headTitle {
-    font-size: 20px;
-    padding-left: 22px
-}
-
-.comp-product-specs .spec-title .toggle-sec {
-    height: 20px;
-    width: 20px;
-    font-size: 12px;
-    line-height: 20px;
-    margin-right: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
-    vertical-align: top;
-    text-align: center
-}
-
-.comp-product-specs .spec-body.specifications {
-    padding-left: 52px
-}
-
-.comp-product-specs .spec-body {
-    padding: 15px 35px 20px 33px;
-    font-size: 14px;
-    line-height: 16px;
-    overflow: hidden
-}
-
-.comp-product-specs .spec-body .detailssubbox {
-    line-height: 20px
-}
-
-.comp-product-specs .spec-body .extLink {
-    font-size: 14px;
-    line-height: 1;
-    text-decoration: none;
-    margin-bottom: 12px;
-    display: inline-block
-}
-
-.comp-product-specs .spec-body .extLink-lbl {
-    text-decoration: underline
-}
-
-.comp-product-specs .spec-body .dtls-li > span {
-    display: table-cell
-}
-
-.comp-product-specs .spec-body .dtls-li {
-    padding: 0 15px;
-    font-size: 13px;
-    line-height: 22px;
-    position: relative;
-    display: table;
-    white-space: initial;
-    overflow: initial;
-    text-overflow: initial
-}
-
-.comp-product-specs .spec-body .dtls-li .list-cicrle-cont {
-    width: 1%
-}
-
-.comp-product-specs .spec-body .dtls-li a {
-    color: #000
-}
-
-.comp-product-specs .spec-body .dtls-li a:hover,
-.comp-product-specs .spec-body .dtls-li a:active {
-    text-decoration: underline
-}
-
-.comp-product-specs .spec-body .dtls-li a.extLink:hover,
-.comp-product-specs .spec-body .dtls-li a.extLink:active {
-    text-decoration: none
+section.map_shop {
+    margin-top: 20px;
 }
 
 .shop_det_rat_spa {
@@ -509,7 +402,9 @@ section.shop_banner {
 .review_image img{
     margin-right: 10px;
 }
-
+.product_list_pod {
+    margin-bottom: 100px;
+}
 
 
 
@@ -695,7 +590,7 @@ section.shop_banner {
         padding: 0 40px;
         padding-right: 20px;
     }
-    
+
     .sort select {
         margin-left: 8px;
         padding-right: 15px;
