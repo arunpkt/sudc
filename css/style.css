@@ -66,6 +66,10 @@ p {
 .pad_r_l {
     padding: 0 40px
 }
+.pad_l {
+    padding-right: 5px;
+    padding-left: 40px;
+}
 
 .pad_mar_0 {
     padding: 0;
@@ -1142,7 +1146,10 @@ padding-left: 0px;
 .grid-arrival {
     padding: 5%;
 }
-
+.grid-img {
+    min-height: 150px;
+    max-height: 180px;
+}
 .grid-arr:hover {
     /*    border: 1px solid #E2E2E2;
     border: 5px solid #ffffff;
@@ -1299,6 +1306,8 @@ a.fill-div {
 
 .top_stores .grid-img {
     height: 45px;
+    min-height: auto;
+    max-height: auto;
 }
 .top_stores .col-md-2{
     padding-left: 5px;
@@ -1416,12 +1425,12 @@ main_search {
 
 .looking input {
     padding: 0px;
-    width: 72% !important;
+    width: 69% !important;
 }
 
 .looking label {
     padding: 0 10px 0 20px;
-    width: 27% !important;
+    width: 30% !important;
 }
 
 .main_search .form-group {
@@ -1491,15 +1500,16 @@ section.top_stores .grid-arr {
     border: 1px solid #dcd9d9;
 }
 
-.grid-img {
-   /* min-height: 150px;
-    max-height: 180px;*/
-    height: auto;
-}
+
 .prodt_page .grid-img {
     min-height: 180px;
     max-height: 200px;
 }
+.rcmd_for_u .grid-img , .top_dscnts_fr_u .grid-img{
+    min-height: 130px;
+    max-height: 150px;
+}
+
 .top_stores .description h6 {
     font-size: 16px;
     margin: 0.4em 0;

@@ -295,6 +295,7 @@ li.vwmre a {
     margin-left: 10px;
     padding-right: 15px;
     z-index: 1;
+    width: 65%;
 }
 
 .sort select:before {
@@ -497,8 +498,14 @@ h2.mt100.clk {
 section.shop_banner {
     margin-top: 20px;
 }
-
-
+.product_list_pod .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.product_list_pod .home_view_more a {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 
 
@@ -686,10 +693,7 @@ section.shop_banner {
         padding: 0 40px;
         padding-right: 20px;
     }
-    .pad_l {
-        padding-right: 5px;
-        padding-left: 40px;
-    }
+    
     .sort select {
         margin-left: 8px;
         padding-right: 15px;

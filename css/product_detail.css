@@ -185,7 +185,7 @@ padding:0;
 
 .slick-slide {
     transition: all ease-in-out .3s;
-    opacity: .2;
+    opacity: 1;
 }
 
 .slick-active {
