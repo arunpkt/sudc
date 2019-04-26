@@ -304,15 +304,15 @@
                 <div class="row">
                     <div class="col-md-1 col-sm-1 col-xs-12 thumbnail_image_detail">
                         <div class="col-md-12 col-sm-12 col-xs-12 no-padding img_wrapper">
-                            <img src="images/thumbnail_mobile.png" class="img-responsive border_1" />
+                            <img src="images/thumbnail_mobile.png" class="img-responsive border_1 detail_img" />
                         </div>
                         <div class="col-md-12 col-sm-12 col-xs-12 no-padding img_wrapper">
-                            <img src="images/thumbnail_mobile.png" class="img-responsive border_1" />
+                            <img src="images/thumbnail_mobile_2.png" class="img-responsive border_1 detail_img" />
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <div class="big_image_wraper">
-                            <img src="images/mobile_logo_big.png"  class="img-responsive" width="500"/>
+                            <img src="images/mobile.png" class="img-responsive detail_big_img" width="500"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -456,5 +456,10 @@
             </div>
         </footer>
         <div class="upar"></div>
+        <script>
+          $(".detail_img").click(function(){
+              $(".detail_big_img").attr("src", $(this).attr("src").replace("thumbnail_", ""));
+          });
+        </script>
     </body>
 </html>
