@@ -405,6 +405,9 @@ section.shop_banner {
 .product_list_pod {
     margin-bottom: 100px;
 }
+.shp_detl_dis::after {
+    content: "|";
+}
 
 
 

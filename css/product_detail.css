@@ -56,6 +56,7 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 8px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .hrs ul{
     padding:0;
@@ -273,6 +274,7 @@ padding:0;
 }
 .shop_review .shp_rview_sec {
     padding-right: 50px;
+    margin-bottom: 100px;
 }
 .shop_review .search_bar {
     margin-top: 20px;
@@ -280,6 +282,7 @@ padding:0;
 }
 .shop_review .rc_drp {
     margin-top: 15px;
+    padding-right: 0;
 }
 .shop_review .pagination {
     margin: 15px 0 0;
@@ -388,7 +391,10 @@ span.share {
     padding-left: 20px;
     color: #8e8c8c;
 }
-
+.browse_nearby .lk {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
 
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }
