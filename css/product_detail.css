@@ -242,8 +242,11 @@ padding:0;
 }
 
 .shop_banner .adrs {
-    font-size: 14px;
+    font-size: 15px;
     padding-left: 20px;
+}
+.shop_banner p {
+    margin-bottom: 8px;
 }
 .shop_detail_ad1 {
     margin-top: 15px;
