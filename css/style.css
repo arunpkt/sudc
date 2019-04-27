@@ -543,7 +543,9 @@ bottom: -50px;
 .no-padding {
     padding: 0;
 }
-
+.no-margin {
+    margin: 0;
+}
 .row-no-padding [class*="col-"] {
     padding-left: 0;
     padding-right: 0;
@@ -2037,7 +2039,7 @@ h2.text-center.alegreya::before {
 }
 
 section.menu_other_pages .container {
-    padding: 10px 10px;
+    padding: 10px 8px;
 }
 section.menu_other_pages {
     background-color: #2298d0;

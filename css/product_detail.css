@@ -33,7 +33,14 @@
     margin-right: 0;
 }
 .row.tp_sr div{padding:0;}
-.row.pagnt{float: left;width:100%; border-bottom: 1px solid #ddd;}
+.row.pagnt{
+    float: left;
+    width:100%;
+    border-bottom: 1px solid #ddd;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .fl{float:left;}
 .row.rslt.fl {
     border-bottom: 1px solid #ddd;
@@ -41,6 +48,17 @@
     margin-bottom: 20px;
     width: 100%;
     color: #8e8c8c;
+    margin-left: 0;
+    margin-right: 0;
+}
+.people_viewed .row {
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+.usr_dtl .pics a img {
+    margin-left: 0;
+    margin-right: 0;
 }
 .row.rslt.fl .btn-default{
     color: #8e8c8c; 
@@ -87,10 +105,13 @@
     margin-left: 0px;
 }
 .hrs_sec {
-    margin-top: 20px;  
+    margin-top: 30px;  
 }
-.more_business_info, .other_items_nearby, .browse_nearby {
-    margin-top: 20px;
+.other_items_nearby, .browse_nearby,.people_als_vewd {
+    margin-top: 40px;
+}
+.more_business_info {
+    margin-top: 30px;
 }
 .other_items_nearby .lk, .browse_nearby .lk {
     text-decoration: underline;
@@ -104,9 +125,6 @@
 
 }
 .people_viewd_sec {
-    margin-top: 20px;
-}
-.people_als_vewd {
     margin-top: 20px;
 }
 .prd_link span{display: inline-block;margin-left: 20px}
@@ -202,6 +220,11 @@ padding:0;
     margin-top: 10px;
     margin-left: 10px;
 }
+.shp_detl_ .tp_lnk {
+    margin-top: 0;
+    padding-top: 10px;
+    margin-left: 0px;
+}
 .shop_banner .tp_lnk a {
     font-weight: 600;
     font-size: 15px;
@@ -211,6 +234,10 @@ padding:0;
     text-decoration: underline;
     font-size: 15px;
 }
+.shop_banner .shp_detl_se_more > a{
+  margin-left: 20px;
+}
+
 .shop_banner .adrs {
     font-size: 14px;
     padding-left: 20px;
@@ -395,7 +422,12 @@ span.share {
     margin-top: 5px;
     margin-bottom: 0;
 }
-
+.browse_nearby ul li img {
+    float: left
+}
+.browse_nearby ul li a {
+    float: left
+}
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }
     .banr_link .tp_lnk a {
