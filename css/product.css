@@ -440,6 +440,13 @@ section.shop_banner {
     .border-left.pad_r_l {
         border: 0 !important;
     }
+    .pad_l {
+        padding: 10px;
+    }
+
+    .border-left.pad_l {
+        border: 0 !important;
+    }
 
     .row.mt25,
     .adrs,
@@ -546,6 +553,9 @@ section.shop_banner {
 
     .adrs.mt10 {
         margin-top: 0
+    }
+    .adrs .cate {
+        margin-left: 0px;
     }
 }
 
