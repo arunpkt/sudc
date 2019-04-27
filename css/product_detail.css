@@ -127,6 +127,9 @@
 .people_viewd_sec {
     margin-top: 20px;
 }
+.people_viewd_sec .pics a img {
+    margin-left: 10px;
+}
 .prd_link span{display: inline-block;margin-left: 20px}
 .mp_sec .dtl_img{margin-top:20px}
 /*.container.ad_link{
@@ -426,7 +429,8 @@ span.share {
     float: left
 }
 .browse_nearby ul li a {
-    float: left
+    float: left;
+    margin-left: 0;
 }
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }
