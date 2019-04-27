@@ -1302,10 +1302,10 @@ a.fill-div {
     margin-top: 40px;
 }
 .slick-prev::before {
-    content: "<";
+    content: "<"!important;
 }
 .slick-next::before {
-    content: ">";
+    content: ">"!important;
 }
 
 .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
