@@ -259,8 +259,8 @@ padding:0;
 }
 .shop_description {
     margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+/*    padding-left: 20px;
+    padding-right: 20px;*/
 }
 .people_viewed .description h6 a {
     color: #1f9cd7;
@@ -292,9 +292,19 @@ padding:0;
     margin-left: 15px;
     float: left;
 }
+.shop_des_col {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.lstout {
+    padding-right: 20px;
+}
+.shp_rview_sec {
+    padding-left: 40px;
+}
 .shop_review {
     margin-top: 10px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 .shop_review .rgt_sr {
     padding-left: 10px;
@@ -340,8 +350,8 @@ p.font-weight-bold.grey.review_ques {
     margin-bottom:0px;
 }
 .mp_sec p.pull-right{
-    margin-top: 5px;
-    margin-bottom: 17px
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .lk{margin:10px;float:left;width:100%;}
 
