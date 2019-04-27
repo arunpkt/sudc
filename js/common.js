@@ -86,6 +86,10 @@ function loadIpadImages() {
     }
   });
 } 
+//Open filetr
+function openFilter() {
+    $("#accordionExample").show();
+}
 if (typeof jQuery === "undefined") {
     throw new Error("jQuery required");
 }

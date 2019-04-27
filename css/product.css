@@ -395,6 +395,9 @@ section.shop_banner {
     margin-left: 0;
     margin-right: 0;
 }
+.product_list_pod .pdbtm {
+    margin-bottom: 30px;
+}
 .product_list_pod .home_view_more a {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -542,7 +545,7 @@ section.shop_banner {
     }
 
     .accordion {
-        display: none
+        display: none;
     }
 
     .sort select {
@@ -571,6 +574,9 @@ section.shop_banner {
     }
     .filters .accordion.mt100 {
         margin-top: 0;
+    }
+    .product_list_filter h2 {
+        display: block!important;
     }
 }
 
