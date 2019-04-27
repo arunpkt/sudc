@@ -129,7 +129,7 @@ header {
 }
 img.img-responsive:hover {
     opacity: 0.6;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 .grid-arr .grid-arrival figure > a .grid-img img:hover, .header-carousal img:hover {
    opacity: 1;
