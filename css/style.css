@@ -131,7 +131,7 @@ img.img-responsive:hover {
     opacity: 0.6;
     transition: opacity 0.3s ease-in-out;
 }
-.grid-arr .grid-arrival figure > a .grid-img img:hover, .header-carousal img:hover {
+.grid-arr .grid-arrival figure > a .grid-img img:hover, .header-carousal img:hover, .logo img:hover, footer_height img:hover {
    opacity: 1;
 }
 .logo {
