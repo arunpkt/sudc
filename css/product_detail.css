@@ -486,6 +486,8 @@ a.btn-det_link:hover {
     vertical-align: middle;
     margin-right: 20px;
     line-height: 45px;
+    font-size: 12px;
+    font-weight: 400;
 }
 .btn-det_link.collapsed:before {
     content: "\f067";
@@ -494,6 +496,8 @@ a.btn-det_link:hover {
     vertical-align: middle;
     margin-right: 20px;
     line-height: 45px;
+    font-size: 12px;
+    font-weight: 400;
 }
 .border_dotted-bottom {
     border-bottom: 1px dashed #d0d0d0;
