@@ -504,7 +504,7 @@ a.btn-det_link:hover {
 }
 
 .heighligts-body .list {
-    padding-left: 30px;
+    padding-left: 45px;
 }
 .specification-body span.left_spec {
     width: 10%;
@@ -528,8 +528,23 @@ a.btn-det_link:hover {
     font-size: 20px;
     margin-top: 20px;
 }
-
-
+.description-body p {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.useful_link_product-body ul {
+    list-style: none;
+}
+.useful_link_product-body ul p a {
+    color: #000;
+    text-decoration: none;
+}
+.useful_link_product-body ul p {
+    color: #6f6c6c;
+}
+.border {
+    border: 1px solid #f0f0f0;
+}
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }
     .banr_link .tp_lnk a {
