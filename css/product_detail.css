@@ -579,7 +579,7 @@ a.btn-det_link:hover {
 }
 .review_write p {
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 40px; 
 }
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }
