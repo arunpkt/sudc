@@ -132,7 +132,7 @@ img.img-responsive:hover {
     transition: opacity 0.3s ease-in-out;
 }
 .grid-arr .grid-arrival figure > a .grid-img img:hover, .header-carousal img:hover, .logo img:hover, footer_height img:hover {
-   opacity: 1;
+    opacity: 1;
 }
 .logo {
     margin-top: 20px;
@@ -344,6 +344,15 @@ header.sticky_header {
     z-index: 100;
     padding-bottom: 0;
 }
+/*header.sticky_header .modal{
+z-index: 1050;
+}
+.modal-open header.sticky_header {
+z-index: 1050; 
+}
+.modal-open header.sticky_header > .container {
+z-index: 100; 
+}*/
 header.sticky_header .logo {
     width: 80%;
     margin-top: 10px;
@@ -1271,7 +1280,7 @@ i.fa.fa-star.checked {
 
 .item_price {
     color: #7aae22;
-/*    margin-left: 10px;*/
+    /*    margin-left: 10px;*/
     font-size: 14px;
     font-weight: 700;
 }
@@ -2674,7 +2683,9 @@ p.signup-policy {
     background-color: #e5e5e5;
     border-color: #e5e5e5;
 }
-
+.border-bottom {
+    border-bottom: 1px solid #000;
+}
 
 
 
@@ -3152,6 +3163,10 @@ p.signup-policy {
 
 /*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .modal-dialog {
+        width: 100%;
+        margin: 0 auto;
+    }
     .sticky_header {
         margin-top: 0px;
         padding-top: 0px;
@@ -3530,7 +3545,7 @@ p.signup-policy {
     .border-or {
         display: none;
     }
-    .modal-dialog {
+    .modal-dialog  {
         width: 100%;
         margin: 0 auto;
     }

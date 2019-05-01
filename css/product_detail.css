@@ -54,7 +54,7 @@
 .people_viewed .row {
     margin-left: 0;
     margin-right: 0;
-    
+
 }
 .usr_dtl .pics a img {
     margin-left: 0;
@@ -238,7 +238,7 @@ padding:0;
     font-size: 15px;
 }
 .shop_banner .shp_detl_se_more > a{
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 .shop_banner .adrs {
@@ -262,7 +262,7 @@ padding:0;
 }
 .shop_description {
     margin-top: 10px;
-/*    padding-left: 20px;
+    /*    padding-left: 20px;
     padding-right: 20px;*/
 }
 .people_viewed .description h6 a {
@@ -446,7 +446,7 @@ span.share {
     margin-left: 0;
 }
 ul.pdt_det_head {
-  background-color: #d0d0d0;
+    background-color: #d0d0d0;
 }
 .pdt_det_head li {
     font-size: 16px;
@@ -460,10 +460,10 @@ ul.pdt_det_head {
     text-decoration: none;
 }
 .pdt_det_head li.active {
-  border-bottom: 5px solid #109fc6;
+    border-bottom: 5px solid #109fc6;
 }
 .pdt_det_head li.active > a {
-  color: #109fc6;
+    color: #109fc6;
 }
 .pdt_det_head li a:hover{
     color: #109fc6;
@@ -519,7 +519,7 @@ a.btn-det_link:hover {
 }
 .specification-body ul li {
     display: flex;
-    
+
 }
 .specification-body {
     padding-left: 30px;
@@ -544,6 +544,42 @@ a.btn-det_link:hover {
 }
 .border {
     border: 1px solid #f0f0f0;
+}
+.review_box_pro_de .review_star, .review_box_pro_de  .review_per,.review_box_pro_de  .review_write {
+    height: 230px;
+    padding: 40px 20px;
+}
+.review_box_pro_de {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.item_details {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    
+}
+.review_star h2 {
+    margin-bottom: 20px;
+}
+.review_star h2 sub{
+    font-size: 16px;
+}
+.review_hd_pro_de {
+    margin-bottom: 15px;
+}
+.review_star span, .review_star p{
+    margin-top: 15px;
+}
+.review_per p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.review_per .yesno {
+  margin-top: 15px;
+}
+.review_write p {
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }

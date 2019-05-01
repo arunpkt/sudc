@@ -376,14 +376,14 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <ul class="list-inline pdt_det_head">
-                            <li class="active"><a href="#item_detail">ITEM DETAILS</a></li>
-                            <li><a href="ratings">RATINGS & REVIEWS</a></li>
+                            <li class="active"><a href="#heighligts">ITEM DETAILS</a></li>
+                            <li><a href="#review_box_pro_de">RATINGS & REVIEWS</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="heighligts">
+                        <div class="heighligts" id="heighligts">
                             <div class="heighligts-header border_dotted-bottom">
                                 <h2>
                                     <a class="btn-det_link" type="button" data-toggle="collapse" data-target="#heighligts">
@@ -615,22 +615,36 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="clearfix"></div>
-                        
-                        <div class="review_box_pro_de">
+
+                        <div class="review_box_pro_de" id="review_box_pro_de">
                             <h2 class="review_hd_pro_de">Ratings & Reviews</h2>
                             <div class="col-md-4 col-sm-6 col-xs-12 no-padding review_star border text-center">
-                                <h2>4.8/5</h2>
-                                <p>4 rating & 0 reviews</p>
+                                <h2>4.8<sub class="grey">/5</sub></h2>
+                                <span>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <p class="grey">4 rating & 0 reviews</p>
                             </div>
 
                             <div class="col-md-4 col-sm-6 col-xs-12 no-padding review_per border text-center">
                                 <h2>100%</h2>
-                                <p>Based on 3 Recommendations.</p>
+                                <p class="grey">Based on 3 Recommendations.</p>
+                                <div class="col-md-6 col-md-offset-1 col-sm-6 col-xs-12 no-padding text-center">
+                                    <p class="rec-ques">Would you like to recommend this item?</p>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 text-center yesno">
+                                    <a class="btn btn-default">YES</a>
+                                    <a class="btn btn-default">NO</a>
+                                </div>
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12 no-padding review_write border text-center">
-                               <p>Have you used this product?</p>
+                                <p>Have you used this product?</p>
                                 <a href="" class="btn btn-primary">REVIEWS</a>
                             </div>
                         </div>

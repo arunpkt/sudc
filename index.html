@@ -109,134 +109,167 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content row  sign-option" style="height: auto;">
-                        <div class="modal-header signup-modal-head text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4>sign up</h4>
-                            <div class="text-uppercase"> ALREADY REGISTERED? 
-                                <a data-toggle="modal" data-target="#loginModal">sign in </a>
-                            </div>
-                        </div>
-                        <div class="modal-body">				  
-
-                            <div class="row">							
-                                <div class="col-md-6  col-xs-12 mx-auto login-modal">
-                                    <div class="form-group">
-                                        <input type="text" id="firstname" class="form-control" required>
-                                        <label class="form-control-placeholder" for="firstname">First Name</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" id="lastname" class="form-control" required>
-                                        <label class="form-control-placeholder" for="lastname">Last Name</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" id="email" class="form-control" required>
-                                        <label class="form-control-placeholder" for="name">email</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" id="password" class="form-control" required>
-                                        <label class="form-control-placeholder" for="password">Password</label>
-                                    </div>	
-                                    <div class="btn-radio">
-                                        <!-- Male radio -->
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="o3" value="">
-                                                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
-                                                Male
-                                            </label>
-                                        </div>
-
-                                        <!-- Female radio -->
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="o3" value="" checked>
-                                                <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
-                                                Female
-                                            </label>
-                                        </div>
-                                    </div>						  
-                                    <div>
-                                        <p class="signup-policy">By Signing up you will agree Privacy Policy and Terms of Conditions.</p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" class="btn btn-block btn-primary" value="SIGN UP" />
-                                    </div>
-                                </div>
-                                <span class="border-or">OR</span>
-                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
-                                    <div class="div-center-align">
-                                        <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> Sign in with google</a>
-                                        <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> Sign in with facebook</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- model / -->
-
-            <div class="modal fade" id="loginModal" tabindex="0" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content row signin-page" style="height: auto;">
-                        <div class="modal-header signup-modal-head text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4>sign in</h4>
-                            <div class="text-uppercase"> not registered? 
-                                <a data-toggle="modal" data-target="#signUpModal">sign up </a>
-                            </div>
-                        </div>
-                        <div class="modal-body signup-modal-body">				  
-
-                            <div class="row">				
-                                <div class="col-md-6  col-xs-12 mx-auto login-modal" id="loginModel">
-                                    <div class="form-group">
-                                        <input type="text" id="name" class="form-control" required>
-                                        <label class="form-control-placeholder" for="name">Name</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" id="password" class="form-control" required>
-                                        <label class="form-control-placeholder" for="password">Password</label>
-                                    </div>
-                                    <!--forgot -->
-                                    <a href="#" class="btn-forgot" onclick="openForgotPassword();">forgot password ?</a>
-                                    <div class="form-group">
-                                        <input type="submit" class="btn btn-block btn-primary" value="LOGIN" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xs-12 retrieve-password login-modal" id="forgetModel" style="display: none;">
-                                    <h4 class="text-uppercase">Forgot Password?</h4>
-                                    <p>Enter your email address and we will send you a link to reset your password.</p>
-                                    <form method="POST" id="form-forget-password" action="">
-                                        <div class="form-group">
-                                            <label for="forget-email" class="form-control-placeholder">Email</label>
-                                            <input type="email" name="email" id="forget-email" class="form-control " data-rule="email">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary password-reset">EMAIL RESET LINK</button>
-                                        <button type="button" class="btn btn-filled cancel cancel-forget-password" onclick="openLogin();">CANCEL</button>
-                                    </form>
-                                </div>
-                                <span class="border-or">OR</span>
-                                <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
-                                    <div class="div-center-align">
-                                        <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> sign in with google</a>
-                                        <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> sign in with facebook</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- model / -->
-
         </header>
+        <!-- Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content row  sign-option" style="height: auto;">
+                    <div class="modal-header signup-modal-head text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>sign up</h4>
+                        <div class="text-uppercase"> ALREADY REGISTERED? 
+                            <a data-toggle="modal" data-target="#loginModal">sign in </a>
+                        </div>
+                    </div>
+                    <div class="modal-body">				  
 
+                        <div class="row">							
+                            <div class="col-md-6  col-xs-12 mx-auto login-modal">
+                                <div class="form-group">
+                                    <input type="text" id="firstname" class="form-control" required>
+                                    <label class="form-control-placeholder" for="firstname">First Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="lastname" class="form-control" required>
+                                    <label class="form-control-placeholder" for="lastname">Last Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="email" class="form-control" required>
+                                    <label class="form-control-placeholder" for="name">email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" class="form-control" required>
+                                    <label class="form-control-placeholder" for="password">Password</label>
+                                </div>	
+                                <div class="btn-radio">
+                                    <!-- Male radio -->
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o3" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Male
+                                        </label>
+                                    </div>
+
+                                    <!-- Female radio -->
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o3" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>						  
+                                <div>
+                                    <p class="signup-policy">By Signing up you will agree Privacy Policy and Terms of Conditions.</p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-block btn-primary" value="SIGN UP" />
+                                </div>
+                            </div>
+                            <span class="border-or">OR</span>
+                            <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
+                                <div class="div-center-align">
+                                    <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> Sign in with google</a>
+                                    <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> Sign in with facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- model / -->
+
+        <div class="modal fade" id="loginModal" tabindex="0" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content row signin-page" style="height: auto;">
+                    <div class="modal-header signup-modal-head text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>sign in</h4>
+                        <div class="text-uppercase"> not registered? 
+                            <a data-toggle="modal" data-target="#signUpModal">sign up </a>
+                        </div>
+                    </div>
+                    <div class="modal-body signup-modal-body">				  
+
+                        <div class="row">				
+                            <div class="col-md-6  col-xs-12 mx-auto login-modal" id="loginModel">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" required>
+                                    <label class="form-control-placeholder" for="name">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" class="form-control" required>
+                                    <label class="form-control-placeholder" for="password">Password</label>
+                                </div>
+                                <!--forgot -->
+                                <a href="#" class="btn-forgot" onclick="openForgotPassword();">forgot password ?</a>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-block btn-primary" value="LOGIN" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 retrieve-password login-modal" id="forgetModel" style="display: none;">
+                                <h4 class="text-uppercase">Forgot Password?</h4>
+                                <p>Enter your email address and we will send you a link to reset your password.</p>
+                                <form method="POST" id="form-forget-password" action="">
+                                    <div class="form-group">
+                                        <label for="forget-email" class="form-control-placeholder">Email</label>
+                                        <input type="email" name="email" id="forget-email" class="form-control " data-rule="email">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary password-reset">EMAIL RESET LINK</button>
+                                    <button type="button" class="btn btn-filled cancel cancel-forget-password" onclick="openLogin();">CANCEL</button>
+                                </form>
+                            </div>
+                            <span class="border-or">OR</span>
+                            <div class="col-md-6 col-sm-12 col-xs-12 signup-other mx-auto" >
+                                <div class="div-center-align">
+                                    <a href="" class="btn btn-other signup-g btn-block"><i class="fab fa-google"></i> sign in with google</a>
+                                    <a href="" class="btn btn-other signup-fb btn-block"><i class="fab fa-facebook-f"></i> sign in with facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Advanced search model-->
+        <div class="modal fade" id="searchModal" tabindex="2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content row signin-page" style="height: auto;">
+                    <div class="modal-header signup-modal-head">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4>ADVANCED SEARCH</h4>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="modal-body signup-modal-body">				  
+
+                        <div class="row">				
+                            <div class="col-md-12 col-xs-12 mx-auto login-modal" id="loginModel">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for shops and products">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button"><img src="images/sr_ic.png"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" class="form-control" required>
+                                    <label class="form-control-placeholder" for="password">Password</label>
+                                </div>
+                                <!--forgot -->
+                                <a href="#" class="btn-forgot" onclick="openForgotPassword();">forgot password ?</a>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-block btn-primary" value="LOGIN" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Main seach bar / Hero section-->
 
         <section class="header-carousal"> 
@@ -308,7 +341,7 @@
                                     </div>
                                     <div class="col-md-2 col-sm-12 col-xs-12">
                                         <ul class="list-group horizontal category_list_hero">
-                                            <li class="list-group-item pull-right"><a href=""><i class="fas fa-cog"></i>Advanced search</a></li>
+                                            <li class="list-group-item pull-right"><a href="" data-toggle="modal" data-target="#searchModal"><i class="fas fa-cog"></i>Advanced search</a></li>
                                         </ul>
                                     </div>
                                 </div>
