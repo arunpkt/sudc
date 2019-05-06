@@ -254,9 +254,6 @@ padding:0;
 .shop_description p{
     color: #8e8c8c;
 }
-.grey{
-    color: #8e8c8c;
-}
 .shop_description h3{
     font-weight: 800
 }
@@ -556,7 +553,7 @@ a.btn-det_link:hover {
 .item_details {
     margin-top: 30px;
     margin-bottom: 70px;
-    
+
 }
 .review_star h2 {
     margin-bottom: 20px;
@@ -575,11 +572,89 @@ a.btn-det_link:hover {
     margin-bottom: 15px;
 }
 .review_per .yesno {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 .review_write p {
     margin-bottom: 20px;
     margin-top: 40px; 
+}
+.rev_search_texting_name span {
+    background-color: red;
+    border-radius: 26px;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: #FFF;
+    font-weight: 600;
+    opacity: 0.5;
+}
+.review_text_pro_de {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+p.review_text_pag_titl {
+    color : #98a1ac;  
+}
+.rev_search_teaser h2 {
+    margin: 0;
+}
+.rev_search_icon {
+    border-left: 1px solid #d0d0d0;
+}
+.rev_search_srt .pull-right {
+    margin-left: 15px;
+}
+.rev_search_filter_by.pull-right {
+    padding: 5px;
+}
+.rev_search_srt_by.pull-right {
+    padding: 5px;  
+}
+.rev_search_srt  span.grey {
+    line-height: 30px;
+}
+.rev_search_wrap {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.rev_search_texting_name_wrapper.no-padding {
+    margin-top: 40px;
+}
+.rev_search_texting_name {
+    padding-top: 15px;
+}
+.rev_search_texting_text p.revy {
+    font-size: 16px;
+    margin-top: 10px;
+}
+span.rev_schek {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.rev_search_texting_text p.revTex {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.rev_search_texting_text  p.revHelp {
+    margin-top: 20px;
+}
+p.view_ount {
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #8e8c8c;
+    border-radius: 5px;
+}
+p.view_ount i.icon-thumbs-up {
+    margin-right: 10px;
+}
+.orange {
+    background-color: orange!important;
+}
+.skyblue {
+    background-color:  deepskyblue!important;
+}
+.rev_search_icon .form-control {
+    border: 0px solid #000!important;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
 }
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }

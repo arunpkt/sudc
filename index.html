@@ -10,12 +10,31 @@
         <link rel="stylesheet" href="css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" />   
 
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/common.js"></script>
         <script src="js/bootstrap-typeahead.min.js"></script>
         <script src="js/jquery.mockjax.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                $( "#slider-range" ).slider({
+                    range: true,
+                    min: 0,
+                    max: 500,
+                    values: [ 75, 300 ],
+                    slide: function( event, ui ) {
+                        $( "#amountStart" ).val( "Rs. " + ui.values[ 0 ]);
+                        $( "#amountEnd" ).val( "Rs. " + ui.values[ 1 ] );
+                    }
+                });
+                $( "#amountStart" ).val( "Rs. " + $( "#slider-range" ).slider( "values", 0 ));
+                $( "#amountEnd" ).val("Rs. " + $( "#slider-range" ).slider( "values", 1 ));
+
+            });
+        </script>
 
     </head>
 
@@ -233,36 +252,102 @@
                 </div>
             </div>
         </div>
-        
+
         <!--Advanced search model-->
         <div class="modal fade" id="searchModal" tabindex="2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content row signin-page" style="height: auto;">
-                    <div class="modal-header signup-modal-head">
+                <div class="modal-content row advanced-page" style="height: auto;">
+                    <div class="modal-header advanced-modal-head">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4>ADVANCED SEARCH</h4>
+                        <h3>ADVANCED SEARCH</h3>
                         <div class="border-bottom"></div>
                     </div>
-                    <div class="modal-body signup-modal-body">				  
+                    <div class="modal-body advanced-modal-body">				  
 
                         <div class="row">				
-                            <div class="col-md-12 col-xs-12 mx-auto login-modal" id="loginModel">
-                                <div class="form-group">
+                            <div class="col-md-12 col-xs-12 mx-auto advanced-modal" id="loginModel">
+                                <div class="form-group search_term">
+                                    <label for="discount">Find items</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search for shops and products">
+                                        <input type="text" class="form-control grey" placeholder="Search for shops and products">
                                         <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button"><img src="images/sr_ic.png"></button>
+                                            <button class="btn btn-default" type="button">
+                                                <img src="images/sr_ic.png" width="15">
+                                            </button>
                                         </span>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" id="password" class="form-control" required>
-                                    <label class="form-control-placeholder" for="password">Password</label>
+                                <div class="form-group price">
+                                    <label for="discount">Price</label>
+                                    <div class="price_lider">
+                                        <div id="slider-range"></div>
+                                        <p class="mt20">   
+                                            <input type="text" id="amountStart" class="prc_rte text-center grey" readonly="">
+                                            <input type="text" id="amountEnd" class="prc_rte text-center grey pull-right" readonly="">
+                                        </p>
+                                    </div>
                                 </div>
-                                <!--forgot -->
-                                <a href="#" class="btn-forgot" onclick="openForgotPassword();">forgot password ?</a>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-block btn-primary" value="LOGIN" />
+                                <div class="form-group discount">
+                                    <label for="discount">Discount offers</label>
+                                    <select class="custom-select custom-select-xl grey">
+                                        <option selected="10">10% to 20%</option>
+                                        <option value="20">20% to 30%</option>
+                                        <option value="30">30% to 40%</option>
+                                        <option value="40">40% to 50%</option>
+                                        <option value="50">50% and above</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group location">
+                                    <label for="loction">Location</label>
+                                </div>
+
+                                <ul class="list-group">
+                                    <li class="radio width_50">
+                                        <label><input type="radio" class="" name="location" id="location" checked>Located</label>
+                                    </li>
+                                    <li class="width_50">
+                                        <select class="custom-select custom-select-xl grey">
+                                            <option selected="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        miles of
+                                        <input type="text" class="" placeholder="600027" />
+                                    </li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="radio width_50">
+                                        <label><input type="radio" class="" name="location" id="location">From preferred locations</label>
+                                    </li>
+                                    <li class="width_50">
+                                        <select class="custom-select custom-select-xl grey">
+                                            <option selected="india">India only</option>
+                                            <option value="uk">UK only</option>
+                                            <option value="usa">USA only</option>
+                                            <option value="canada">Canada only</option>
+                                        </select>
+                                    </li>
+                                </ul>
+
+                                <ul class="list-group">
+                                    <li class="radio width_50">
+                                        <label><input type="radio" class="" name="location" id="location" checked>Located in</label>
+                                    </li>
+                                    <li class="width_50">
+                                        <select class="custom-select custom-select-xl grey">
+                                            <option selected="india">India</option>
+                                            <option value="uk">UK</option>
+                                            <option value="usa">USA</option>
+                                            <option value="canada">Canada</option>
+                                        </select>
+                                    </li>
+                                </ul>
+
+                                <div class="form-group submit">
+                                    <input type="submit" class="btn btn-block btn-primary" value="SEARCH" />
                                 </div>
                             </div>
                         </div>

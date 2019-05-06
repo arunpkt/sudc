@@ -88,7 +88,9 @@ p {
     margin-top: 45px;
 }
 
-
+.grey{
+    color: #8e8c8c;
+}
 
 .breadcrumb > li {
     font-size: 14px
@@ -2686,19 +2688,48 @@ p.signup-policy {
 .border-bottom {
     border-bottom: 1px solid #000;
 }
+.discount .custom-select{
+    width: 100%;
+    padding: 10px;
+}
+.advanced-modal-head, .advanced-modal-body {
+    padding: 0px 35px!important;
+}
+.advanced-modal label input[type="radio"] {
+    display: block;
+}
+.width_50 {
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+.advanced-modal .list-group {
+    padding-left: 0;
+    margin-bottom: 5px;
+}
 
+.advanced-modal button.btn.btn-default {
+    background-color: #9e9a9a;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.advanced-modal .form-control, .advanced-modal .btn{
+  border-radius: 0px;
+}
+.advanced-modal-head h3 {
+    font-weight: 600;
+}
+.advanced-modal-body .search_term label, .advanced-modal-body .price label, .advanced-modal-body .discount label, .advanced-modal-body .location label {
+    margin-top: 20px; 
+    margin-bottom: 5px;
+}
+.advanced-modal-body form-group {
+    margin-bottom: 0;
+}
+.advanced-modal-body  .submit {
+    margin-bottom: 35px;
+    margin-top : 30px;
+    width: 20%;
+}
 
 
 
