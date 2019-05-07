@@ -136,12 +136,13 @@
 padding:0;
 }*/
 .tp_sr input.form-control {
-    padding: 24px 10px;
+    padding: 18px 10px;
 }
 .tp_sr .input-group-btn button.btn.btn-default {
-    padding: 10px 35px 9px;
-    background: #9c9898;
+    padding: 8px 16px 8px;
+    background: #000000;
     line-height: 0;
+
 }
 .tp_sr .input-group-btn button.btn.btn-default img{
     width:25px;
@@ -320,8 +321,14 @@ padding:0;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.search_bar .fas {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+}
+
 .shop_review .rc_drp {
-    margin-top: 15px;
+    margin-top: 5px;
     padding-right: 0;
 }
 .shop_review .pagination {
