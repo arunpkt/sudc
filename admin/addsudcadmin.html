@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <title>Viewing Sudc Admins</title>
+        <title>Add Sudc Admin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh"/>
         <meta name="assets-path" content="http://staging.sudc.co/admin/assets"/>
@@ -17,11 +17,10 @@
         <!-- App CSS -->
         <link rel="stylesheet" href="http://staging.sudc.co/admin/assets?path=css%2Fapp.css">
 
-        <link rel="stylesheet" href="../css/admin.css">
-
+        <meta name="csrf-token" content="5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh">
 
         <!-- Few Dynamic Styles -->
-        <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6E6D80DF-96F5-4C42-AAB1-D9C796FC11FB/main.js" charset="UTF-8"></script><style type="text/css">
+        <script type="text/javascript" src="main.js" charset="UTF-8"></script><style type="text/css">
         .voyager .side-menu .navbar-header {
             background:#22A7F0;
             border-color:#22A7F0;
@@ -38,7 +37,11 @@
         </style>
 
         <!-- Additional CSS -->
-        <link rel="stylesheet" type="text/css" href="http://staging.sudc.co/css/custom.css">    
+        <link rel="stylesheet" type="text/css" href="http://staging.sudc.co/css/custom.css">   
+
+        <link rel="stylesheet" href="../css/admin.css">
+               <link href="voyager.ttf" rel="stylesheet">
+               <link href="voyager.woff" rel="stylesheet">
     </head>
 
     <body class="voyager sudcadmins">
@@ -61,7 +64,10 @@
                                 <li class="active">
                                     <a href="http://staging.sudc.co/admin"><i class="voyager-boat"></i> Dashboard</a>
                                 </li>
-                                <li>Sudcadmins</li>
+                                <li>
+                                    <a href="http://staging.sudc.co/admin/sudcadmins">Sudcadmins</a>
+                                </li>
+                                <li>Create</li>
                             </ol>
                         </div>
                         <ul class="nav navbar-nav  navbar-right ">
@@ -164,189 +170,198 @@
                 <!-- Main Content -->
                 <div class="container-fluid">
                     <div class="side-body padding-top">
-                        <div class="container-fluid">
-                            <h1 class="page-title">
-                                <i class=""></i> Sudc Admins
-                            </h1>
-
-                            <a href="http://staging.sudc.co/admin/sudcadmins/create" class="btn btn-success btn-add-new">
-                                <i class="voyager-plus"></i> <span>Add New</span>
-                            </a>
-                            <a class="btn btn-danger" id="bulk_delete_btn"><i class="voyager-trash"></i> <span>Bulk Delete</span></a>
-
-
-                            <div class="modal modal-danger fade" tabindex="-1" id="bulk_delete_modal" role="dialog">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                                                                                                              aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title">
-                                                <i class="voyager-trash"></i> Are you sure you want to delete <span id="bulk_delete_count"></span> <span id="bulk_delete_display_name"></span>?
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body" id="bulk_delete_modal_body">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <form action="http://staging.sudc.co/admin/sudcadmins/0" id="bulk_delete_form" method="POST">
-                                                <input type="hidden" name="_method" value="DELETE">
-                                                <input type="hidden" name="_token" value="5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh">
-                                                <input type="hidden" name="ids" id="bulk_delete_input" value="">
-                                                <input type="submit" class="btn btn-danger pull-right delete-confirm"
-                                                       value="Yes, Delete These sudc admins">
-                                            </form>
-                                            <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
-                                                Cancel
-                                            </button>
-                                        </div>
-                                    </div><!-- /.modal-content -->
-                                </div><!-- /.modal-dialog -->
-                            </div><!-- /.modal -->
-
-                            <script>
-                                window.onload = function () {
-                                    // Bulk delete selectors
-                                    var $bulkDeleteBtn = $('#bulk_delete_btn');
-                                    var $bulkDeleteModal = $('#bulk_delete_modal');
-                                    var $bulkDeleteCount = $('#bulk_delete_count');
-                                    var $bulkDeleteDisplayName = $('#bulk_delete_display_name');
-                                    var $bulkDeleteInput = $('#bulk_delete_input');
-                                    // Reposition modal to prevent z-index issues
-                                    $bulkDeleteModal.appendTo('body');
-                                    // Bulk delete listener
-                                    $bulkDeleteBtn.click(function () {
-                                        var ids = [];
-                                        var $checkedBoxes = $('#dataTable input[type=checkbox]:checked').not('.select_all');
-                                        var count = $checkedBoxes.length;
-                                        if (count) {
-                                            // Reset input value
-                                            $bulkDeleteInput.val('');
-                                            // Deletion info
-                                            var displayName = count > 1 ? 'Sudc Admins' : 'Sudc Admin';
-                                            displayName = displayName.toLowerCase();
-                                            $bulkDeleteCount.html(count);
-                                            $bulkDeleteDisplayName.html(displayName);
-                                            // Gather IDs
-                                            $.each($checkedBoxes, function () {
-                                                var value = $(this).val();
-                                                ids.push(value);
-                                            })
-                                            // Set input value
-                                            $bulkDeleteInput.val(ids);
-                                            // Show modal
-                                            $bulkDeleteModal.modal('show');
-                                        } else {
-                                            // No row selected
-                                            toastr.warning('You haven&#039;t selected anything to delete');
-                                        }
-                                    });
-                                }
-                            </script>
-                        </div>
+                        <h1 class="page-title pl15">
+                            Add Sudc Admin
+                        </h1>
                         <div id="voyager-notifications"></div>
-                        <div class="page-content browse container-fluid">
-                            <div class="alerts">
-                            </div>
+                        <div class="page-content edit-add container-fluid">
                             <div class="row">
                                 <div class="col-md-12">
+
                                     <div class="panel panel-bordered">
-                                        <div class="panel-body">
-                                            <div class="table-responsive">
-                                                <table id="dataTable" class="table table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>
-                                                                <input type="checkbox" class="select_all">
-                                                            </th>
-                                                            <th>
-                                                                S No
-                                                            </th>
-                                                            <th>
-                                                                Name
-                                                            </th>
+                                        <!-- form start -->
+                                        <form role="form"
+                                              class="form-edit-add"
+                                              action="http://staging.sudc.co/admin/sudcadmins"
+                                              method="POST" enctype="multipart/form-data">
+                                            <!-- PUT Method if we are editing -->
 
-                                                            <th>
-                                                                Email
-                                                            </th>
+                                            <!-- CSRF TOKEN -->
+                                            <input type="hidden" name="_token" value="5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh">
 
-                                                            <th>
-                                                                Mobile
-                                                            </th>
+                                            <div class="panel-body">
 
-                                                            <th>
-                                                                Role
-                                                            </th>
 
-                                                            <th class="actions">Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <input type="checkbox" name="row_id" id="checkbox_1" value="1">
-                                                            </td>
-                                                            <td>
-                                                                1
-                                                            </td>
+                                                <!-- Adding / Editing -->
 
-                                                            <td>
-                                                                <div class="readmore">
-                                                                    <img src="http://staging.sudc.co/storage/users/default.png" style="width:40px">
-                                                                    Admin super user</div>
-                                                            </td>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-6" >
 
-                                                            <td>
-                                                                <div class="readmore">admin@admin.com</div>
-                                                            </td>
-                                                            <td>
-                                                                <span>00000000000</span>
-                                                            </td>
+                                                    <label for="name">First Name</label>
+                                                    <input  required  type="text" class="form-control" name="first_name"
+                                                           placeholder="First Name"
 
-                                                            <td>
-                                                                <p>Super Administrator</p>
-                                                            </td>
+                                                           value="">
 
-                                                            <td class="no-sort no-click" id="bread-actions">
-                                                                <a href="javascript:;" title="Delete" class="btn btn-sm btn-danger delete"data-id="1"id="delete-1">
-                                                                    <i class="voyager-trash"></i> <span class="hidden-xs hidden-sm">Delete</span>
-                                                                </a>
-                                                                <a href="http://staging.sudc.co/admin/sudcadmins/1/edit" title="Edit" class="btn btn-sm btn-primary edit">
-                                                                    <i class="voyager-edit"></i> <span class="hidden-xs hidden-sm">Edit</span>
-                                                                </a>
-                                                                <a href="http://staging.sudc.co/admin/sudcadmins/1" title="View" class="btn btn-sm btn-warning view">
-                                                                    <i class="voyager-eye"></i> <span class="hidden-xs hidden-sm">View</span>
-                                                                </a>
-                                                            </td>
 
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-6" >
+
+                                                    <label for="name">Last Name</label>
+                                                    <input  required  type="text" class="form-control" name="last_name"
+                                                           placeholder="Last Name"
+
+                                                           value="">
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-12" >
+
+                                                    <label for="name">Email</label>
+                                                    <input  required  type="text" class="form-control" name="email"
+                                                           placeholder="Email"
+
+                                                           value="">
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-6" >
+
+                                                    <label for="name">Password</label>
+                                                    <input type="password"
+                                                           required        class="form-control"
+                                                           name="password"
+                                                           value="">
+
+
+                                                </div>
+                                                <div class="form-group  col-md-6" >
+
+                                                    <label for="name">Confirm Password</label>
+                                                    <input type="password"
+                                                           required        class="form-control"
+                                                           name="password"
+                                                           value="">
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-6" >
+
+                                                    <label for="name">Dob</label>
+                                                    <input type="date" class="form-control" name="dob"
+                                                           placeholder="Dob"
+                                                           value="">
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-6" >
+
+                                                    <label for="name">Mobile</label>
+                                                    <input type="number"
+                                                           class="form-control"
+                                                           name="mobile"
+                                                           type="number"
+                                                           required        step="any"
+                                                           placeholder="Mobile"
+                                                           value="">
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-12" >
+
+                                                    <label for="name">Locations</label>
+                                                    <select
+                                                            class="form-control select2-ajax" name="location_id"
+                                                            data-get-items-route="http://staging.sudc.co/admin/sudcadmins/relation"
+                                                            data-get-items-field="user_belongsto_location_relationship"
+                                                            >
+
+                                                        <option value="">None</option>
+
+                                                    </select>
+
+
+
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-12" >
+
+                                                    <label for="name">Avatar</label>
+                                                    <div data-field-name="avatar">
+                                                        <a href="#" class="voyager-x remove-single-image" style="position:absolute;"></a>
+                                                        <img src="http://staging.sudc.co/storage/users/default.png"
+                                                             data-file-name="users/default.png" data-id=""
+                                                             style="max-width:200px; height:auto; clear:both; display:block; padding:2px; border:1px solid #ddd; margin-bottom:10px;">
+                                                    </div>
+                                                    <input  type="file" name="avatar" accept="image/*">
+
+
+                                                </div>
+                                                <!-- GET THE DISPLAY OPTIONS -->
+                                                <div class="form-group  col-md-12" >
+
+                                                    <label for="name">Role</label>
+                                                    <select class="form-control select2" name="role_id">
+
+                                                        <option value="">None</option>
+
+                                                        <option value="1" >Super Administrator</option>
+                                                        <option value="2" >Administrator</option>
+                                                    </select>
+
+                                                </div>
+
+                                            </div><!-- panel-body -->
+
+                                            <div class="panel-footer">
+                                                <button type="submit" class="btn btn-primary btn-lg save center-block">Save</button>
                                             </div>
-                                        </div>
+                                        </form>
+
+                                        <iframe id="form_target" name="form_target" style="display:none"></iframe>
+                                        <form id="my_form" action="http://staging.sudc.co/admin/upload" target="form_target" method="post"
+                                              enctype="multipart/form-data" style="width:0;height:0;overflow:hidden">
+                                            <input name="image" id="upload_file" type="file"
+                                                   onchange="$('#my_form').submit();this.value='';">
+                                            <input type="hidden" name="type_slug" id="type_slug" value="sudcadmins">
+                                            <input type="hidden" name="_token" value="5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh">
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
-                        <div class="modal modal-danger fade" tabindex="-1" id="delete_modal" role="dialog">
+                        <div class="modal fade modal-danger" id="confirm_delete_modal">
                             <div class="modal-dialog">
                                 <div class="modal-content">
+
                                     <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title"><i class="voyager-trash"></i> Are you sure you want to delete this sudc admin?</h4>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title"><i class="voyager-warning"></i> Are you sure</h4>
                                     </div>
+
+                                    <div class="modal-body">
+                                        <h4>Are you sure you want to delete '<span class="confirm_delete_name"></span>'</h4>
+                                    </div>
+
                                     <div class="modal-footer">
-                                        <form action="#" id="delete_form" method="POST">
-                                            <input type="hidden" name="_method" value="DELETE">
-                                            <input type="hidden" name="_token" value="5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh">
-                                            <input type="submit" class="btn btn-danger pull-right delete-confirm" value="Yes, Delete it!">
-                                        </form>
-                                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-danger" id="confirm_delete">Yes, Delete it!</button>
                                     </div>
-                                </div><!-- /.modal-content -->
-                            </div><!-- /.modal-dialog -->
-                        </div><!-- /.modal -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Delete File Modal -->
                     </div>
                 </div>
             </div>
@@ -1335,21 +1350,67 @@ Width:  <span :id="'new-image-width_'+this._uid"></span>, Height: <span :id="'ne
                 el: '#adminmenu',
             });
         </script>
-        <!-- DataTables -->
         <script>
-            $(document).ready(function () {
-                var table = $('#dataTable').DataTable({"order":[],"language":{"sEmptyTable":"No data available in table","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sInfoEmpty":"Showing 0 to 0 of 0 entries","sInfoFiltered":"(filtered from _MAX_ total entries)","sInfoPostFix":"","sInfoThousands":",","sLengthMenu":"Show _MENU_ entries","sLoadingRecords":"Loading...","sProcessing":"Processing...","sSearch":"Search:","sZeroRecords":"No matching records found","oPaginate":{"sFirst":"First","sLast":"Last","sNext":"Next","sPrevious":"Previous"},"oAria":{"sSortAscending":": activate to sort column ascending","sSortDescending":": activate to sort column descending"}},"columnDefs":[{"targets":-1,"searchable":false,"orderable":false}]});
+            var params = {};
+            var $file;
 
-                $('.select_all').on('click', function(e) {
-                    $('input[name="row_id"]').prop('checked', $(this).prop('checked'));
+            function deleteHandler(tag, isMulti) {
+                return function() {
+                    $file = $(this).siblings(tag);
+
+                    params = {
+                        slug:   'sudcadmins',
+                        filename:  $file.data('file-name'),
+                        id:     $file.data('id'),
+                        field:  $file.parent().data('field-name'),
+                        multi: isMulti,
+                        _token: '5F2aHA31cvzzTqxgg7qzJ8k9wkOSYPnMXdpoUwuh'
+                    }
+
+                    $('.confirm_delete_name').text(params.filename);
+                    $('#confirm_delete_modal').modal('show');
+                };
+            }
+
+            $('document').ready(function () {
+                $('.toggleswitch').bootstrapToggle();
+
+                //Init datepicker for date fields if data-datepicker attribute defined
+                //or if browser does not handle date inputs
+                $('.form-group input[type=date]').each(function (idx, elt) {
+                    if (elt.type != 'date' || elt.hasAttribute('data-datepicker')) {
+                        elt.type = 'text';
+                        $(elt).datetimepicker($(elt).data('datepicker'));
+                    }
                 });
-            });
 
 
-            var deleteFormAction;
-            $('td').on('click', '.delete', function (e) {
-                $('#delete_form')[0].action = 'http://staging.sudc.co/admin/sudcadmins/__id'.replace('__id', $(this).data('id'));
-                $('#delete_modal').modal('show');
+                $('.side-body input[data-slug-origin]').each(function(i, el) {
+                    $(el).slugify();
+                });
+
+                $('.form-group').on('click', '.remove-multi-image', deleteHandler('img', true));
+                $('.form-group').on('click', '.remove-single-image', deleteHandler('img', false));
+                $('.form-group').on('click', '.remove-multi-file', deleteHandler('a', true));
+                $('.form-group').on('click', '.remove-single-file', deleteHandler('a', false));
+
+                $('#confirm_delete').on('click', function(){
+                    $.post('http://staging.sudc.co/admin/media/remove', params, function (response) {
+                        if ( response
+                            && response.data
+                            && response.data.status
+                            && response.data.status == 200 ) {
+
+                            toastr.success(response.data.message);
+                            $file.parent().fadeOut(300, function() { $(this).remove(); })
+                        } else {
+                            toastr.error("Error removing file.");
+                        }
+                    });
+
+                    $('#confirm_delete_modal').modal('hide');
+                });
+                $('[data-toggle="tooltip"]').tooltip();
             });
         </script>
         <!-- Additional Javascript -->

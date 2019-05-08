@@ -1,0 +1,24 @@
+.page-title {
+    padding-left: 0px;
+}
+ table.dataTable thead>tr>th {
+    padding: 10px 5px;
+    border-bottom: 1px solid #111;
+     width: auto!important;
+}
+table.dataTable tbody td, table.dataTable tbody th {
+    padding: 10px 5px;
+}
+a.view span, a.edit span,a.delete span{
+  display: none;
+}
+a.view, a.edit,a.delete {
+    border-radius: 15px !important;
+}
+.voyager .pagination .active>a, .voyager .pagination .active>a:focus, .voyager .pagination .active>a:hover, .voyager .pagination .active>span:focus, .voyager .pagination .active>span:hover, .voyager .pagination .active span {
+    background-color: #c1c1c1;
+    border-color: #c1c1c1;
+}
+.pl15 {
+    padding-left: 15px;
+}
