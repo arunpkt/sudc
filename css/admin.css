@@ -12,7 +12,7 @@ table.dataTable tbody td, table.dataTable tbody th {
 a.view span, a.edit span,a.delete span{
   display: none;
 }
-a.view, a.edit,a.delete {
+a.view, a.edit,a.delete, a.btn-shop , a.btn-document {
     border-radius: 15px !important;
 }
 .voyager .pagination .active>a, .voyager .pagination .active>a:focus, .voyager .pagination .active>a:hover, .voyager .pagination .active>span:focus, .voyager .pagination .active>span:hover, .voyager .pagination .active span {
