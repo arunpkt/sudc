@@ -578,6 +578,10 @@ section.shop_banner {
     .product_list_filter h2 {
         display: block!important;
     }
+     .prodt_page .grid-img {
+        /* min-height: 180px; */
+        height: 140px!important;
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -647,6 +651,7 @@ section.shop_banner {
         padding-right: 0;
         padding-left: 15px
     }
+   
 
 }
 

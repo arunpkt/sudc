@@ -1527,10 +1527,6 @@ section.top_stores .grid-arr {
 .filled {
     color:#f4da7a!important;
 }
-.prodt_page .grid-img {
-    min-height: 180px;
-    max-height: 200px;
-}
 .rcmd_for_u .grid-img , .top_dscnts_fr_u .grid-img{
     min-height: 130px;
     max-height: 150px;
