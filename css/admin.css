@@ -1,19 +1,20 @@
 .page-title {
     padding-left: 0px;
 }
- table.dataTable thead>tr>th {
+table.dataTable thead>tr>th {
     padding: 10px 5px;
     border-bottom: 1px solid #111;
-     width: auto!important;
+    width: auto!important;
 }
 table.dataTable tbody td, table.dataTable tbody th {
     padding: 10px 5px;
 }
 a.view span, a.edit span,a.delete span{
-  display: none;
+    display: none;
 }
 a.view, a.edit,a.delete, a.btn-shop , a.btn-document {
     border-radius: 15px !important;
+    margin-left: 5px;
 }
 .voyager .pagination .active>a, .voyager .pagination .active>a:focus, .voyager .pagination .active>a:hover, .voyager .pagination .active>span:focus, .voyager .pagination .active>span:hover, .voyager .pagination .active span {
     background-color: #c1c1c1;
@@ -21,4 +22,46 @@ a.view, a.edit,a.delete, a.btn-shop , a.btn-document {
 }
 .pl15 {
     padding-left: 15px;
+}
+body.login .logo {
+    max-width: 60px;
+    padding-top: 53px;
+    padding-bottom: 20px;
+}
+
+body.login .copy h1 {
+    margin: 23px 0 0 5px;
+}
+body.login .copy p {
+    left: 5px;
+    position: relative;
+    top: -14px;
+}
+body.login .login-button {
+    width: 100%;
+}
+
+body.login .form-group-default {
+    border: none;
+    border-bottom: 2px solid rgba(28,43,54,.07);
+    border-radius: 0px;
+}
+.home_banner {
+    background-image: url("http://staging.sudc.co/admin/assets?path=images%2Fbg.jpg");
+}
+.voyager input[type=file] {
+    border: 0px solid #f1f1f1;
+}
+button.btn.btn-primary.btn-lg.save.center-block {
+    width: 200px;
+}
+.app-container .content-container .side-menu .navbar-header .navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+.ml15{
+    margin-left: 15px!important;
+}
+.readmore img{
+    margin-right: 5px;
 }

@@ -1,1518 +1,1420 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <title>Viewing Vendors</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d"/>
-    <meta name="assets-path" content="http://staging.sudc.co/admin/assets"/>
+    <head>
+        <title>Viewing Vendors</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d"/>
+        <meta name="assets-path" content="http://staging.sudc.co/admin/assets"/>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="http://staging.sudc.co/admin/assets?path=images%2Flogo-icon.png" type="image/x-icon">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="http://staging.sudc.co/admin/assets?path=images%2Flogo-icon.png" type="image/x-icon">
 
 
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="http://staging.sudc.co/admin/assets?path=css%2Fapp.css">
+        <!-- App CSS -->
+        <link rel="stylesheet" href="http://staging.sudc.co/admin/assets?path=css%2Fapp.css">
 
-        
-    <!-- Few Dynamic Styles -->
-    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6E6D80DF-96F5-4C42-AAB1-D9C796FC11FB/main.js" charset="UTF-8"></script><style type="text/css">
-        .voyager .side-menu .navbar-header {
-            background:#22A7F0;
-            border-color:#22A7F0;
-        }
-        .widget .btn-primary{
-            border-color:#22A7F0;
-        }
-        .widget .btn-primary:focus, .widget .btn-primary:hover, .widget .btn-primary:active, .widget .btn-primary.active, .widget .btn-primary:active:focus{
-            background:#22A7F0;
-        }
-        .voyager .breadcrumb a{
-            color:#22A7F0;
-        }
-    </style>
 
-    <!-- Additional CSS -->
+        <!-- Few Dynamic Styles -->
+        <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6E6D80DF-96F5-4C42-AAB1-D9C796FC11FB/main.js" charset="UTF-8"></script>
+        <style type="text/css">
+            .voyager .side-menu .navbar-header {
+                background:#22A7F0;
+                border-color:#22A7F0;
+            }
+            .widget .btn-primary{
+                border-color:#22A7F0;
+            }
+            .widget .btn-primary:focus, .widget .btn-primary:hover, .widget .btn-primary:active, .widget .btn-primary.active, .widget .btn-primary:active:focus{
+                background:#22A7F0;
+            }
+            .voyager .breadcrumb a{
+                color:#22A7F0;
+            }
+        </style>
+
+        <!-- Additional CSS -->
         <link rel="stylesheet" type="text/css" href="http://staging.sudc.co/css/custom.css">    
+        <link rel="stylesheet" href="../css/admin.css">
     </head>
 
-<body class="voyager vendors">
+    <body class="voyager vendors">
 
-<div id="voyager-loader">
-                <img src="http://staging.sudc.co/admin/assets?path=images%2Flogo-icon.png" alt="Voyager Loader">
-    </div>
-
-
-<div class="app-container">
-    <div class="fadetoblack visible-xs"></div>
-    <div class="row content-container">
-        <nav class="navbar navbar-default navbar-fixed-top navbar-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="hamburger btn-link">
-                <span class="hamburger-inner"></span>
-            </button>
-                        <ol class="breadcrumb hidden-xs">
-                                                    <li class="active">
-                        <a href="http://staging.sudc.co/admin"><i class="voyager-boat"></i> Dashboard</a>
-                    </li>
-                                                                                                <li>Vendors</li>
-                                                                        </ol>
-                    </div>
-        <ul class="nav navbar-nav  navbar-right ">
-            <li class="dropdown profile">
-                <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
-                   aria-expanded="false"><img src="http://staging.sudc.co/storage/users/default.png" class="profile-img"> <span
-                            class="caret"></span></a>
-                <ul class="dropdown-menu dropdown-menu-animated">
-                    <li class="profile-img">
-                        <img src="http://staging.sudc.co/storage/users/default.png" class="profile-img">
-                        <div class="profile-body">
-                            <h5></h5>
-                            <h6>admin@admin.com</h6>
-                        </div>
-                    </li>
-                    <li class="divider"></li>
-                                                                                <li class="class-full-of-rum">
-                                                <a href="http://staging.sudc.co/admin/profile" >
-                                                        <i class="voyager-person"></i>
-                                                        Profile
-                        </a>
-                                            </li>
-                                        <li >
-                                                <a href="/" target="_blank">
-                                                        <i class="voyager-home"></i>
-                                                        Home
-                        </a>
-                                            </li>
-                                        <li >
-                                                <form action="http://staging.sudc.co/admin/logout" method="POST">
-                            <input type="hidden" name="_token" value="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d">
-                            <button type="submit" class="btn btn-danger btn-block">
-                                                                <i class="voyager-power"></i>
-                                                                Logout
-                            </button>
-                        </form>
-                                            </li>
-                                                        </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-        <div class="side-menu sidebar-inverse">
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="side-menu-container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="http://staging.sudc.co/admin">
-                    <div class="logo-icon-container">
-                                                                            <img src="http://staging.sudc.co/admin/assets?path=images%2Flogo-icon-light.png" alt="Logo Icon">
-                                            </div>
-                    <div class="title">Voyager</div>
-                </a>
-            </div><!-- .navbar-header -->
-
-            <div class="panel widget center bgimage"
-                 style="background-image:url(http://staging.sudc.co/admin/assets?path=images%2Fbg.jpg); background-size: cover; background-position: 0px;">
-                <div class="dimmer"></div>
-                <div class="panel-content">
-                    <img src="http://staging.sudc.co/storage/users/default.png" class="avatar" alt=" avatar">
-                    <h4></h4>
-                    <p>admin@admin.com</p>
-
-                    <a href="http://staging.sudc.co/admin/profile" class="btn btn-primary">Profile</a>
-                    <div style="clear:both"></div>
-                </div>
-            </div>
-
+        <div id="voyager-loader">
+            <img src="assets_002.png" alt="Voyager Loader">
         </div>
-        <div id="adminmenu">
-            <admin-menu :items="[{&quot;id&quot;:1,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Dashboard&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-boat&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:1,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;route&quot;:&quot;voyager.dashboard&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin&quot;,&quot;active&quot;:false,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:19,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;User&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-group&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:2,&quot;created_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:null,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co&quot;,&quot;active&quot;:true,&quot;children&quot;:[{&quot;id&quot;:18,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Sudc Admins&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-people&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;parent_id&quot;:19,&quot;order&quot;:1,&quot;created_at&quot;:&quot;2019-03-03 07:06:00&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:&quot;voyager.sudcadmins.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/sudcadmins&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:3,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Users&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-person&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:19,&quot;order&quot;:2,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:&quot;voyager.users.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/users&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:20,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Vendors&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-company&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;parent_id&quot;:19,&quot;order&quot;:3,&quot;created_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:&quot;voyager.vendors.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/vendors&quot;,&quot;active&quot;:true,&quot;children&quot;:[],&quot;translations&quot;:[]}],&quot;translations&quot;:[]},{&quot;id&quot;:11,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Categories&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-categories&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:5,&quot;created_at&quot;:&quot;2019-02-27 08:20:44&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.categories.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/categories&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:15,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Locations&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-location&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;parent_id&quot;:null,&quot;order&quot;:7,&quot;created_at&quot;:&quot;2019-02-27 08:56:44&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.locations.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/locations&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:4,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Roles&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-lock&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:8,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.roles.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/roles&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:5,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Tools&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-tools&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:9,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:null,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co&quot;,&quot;active&quot;:false,&quot;children&quot;:[{&quot;id&quot;:6,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Menu Builder&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-list&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:1,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-02-27 11:10:23&quot;,&quot;route&quot;:&quot;voyager.menus.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/menus&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:7,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Database&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-data&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:2,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-02-27 11:10:25&quot;,&quot;route&quot;:&quot;voyager.database.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/database&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:8,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Compass&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-compass&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:3,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.compass.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/compass&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:9,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;BREAD&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-bread&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:4,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.bread.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/bread&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:12,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Hooks&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-hook&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:5,&quot;created_at&quot;:&quot;2019-02-27 08:22:10&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.hooks&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/hooks&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:2,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Media&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-images&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:6,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.media.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/media&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:13,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Posts&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-news&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:7,&quot;created_at&quot;:&quot;2019-02-27 08:37:06&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.posts.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/posts&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:14,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Pages&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-file-text&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:8,&quot;created_at&quot;:&quot;2019-02-27 08:37:07&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.pages.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/pages&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]}],&quot;translations&quot;:[]},{&quot;id&quot;:10,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Settings&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-settings&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:10,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.settings.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/settings&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]}]"></admin-menu>
-        </div>
-    </nav>
-</div>
-        <script>
-            (function(){
-                    var appContainer = document.querySelector('.app-container'),
-                        sidebar = appContainer.querySelector('.side-menu'),
-                        navbar = appContainer.querySelector('nav.navbar.navbar-top'),
-                        loader = document.getElementById('voyager-loader'),
-                        hamburgerMenu = document.querySelector('.hamburger'),
-                        sidebarTransition = sidebar.style.transition,
-                        navbarTransition = navbar.style.transition,
-                        containerTransition = appContainer.style.transition;
 
-                    sidebar.style.WebkitTransition = sidebar.style.MozTransition = sidebar.style.transition =
-                    appContainer.style.WebkitTransition = appContainer.style.MozTransition = appContainer.style.transition =
-                    navbar.style.WebkitTransition = navbar.style.MozTransition = navbar.style.transition = 'none';
 
-                    if (window.localStorage && window.localStorage['voyager.stickySidebar'] == 'true') {
-                        appContainer.className += ' expanded no-animation';
-                        loader.style.left = (sidebar.clientWidth/2)+'px';
-                        hamburgerMenu.className += ' is-active no-animation';
-                    }
-
-                   navbar.style.WebkitTransition = navbar.style.MozTransition = navbar.style.transition = navbarTransition;
-                   sidebar.style.WebkitTransition = sidebar.style.MozTransition = sidebar.style.transition = sidebarTransition;
-                   appContainer.style.WebkitTransition = appContainer.style.MozTransition = appContainer.style.transition = containerTransition;
-            })();
-        </script>
-        <!-- Main Content -->
-        <div class="container-fluid">
-            <div class="side-body padding-top">
+        <div class="app-container">
+            <div class="fadetoblack visible-xs"></div>
+            <div class="row content-container">
+                <nav class="navbar navbar-default navbar-fixed-top navbar-top">
                     <div class="container-fluid">
-        <h1 class="page-title">
-            <i class=""></i> Vendors
-        </h1>
-        
-                                    <a href="http://staging.sudc.co/admin/vendors/create" class="btn btn-success btn-add-new">
-                    <i class="voyager-plus"></i> <span>Add New</span>
-                </a>
-                                        <a class="btn btn-danger" id="bulk_delete_btn"><i class="voyager-trash"></i> <span>Bulk Delete</span></a>
-
-
-<div class="modal modal-danger fade" tabindex="-1" id="bulk_delete_modal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">
-                    <i class="voyager-trash"></i> Are you sure you want to delete <span id="bulk_delete_count"></span> <span id="bulk_delete_display_name"></span>?
-                </h4>
-            </div>
-            <div class="modal-body" id="bulk_delete_modal_body">
-            </div>
-            <div class="modal-footer">
-                <form action="http://staging.sudc.co/admin/vendors/0" id="bulk_delete_form" method="POST">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="_token" value="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d">
-                    <input type="hidden" name="ids" id="bulk_delete_input" value="">
-                    <input type="submit" class="btn btn-danger pull-right delete-confirm"
-                             value="Yes, Delete These vendors">
-                </form>
-                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
-                    Cancel
-                </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<script>
-window.onload = function () {
-    // Bulk delete selectors
-    var $bulkDeleteBtn = $('#bulk_delete_btn');
-    var $bulkDeleteModal = $('#bulk_delete_modal');
-    var $bulkDeleteCount = $('#bulk_delete_count');
-    var $bulkDeleteDisplayName = $('#bulk_delete_display_name');
-    var $bulkDeleteInput = $('#bulk_delete_input');
-    // Reposition modal to prevent z-index issues
-    $bulkDeleteModal.appendTo('body');
-    // Bulk delete listener
-    $bulkDeleteBtn.click(function () {
-        var ids = [];
-        var $checkedBoxes = $('#dataTable input[type=checkbox]:checked').not('.select_all');
-        var count = $checkedBoxes.length;
-        if (count) {
-            // Reset input value
-            $bulkDeleteInput.val('');
-            // Deletion info
-            var displayName = count > 1 ? 'Vendors' : 'Vendor';
-            displayName = displayName.toLowerCase();
-            $bulkDeleteCount.html(count);
-            $bulkDeleteDisplayName.html(displayName);
-            // Gather IDs
-            $.each($checkedBoxes, function () {
-                var value = $(this).val();
-                ids.push(value);
-            })
-            // Set input value
-            $bulkDeleteInput.val(ids);
-            // Show modal
-            $bulkDeleteModal.modal('show');
-        } else {
-            // No row selected
-            toastr.warning('You haven&#039;t selected anything to delete');
-        }
-    });
-}
-</script>
-                                                                        </div>
-                <div id="voyager-notifications"></div>
-                    <div class="page-content browse container-fluid">
-        <div class="alerts">
-    </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-bordered">
-                    <div class="panel-body">
-                                                <div class="table-responsive">
-                            <table id="dataTable" class="table table-hover">
-                                <thead>
-                                    <tr>
-                                                                                    <th>
-                                                <input type="checkbox" class="select_all">
-                                            </th>
-                                                                                                                        <th>
-                                                                                        First Name
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Last Name
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Email
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Dob
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Created At
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Mobile
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Locations
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Avatar
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Role
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Status
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Roles
-                                                                                    </th>
-                                                                                <th>
-                                                                                        Shops
-                                                                                    </th>
-                                                                                <th class="actions text-right">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                                                        <tr>
-                                                                                    <td>
-                                                <input type="checkbox" name="row_id" id="checkbox_4" value="4">
-                                            </td>
-                                                                                
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                                                                        <div class="readmore">test</div>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                                                                        <div class="readmore">jsc</div>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                                                                        <div class="readmore">riyas.1012@gmail.com</div>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    1989-12-10
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    2019-04-16 23:12:23
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                                                                        <span>9944213734</span>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    <p>chennai</p>
-                
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    <img src="http://staging.sudc.co/storage/users/default.png" style="width:100px">
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    <p>Vendor</p>
-                
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    <p>not active</p>
-                
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    <p>No results</p>
-                                    
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=4>
-                                            <td>
-                                                                                                    <p>No results</p>
-                                    
-            
-        
-    
-                                                                                            </td>
-                                                                                
-                                            <td class="no-sort no-click" id="bread-actions">
-                                                                                                    <a href="javascript:;" title="Delete" class="btn btn-sm btn-danger pull-right delete"data-id="4"id="delete-4">
-                <i class="voyager-trash"></i> <span class="hidden-xs hidden-sm">Delete</span>
-            </a>
-                                                                                                                                                                                                                    <a href="http://staging.sudc.co/admin/vendors/4/edit" title="Edit" class="btn btn-sm btn-primary pull-right edit">
-                <i class="voyager-edit"></i> <span class="hidden-xs hidden-sm">Edit</span>
-            </a>
-                                                                                                                <a href="http://staging.sudc.co/admin/vendors/4" title="View" class="btn btn-sm btn-warning pull-right view">
-                <i class="voyager-eye"></i> <span class="hidden-xs hidden-sm">View</span>
-            </a>
-                                                                                                                <a href="http://staging.sudc.co/admin/userdocuments?user_key=eyJpdiI6IlB6dzFPUmNFTlBZalVocW1rNFlOQnc9PSIsInZhbHVlIjoib2NrODc2M0grZ2k1cVNKcjFGUUFaUT09IiwibWFjIjoiYzQ1OWU4M2IwNjE3Mjc4MDdjMGYxNjVjYzQ0M2E0NzkwMGYwNGFkNWE3ZGEwZDI4YzRkNzljM2M0MGZjMGQ2NCJ9" title="Document" class="btn btn-sm btn-document pull-right view">
-                <i class="voyager-documentation"></i> <span class="hidden-xs hidden-sm">Document</span>
-            </a>
-                                                                                                                                                                                                            </td>
-                                       
-                                    </tr>
-                                                                        <tr>
-                                                                                    <td>
-                                                <input type="checkbox" name="row_id" id="checkbox_3" value="3">
-                                            </td>
-                                                                                
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                                                                        <div class="readmore">Karthi</div>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                                                                        <div class="readmore">keyan</div>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                                                                        <div class="readmore">karthi@gmail.com</div>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    1989-12-10
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    2019-04-11 21:34:17
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                                                                        <span>994421369</span>
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    <p>chennai</p>
-                
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    <img src="http://staging.sudc.co/storage/users/default.png" style="width:100px">
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    <p>Vendor</p>
-                
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    <p>active</p>
-                
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    <p>No results</p>
-                                    
-            
-        
-    
-                                                                                            </td>
-                                                                                <input type="hidden" name='user_id' value=3>
-                                            <td>
-                                                                                                    <p>chennai mobiles, poorvika...</p>
-                                    
-            
-        
-    
-                                                                                            </td>
-                                                                                
-                                            <td class="no-sort no-click" id="bread-actions">
-                                                                                                    <a href="javascript:;" title="Delete" class="btn btn-sm btn-danger pull-right delete"data-id="3"id="delete-3">
-                <i class="voyager-trash"></i> <span class="hidden-xs hidden-sm">Delete</span>
-            </a>
-                                                                                                                                                                                                                    <a href="http://staging.sudc.co/admin/vendors/3/edit" title="Edit" class="btn btn-sm btn-primary pull-right edit">
-                <i class="voyager-edit"></i> <span class="hidden-xs hidden-sm">Edit</span>
-            </a>
-                                                                                                                <a href="http://staging.sudc.co/admin/vendors/3" title="View" class="btn btn-sm btn-warning pull-right view">
-                <i class="voyager-eye"></i> <span class="hidden-xs hidden-sm">View</span>
-            </a>
-                                                                                                                <a href="http://staging.sudc.co/admin/userdocuments?user_key=eyJpdiI6IjBqM1prRjE2UFF3NmIwb0xpQWhGS3c9PSIsInZhbHVlIjoiRWplSWZuUUh0cDgwVFFKaHE3Z1BLZz09IiwibWFjIjoiNzcyNDQ3ZGU1MGZhM2EyZmRlNGJjMzIwYTc3OGE2ZGM2NGRjNjQyMjA5YmZlOGI5OGFkZjA4MmYyMDU3ZjJiMyJ9" title="Document" class="btn btn-sm btn-document pull-right view">
-                <i class="voyager-documentation"></i> <span class="hidden-xs hidden-sm">Document</span>
-            </a>
-                                                                                                                <a href="http://staging.sudc.co/admin/shop?user_key=eyJpdiI6InRTWW5vZmxzYzZ3WDBZOWJ1SElnT2c9PSIsInZhbHVlIjoibkJIa3EwVisrT3p1RkN0bERsRzdhZz09IiwibWFjIjoiOWE5OTAwYzhlODBjNTdkMWFiYWYyNGM1NmNkODdjMGM2OTMwNTQ3MzUxZWU5YTMwYzJjZDcyOGFlYTY3NDFkMCJ9" title="Shop" class="btn btn-sm btn-shop pull-right view">
-                    <i class="voyager-shop"></i> <span class="hidden-xs hidden-sm">Shop</span>
-                </a>
-                                                                                                                    </td>
-                                       
-                                    </tr>
-                                                                    </tbody>
-                            </table>
+                        <div class="navbar-header">
+                            <button class="hamburger btn-link">
+                                <span class="hamburger-inner"></span>
+                            </button>
+                            <ol class="breadcrumb hidden-xs">
+                                <li class="active">
+                                    <a href="http://staging.sudc.co/admin"><i class="voyager-boat"></i> Dashboard</a>
+                                </li>
+                                <li>Vendors</li>
+                            </ol>
                         </div>
-                                            </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="modal modal-danger fade" tabindex="-1" id="delete_modal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title"><i class="voyager-trash"></i> Are you sure you want to delete this vendor?</h4>
-                </div>
-                <div class="modal-footer">
-                    <form action="#" id="delete_form" method="POST">
-                        <input type="hidden" name="_method" value="DELETE">
-                        <input type="hidden" name="_token" value="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d">
-                        <input type="submit" class="btn btn-danger pull-right delete-confirm" value="Yes, Delete it!">
-                    </form>
-                    <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="app-footer">
-    <div class="site-footer-right">
-                    Made with <i class="voyager-heart"></i> by <a href="http://thecontrolgroup.com" target="_blank">The Control Group</a>
-                                    - v1.2.3
-            </div>
-</footer>
-
-<!-- Javascript Libs -->
-
-
-<script type="text/javascript" src="http://staging.sudc.co/admin/assets?path=js%2Fapp.js"></script>
-
-<script>
-    
-    </script>
-<script>
-    Vue.component('media-manager', {
-        template: `<div>
-    <div v-if="hidden_element" class="dd">
-        <ol id="files" class="dd-list">
-            <li v-for="file in getSelectedFiles()" class="dd-item" :data-url="file">
-                <div class="file_link selected" aria-hidden="true" data-toggle="tooltip" data-placement="auto" :title="file">
-                    <div class="link_icon">
-                        <template v-if="fileIs(file, 'image')">
-                            <div class="img_icon" :style="imgIcon('http://staging.sudc.co/storage/'+file)"></div>
-                        </template>
-                        <template v-else-if="fileIs(file, 'video')">
-                            <i class="icon voyager-video"></i>
-                        </template>
-                        <template v-else-if="fileIs(file, 'audio')">
-                            <i class="icon voyager-music"></i>
-                        </template>
-                        <template v-else-if="fileIs(file, 'zip')">
-                            <i class="icon voyager-archive"></i>
-                        </template>
-                        <template v-else-if="fileIs(file, 'folder')">
-                            <i class="icon voyager-folder"></i>
-                        </template>
-                        <template v-else>
-                            <i class="icon voyager-file-text"></i>
-                        </template>
+                        <ul class="nav navbar-nav  navbar-right ">
+                            <li class="dropdown profile">
+                                <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
+                                   aria-expanded="false"><img src="http://staging.sudc.co/storage/users/default.png" class="profile-img"> <span
+                                                                                                                                                class="caret"></span></a>
+                                <ul class="dropdown-menu dropdown-menu-animated">
+                                    <li class="profile-img">
+                                        <img src="http://staging.sudc.co/storage/users/default.png" class="profile-img">
+                                        <div class="profile-body">
+                                            <h5></h5>
+                                            <h6>admin@admin.com</h6>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="class-full-of-rum">
+                                        <a href="http://staging.sudc.co/admin/profile" >
+                                            <i class="voyager-person"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="/" target="_blank">
+                                            <i class="voyager-home"></i>
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <form action="http://staging.sudc.co/admin/logout" method="POST">
+                                            <input type="hidden" name="_token" value="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d">
+                                            <button type="submit" class="btn btn-danger btn-block">
+                                                <i class="voyager-power"></i>
+                                                Logout
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="details">
-                        <div class="folder">
-                            <h4>{{ getFileName(file) }}</h4>
-                        </div>
-                    </div>
-                    <i class="voyager-x dd-nodrag" v-on:click="removeFileFromInput(file)"></i>
-                </div>
-            </li>
-        </ol>
-    </div>
-    <div v-if="hidden_element">
-        <div class="btn btn-sm btn-default" v-on:click="expanded = !expanded;" style="width:100%">
-            <div v-if="!expanded"><i class="voyager-double-down"></i> Open</div>
-            <div v-if="expanded"><i class="voyager-double-up"></i> Close</div>
-        </div>
-    </div>
-    <div id="toolbar" v-if="showToolbar" :style="expanded ? 'display:block' : 'display:none'">
-        <div class="btn-group offset-right">
-            <button type="button" class="btn btn-primary" id="upload" v-if="allowUpload">
-                <i class="voyager-upload"></i>
-                Upload
-            </button>
-            <button type="button" class="btn btn-primary" v-if="allowCreateFolder" data-toggle="modal" :data-target="'#create_dir_modal_'+this._uid">
-                <i class="voyager-folder"></i>
-                Add Folder
-            </button>
-        </div>
-        <button type="button" class="btn btn-default" v-on:click="getFiles()">
-            <i class="voyager-refresh"></i>
-        </button>
-        <div class="btn-group offset-right">
-            <button type="button" v-if="showFolders && allowMove" class="btn btn-default" data-toggle="modal" :data-target="'#move_files_modal_'+this._uid">
-                <i class="voyager-move"></i>
-                Move
-            </button>
-            <button type="button" v-if="allowDelete" :disabled="selected_files.length == 0" class="btn btn-default" data-toggle="modal" :data-target="'#confirm_delete_modal_'+this._uid">
-                <i class="voyager-trash"></i>
-                Delete
-            </button>
-            <button v-if="allowCrop" :disabled="selected_files.length != 1 || !fileIs(selected_file, 'image')" type="button" class="btn btn-default" data-toggle="modal" :data-target="'#crop_modal_'+this._uid">
-                <i class="voyager-crop"></i>
-                Crop
-            </button>
-        </div>
-    </div>
-    <div id="uploadPreview" style="display:none;" v-if="allowUpload"></div>
-    <div id="uploadProgress" class="progress active progress-striped" v-if="allowUpload">
-        <div class="progress-bar progress-bar-success" style="width: 0"></div>
-    </div>
-    <div id="content" :style="expanded ? 'display:block' : 'display:none'">
-        <div class="breadcrumb-container">
-            <ol class="breadcrumb filemanager">
-                <li class="media_breadcrumb" v-on:click="setCurrentPath(-1)">
-                    <span class="arrow"></span>
-                    <strong>Media Library</strong>
-                </li>
-                <li v-for="(folder, i) in getCurrentPath()" v-on:click="setCurrentPath(i)">
-                    <span class="arrow"></span>
-                    {{ folder }}
-                </li>
-            </ol>
-        </div>
-        <div class="flex">
-            <div id="left">
-                <ul id="files">
-                    <li v-for="(file) in files" v-on:click="selectFile(file, $event)" v-on:dblclick="openFile(file)" v-if="filter(file)">
-                        <div :class="'file_link ' + (isFileSelected(file) ? 'selected' : '')">
-                            <div class="link_icon">
-                                <template v-if="fileIs(file, 'image')">
-                                    <div class="img_icon" :style="imgIcon(file.path)"></div>
-                                </template>
-                                <template v-else-if="fileIs(file, 'video')">
-                                    <i class="icon voyager-video"></i>
-                                </template>
-                                <template v-else-if="fileIs(file, 'audio')">
-                                    <i class="icon voyager-music"></i>
-                                </template>
-                                <template v-else-if="fileIs(file, 'zip')">
-                                    <i class="icon voyager-archive"></i>
-                                </template>
-                                <template v-else-if="fileIs(file, 'folder')">
-                                    <i class="icon voyager-folder"></i>
-                                </template>
-                                <template v-else>
-                                    <i class="icon voyager-file-text"></i>
-                                </template>
+                </nav>
+                <div class="side-menu sidebar-inverse">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="side-menu-container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="http://staging.sudc.co/admin">
+                                    <div class="logo-icon-container">
+                                        <img src="assets.png" alt="Logo Icon">
+                                    </div>
+                                    <div class="title">SUDC</div>
+                                </a>
+                            </div><!-- .navbar-header -->
+
+                            <div class="panel widget center bgimage"
+                                 style="background-image:url(http://staging.sudc.co/admin/assets?path=images%2Fbg.jpg); background-size: cover; background-position: 0px;">
+                                <div class="dimmer"></div>
+                                <div class="panel-content">
+                                    <img src="http://staging.sudc.co/storage/users/default.png" class="avatar" alt=" avatar">
+                                    <h4></h4>
+                                    <p>admin@admin.com</p>
+
+                                    <a href="http://staging.sudc.co/admin/profile" class="btn btn-primary">Profile</a>
+                                    <div style="clear:both"></div>
+                                </div>
                             </div>
-                            <div class="details">
-                                <div :class="file.type">
-                                    <h4>{{ file.name }}</h4>
-                                    <small v-if="!fileIs(file, 'folder')">
-                                        <span class="file_size">{{ bytesToSize(file.size) }}</span>
-                                    </small>
+
+                        </div>
+                        <div id="adminmenu">
+                            <admin-menu :items="[{&quot;id&quot;:1,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Dashboard&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-boat&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:1,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;route&quot;:&quot;voyager.dashboard&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin&quot;,&quot;active&quot;:false,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:19,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;User&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-group&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:2,&quot;created_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:null,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co&quot;,&quot;active&quot;:true,&quot;children&quot;:[{&quot;id&quot;:18,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Sudc Admins&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-people&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;parent_id&quot;:19,&quot;order&quot;:1,&quot;created_at&quot;:&quot;2019-03-03 07:06:00&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:&quot;voyager.sudcadmins.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/sudcadmins&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:3,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Users&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-person&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:19,&quot;order&quot;:2,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:&quot;voyager.users.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/users&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:20,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Vendors&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-company&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;parent_id&quot;:19,&quot;order&quot;:3,&quot;created_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;updated_at&quot;:&quot;2019-04-12 06:33:09&quot;,&quot;route&quot;:&quot;voyager.vendors.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/vendors&quot;,&quot;active&quot;:true,&quot;children&quot;:[],&quot;translations&quot;:[]}],&quot;translations&quot;:[]},{&quot;id&quot;:11,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Categories&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-categories&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:5,&quot;created_at&quot;:&quot;2019-02-27 08:20:44&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.categories.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/categories&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:15,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Locations&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-location&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;parent_id&quot;:null,&quot;order&quot;:7,&quot;created_at&quot;:&quot;2019-02-27 08:56:44&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.locations.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/locations&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:4,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Roles&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-lock&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:8,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.roles.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/roles&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:5,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Tools&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-tools&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:9,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:null,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co&quot;,&quot;active&quot;:false,&quot;children&quot;:[{&quot;id&quot;:6,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Menu Builder&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-list&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:1,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-02-27 11:10:23&quot;,&quot;route&quot;:&quot;voyager.menus.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/menus&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:7,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Database&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-data&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:2,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-02-27 11:10:25&quot;,&quot;route&quot;:&quot;voyager.database.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/database&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:8,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Compass&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-compass&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:3,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.compass.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/compass&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:9,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;BREAD&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-bread&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:4,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.bread.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/bread&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:12,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Hooks&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-hook&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:5,&quot;created_at&quot;:&quot;2019-02-27 08:22:10&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.hooks&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/hooks&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:2,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Media&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-images&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:6,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.media.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/media&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:13,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Posts&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-news&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:7,&quot;created_at&quot;:&quot;2019-02-27 08:37:06&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.posts.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/posts&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]},{&quot;id&quot;:14,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Pages&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-file-text&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:5,&quot;order&quot;:8,&quot;created_at&quot;:&quot;2019-02-27 08:37:07&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.pages.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/pages&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]}],&quot;translations&quot;:[]},{&quot;id&quot;:10,&quot;menu_id&quot;:1,&quot;title&quot;:&quot;Settings&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;icon_class&quot;:&quot;voyager-settings&quot;,&quot;color&quot;:null,&quot;parent_id&quot;:null,&quot;order&quot;:10,&quot;created_at&quot;:&quot;2019-02-27 08:20:40&quot;,&quot;updated_at&quot;:&quot;2019-03-03 07:06:18&quot;,&quot;route&quot;:&quot;voyager.settings.index&quot;,&quot;parameters&quot;:null,&quot;href&quot;:&quot;http:\/\/staging.sudc.co\/admin\/settings&quot;,&quot;children&quot;:[],&quot;translations&quot;:[]}]"></admin-menu>
+                        </div>
+                    </nav>
+                </div>
+                <script>
+                    (function(){
+                        var appContainer = document.querySelector('.app-container'),
+                            sidebar = appContainer.querySelector('.side-menu'),
+                            navbar = appContainer.querySelector('nav.navbar.navbar-top'),
+                            loader = document.getElementById('voyager-loader'),
+                            hamburgerMenu = document.querySelector('.hamburger'),
+                            sidebarTransition = sidebar.style.transition,
+                            navbarTransition = navbar.style.transition,
+                            containerTransition = appContainer.style.transition;
+
+                        sidebar.style.WebkitTransition = sidebar.style.MozTransition = sidebar.style.transition =
+                            appContainer.style.WebkitTransition = appContainer.style.MozTransition = appContainer.style.transition =
+                            navbar.style.WebkitTransition = navbar.style.MozTransition = navbar.style.transition = 'none';
+
+                        if (window.localStorage && window.localStorage['voyager.stickySidebar'] == 'true') {
+                            appContainer.className += ' expanded no-animation';
+                            loader.style.left = (sidebar.clientWidth/2)+'px';
+                            hamburgerMenu.className += ' is-active no-animation';
+                        }
+
+                        navbar.style.WebkitTransition = navbar.style.MozTransition = navbar.style.transition = navbarTransition;
+                        sidebar.style.WebkitTransition = sidebar.style.MozTransition = sidebar.style.transition = sidebarTransition;
+                        appContainer.style.WebkitTransition = appContainer.style.MozTransition = appContainer.style.transition = containerTransition;
+                    })();
+                </script>
+                <!-- Main Content -->
+                <div class="container-fluid">
+                    <div class="side-body padding-top">
+                        <div class="container-fluid">
+                            <h1 class="page-title">
+                                <i class=""></i> Vendors
+                            </h1>
+
+                            <a href="http://staging.sudc.co/admin/vendors/create" class="btn btn-success btn-add-new">
+                                <i class="voyager-plus"></i> <span>Add New</span>
+                            </a>
+                            <a class="btn btn-danger ml15" id="bulk_delete_btn"><i class="voyager-trash"></i> <span>Bulk Delete</span></a>
+
+
+                            <div class="modal modal-danger fade" tabindex="-1" id="bulk_delete_modal" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span
+                                                      aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">
+                                                <i class="voyager-trash"></i> Are you sure you want to delete <span id="bulk_delete_count"></span> <span id="bulk_delete_display_name"></span>?
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body" id="bulk_delete_modal_body">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <form action="http://staging.sudc.co/admin/vendors/0" id="bulk_delete_form" method="POST">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <input type="hidden" name="_token" value="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d">
+                                                <input type="hidden" name="ids" id="bulk_delete_input" value="">
+                                                <input type="submit" class="btn btn-danger pull-right delete-confirm"
+                                                       value="Yes, Delete These vendors">
+                                            </form>
+                                            <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+
+                            <script>
+                                window.onload = function () {
+                                    // Bulk delete selectors
+                                    var $bulkDeleteBtn = $('#bulk_delete_btn');
+                                    var $bulkDeleteModal = $('#bulk_delete_modal');
+                                    var $bulkDeleteCount = $('#bulk_delete_count');
+                                    var $bulkDeleteDisplayName = $('#bulk_delete_display_name');
+                                    var $bulkDeleteInput = $('#bulk_delete_input');
+                                    // Reposition modal to prevent z-index issues
+                                    $bulkDeleteModal.appendTo('body');
+                                    // Bulk delete listener
+                                    $bulkDeleteBtn.click(function () {
+                                        var ids = [];
+                                        var $checkedBoxes = $('#dataTable input[type=checkbox]:checked').not('.select_all');
+                                        var count = $checkedBoxes.length;
+                                        if (count) {
+                                            // Reset input value
+                                            $bulkDeleteInput.val('');
+                                            // Deletion info
+                                            var displayName = count > 1 ? 'Vendors' : 'Vendor';
+                                            displayName = displayName.toLowerCase();
+                                            $bulkDeleteCount.html(count);
+                                            $bulkDeleteDisplayName.html(displayName);
+                                            // Gather IDs
+                                            $.each($checkedBoxes, function () {
+                                                var value = $(this).val();
+                                                ids.push(value);
+                                            })
+                                            // Set input value
+                                            $bulkDeleteInput.val(ids);
+                                            // Show modal
+                                            $bulkDeleteModal.modal('show');
+                                        } else {
+                                            // No row selected
+                                            toastr.warning('You haven&#039;t selected anything to delete');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <div id="voyager-notifications"></div>
+                        <div class="page-content browse container-fluid">
+                            <div class="alerts">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-bordered">
+                                        <div class="panel-body">
+                                            <div class="table-responsive">
+                                                <table id="dataTable" class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <input type="checkbox" class="select_all">
+                                                            </th>
+                                                            <th>
+                                                                S No
+                                                            </th>
+                                                            <th>
+                                                                Name
+                                                            </th>
+
+                                                            <th>
+                                                                Email
+                                                            </th>
+
+                                                            <th>
+                                                                Mobile
+                                                            </th>
+
+                                                            <th>
+                                                                Role
+                                                            </th>
+
+                                                            <th>
+                                                                Shop
+                                                            </th>
+
+                                                            <th class="actions">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" name="row_id" id="checkbox_4" value="4">
+                                                            </td>
+                                                            <td>
+                                                                1
+                                                            </td>
+                                                            <input type="hidden" name='user_id' value=4>
+                                                            <td>
+
+                                                                <div class="readmore">       <img src="http://staging.sudc.co/storage/users/default.png" style="width:40px">Arunkumar Mani</div>
+                                                            </td>
+                                                            <input type="hidden" name='user_id' value=4>
+
+                                                            <input type="hidden" name='user_id' value=4>
+                                                            <td>
+                                                                <div class="readmore">riyas.1012@gmail.com</div>
+                                                            </td>
+
+                                                            <td>
+                                                                <span>9944213734</span>
+                                                            </td>
+                                                            <input type="hidden" name='user_id' value=4>
+
+                                                            <td>
+                                                                <p>Vendor</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>No shop</p>
+                                                            </td>
+
+                                                            <td class="no-sort no-click" id="bread-actions">
+                                                                <a href="javascript:;" title="Delete" class="btn btn-sm btn-danger pull-left delete"data-id="4"id="delete-4">
+                                                                    <i class="voyager-trash"></i> <span class="hidden-xs hidden-sm">Delete</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/vendors/4/edit" title="Edit" class="btn btn-sm btn-primary pull-left edit">
+                                                                    <i class="voyager-edit"></i> <span class="hidden-xs hidden-sm">Edit</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/vendors/4" title="View" class="btn btn-sm btn-warning pull-left view">
+                                                                    <i class="voyager-eye"></i> <span class="hidden-xs hidden-sm">View</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/userdocuments?user_key=eyJpdiI6IlB6dzFPUmNFTlBZalVocW1rNFlOQnc9PSIsInZhbHVlIjoib2NrODc2M0grZ2k1cVNKcjFGUUFaUT09IiwibWFjIjoiYzQ1OWU4M2IwNjE3Mjc4MDdjMGYxNjVjYzQ0M2E0NzkwMGYwNGFkNWE3ZGEwZDI4YzRkNzljM2M0MGZjMGQ2NCJ9" title="Document" class="btn btn-sm btn-document pull-left view">
+                                                                    <i class="voyager-documentation"></i> <span class="hidden-xs hidden-sm">Document</span>
+                                                                </a>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" name="row_id" id="checkbox_3" value="3">
+                                                            </td>
+
+                                                            <td>
+                                                                2
+                                                            </td>
+                                                            <td>
+
+                                                                <div class="readmore"><img src="http://staging.sudc.co/storage/users/default.png" style="width:40px">Karthi</div>
+                                                            </td>
+                                                            <input type="hidden" name='user_id' value=3>
+
+                                                            <td>
+                                                                <div class="readmore">karthi@gmail.com</div>
+                                                            </td>
+
+                                                            <td>
+                                                                <span>994421369</span>
+                                                            </td>
+                                                            <td>
+                                                                <p>Vendor</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>Chenna mobiles</p>
+                                                            </td>
+
+
+                                                            <td class="no-sort no-click" id="bread-actions">
+                                                                <a href="javascript:;" title="Delete" class="btn btn-sm btn-danger pull-left delete"data-id="3"id="delete-3">
+                                                                    <i class="voyager-trash"></i> <span class="hidden-xs hidden-sm">Delete</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/vendors/3/edit" title="Edit" class="btn btn-sm btn-primary pull-left edit">
+                                                                    <i class="voyager-edit"></i> <span class="hidden-xs hidden-sm">Edit</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/vendors/3" title="View" class="btn btn-sm btn-warning pull-left view">
+                                                                    <i class="voyager-eye"></i> <span class="hidden-xs hidden-sm">View</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/userdocuments?user_key=eyJpdiI6IjBqM1prRjE2UFF3NmIwb0xpQWhGS3c9PSIsInZhbHVlIjoiRWplSWZuUUh0cDgwVFFKaHE3Z1BLZz09IiwibWFjIjoiNzcyNDQ3ZGU1MGZhM2EyZmRlNGJjMzIwYTc3OGE2ZGM2NGRjNjQyMjA5YmZlOGI5OGFkZjA4MmYyMDU3ZjJiMyJ9" title="Document" class="btn btn-sm btn-document pull-left view">
+                                                                    <i class="voyager-documentation"></i> <span class="hidden-xs hidden-sm">Document</span>
+                                                                </a>
+                                                                <a href="http://staging.sudc.co/admin/shop?user_key=eyJpdiI6InRTWW5vZmxzYzZ3WDBZOWJ1SElnT2c9PSIsInZhbHVlIjoibkJIa3EwVisrT3p1RkN0bERsRzdhZz09IiwibWFjIjoiOWE5OTAwYzhlODBjNTdkMWFiYWYyNGM1NmNkODdjMGM2OTMwNTQ3MzUxZWU5YTMwYzJjZDcyOGFlYTY3NDFkMCJ9" title="Shop" class="btn btn-sm btn-shop pull-left view">
+                                                                    <i class="voyager-shop"></i> <span class="hidden-xs hidden-sm">Shop</span>
+                                                                </a>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <div id="file_loader" v-if="is_loading">
-                                                            <img src="http://staging.sudc.co/admin/assets?path=images%2Flogo-icon.png" alt="Voyager Loader">
-                                        <p>LOADING YOUR MEDIA FILES</p>
-                </div>
 
-                <div id="no_files" v-if="files.length == 0">
-                    <h3><i class="voyager-meh"></i> No files in this folder.</h3>
-                </div>
-            </div>
-            <div id="right">
-                <div class="right_details">
-                    <div v-if="selected_files.length > 1" class="right_none_selected">
-                        <i class="voyager-list"></i>
-                        <p>{{ selected_files.length }} files/folder selected</p>
-                    </div>
-                    <div v-else-if="selected_files.length == 1" class="right_details">
-                        <div class="detail_img">
-                            <div v-if="fileIs(selected_file, 'image')">
-                                <img :src="selected_file.path" />
-                            </div>
-                            <div v-else-if="fileIs(selected_file, 'video')">
-                                <video width="100%" height="auto" ref="videoplayer" controls>
-                                    <source :src="selected_file.path" type="video/mp4">
-                                    <source :src="selected_file.path" type="video/ogg">
-                                    <source :src="selected_file.path" type="video/webm">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div v-else-if="fileIs(selected_file, 'audio')">
-                                <i class="voyager-music"></i>
-                                <audio controls style="width:100%; margin-top:5px;" ref="audioplayer">
-                                    <source :src="selected_file.path" type="audio/ogg">
-                                    <source :src="selected_file.path" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
-                            <div v-else-if="fileIs(selected_file, 'zip')">
-                                <i class="voyager-archive"></i>
-                            </div>
-                            <div v-else-if="fileIs(selected_file, 'folder')">
-                                <i class="voyager-folder"></i>
-                            </div>
-                            <div v-else>
-                                <i class="voyager-file-text"></i>
-                            </div>
-                        </div>
-                        <div class="detail_info">
-                            <span>
-                                <h4>Title:</h4>
-                                <input v-if="allowRename" type="text" class="form-control" :value="selected_file.name" @keydown.enter.prevent="renameFile">
-                                <p v-else>{{ selected_file.name }}</p>
-                            </span>
-                            <span>
-                                <h4>Type:</h4>
-                                <p>{{ selected_file.type }}</p>
-                            </span>
 
-                            <template v-if="!fileIs(selected_file, 'folder')">
-                                <span>
-                                    <h4>Size:</h4>
-                                    <p><span class="selected_file_size">{{ bytesToSize(selected_file.size) }}</span></p>
-                                </span>
-                                <span>
-                                    <h4>Public URL:</h4>
-                                    <p><a :href="selected_file.path" target="_blank">Click Here</a></p>
-                                </span>
-                                <span>
-                                    <h4>Last Modified:</h4>
-                                    <p>{{ dateFilter(selected_file.last_modified) }}</p>
-                                </span>
-                            </template>
-                        </div>
-                    </div>
-                    <div v-else class="right_none_selected">
-                        <i class="voyager-cursor"></i>
-                        <p>No file or folder selected</p>
+                        <div class="modal modal-danger fade" tabindex="-1" id="delete_modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title"><i class="voyager-trash"></i> Are you sure you want to delete this vendor?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form action="#" id="delete_form" method="POST">
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <input type="hidden" name="_token" value="mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d">
+                                            <input type="submit" class="btn btn-danger pull-right delete-confirm" value="Yes, Delete it!">
+                                        </form>
+                                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <footer class="app-footer">
+            <div class="site-footer-right">
+                Made with <i class="voyager-heart"></i> by <a href="http://thecontrolgroup.com" target="_blank">The Control Group</a>
+                - v1.2.3
+            </div>
+        </footer>
 
-    <!-- Image Modal -->
-    <div class="modal fade" :id="'imagemodal_'+this._uid" v-if="selected_file && fileIs(selected_file, 'image')">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <img :src="selected_file.path" class="img img-responsive" style="margin: 0 auto;">
-                </div>
+        <!-- Javascript Libs -->
 
-                <div class="modal-footer text-left">
-                    <small class="image-title">{{ selected_file.name }}</small>
-                </div>
+
+        <script type="text/javascript" src="http://staging.sudc.co/admin/assets?path=js%2Fapp.js"></script>
+
+        <script>
+
+        </script>
+        <script>
+            Vue.component('media-manager', {
+                template: `<div>
+<div v-if="hidden_element" class="dd">
+<ol id="files" class="dd-list">
+<li v-for="file in getSelectedFiles()" class="dd-item" :data-url="file">
+<div class="file_link selected" aria-hidden="true" data-toggle="tooltip" data-placement="auto" :title="file">
+<div class="link_icon">
+<template v-if="fileIs(file, 'image')">
+<div class="img_icon" :style="imgIcon('http://staging.sudc.co/storage/'+file)"></div>
+            </template>
+<template v-else-if="fileIs(file, 'video')">
+<i class="icon voyager-video"></i>
+            </template>
+<template v-else-if="fileIs(file, 'audio')">
+<i class="icon voyager-music"></i>
+            </template>
+<template v-else-if="fileIs(file, 'zip')">
+<i class="icon voyager-archive"></i>
+            </template>
+<template v-else-if="fileIs(file, 'folder')">
+<i class="icon voyager-folder"></i>
+            </template>
+<template v-else>
+<i class="icon voyager-file-text"></i>
+            </template>
+            </div>
+<div class="details">
+<div class="folder">
+<h4>{{ getFileName(file) }}</h4>
+            </div>
+            </div>
+<i class="voyager-x dd-nodrag" v-on:click="removeFileFromInput(file)"></i>
+            </div>
+            </li>
+            </ol>
+            </div>
+<div v-if="hidden_element">
+<div class="btn btn-sm btn-default" v-on:click="expanded = !expanded;" style="width:100%">
+<div v-if="!expanded"><i class="voyager-double-down"></i> Open</div>
+<div v-if="expanded"><i class="voyager-double-up"></i> Close</div>
+            </div>
+            </div>
+<div id="toolbar" v-if="showToolbar" :style="expanded ? 'display:block' : 'display:none'">
+<div class="btn-group offset-right">
+<button type="button" class="btn btn-primary" id="upload" v-if="allowUpload">
+<i class="voyager-upload"></i>
+Upload
+            </button>
+<button type="button" class="btn btn-primary" v-if="allowCreateFolder" data-toggle="modal" :data-target="'#create_dir_modal_'+this._uid">
+<i class="voyager-folder"></i>
+Add Folder
+            </button>
+            </div>
+<button type="button" class="btn btn-default" v-on:click="getFiles()">
+<i class="voyager-refresh"></i>
+            </button>
+<div class="btn-group offset-right">
+<button type="button" v-if="showFolders && allowMove" class="btn btn-default" data-toggle="modal" :data-target="'#move_files_modal_'+this._uid">
+<i class="voyager-move"></i>
+Move
+            </button>
+<button type="button" v-if="allowDelete" :disabled="selected_files.length == 0" class="btn btn-default" data-toggle="modal" :data-target="'#confirm_delete_modal_'+this._uid">
+<i class="voyager-trash"></i>
+Delete
+            </button>
+<button v-if="allowCrop" :disabled="selected_files.length != 1 || !fileIs(selected_file, 'image')" type="button" class="btn btn-default" data-toggle="modal" :data-target="'#crop_modal_'+this._uid">
+<i class="voyager-crop"></i>
+Crop
+            </button>
+            </div>
+            </div>
+<div id="uploadPreview" style="display:none;" v-if="allowUpload"></div>
+<div id="uploadProgress" class="progress active progress-striped" v-if="allowUpload">
+<div class="progress-bar progress-bar-success" style="width: 0"></div>
+            </div>
+<div id="content" :style="expanded ? 'display:block' : 'display:none'">
+<div class="breadcrumb-container">
+<ol class="breadcrumb filemanager">
+<li class="media_breadcrumb" v-on:click="setCurrentPath(-1)">
+<span class="arrow"></span>
+<strong>Media Library</strong>
+            </li>
+<li v-for="(folder, i) in getCurrentPath()" v-on:click="setCurrentPath(i)">
+<span class="arrow"></span>
+{{ folder }}
+            </li>
+            </ol>
+            </div>
+<div class="flex">
+<div id="left">
+<ul id="files">
+<li v-for="(file) in files" v-on:click="selectFile(file, $event)" v-on:dblclick="openFile(file)" v-if="filter(file)">
+<div :class="'file_link ' + (isFileSelected(file) ? 'selected' : '')">
+<div class="link_icon">
+<template v-if="fileIs(file, 'image')">
+<div class="img_icon" :style="imgIcon(file.path)"></div>
+            </template>
+<template v-else-if="fileIs(file, 'video')">
+<i class="icon voyager-video"></i>
+            </template>
+<template v-else-if="fileIs(file, 'audio')">
+<i class="icon voyager-music"></i>
+            </template>
+<template v-else-if="fileIs(file, 'zip')">
+<i class="icon voyager-archive"></i>
+            </template>
+<template v-else-if="fileIs(file, 'folder')">
+<i class="icon voyager-folder"></i>
+            </template>
+<template v-else>
+<i class="icon voyager-file-text"></i>
+            </template>
+            </div>
+<div class="details">
+<div :class="file.type">
+<h4>{{ file.name }}</h4>
+<small v-if="!fileIs(file, 'folder')">
+<span class="file_size">{{ bytesToSize(file.size) }}</span>
+            </small>
+            </div>
+            </div>
+            </div>
+            </li>
+            </ul>
+<div id="file_loader" v-if="is_loading">
+<img src="http://staging.sudc.co/admin/assets?path=images%2Flogo-icon.png" alt="Voyager Loader">
+<p>LOADING YOUR MEDIA FILES</p>
+            </div>
+
+<div id="no_files" v-if="files.length == 0">
+<h3><i class="voyager-meh"></i> No files in this folder.</h3>
+            </div>
+            </div>
+<div id="right">
+<div class="right_details">
+<div v-if="selected_files.length > 1" class="right_none_selected">
+<i class="voyager-list"></i>
+<p>{{ selected_files.length }} files/folder selected</p>
+            </div>
+<div v-else-if="selected_files.length == 1" class="right_details">
+<div class="detail_img">
+<div v-if="fileIs(selected_file, 'image')">
+<img :src="selected_file.path" />
+            </div>
+<div v-else-if="fileIs(selected_file, 'video')">
+<video width="100%" height="auto" ref="videoplayer" controls>
+<source :src="selected_file.path" type="video/mp4">
+<source :src="selected_file.path" type="video/ogg">
+<source :src="selected_file.path" type="video/webm">
+Your browser does not support the video tag.
+            </video>
+            </div>
+<div v-else-if="fileIs(selected_file, 'audio')">
+<i class="voyager-music"></i>
+<audio controls style="width:100%; margin-top:5px;" ref="audioplayer">
+<source :src="selected_file.path" type="audio/ogg">
+<source :src="selected_file.path" type="audio/mpeg">
+Your browser does not support the audio element.
+            </audio>
+            </div>
+<div v-else-if="fileIs(selected_file, 'zip')">
+<i class="voyager-archive"></i>
+            </div>
+<div v-else-if="fileIs(selected_file, 'folder')">
+<i class="voyager-folder"></i>
+            </div>
+<div v-else>
+<i class="voyager-file-text"></i>
+            </div>
+            </div>
+<div class="detail_info">
+<span>
+<h4>Title:</h4>
+<input v-if="allowRename" type="text" class="form-control" :value="selected_file.name" @keydown.enter.prevent="renameFile">
+<p v-else>{{ selected_file.name }}</p>
+            </span>
+<span>
+<h4>Type:</h4>
+<p>{{ selected_file.type }}</p>
+            </span>
+
+<template v-if="!fileIs(selected_file, 'folder')">
+<span>
+<h4>Size:</h4>
+<p><span class="selected_file_size">{{ bytesToSize(selected_file.size) }}</span></p>
+            </span>
+<span>
+<h4>Public URL:</h4>
+<p><a :href="selected_file.path" target="_blank">Click Here</a></p>
+            </span>
+<span>
+<h4>Last Modified:</h4>
+<p>{{ dateFilter(selected_file.last_modified) }}</p>
+            </span>
+            </template>
+            </div>
+            </div>
+<div v-else class="right_none_selected">
+<i class="voyager-cursor"></i>
+<p>No file or folder selected</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+<!-- Image Modal -->
+<div class="modal fade" :id="'imagemodal_'+this._uid" v-if="selected_file && fileIs(selected_file, 'image')">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+<div class="modal-body">
+<img :src="selected_file.path" class="img img-responsive" style="margin: 0 auto;">
+            </div>
+
+<div class="modal-footer text-left">
+<small class="image-title">{{ selected_file.name }}</small>
+            </div>
 
             </div>
-        </div>
-    </div>
-    <!-- End Image Modal -->
-
-    <!-- New Folder Modal -->
-    <div class="modal fade modal-info" :id="'create_dir_modal_'+this._uid">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><i class="voyager-folder"></i> Add New Folder</h4>
-                </div>
-
-                <div class="modal-body">
-                    <input name="new_folder_name" placeholder="New Folder Name" class="form-control" value="" v-model="modals.new_folder.name" />
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-info" v-on:click="createFolder">Create New Folder
-                    </button>
-                </div>
             </div>
-        </div>
-    </div>
-    <!-- End New Folder Modal -->
-
-    <!-- Delete File Modal -->
-    <div class="modal fade modal-danger" :id="'confirm_delete_modal_'+this._uid" v-if="allowDelete">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><i class="voyager-warning"></i> Are you sure</h4>
-                </div>
-
-                <div class="modal-body">
-                    <h4>Are you sure you want to delete the following file(s)?</h4>
-                    <ul>
-                        <li v-for="file in selected_files">{{ file.name }}</li>
-                    </ul>
-                    <h5 class="folder_warning">
-                        <i class="voyager-warning"></i> Deleting a folder will remove all files and folders contained inside
-                    </h5>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-danger" v-on:click="deleteFiles">Yes, Delete it!
-                    </button>
-                </div>
             </div>
-        </div>
-    </div>
-    <!-- End Delete File Modal -->
+<!-- End Image Modal -->
 
-    <!-- Move Files Modal -->
-    <div class="modal fade modal-warning" :id="'move_files_modal_'+this._uid" v-if="allowMove">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"
-                            aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><i class="voyager-move"></i> Move File/Folder</h4>
-                </div>
-
-                <div class="modal-body">
-                    <h4>Destination Folder</h4>
-                    <select class="form-control" v-model="modals.move_files.destination">
-                        <option value="" disabled>Destination Folder</option>
-                        <option v-if="current_folder != basePath && showFolders" value="/../">../</option>
-                        <option v-for="file in files" v-if="file.type == 'folder' && !selected_files.includes(file)" :value="current_folder+'/'+file.name">{{ file.name }}</option>
-                    </select>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-warning" v-on:click="moveFiles">Move</button>
-                </div>
+<!-- New Folder Modal -->
+<div class="modal fade modal-info" :id="'create_dir_modal_'+this._uid">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title"><i class="voyager-folder"></i> Add New Folder</h4>
             </div>
-        </div>
-    </div>
-    <!-- End Move File Modal -->
 
-    <!-- Crop Image Modal -->
-    <div class="modal fade modal-warning" :id="'crop_modal_'+this._uid" v-if="allowCrop">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"><i class="voyager-warning"></i> Crop Image</h4>
-                </div>
-
-                <div class="modal-body">
-                    <div class="crop-container">
-                        <img :id="'cropping-image_'+this._uid" v-if="selected_files.length == 1 && fileIs(selected_file, 'image')" class="img img-responsive" :src="selected_file.path + '?' + selected_file.last_modified" />
-                    </div>
-                    <div class="new-image-info">
-                        Width:  <span :id="'new-image-width_'+this._uid"></span>, Height: <span :id="'new-image-height_'+this._uid"></span>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-warning" v-on:click="crop(false)">Crop</button>
-                    <button type="button" class="btn btn-warning" v-on:click="crop(true)">Crop &amp; Create</button>
-                </div>
+<div class="modal-body">
+<input name="new_folder_name" placeholder="New Folder Name" class="form-control" value="" v-model="modals.new_folder.name" />
             </div>
-        </div>
-    </div>
-    <!-- End Crop Image Modal -->
-</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+<button type="button" class="btn btn-info" v-on:click="createFolder">Create New Folder
+            </button>
+            </div>
+            </div>
+            </div>
+            </div>
+<!-- End New Folder Modal -->
+
+<!-- Delete File Modal -->
+<div class="modal fade modal-danger" :id="'confirm_delete_modal_'+this._uid" v-if="allowDelete">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title"><i class="voyager-warning"></i> Are you sure</h4>
+            </div>
+
+<div class="modal-body">
+<h4>Are you sure you want to delete the following file(s)?</h4>
+<ul>
+<li v-for="file in selected_files">{{ file.name }}</li>
+            </ul>
+<h5 class="folder_warning">
+<i class="voyager-warning"></i> Deleting a folder will remove all files and folders contained inside
+            </h5>
+            </div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+<button type="button" class="btn btn-danger" v-on:click="deleteFiles">Yes, Delete it!
+            </button>
+            </div>
+            </div>
+            </div>
+            </div>
+<!-- End Delete File Modal -->
+
+<!-- Move Files Modal -->
+<div class="modal fade modal-warning" :id="'move_files_modal_'+this._uid" v-if="allowMove">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"
+aria-hidden="true">&times;</button>
+<h4 class="modal-title"><i class="voyager-move"></i> Move File/Folder</h4>
+            </div>
+
+<div class="modal-body">
+<h4>Destination Folder</h4>
+<select class="form-control" v-model="modals.move_files.destination">
+<option value="" disabled>Destination Folder</option>
+<option v-if="current_folder != basePath && showFolders" value="/../">../</option>
+<option v-for="file in files" v-if="file.type == 'folder' && !selected_files.includes(file)" :value="current_folder+'/'+file.name">{{ file.name }}</option>
+            </select>
+            </div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+<button type="button" class="btn btn-warning" v-on:click="moveFiles">Move</button>
+            </div>
+            </div>
+            </div>
+            </div>
+<!-- End Move File Modal -->
+
+<!-- Crop Image Modal -->
+<div class="modal fade modal-warning" :id="'crop_modal_'+this._uid" v-if="allowCrop">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title"><i class="voyager-warning"></i> Crop Image</h4>
+            </div>
+
+<div class="modal-body">
+<div class="crop-container">
+<img :id="'cropping-image_'+this._uid" v-if="selected_files.length == 1 && fileIs(selected_file, 'image')" class="img img-responsive" :src="selected_file.path + '?' + selected_file.last_modified" />
+            </div>
+<div class="new-image-info">
+Width:  <span :id="'new-image-width_'+this._uid"></span>, Height: <span :id="'new-image-height_'+this._uid"></span>
+            </div>
+            </div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+<button type="button" class="btn btn-warning" v-on:click="crop(false)">Crop</button>
+<button type="button" class="btn btn-warning" v-on:click="crop(true)">Crop &amp; Create</button>
+            </div>
+            </div>
+            </div>
+            </div>
+<!-- End Crop Image Modal -->
+            </div>
 `,
-        props: {
-            basePath: {
-                type: String,
-                default: '/'
-            },
-            filename: {
-                type: String,
-                default: null
-            },
-            allowMultiSelect: {
-                type: Boolean,
-                default: true
-            },
-            maxSelectedFiles: {
-                type: Number,
-                default: 0
-            },
-            minSelectedFiles: {
-                type: Number,
-                default: 0
-            },
-            showFolders: {
-                type: Boolean,
-                default: true
-            },
-            showToolbar: {
-                type: Boolean,
-                default: true
-            },
-            allowUpload: {
-                type: Boolean,
-                default: true
-            },
-            allowMove: {
-                type: Boolean,
-                default: true
-            },
-            allowDelete: {
-                type: Boolean,
-                default: true
-            },
-            allowCreateFolder: {
-                type: Boolean,
-                default: true
-            },
-            allowRename: {
-                type: Boolean,
-                default: true
-            },
-            allowCrop: {
-                type: Boolean,
-                default: true
-            },
-            allowedTypes: {
-                type: Array,
-                default: function() {
-                    return [];
-                }
-            },
-            preSelect: {
-                type: Boolean,
-                default: true,
-            },
-            element: {
-                type: String,
-                default: ""
-            }
-        },
-        data: function() {
-            return {
-                current_folder: this.basePath,
-		  		selected_files: [],
-                files: [],
-		  		is_loading: true,
-                hidden_element: null,
-                expanded: true,
-                modals: {
-                    new_folder: {
-                        name: ''
+                props: {
+                    basePath: {
+                        type: String,
+                        default: '/'
                     },
-                    move_files: {
-                        destination: ''
-                    }
-                }
-            };
-        },
-        computed: {
-            selected_file: function() {
-                return this.selected_files[0];
-            }
-        },
-        methods: {
-            getFiles: function() {
-                var vm = this;
-                vm.is_loading = true;
-                $.post('http://staging.sudc.co/admin/media/files', { folder: vm.current_folder, _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d' }, function(data) {
-                    vm.files = [];
-                    for (var i = 0, file; file = data[i]; i++) {
-                        if (vm.filter(file)) {
-                            vm.files.push(file);
+                    filename: {
+                        type: String,
+                        default: null
+                    },
+                    allowMultiSelect: {
+                        type: Boolean,
+                        default: true
+                    },
+                    maxSelectedFiles: {
+                        type: Number,
+                        default: 0
+                    },
+                    minSelectedFiles: {
+                        type: Number,
+                        default: 0
+                    },
+                    showFolders: {
+                        type: Boolean,
+                        default: true
+                    },
+                    showToolbar: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowUpload: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowMove: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowDelete: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowCreateFolder: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowRename: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowCrop: {
+                        type: Boolean,
+                        default: true
+                    },
+                    allowedTypes: {
+                        type: Array,
+                        default: function() {
+                            return [];
                         }
+                    },
+                    preSelect: {
+                        type: Boolean,
+                        default: true,
+                    },
+                    element: {
+                        type: String,
+                        default: ""
                     }
-                    vm.selected_files = [];
-                    if (vm.preSelect && data.length > 0) {
-                        vm.selected_files.push(data[0]);
-                    }
-					vm.is_loading = false;
-				});
-            },
-            selectFile: function(file, e) {
-                if ((!e.ctrlKey && !e.metaKey && !e.shiftKey) || !this.allowMultiSelect) {
-                    this.selected_files = [];
-                }
-
-                if (e.shiftKey && this.allowMultiSelect && this.selected_files.length == 1) {
-                    var index = null;
-                    var start = 0;
-                    for (var i = 0, cfile; cfile = this.files[i]; i++) {
-                        if (cfile === this.selected_file) {
-                            start = i;
-                            break;
-                        }
-                    }
-
-                    var end = 0;
-                    for (var i = 0, cfile; cfile = this.files[i]; i++) {
-                        if (cfile === file) {
-                            end = i;
-                            break;
-                        }
-                    }
-
-                    for (var i = start; i < end; i++) {
-                        index = this.selected_files.indexOf(this.files[i]);
-                        if (index === -1) {
-                            this.selected_files.push(this.files[i]);
-                        }
-                    }
-                }
-
-                index = this.selected_files.indexOf(file);
-                if (index === -1) {
-                    this.selected_files.push(file);
-                }
-
-                if (this.selected_files.length == 1) {
-                    var vm = this;
-                    Vue.nextTick(function () {
-                        if (vm.fileIs(vm.selected_file, 'video')) {
-                            vm.$refs.videoplayer.load();
-                        } else if (vm.fileIs(vm.selected_file, 'audio')) {
-                            vm.$refs.audioplayer.load();
-                        }
-                    });
-                }
-            },
-            openFile: function(file) {
-                if (file.type == 'folder') {
-                    this.current_folder += "/"+file.name;
-                    this.getFiles();
-                } else if (this.hidden_element) {
-                    this.addFileToInput(file);
-                } else {
-                    if (this.fileIs(this.selected_file, 'image')) {
-                        $('#imagemodal_' + this._uid).modal('show');
-                    } else {
-                        // ...
-                    }
-                }
-            },
-            isFileSelected: function(file) {
-                return this.selected_files.includes(file);
-            },
-            fileIs: function(file, type) {
-                if (typeof file === 'string') {
-                    if (type == 'image') {
-                        return this.endsWithAny(['jpg', 'jpeg', 'png', 'bmp'], file);
-                    }
-                    //Todo: add other types
-                } else {
-                    return file.type.includes(type);
-                }
-
-                return false;
-			},
-            getCurrentPath: function() {
-                var path = this.current_folder.replace(this.basePath, '').split('/').filter(function (el) {
-                    return el != '';
-                });
-
-                return path;
-            },
-            setCurrentPath: function(i) {
-                if (i == -1) {
-                    this.current_folder = this.basePath;
-                } else {
-                    var path = this.getCurrentPath();
-                    path.length = i + 1;
-                    this.current_folder = this.basePath+path.join('/');
-                }
-
-                this.getFiles();
-            },
-            filter: function(file) {
-                if (this.allowedTypes.length > 0) {
-                    if (file.type != 'folder') {
-                        for (var i = 0, type; type = this.allowedTypes[i]; i++) {
-                            if (file.type.includes(type)) {
-                                return true;
+                },
+                data: function() {
+                    return {
+                        current_folder: this.basePath,
+                        selected_files: [],
+                        files: [],
+                        is_loading: true,
+                        hidden_element: null,
+                        expanded: true,
+                        modals: {
+                            new_folder: {
+                                name: ''
+                            },
+                            move_files: {
+                                destination: ''
                             }
                         }
+                    };
+                },
+                computed: {
+                    selected_file: function() {
+                        return this.selected_files[0];
                     }
-                }
-
-                if (file.type == 'folder' && this.showFolders) {
-                    return true;
-                } else if (file.type == 'folder' && !this.showFolders) {
-                    return false;
-                }
-                if (this.allowedTypes.length == 0) {
-                    return true;
-                }
-
-                return false;
-            },
-            addFileToInput: function(file) {
-                if (file.type != 'folder') {
-                    if (!this.allowMultiSelect) {
-                        this.hidden_element.value = file.relative_path;
-                    } else {
-                        var content = JSON.parse(this.hidden_element.value);
-                        if (content.indexOf(file.relative_path) !== -1) {
-                            return;
-                        }
-                        if (content.length >= this.maxSelectedFiles && this.maxSelectedFiles > 0) {
-                            var msg_sing = "You can only select one file";
-                            var msg_plur = "You can only select a maximum of 2 files";
-                            if (this.maxSelectedFiles == 1) {
-                                toastr.error(msg_sing);
-                            } else {
-                                toastr.error(msg_plur.replace('2', this.maxSelectedFiles));
-                            }
-                        } else {
-                            content.push(file.relative_path);
-                            this.hidden_element.value = JSON.stringify(content);
-                        }
-                    }
-                }
-            },
-            removeFileFromInput: function(path) {
-                if (this.allowMultiSelect) {
-                    var content = JSON.parse(this.hidden_element.value);
-                    if (content.indexOf(path) !== -1) {
-                        content.splice(content.indexOf(path), 1);
-                        this.hidden_element.value = JSON.stringify(content);
-                        this.$forceUpdate();
-                    }
-                } else {
-                    this.hidden_element.value = '';
-                }
-            },
-            getSelectedFiles: function() {
-                if (!this.allowMultiSelect) {
-                    var content = [];
-                    if (this.hidden_element.value != '') {
-                        content.push(this.hidden_element.value);
-                    }
-
-                    return content;
-                } else {
-                    return JSON.parse(this.hidden_element.value);
-                }
-            },
-            renameFile: function(object) {
-                var vm = this;
-                if (!this.allowRename || vm.selected_file.name == object.target.value) {
-                    return;
-                }
-                $.post('http://staging.sudc.co/admin/media/rename_file', {
-                    folder_location: vm.current_folder,
-                    filename: vm.selected_file.name,
-                    new_filename: object.target.value,
-                    _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d'
-                }, function(data){
-					if (data.success == true) {
-						toastr.success('Successfully renamed file/folder', "Sweet Success!");
-						vm.getFiles();
-					} else {
-						toastr.error(data.error, "Whoopsie!");
-					}
-				});
-            },
-            createFolder: function(e) {
-                if (!this.allowCreateFolder) {
-                    return;
-                }
-                var vm = this;
-                var name = this.modals.new_folder.name;
-                $.post('http://staging.sudc.co/admin/media/new_folder', { new_folder: vm.current_folder+'/'+name, _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d' }, function(data) {
-					if(data.success == true){
-						toastr.success('Successfully created ' + name, "Sweet Success!");
-						vm.getFiles();
-					} else {
-						toastr.error(data.error, "Whoopsie!");
-					}
-                    vm.modals.new_folder.name = '';
-					$('#create_dir_modal_'+vm._uid).modal('hide');
-				});
-            },
-            deleteFiles: function() {
-                if (!this.allowDelete) {
-                    return;
-                }
-                var vm = this;
-                $.post('http://staging.sudc.co/admin/media/delete_file_folder', {
-                    path: vm.current_folder,
-                    files: vm.selected_files,
-                    _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d'
-                }, function(data){
-					if(data.success == true){
-						toastr.success('', "Sweet Success!");
-						vm.getFiles();
-						$('#confirm_delete_modal_'+vm._uid).modal('hide');
-					} else {
-						toastr.error(data.error, "Whoopsie!");
-                        vm.getFiles();
-						$('#confirm_delete_modal_'+vm._uid).modal('hide');
-					}
-				});
-            },
-            moveFiles: function(e) {
-                if (!this.allowMove) {
-                    return;
-                }
-                var vm = this;
-                var destination = this.modals.move_files.destination;
-                if (destination === '') {
-                    return;
-                }
-                $('#move_files_modal_'+vm._uid).modal('hide');
-				$.post('http://staging.sudc.co/admin/media/move_file', {
-                    path: vm.current_folder,
-                    files: vm.selected_files,
-                    destination: destination,
-                    _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d'
-                }, function(data){
-					if(data.success == true){
-						toastr.success('Successfully moved file/folder', "Sweet Success!");
-						vm.getFiles();
-					} else {
-						toastr.error(data.error, "Whoopsie!");
-					}
-
-                    vm.modals.move_files.destination = '';
-				});
-            },
-            crop: function(mode) {
-                if (!this.allowCrop) {
-                    return;
-                }
-                if (!mode) {
-                    if (!window.confirm('It will override the original image, are you sure?')) {
-						return;
-					}
-                }
-
-                croppedData.originImageName = this.selected_file.name;
-				croppedData.upload_path = this.current_folder;
-				croppedData.createMode = mode;
-
-                var vm = this;
-                var postData = Object.assign(croppedData, { _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d' });
-				$.post('http://staging.sudc.co/admin/media/crop', postData, function(data) {
-					if (data.success) {
-						toastr.success(data.message);
-						vm.getFiles();
-						$('#crop_modal_'+vm._uid).modal('hide');
-					} else {
-						toastr.error(data.error, "Whoopsie!");
-					}
-				});
-            },
-            bytesToSize: function(bytes) {
-				var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-				if (bytes == 0) return '0 Bytes';
-				var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
-				return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
-			},
-            getFileName: function(name) {
-                var name = name.split('/');
-                return name[name.length -1];
-            },
-            imgIcon: function(path) {
-                path = path.replace(/\\/g,"/");
-				return 'background-size: cover; background-image: url("' + path + '"); background-repeat:no-repeat; background-position:center center;display:inline-block; width:100%; height:100%;';
-			},
-            dateFilter: function(date) {
-                if (!date) {
-                    return null;
-                }
-                var date = new Date(date * 1000);
-
-                var month = "0" + (date.getMonth() + 1);
-                var minutes = "0" + date.getMinutes();
-                var seconds = "0" + date.getSeconds();
-
-                var dateFormated = date.getFullYear() + '-' + month.substr(-2) + '-' + date.getDate() + ' ' + date.getHours() + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-
-                return dateFormated;
-            },
-            endsWithAny: function(suffixes, string) {
-                return suffixes.some(function (suffix) {
-                    return string.endsWith(suffix);
-                });
-            }
-        },
-        mounted: function() {
-            this.getFiles();
-            var vm = this;
-
-            if (this.element != '') {
-                this.hidden_element = document.querySelector(this.element);
-                if (!this.hidden_element) {
-                    console.error('Element "'+this.element+'" could not be found.');
-                } else {
-                    this.expanded = false;
-                    if (this.maxSelectedFiles > 1 && this.hidden_element.value == '') {
-                        this.hidden_element.value = '[]';
-                    }
-                }
-            }
-
-            //Key events
-            this.onkeydown = function(evt) {
-                evt = evt || window.event;
-                if (evt.keyCode == 39) {
-                    evt.preventDefault();
-                    for (var i = 0, file; file = vm.files[i]; i++) {
-                        if (file === vm.selected_file) {
-                            i = i + 1; // increase i by one
-                            i = i % vm.files.length;
-                            vm.selectFile(vm.files[i], evt);
-                            break;
-                        }
-                    }
-                } else if (evt.keyCode == 37) {
-                    evt.preventDefault();
-                    for (var i = 0, file; file = vm.files[i]; i++) {
-                        if (file === vm.selected_file) {
-                            if (i === 0) {
-                                i = vm.files.length;
-                            }
-                            i = i - 1;
-                            vm.selectFile(vm.files[i], evt);
-                            break;
-                        }
-                    }
-                } else if (evt.keyCode == 13) {
-                    evt.preventDefault();
-                    if (evt.target.tagName != 'INPUT') {
-                        vm.openFile(vm.selected_file, null);
-                    }
-                }
-            };
-            //Dropzone
-            var dropzone = $(vm.$el).first().find('#upload').first();
-            var progress = $(vm.$el).first().find('#uploadProgress').first();
-            var progress_bar = $(vm.$el).first().find('#uploadProgress .progress-bar').first();
-            if (this.allowUpload && !dropzone.hasClass('dz-clickable')) {
-                dropzone.dropzone({
-                    timeout: 180000,
-                    url: 'http://staging.sudc.co/admin/media/upload',
-                    previewsContainer: "#uploadPreview",
-                    totaluploadprogress: function(uploadProgress, totalBytes, totalBytesSent) {
-                        progress_bar.css('width', uploadProgress + '%');
-    					if (uploadProgress == 100) {
-    						progress.delay(1500).slideUp(function(){
-    							progress_bar.css('width', '0%');
-    						});
-    					}
-                    },
-                    processing: function(){
-                        progress.fadeIn();
-                    },
-                    sending: function(file, xhr, formData) {
-                        formData.append("_token", 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d');
-                        formData.append("upload_path", vm.current_folder);
-                        formData.append("filename", vm.filename);
-                    },
-                    success: function(e, res) {
-                        if (res.success) {
-                            toastr.success(res.message, "Sweet Success!");
-                        } else {
-                            toastr.error(res.message, "Whoopsie!");
-                        }
-                    },
-                    error: function(e, res, xhr) {
-                        toastr.error(res, "Whoopsie!");
-                    },
-                    queuecomplete: function() {
-                        vm.getFiles();
-                    }
-                });
-            }
-
-            //Cropper
-            if (this.allowCrop) {
-                var cropper = $(vm.$el).first().find('#crop_modal_'+vm._uid).first();
-                cropper.on('shown.bs.modal', function (e) {
-                    if (typeof cropper !== 'undefined' && cropper instanceof Cropper) {
-    					cropper.destroy();
-    				}
-    				var croppingImage = document.getElementById('cropping-image_'+vm._uid);
-    				cropper = new Cropper(croppingImage, {
-    					crop: function(e) {
-    						document.getElementById('new-image-width_'+vm._uid).innerText = Math.round(e.detail.width) + 'px';
-    						document.getElementById('new-image-height_'+vm._uid).innerText = Math.round(e.detail.height) + 'px';
-    						croppedData = {
-    							x: Math.round(e.detail.x),
-    							y: Math.round(e.detail.y),
-    							height: Math.round(e.detail.height),
-    							width: Math.round(e.detail.width)
-    						};
-    					}
-    				});
-    			});
-            }
-
-            $(document).ready(function () {
-                $(".form-edit-add").submit(function (e) {
-                    if (vm.hidden_element) {
-                        if (vm.maxSelectedFiles > 1) {
-                            var content = JSON.parse(vm.hidden_element.value);
-                            if (content.length < vm.minSelectedFiles) {
-                                e.preventDefault();
-                                var msg_sing = "You must select at least one file";
-                                var msg_plur = "You must select at least 2 files";
-                                if (vm.minSelectedFiles == 1) {
-                                    toastr.error(msg_sing);
-                                } else {
-                                    toastr.error(msg_plur.replace('2', vm.minSelectedFiles));
+                },
+                methods: {
+                    getFiles: function() {
+                        var vm = this;
+                        vm.is_loading = true;
+                        $.post('http://staging.sudc.co/admin/media/files', { folder: vm.current_folder, _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d' }, function(data) {
+                            vm.files = [];
+                            for (var i = 0, file; file = data[i]; i++) {
+                                if (vm.filter(file)) {
+                                    vm.files.push(file);
                                 }
                             }
+                            vm.selected_files = [];
+                            if (vm.preSelect && data.length > 0) {
+                                vm.selected_files.push(data[0]);
+                            }
+                            vm.is_loading = false;
+                        });
+                    },
+                    selectFile: function(file, e) {
+                        if ((!e.ctrlKey && !e.metaKey && !e.shiftKey) || !this.allowMultiSelect) {
+                            this.selected_files = [];
+                        }
+
+                        if (e.shiftKey && this.allowMultiSelect && this.selected_files.length == 1) {
+                            var index = null;
+                            var start = 0;
+                            for (var i = 0, cfile; cfile = this.files[i]; i++) {
+                                if (cfile === this.selected_file) {
+                                    start = i;
+                                    break;
+                                }
+                            }
+
+                            var end = 0;
+                            for (var i = 0, cfile; cfile = this.files[i]; i++) {
+                                if (cfile === file) {
+                                    end = i;
+                                    break;
+                                }
+                            }
+
+                            for (var i = start; i < end; i++) {
+                                index = this.selected_files.indexOf(this.files[i]);
+                                if (index === -1) {
+                                    this.selected_files.push(this.files[i]);
+                                }
+                            }
+                        }
+
+                        index = this.selected_files.indexOf(file);
+                        if (index === -1) {
+                            this.selected_files.push(file);
+                        }
+
+                        if (this.selected_files.length == 1) {
+                            var vm = this;
+                            Vue.nextTick(function () {
+                                if (vm.fileIs(vm.selected_file, 'video')) {
+                                    vm.$refs.videoplayer.load();
+                                } else if (vm.fileIs(vm.selected_file, 'audio')) {
+                                    vm.$refs.audioplayer.load();
+                                }
+                            });
+                        }
+                    },
+                    openFile: function(file) {
+                        if (file.type == 'folder') {
+                            this.current_folder += "/"+file.name;
+                            this.getFiles();
+                        } else if (this.hidden_element) {
+                            this.addFileToInput(file);
                         } else {
-                            if (vm.minSelectedFiles > 0 && vm.hidden_element.value == '') {
-                                e.preventDefault();
-                                toastr.error("You must select at least one file");
+                            if (this.fileIs(this.selected_file, 'image')) {
+                                $('#imagemodal_' + this._uid).modal('show');
+                            } else {
+                                // ...
+                            }
+                        }
+                    },
+                    isFileSelected: function(file) {
+                        return this.selected_files.includes(file);
+                    },
+                    fileIs: function(file, type) {
+                        if (typeof file === 'string') {
+                            if (type == 'image') {
+                                return this.endsWithAny(['jpg', 'jpeg', 'png', 'bmp'], file);
+                            }
+                            //Todo: add other types
+                        } else {
+                            return file.type.includes(type);
+                        }
+
+                        return false;
+                    },
+                    getCurrentPath: function() {
+                        var path = this.current_folder.replace(this.basePath, '').split('/').filter(function (el) {
+                            return el != '';
+                        });
+
+                        return path;
+                    },
+                    setCurrentPath: function(i) {
+                        if (i == -1) {
+                            this.current_folder = this.basePath;
+                        } else {
+                            var path = this.getCurrentPath();
+                            path.length = i + 1;
+                            this.current_folder = this.basePath+path.join('/');
+                        }
+
+                        this.getFiles();
+                    },
+                    filter: function(file) {
+                        if (this.allowedTypes.length > 0) {
+                            if (file.type != 'folder') {
+                                for (var i = 0, type; type = this.allowedTypes[i]; i++) {
+                                    if (file.type.includes(type)) {
+                                        return true;
+                                    }
+                                }
+                            }
+                        }
+
+                        if (file.type == 'folder' && this.showFolders) {
+                            return true;
+                        } else if (file.type == 'folder' && !this.showFolders) {
+                            return false;
+                        }
+                        if (this.allowedTypes.length == 0) {
+                            return true;
+                        }
+
+                        return false;
+                    },
+                    addFileToInput: function(file) {
+                        if (file.type != 'folder') {
+                            if (!this.allowMultiSelect) {
+                                this.hidden_element.value = file.relative_path;
+                            } else {
+                                var content = JSON.parse(this.hidden_element.value);
+                                if (content.indexOf(file.relative_path) !== -1) {
+                                    return;
+                                }
+                                if (content.length >= this.maxSelectedFiles && this.maxSelectedFiles > 0) {
+                                    var msg_sing = "You can only select one file";
+                                    var msg_plur = "You can only select a maximum of 2 files";
+                                    if (this.maxSelectedFiles == 1) {
+                                        toastr.error(msg_sing);
+                                    } else {
+                                        toastr.error(msg_plur.replace('2', this.maxSelectedFiles));
+                                    }
+                                } else {
+                                    content.push(file.relative_path);
+                                    this.hidden_element.value = JSON.stringify(content);
+                                }
+                            }
+                        }
+                    },
+                    removeFileFromInput: function(path) {
+                        if (this.allowMultiSelect) {
+                            var content = JSON.parse(this.hidden_element.value);
+                            if (content.indexOf(path) !== -1) {
+                                content.splice(content.indexOf(path), 1);
+                                this.hidden_element.value = JSON.stringify(content);
+                                this.$forceUpdate();
+                            }
+                        } else {
+                            this.hidden_element.value = '';
+                        }
+                    },
+                    getSelectedFiles: function() {
+                        if (!this.allowMultiSelect) {
+                            var content = [];
+                            if (this.hidden_element.value != '') {
+                                content.push(this.hidden_element.value);
+                            }
+
+                            return content;
+                        } else {
+                            return JSON.parse(this.hidden_element.value);
+                        }
+                    },
+                    renameFile: function(object) {
+                        var vm = this;
+                        if (!this.allowRename || vm.selected_file.name == object.target.value) {
+                            return;
+                        }
+                        $.post('http://staging.sudc.co/admin/media/rename_file', {
+                            folder_location: vm.current_folder,
+                            filename: vm.selected_file.name,
+                            new_filename: object.target.value,
+                            _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d'
+                        }, function(data){
+                            if (data.success == true) {
+                                toastr.success('Successfully renamed file/folder', "Sweet Success!");
+                                vm.getFiles();
+                            } else {
+                                toastr.error(data.error, "Whoopsie!");
+                            }
+                        });
+                    },
+                    createFolder: function(e) {
+                        if (!this.allowCreateFolder) {
+                            return;
+                        }
+                        var vm = this;
+                        var name = this.modals.new_folder.name;
+                        $.post('http://staging.sudc.co/admin/media/new_folder', { new_folder: vm.current_folder+'/'+name, _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d' }, function(data) {
+                            if(data.success == true){
+                                toastr.success('Successfully created ' + name, "Sweet Success!");
+                                vm.getFiles();
+                            } else {
+                                toastr.error(data.error, "Whoopsie!");
+                            }
+                            vm.modals.new_folder.name = '';
+                            $('#create_dir_modal_'+vm._uid).modal('hide');
+                        });
+                    },
+                    deleteFiles: function() {
+                        if (!this.allowDelete) {
+                            return;
+                        }
+                        var vm = this;
+                        $.post('http://staging.sudc.co/admin/media/delete_file_folder', {
+                            path: vm.current_folder,
+                            files: vm.selected_files,
+                            _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d'
+                        }, function(data){
+                            if(data.success == true){
+                                toastr.success('', "Sweet Success!");
+                                vm.getFiles();
+                                $('#confirm_delete_modal_'+vm._uid).modal('hide');
+                            } else {
+                                toastr.error(data.error, "Whoopsie!");
+                                vm.getFiles();
+                                $('#confirm_delete_modal_'+vm._uid).modal('hide');
+                            }
+                        });
+                    },
+                    moveFiles: function(e) {
+                        if (!this.allowMove) {
+                            return;
+                        }
+                        var vm = this;
+                        var destination = this.modals.move_files.destination;
+                        if (destination === '') {
+                            return;
+                        }
+                        $('#move_files_modal_'+vm._uid).modal('hide');
+                        $.post('http://staging.sudc.co/admin/media/move_file', {
+                            path: vm.current_folder,
+                            files: vm.selected_files,
+                            destination: destination,
+                            _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d'
+                        }, function(data){
+                            if(data.success == true){
+                                toastr.success('Successfully moved file/folder', "Sweet Success!");
+                                vm.getFiles();
+                            } else {
+                                toastr.error(data.error, "Whoopsie!");
+                            }
+
+                            vm.modals.move_files.destination = '';
+                        });
+                    },
+                    crop: function(mode) {
+                        if (!this.allowCrop) {
+                            return;
+                        }
+                        if (!mode) {
+                            if (!window.confirm('It will override the original image, are you sure?')) {
+                                return;
+                            }
+                        }
+
+                        croppedData.originImageName = this.selected_file.name;
+                        croppedData.upload_path = this.current_folder;
+                        croppedData.createMode = mode;
+
+                        var vm = this;
+                        var postData = Object.assign(croppedData, { _token: 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d' });
+                        $.post('http://staging.sudc.co/admin/media/crop', postData, function(data) {
+                            if (data.success) {
+                                toastr.success(data.message);
+                                vm.getFiles();
+                                $('#crop_modal_'+vm._uid).modal('hide');
+                            } else {
+                                toastr.error(data.error, "Whoopsie!");
+                            }
+                        });
+                    },
+                    bytesToSize: function(bytes) {
+                        var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+                        if (bytes == 0) return '0 Bytes';
+                        var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+                        return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+                    },
+                    getFileName: function(name) {
+                        var name = name.split('/');
+                        return name[name.length -1];
+                    },
+                    imgIcon: function(path) {
+                        path = path.replace(/\\/g,"/");
+                        return 'background-size: cover; background-image: url("' + path + '"); background-repeat:no-repeat; background-position:center center;display:inline-block; width:100%; height:100%;';
+                    },
+                    dateFilter: function(date) {
+                        if (!date) {
+                            return null;
+                        }
+                        var date = new Date(date * 1000);
+
+                        var month = "0" + (date.getMonth() + 1);
+                        var minutes = "0" + date.getMinutes();
+                        var seconds = "0" + date.getSeconds();
+
+                        var dateFormated = date.getFullYear() + '-' + month.substr(-2) + '-' + date.getDate() + ' ' + date.getHours() + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+
+                        return dateFormated;
+                    },
+                    endsWithAny: function(suffixes, string) {
+                        return suffixes.some(function (suffix) {
+                            return string.endsWith(suffix);
+                        });
+                    }
+                },
+                mounted: function() {
+                    this.getFiles();
+                    var vm = this;
+
+                    if (this.element != '') {
+                        this.hidden_element = document.querySelector(this.element);
+                        if (!this.hidden_element) {
+                            console.error('Element "'+this.element+'" could not be found.');
+                        } else {
+                            this.expanded = false;
+                            if (this.maxSelectedFiles > 1 && this.hidden_element.value == '') {
+                                this.hidden_element.value = '[]';
                             }
                         }
                     }
-                });
 
-                //Nestable
-                $('.dd').nestable({
-                    maxDepth: 1,
-                    handleClass: 'file_link',
-                    collapseBtnHTML: '',
-                    expandBtnHTML: '',
-                    emptyClass : '',
-                    callback: function(l, e) {
-                        if (vm.allowMultiSelect) {
-                            var new_content = [];
-                            var object = $('.dd').nestable('serialize');
-                            for (var key in object) {
-                                new_content.push(object[key].url);
+                    //Key events
+                    this.onkeydown = function(evt) {
+                        evt = evt || window.event;
+                        if (evt.keyCode == 39) {
+                            evt.preventDefault();
+                            for (var i = 0, file; file = vm.files[i]; i++) {
+                                if (file === vm.selected_file) {
+                                    i = i + 1; // increase i by one
+                                    i = i % vm.files.length;
+                                    vm.selectFile(vm.files[i], evt);
+                                    break;
+                                }
                             }
-                            vm.hidden_element.value = JSON.stringify(new_content);
+                        } else if (evt.keyCode == 37) {
+                            evt.preventDefault();
+                            for (var i = 0, file; file = vm.files[i]; i++) {
+                                if (file === vm.selected_file) {
+                                    if (i === 0) {
+                                        i = vm.files.length;
+                                    }
+                                    i = i - 1;
+                                    vm.selectFile(vm.files[i], evt);
+                                    break;
+                                }
+                            }
+                        } else if (evt.keyCode == 13) {
+                            evt.preventDefault();
+                            if (evt.target.tagName != 'INPUT') {
+                                vm.openFile(vm.selected_file, null);
+                            }
                         }
+                    };
+                    //Dropzone
+                    var dropzone = $(vm.$el).first().find('#upload').first();
+                    var progress = $(vm.$el).first().find('#uploadProgress').first();
+                    var progress_bar = $(vm.$el).first().find('#uploadProgress .progress-bar').first();
+                    if (this.allowUpload && !dropzone.hasClass('dz-clickable')) {
+                        dropzone.dropzone({
+                            timeout: 180000,
+                            url: 'http://staging.sudc.co/admin/media/upload',
+                            previewsContainer: "#uploadPreview",
+                            totaluploadprogress: function(uploadProgress, totalBytes, totalBytesSent) {
+                                progress_bar.css('width', uploadProgress + '%');
+                                if (uploadProgress == 100) {
+                                    progress.delay(1500).slideUp(function(){
+                                        progress_bar.css('width', '0%');
+                                    });
+                                }
+                            },
+                            processing: function(){
+                                progress.fadeIn();
+                            },
+                            sending: function(file, xhr, formData) {
+                                formData.append("_token", 'mpyZrHGuhOoy59SjLupda94amWcoZB1aMA6nuu0d');
+                                formData.append("upload_path", vm.current_folder);
+                                formData.append("filename", vm.filename);
+                            },
+                            success: function(e, res) {
+                                if (res.success) {
+                                    toastr.success(res.message, "Sweet Success!");
+                                } else {
+                                    toastr.error(res.message, "Whoopsie!");
+                                }
+                            },
+                            error: function(e, res, xhr) {
+                                toastr.error(res, "Whoopsie!");
+                            },
+                            queuecomplete: function() {
+                                vm.getFiles();
+                            }
+                        });
                     }
-                });
 
-                $('#create_dir_modal_' + vm._uid).on('hidden.bs.modal', function () {
-                    vm.modals.new_folder.name = '';
-                });
+                    //Cropper
+                    if (this.allowCrop) {
+                        var cropper = $(vm.$el).first().find('#crop_modal_'+vm._uid).first();
+                        cropper.on('shown.bs.modal', function (e) {
+                            if (typeof cropper !== 'undefined' && cropper instanceof Cropper) {
+                                cropper.destroy();
+                            }
+                            var croppingImage = document.getElementById('cropping-image_'+vm._uid);
+                            cropper = new Cropper(croppingImage, {
+                                crop: function(e) {
+                                    document.getElementById('new-image-width_'+vm._uid).innerText = Math.round(e.detail.width) + 'px';
+                                    document.getElementById('new-image-height_'+vm._uid).innerText = Math.round(e.detail.height) + 'px';
+                                    croppedData = {
+                                        x: Math.round(e.detail.x),
+                                        y: Math.round(e.detail.y),
+                                        height: Math.round(e.detail.height),
+                                        width: Math.round(e.detail.width)
+                                    };
+                                }
+                            });
+                        });
+                    }
 
-                $('#move_files_modal_' + vm._uid).on('hidden.bs.modal', function () {
-                    vm.modals.move_files.destination = '';
-                });
+                    $(document).ready(function () {
+                        $(".form-edit-add").submit(function (e) {
+                            if (vm.hidden_element) {
+                                if (vm.maxSelectedFiles > 1) {
+                                    var content = JSON.parse(vm.hidden_element.value);
+                                    if (content.length < vm.minSelectedFiles) {
+                                        e.preventDefault();
+                                        var msg_sing = "You must select at least one file";
+                                        var msg_plur = "You must select at least 2 files";
+                                        if (vm.minSelectedFiles == 1) {
+                                            toastr.error(msg_sing);
+                                        } else {
+                                            toastr.error(msg_plur.replace('2', vm.minSelectedFiles));
+                                        }
+                                    }
+                                } else {
+                                    if (vm.minSelectedFiles > 0 && vm.hidden_element.value == '') {
+                                        e.preventDefault();
+                                        toastr.error("You must select at least one file");
+                                    }
+                                }
+                            }
+                        });
+
+                        //Nestable
+                        $('.dd').nestable({
+                            maxDepth: 1,
+                            handleClass: 'file_link',
+                            collapseBtnHTML: '',
+                            expandBtnHTML: '',
+                            emptyClass : '',
+                            callback: function(l, e) {
+                                if (vm.allowMultiSelect) {
+                                    var new_content = [];
+                                    var object = $('.dd').nestable('serialize');
+                                    for (var key in object) {
+                                        new_content.push(object[key].url);
+                                    }
+                                    vm.hidden_element.value = JSON.stringify(new_content);
+                                }
+                            }
+                        });
+
+                        $('#create_dir_modal_' + vm._uid).on('hidden.bs.modal', function () {
+                            vm.modals.new_folder.name = '';
+                        });
+
+                        $('#move_files_modal_' + vm._uid).on('hidden.bs.modal', function () {
+                            vm.modals.move_files.destination = '';
+                        });
+                    });
+                },
             });
-        },
-    });
-</script>
-<script>
-Vue.component('admin-menu', {
-    template: `<ul class="nav navbar-nav">
-    <li v-for="(item, i) in items" :class="classes(item)">
-        <a :target="item.target" :href="item.children.length > 0 ? '#'+item.id+'-dropdown-element' : item.href" :style="'color:'+color(item)" v-bind:data-toggle="item.children.length > 0 ? 'collapse' : false" :aria-expanded="item.children.length > 0 ? String(item.active) : false">
-            <span :class="'icon '+item.icon_class"></span>
-            <span class="title">{{ item.title }}</span>
-        </a>
-        <div v-if="item.children.length > 0" :id="item.id+'-dropdown-element'" :class="'panel-collapse collapse' + (item.active ? ' in' : ' ')">
-            <div class="panel-body">
-                <admin-menu :items="item.children"></admin-menu>
-            </div>
-        </div>
-    </li>
-</ul>
-`,
-    props: {
-        items: {
-            type: Array,
-            default: [],
-        }
-    },
-    methods: {
-        classes: function(item) {
-            var classes = [];
-            if (item.children.length > 0) {
-                classes.push('dropdown');
-            }
-            if (item.active) {
-                classes.push('active');
-            }
-
-
-            return classes.join(' ');
-        },
-        color: function(item) {
-            if (item.color && item.color != '#000000') {
-                return item.color;
-            }
-
-            return '';
-        }
-    }
-});
-</script>
-<script>
-new Vue({
-    el: '#adminmenu',
-});
-</script>
-    <!-- DataTables -->
+        </script>
         <script>
-        $(document).ready(function () {
-                            var table = $('#dataTable').DataTable({"order":[],"language":{"sEmptyTable":"No data available in table","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sInfoEmpty":"Showing 0 to 0 of 0 entries","sInfoFiltered":"(filtered from _MAX_ total entries)","sInfoPostFix":"","sInfoThousands":",","sLengthMenu":"Show _MENU_ entries","sLoadingRecords":"Loading...","sProcessing":"Processing...","sSearch":"Search:","sZeroRecords":"No matching records found","oPaginate":{"sFirst":"First","sLast":"Last","sNext":"Next","sPrevious":"Previous"},"oAria":{"sSortAscending":": activate to sort column ascending","sSortDescending":": activate to sort column descending"}},"columnDefs":[{"targets":-1,"searchable":false,"orderable":false}]});
-            
-                        $('.select_all').on('click', function(e) {
-                $('input[name="row_id"]').prop('checked', $(this).prop('checked'));
+            Vue.component('admin-menu', {
+                template: `<ul class="nav navbar-nav">
+<li v-for="(item, i) in items" :class="classes(item)">
+<a :target="item.target" :href="item.children.length > 0 ? '#'+item.id+'-dropdown-element' : item.href" :style="'color:'+color(item)" v-bind:data-toggle="item.children.length > 0 ? 'collapse' : false" :aria-expanded="item.children.length > 0 ? String(item.active) : false">
+<span :class="'icon '+item.icon_class"></span>
+<span class="title">{{ item.title }}</span>
+            </a>
+<div v-if="item.children.length > 0" :id="item.id+'-dropdown-element'" :class="'panel-collapse collapse' + (item.active ? ' in' : ' ')">
+<div class="panel-body">
+<admin-menu :items="item.children"></admin-menu>
+            </div>
+            </div>
+            </li>
+            </ul>
+`,
+                props: {
+                    items: {
+                        type: Array,
+                        default: [],
+                    }
+                },
+                methods: {
+                    classes: function(item) {
+                        var classes = [];
+                        if (item.children.length > 0) {
+                            classes.push('dropdown');
+                        }
+                        if (item.active) {
+                            classes.push('active');
+                        }
+
+
+                        return classes.join(' ');
+                    },
+                    color: function(item) {
+                        if (item.color && item.color != '#000000') {
+                            return item.color;
+                        }
+
+                        return '';
+                    }
+                }
             });
-        });
+        </script>
+        <script>
+            new Vue({
+                el: '#adminmenu',
+            });
+        </script>
+        <!-- DataTables -->
+        <script>
+            $(document).ready(function () {
+                var table = $('#dataTable').DataTable({"order":[],"language":{"sEmptyTable":"No data available in table","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sInfoEmpty":"Showing 0 to 0 of 0 entries","sInfoFiltered":"(filtered from _MAX_ total entries)","sInfoPostFix":"","sInfoThousands":",","sLengthMenu":"Show _MENU_ entries","sLoadingRecords":"Loading...","sProcessing":"Processing...","sSearch":"Search:","sZeroRecords":"No matching records found","oPaginate":{"sFirst":"First","sLast":"Last","sNext":"Next","sPrevious":"Previous"},"oAria":{"sSortAscending":": activate to sort column ascending","sSortDescending":": activate to sort column descending"}},"columnDefs":[{"targets":-1,"searchable":false,"orderable":false}]});
+
+                $('.select_all').on('click', function(e) {
+                    $('input[name="row_id"]').prop('checked', $(this).prop('checked'));
+                });
+            });
 
 
-        var deleteFormAction;
-        $('td').on('click', '.delete', function (e) {
-            $('#delete_form')[0].action = 'http://staging.sudc.co/admin/vendors/__id'.replace('__id', $(this).data('id'));
-            $('#delete_modal').modal('show');
-        });
-    </script>
-<!-- Additional Javascript -->
-    <script type="text/javascript" src="http://staging.sudc.co/js/custom.js"></script>
-</body>
+            var deleteFormAction;
+            $('td').on('click', '.delete', function (e) {
+                $('#delete_form')[0].action = 'http://staging.sudc.co/admin/vendors/__id'.replace('__id', $(this).data('id'));
+                $('#delete_modal').modal('show');
+            });
+        </script>
+        <!-- Additional Javascript -->
+        <script type="text/javascript" src="http://staging.sudc.co/js/custom.js"></script>
+    </body>
 </html>

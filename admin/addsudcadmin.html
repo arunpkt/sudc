@@ -40,8 +40,7 @@
         <link rel="stylesheet" type="text/css" href="http://staging.sudc.co/css/custom.css">   
 
         <link rel="stylesheet" href="../css/admin.css">
-               <link href="voyager.ttf" rel="stylesheet">
-               <link href="voyager.woff" rel="stylesheet">
+
     </head>
 
     <body class="voyager sudcadmins">
@@ -217,7 +216,7 @@
 
                                                 </div>
                                                 <!-- GET THE DISPLAY OPTIONS -->
-                                                <div class="form-group  col-md-12" >
+                                                <div class="form-group  col-md-6" >
 
                                                     <label for="name">Email</label>
                                                     <input  required  type="text" class="form-control" name="email"
@@ -231,16 +230,6 @@
                                                 <div class="form-group  col-md-6" >
 
                                                     <label for="name">Password</label>
-                                                    <input type="password"
-                                                           required        class="form-control"
-                                                           name="password"
-                                                           value="">
-
-
-                                                </div>
-                                                <div class="form-group  col-md-6" >
-
-                                                    <label for="name">Confirm Password</label>
                                                     <input type="password"
                                                            required        class="form-control"
                                                            name="password"
@@ -273,7 +262,7 @@
 
                                                 </div>
                                                 <!-- GET THE DISPLAY OPTIONS -->
-                                                <div class="form-group  col-md-12" >
+                                                <div class="form-group  col-md-6" >
 
                                                     <label for="name">Locations</label>
                                                     <select
@@ -285,10 +274,17 @@
                                                         <option value="">None</option>
 
                                                     </select>
+                                                </div>
+                                                <div class="form-group  col-md-6" >
 
+                                                    <label for="name">Role</label>
+                                                    <select class="form-control select2" name="role_id">
 
+                                                        <option value="">None</option>
 
-
+                                                        <option value="1" >Super Administrator</option>
+                                                        <option value="2" >Administrator</option>
+                                                    </select>
 
                                                 </div>
                                                 <!-- GET THE DISPLAY OPTIONS -->
@@ -306,18 +302,7 @@
 
                                                 </div>
                                                 <!-- GET THE DISPLAY OPTIONS -->
-                                                <div class="form-group  col-md-12" >
-
-                                                    <label for="name">Role</label>
-                                                    <select class="form-control select2" name="role_id">
-
-                                                        <option value="">None</option>
-
-                                                        <option value="1" >Super Administrator</option>
-                                                        <option value="2" >Administrator</option>
-                                                    </select>
-
-                                                </div>
+                                                
 
                                             </div><!-- panel-body -->
 
