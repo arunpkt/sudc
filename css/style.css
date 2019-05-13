@@ -2775,6 +2775,33 @@ p.signup-policy {
     top: -0.7em;
     margin-left: -.6em;
 }
+.userprofile .form-group {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Device */
 @media screen and (max-width:480px) {
     .modal-content .modal-body {
