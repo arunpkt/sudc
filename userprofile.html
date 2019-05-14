@@ -85,10 +85,8 @@
                                             </li>
 
                                             <li class="dropdown">
-                                                <a href="login.html" class="dropdown-toggle login_reg" id="submenuhead" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                    Login/Register
-                                                    <i class="far fa-user"></i>
-                                                    <i class="fas fa-chevron-down"></i>
+                                                <a href="login.html" class="dropdown-toggle logged_user" id="submenuhead" data-toggle="dropdown" data-hover="dropdown">
+                                                    <img  class="img-rounded" src="images/default.png" />
                                                 </a>
                                                 <ul class="dropdown-menu dropdownhover-bottom" role="menu" id="submenucotent">
                                                     <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
@@ -234,7 +232,7 @@
 
         </header>
 
-        <section class="userprofile">
+        <section class="userprofile_section_page">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
@@ -242,18 +240,38 @@
                             <h2 class="text-left">User profile</h2>
                             <form action="#" method="post" class="form">
                                 <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                    <label for="name">First Name:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="First name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Last Name:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Last name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Date Of Birth:</label>
+                                    <input type="text" class="form-control" id="dob" placeholder="DOB">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile number:</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="Mobile">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Email">
+                                    <label for="mobile">Location:</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="Location">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="mobile">Avatar:</label>
+                                    <input type="file" class="form-control" id="Avatar" placeholder="Avatar">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" placeholder="Email">
+                                    <input type="submit" class="btn btn-primary btn-md" value="SAVE" />
                                 </div>
                             </form>
                         </div>

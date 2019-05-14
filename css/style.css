@@ -345,6 +345,7 @@ header.sticky_header {
     width: 100%;
     z-index: 100;
     padding-bottom: 0;
+    top: 0;
 }
 /*header.sticky_header .modal{
 z-index: 1050;
@@ -2775,16 +2776,31 @@ p.signup-policy {
     top: -0.7em;
     margin-left: -.6em;
 }
-.userprofile .form-group {
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 0px;
+.userprofile_section_page .form-group {
+    border-bottom: 1px solid #dccdcd;
+    padding: 20px;
+    margin-bottom: 0;
 }
-
-
-
-
-
+section.userprofile_section_page {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.userprofile_section_page form.form {
+    border: 1px solid #dccdcd;
+    border-radius: 5px;
+}
+a.logged_user#submenuhead {
+    border: 0px;
+    padding-right: 5px;
+}
+a.logged_user img {
+    width: 35px;
+    border-radius: 60px;
+}
+.dropdown-menu {
+    left:auto;
+    right: 0!important;
+}
 
 
 
