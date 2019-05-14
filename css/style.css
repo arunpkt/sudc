@@ -2801,7 +2801,9 @@ a.logged_user img {
     left:auto;
     right: 0!important;
 }
-
+input#Avatar {
+  border: 0px;
+}
 
 
 
