@@ -2783,8 +2783,12 @@ p.signup-policy {
     margin-bottom: 0;
 }
 section.userprofile_section_page, .write_review_section_page {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+section.userprofile_section_page, .write_review_section_page .btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .userprofile_section_page form.form {
     border: 1px solid #dccdcd;
@@ -2823,7 +2827,12 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
 .rview-section p {
     font-size: 18px;
 }
-
+.rview-section hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #969696;
+}
 
 
 
