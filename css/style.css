@@ -2778,15 +2778,19 @@ p.signup-policy {
     margin-left: -.6em;
 }
 .userprofile_section_page .form-group {
-    border-bottom: 1px solid #dccdcd;
-    padding: 20px;
+    border-bottom: 0px solid #dccdcd;
+    padding: 10px 20px;
     margin-bottom: 0;
 }
 section.userprofile_section_page, .write_review_section_page {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-section.userprofile_section_page, .write_review_section_page .btn {
+section.userprofile_section_page {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.write_review_section_page .btn {
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -2811,6 +2815,7 @@ input#Avatar {
 }
 section.userprofile_section_page input.btn.btn-primary.btn-md {
     margin: 10px;
+    padding: 5px 35px;
 }
 .star-rating {
     line-height:32px;
@@ -2822,6 +2827,7 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
 }
 .star-rating .fa-star {
     color: #e0dfdd;
+    font-size: 25px;
 }
 
 .rview-section p {
@@ -3076,7 +3082,10 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
     }
 
     .top_header a {
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .top_header a i {
+        font-size: 20px;
     }
 
     .text_slideshow {
@@ -3297,10 +3306,16 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
     .customer_pod {
         height: 370px;
     }
+    .signup-other {
+        padding: 0 20px 0 20px;
+    }
 }
 
 /*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .signup-other {
+        padding: 0 20px 0 20px;
+    }
     .modal-dialog {
         width: 100%;
         margin: 0 auto;
