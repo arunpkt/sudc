@@ -563,6 +563,11 @@ section.shop_banner {
     .border-right.shp_rview_sec{
         border: 0!important;
     }
+    .shop_review .shp_rview_sec {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 60px;
+    }
     .shop_des_col {
         padding-left: 10px;
         padding-right: 10px;
@@ -578,9 +583,8 @@ section.shop_banner {
     .product_list_filter h2 {
         display: block!important;
     }
-     .prodt_page .grid-img {
-        /* min-height: 180px; */
-        height: 140px!important;
+    .prodt_page .grid-img {
+        height: 125px!important;
     }
 }
 
@@ -651,7 +655,13 @@ section.shop_banner {
         padding-right: 0;
         padding-left: 15px
     }
-   
+    .product_list_pod .grid-arrival {
+        height: 125px;
+    }
+    .product_list_pod .grid-img {
+        height: 125px !important;
+    }
+
 
 }
 
@@ -665,7 +675,5 @@ section.shop_banner {
         padding-right: 0;
         padding-left: 15px
     }
-
-
 
 }
