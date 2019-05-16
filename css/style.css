@@ -2722,7 +2722,7 @@ p.signup-policy {
 }
 
 .advanced-modal .form-control, .advanced-modal .btn{
-  border-radius: 0px;
+    border-radius: 0px;
 }
 .advanced-modal-head h3 {
     font-weight: 600;
@@ -2803,22 +2803,23 @@ a.logged_user img {
     right: 0!important;
 }
 input#Avatar {
-  /*border: 0px;*/
+    /*border: 0px;*/
 }
 section.userprofile_section_page input.btn.btn-primary.btn-md {
     margin: 10px;
 }
 .star-rating {
-  line-height:32px;
-  font-size:40px;
+    line-height:32px;
+    font-size:40px;
 }
 
-.star-rating .fa-star{
-    color: yellow;
+.star-rating .fa-star.o{
+    color: #ffc400;
 }
-.star-rating .fa-star .o{
-    color: #FFFFFF;
+.star-rating .fa-star {
+    color: #e0dfdd;
 }
+
 .rview-section p {
     font-size: 18px;
 }
@@ -3805,6 +3806,9 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
     .grid-arrival {
         height: 200px;
     }
+    .top_stores .grid-arrival {
+        height: 100px;
+    }
 
     header {
         padding-bottom: 0;
@@ -4012,6 +4016,14 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
     }
 
     a#submenuhead .fa-user {
+        display: none;
+    }
+    .signup-other {
+        padding: 0 20px 0 20px;
+    }
+    .signup-modal-body .retrieve-password {
+        border-right: 0px solid #ebebeb;
+        padding: 0 25px 20px 20px;
         display: none;
     }
 }

@@ -611,7 +611,7 @@ section.shop_banner {
 
     .container .jumbotron,
     .container-fluid .jumbotron {
-        margin: 20px 30px
+        margin: 5px 16px;
     }
 
     .cust-selc {
@@ -637,6 +637,19 @@ section.shop_banner {
         margin-left: 8px;
         padding-right: 15px;
         width: 88%;
+    }
+    .sort select {
+        margin-left: 8px;
+        padding-right: 15px;
+        width: 70%;
+    }
+    .pad_l {
+        padding-right: 7.5px;
+        padding-left: 30px;
+    }
+    .lstout {
+        padding-right: 20px;
+        margin-bottom: 60px;
     }
 }
 
