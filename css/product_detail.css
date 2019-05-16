@@ -363,7 +363,13 @@ p.font-weight-bold.grey.review_ques {
 .lk{margin:10px;float:left;width:100%;}
 
 .thumbnail_image_detail {
-    margin-top: 50px;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.thumbnail_image_detail img{
+    margin-left: 20px;
+    float: left;
 }
 .thumbnail_image_detail .img_wrapper {
     margin-bottom: 15px;
