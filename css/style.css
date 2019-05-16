@@ -2781,7 +2781,7 @@ p.signup-policy {
     padding: 20px;
     margin-bottom: 0;
 }
-section.userprofile_section_page {
+section.userprofile_section_page, .write_review_section_page {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -2802,11 +2802,25 @@ a.logged_user img {
     right: 0!important;
 }
 input#Avatar {
-  border: 0px;
+  /*border: 0px;*/
+}
+section.userprofile_section_page input.btn.btn-primary.btn-md {
+    margin: 10px;
+}
+.star-rating {
+  line-height:32px;
+  font-size:40px;
 }
 
-
-
+.star-rating .fa-star{
+    color: yellow;
+}
+.star-rating .fa-star .o{
+    color: #FFFFFF;
+}
+.rview-section p {
+    font-size: 18px;
+}
 
 
 
