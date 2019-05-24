@@ -2839,7 +2839,9 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
     border: 0;
     border-top: 1px solid #969696;
 }
-
+.about_company {
+    margin-bottom: 70px;
+}
 
 
 
