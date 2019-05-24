@@ -2058,7 +2058,12 @@ p.about_card_head {
     font-style: italic;
     font-weight: 600;
 }
-
+p.about_card_sub_head {
+    font-style: normal;  
+    color: #002038;
+    font-size: 18px;
+    font-weight: 600;
+}
 .about_the_card_wrapper {
     padding: 70px 0 0px 0;
 }
