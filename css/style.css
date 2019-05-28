@@ -2057,6 +2057,7 @@ p.about_card_head {
     font-size: 18px;
     font-style: italic;
     font-weight: 600;
+    text-align: justify;
 }
 p.about_card_sub_head {
     font-style: normal;  
@@ -2088,8 +2089,23 @@ p.about_card_description {
 .product_wrapper h4 {
     font-weight: 600;
 }
+section.news_filter {
+    margin: 25px 0px;
+}
 
-
+.cust-selc {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    font-size: 14px;
+    position: relative;
+    width: 90%;
+}
+.news_pod_wrapper {
+    margin-top: 40px;
+}
+section.news_pod {
+    margin-bottom: 70px;
+}
 /* Submenu */
 
 .submenu {
@@ -2848,7 +2864,10 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
     margin-bottom: 70px;
 }
 
-
+a.newsReadMore {
+    font-size: 22px;
+    text-decoration: underline;
+}
 
 
 
