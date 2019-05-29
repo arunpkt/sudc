@@ -2090,7 +2090,7 @@ p.about_card_description {
     font-weight: 600;
 }
 section.news_filter {
-    margin: 25px 0px;
+    margin: 40px 0px 25px 0;
 }
 
 .cust-selc {
@@ -2865,16 +2865,52 @@ section.userprofile_section_page input.btn.btn-primary.btn-md {
 }
 
 a.newsReadMore {
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: underline;
 }
-
-
-
-
-
-
-
+p.news_date_time {
+    font-size: 18px;
+}
+.news_detail_breadcrumb ol.breadcrumb {
+    background-color: transparent;
+    padding: 8px 10px;
+}
+.news_detail_breadcrumb .breadcrumb>.active {
+    color: #191818;
+    font-weight: 600;
+}
+.news_detail_breadcrumb .breadcrumb-item a {
+    color: #9e9797;
+}
+section.news_detail_pod {
+    margin: 20px 35px 70px 35px;
+}
+p.news_title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0;
+}
+p.news_title_details {
+    font-size: 16px;
+    margin-top: 10px;
+}
+p.news_title_date_location {
+    font-size: 16px;
+    font-weight: 600;
+}
+p.news_title_date_location span.date {
+    margin-left: 10px;
+}
+p.news_title_date_location span.location {
+    margin-right: 10px;
+}
+p.news_title_date_location i {
+    margin-right: 15px;
+    color: #a7a4a4;
+}
+section.news_detail_breadcrumb {
+    margin-top: 20px;
+}
 
 
 /* Device */
