@@ -2942,6 +2942,16 @@ section.site_map_content {
 
 /* Device */
 @media screen and (max-width:480px) {
+
+    .news_filter .cust-selc {
+        width: 100%;
+    }
+    .news_filter .cust-selc select {
+        width: 80%;
+    }
+    .news_filter .input-group {
+        margin-bottom: 20px;
+    }
     .modal-content .modal-body {
         padding: 0px 50px; 
     }
@@ -3081,6 +3091,9 @@ section.site_map_content {
         height: 110px;
         background-color: #796f6f;
         background-image: none;
+    }
+    .site_map  .about_the_card_img{
+        height: 45px;
     }
 
     .directors {
@@ -3397,6 +3410,15 @@ section.site_map_content {
     }
     .signup-other {
         padding: 0 20px 0 20px;
+    }
+    .news_pod p.about_card_head {
+        margin-top: 20px;
+    }
+    section.site_map_content {
+        margin: 30px 20px 70px 20px;
+    }
+    section.news_detail_pod {
+        margin: 20px 15px 70px 15px;
     }
 }
 
@@ -3781,6 +3803,9 @@ section.site_map_content {
 
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
+    .news_filter .input-group {
+        margin-bottom: 20px;
+    }
     .sign-option .signup-other {
         min-height: 200px;
     }
@@ -4138,6 +4163,9 @@ section.site_map_content {
         border-right: 0px solid #ebebeb;
         padding: 0 25px 20px 20px;
         display: none;
+    }
+    .news_pod p.about_card_head {
+        margin-top: 20px;
     }
 }
 
