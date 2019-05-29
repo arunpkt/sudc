@@ -2911,6 +2911,33 @@ p.news_title_date_location i {
 section.news_detail_breadcrumb {
     margin-top: 20px;
 }
+.site_map .submenu {
+    background-color: #000000;
+    position: relative;
+}
+section.site_map_content {
+    margin: 30px 20px 70px 60px;
+}
+.site_map_content h2 {
+    margin: 10px 0px 45px 0px;
+}
+.site_map_content h4 {
+    color: #1f9cd7;
+    margin: 20px 0;
+    font-weight: 600;
+}
+.site_map_content ul {
+    list-style: none;
+    padding: 0px;
+}
+.site_map_content li a {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 10px;
+}
+.site_map_content li {
+    margin-top: 10px;
+}
 
 
 /* Device */
