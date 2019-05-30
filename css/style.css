@@ -1165,10 +1165,10 @@ padding-left: 0px;
 .grid-arrival {
     padding: 5%;
 }
-.grid-img {
+/*.trndy_items .grid-img {
     min-height: 150px;
     max-height: 180px;
-}
+}*/
 .grid-arr:hover {
     transform: scale(1.05);
     transition: 0.5s;
@@ -2938,8 +2938,26 @@ section.site_map_content {
 .site_map_content li {
     margin-top: 10px;
 }
-
-
+.trndy_items .grid-img {
+    min-height: 150px;
+    max-height: 180px;
+}
+.dealsOfDay .grid-img {
+    min-height: 150px;
+    max-height: 180px;
+}
+.top_category .grid-img {
+    min-height: 150px;
+    max-height: 180px;
+}
+.recentlyViewed .grid-img {
+    min-height: 150px;
+    max-height: 180px;
+}
+.product_list_pod .grid-img {
+    min-height: 150px;
+    max-height: 180px;
+}
 /* Device */
 @media screen and (max-width:480px) {
 
@@ -3304,9 +3322,9 @@ section.site_map_content {
         height: 100%;
     }
 
-    .grid-img {
+/*    .grid-img {
         height: auto;
-    }
+    }*/
 
     .grid-arr .grid-arrival figure > a .grid-img img {
         position: unset;
@@ -3689,9 +3707,11 @@ section.site_map_content {
         height: 100%;
     }
 
+/*
     .grid-img {
         height: auto;
     }
+*/
 
     .grid-arr .grid-arrival figure > a .grid-img img {
         position: unset;
