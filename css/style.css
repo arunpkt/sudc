@@ -1139,6 +1139,12 @@ padding-left: 0px;
     text-decoration: underline;
 }
 
+.trndy_items_list li.active a {
+    text-decoration: none !important;
+    color: #5f9904 !important;
+}
+
+
 .trndy_items {
     margin-top: 50px;
 }
@@ -1336,6 +1342,11 @@ a.fill-div {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+#topStoresItems .arrival-grid {
+    margin-bottom: 15px;
+}
+
 .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
     width: 85%;
     max-width: 200px;
@@ -2334,6 +2345,11 @@ img.line{
     border: 1px solid #000000; 
     background-color: #FFFFFF;
 } 
+
+div#dealofdayviewmore {
+    margin-top: 30px;
+    MARGIN-BOTTOM: 10PX;
+}
 .sudc_menu .navbar.navbar-default > .container{
     padding-right: 0px;
 }
@@ -2357,6 +2373,11 @@ button.close{
 }
 .modal-content {
     min-height: 400px;
+    border-radius: 0px;
+}
+#loginModal .modal-content {
+    min-height: 324px;
+    max-height: 300px;
     border-radius: 0px;
 }
 .modal-header {    
@@ -2415,12 +2436,18 @@ button.close{
 .login-modal .form-group input {
     font-size: 14px;
     color: #6e6e6e;
-    margin-bottom: 15px;
-    height: 50px;
+    margin-bottom: 5px;
+    height: 30px;
     font-size: 14px;
     border: 1px solid #ccc;
     font-family: 'Calibri', sans-serif;
     border-radius: 0;
+}
+
+.login-modal .form-group input[type='file'] {
+
+    border: 0px solid #ccc;
+
 }
 
 .signup-modal-body .signup-form button {
@@ -2957,6 +2984,15 @@ section.site_map_content {
 .product_list_pod .grid-img {
     min-height: 150px;
     max-height: 180px;
+}
+.ui-slider-horizontal {
+    height: 5px;
+}
+
+.userprofile_section_page .form-group input[type='file'] {
+
+    border: 0px solid #ccc;
+
 }
 /* Device */
 @media screen and (max-width:480px) {

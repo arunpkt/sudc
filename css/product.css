@@ -305,7 +305,9 @@ li.vwmre a {
     z-index: 1;
     width: 65%;
 }
-
+.product_list_pod .sort select {
+    width: 70%;
+}
 .sort select:before {
     content: "\f107";
     font-family: FontAwesome
@@ -350,7 +352,7 @@ h2.mt100.clk {
 }
 
 .soc_ic {
-    margin-top: 18px;
+    margin-top: 10px;
 }
 
 .no-border {
@@ -411,9 +413,17 @@ section.shop_banner {
 .shp_detl_dis::after {
     content: "|";
 }
+.ui-slider-horizontal {
+    height: 5px!important;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -9px!important;
+    margin-left: -.6em;
+}
 
-
-
+div#slider-range {
+    margin-top: 25px;
+}
 
 
 
