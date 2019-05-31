@@ -303,10 +303,10 @@ li.vwmre a {
     margin-left: 10px;
     padding-right: 15px;
     z-index: 1;
-    width: 65%;
+    width: 63%;
 }
 .product_list_pod .sort select {
-    width: 70%;
+    width: 68%;
 }
 .sort select:before {
     content: "\f107";
