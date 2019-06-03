@@ -129,7 +129,7 @@ input[type=checkbox]:checked:disabled + label:before {
     padding: 5px 15px;
     font-size: 14px;
     position: relative;
-    width: 90%;
+   /* width: 90%;*/
 }
 
 .title {
@@ -297,20 +297,23 @@ li.vwmre a {
 
 /*sortby*/
 .sort select {
-    -webkit-appearance: none;
+/*    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin-left: 10px;
     padding-right: 15px;
     z-index: 1;
-    width: 63%;
+    width: 63%;*/
 }
 .product_list_pod .sort select {
-    width: 68%;
+  /*  width: 68%;*/
 }
 .sort select:before {
-    content: "\f107";
-    font-family: FontAwesome
+    /*content: "\f107";
+    font-family: FontAwesome*/
+}
+.sort .cust-selc i {
+  display: none;
 }
 
 .sort .icon-angle-down:before {
