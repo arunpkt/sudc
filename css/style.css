@@ -309,6 +309,11 @@ img.img-responsive:hover {
     padding-right: 0;
 }
 
+ul#othersubmenuhead {
+    height: 500px;
+    overflow-x: scroll;
+}
+
 .upar {
     background: #FFF url(../images/bk_tp.png)no-repeat center;
     position: fixed;
@@ -2418,11 +2423,11 @@ button.close{
 
 .login-modal .form-control-placeholder {
     position: absolute;
-    top: 10px;
+    top: 0px;
     padding: 7px 0 0 13px;
     transition: all 200ms;
     opacity: 0.5; 
-    color:#b2b2b2;
+    color:#b8b8b8;
     font-weight:300;
     font-family: 'Calibri', sans-serif;
 }
@@ -2430,14 +2435,14 @@ button.close{
 .login-modal .form-control:focus + .form-control-placeholder,
 .login-modal .form-control:valid + .form-control-placeholder {
     font-size: 75%;
-    transform: translate3d(0, -65%, 0);
+    transform: translate3d(0, -25%, 0);
     opacity: 1;
 }
 .login-modal .form-group input {
     font-size: 14px;
     color: #6e6e6e;
     margin-bottom: 5px;
-    height: 30px;
+    height: 38px;
     font-size: 14px;
     border: 1px solid #ccc;
     font-family: 'Calibri', sans-serif;
