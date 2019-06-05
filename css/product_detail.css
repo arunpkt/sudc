@@ -134,7 +134,7 @@
 .mp_sec .dtl_img{
     margin-top:20px;
     height: 170px;
- }
+}
 /*.container.ad_link{
 padding:0;
 }*/
@@ -821,7 +821,7 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     .row.tp_sr{margin:0;}
     .row.tp_sr .col-sm-9{width:72%;margin-right:10px}
     .row.pr_sr .rw_rslt div{margin-bottom:10px}
-    .pagnt .pagination>li>a, .pagination>li>span{padding:0;margin-left:19px}
+    .pagnt .pagination>li>a, .pagination>li>span{padding:0;margin-left:16px}
     .slick-prev, .slick-next{top: 30px!important;}
     .slick-next{right:45px!important;}
     .slick-prev{right:70px!important;}
@@ -836,11 +836,18 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     .rec_sec h3{padding:0 15px;}
     .abt_des,.container.ad_link{padding:0 30px;}
     .tp_sr .no-border{width:50%;}
+    .soc_ic i {
+        margin-left: 7px;
+    }
 
 }
 @media screen and (min-width : 992px) and (max-width: 1024px) and (orientation:landscape) {
+    
     .review_per .yesno {
         margin-top: 15px;
         padding: 0;
+    }
+    .hrs_sec, .more_business_info, .people_als_vewd, .other_items_nearby, .browse_nearby {
+        margin-top: 20px!important;
     }
 }
