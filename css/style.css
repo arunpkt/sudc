@@ -4242,6 +4242,11 @@ section.site_map_content {
     .news_pod p.about_card_head {
         margin-top: 20px;
     }
+
+    .top_category .header_title img {
+        vertical-align: baseline;
+        width: 15%;
+    }
 }
 
 /*991*/
@@ -4285,6 +4290,39 @@ section.site_map_content {
     }
     .customer_pod {
         height: 500px;
+    }
+    section.geturcard_bg span {
+        float: none; 
+        text-align: center;
+    }
+    .getCard a.bttn {
+        text-align: center;
+        margin-left: 135px;
+        float: none;
+    }
+    .quick-shop1, .trndy_items, .quick-shop, .dealsOfDay, .quick-shop_3, .top_stores ,.budget_stores, .top_category,.customer_speaks,.recentlyViewed {
+        margin-top: 20px!important;
+    }
+
+    .trndy_items .grid-img {
+        min-height: 100px;
+        max-height: 180px;
+    }
+    .dealsOfDay .grid-img {
+        min-height: 100px;
+        max-height: 180px;
+    }
+    .top_category .grid-img {
+        min-height: 100px;
+        max-height: 180px;
+    }
+    .recentlyViewed .grid-img {
+        min-height: 100px;
+        max-height: 180px;
+    }
+    .product_list_pod .grid-img {
+        min-height: 100px;
+        max-height: 180px;
     }
 }
 

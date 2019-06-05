@@ -822,7 +822,7 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     .row.tp_sr .col-sm-9{width:72%;margin-right:10px}
     .row.pr_sr .rw_rslt div{margin-bottom:10px}
     .pagnt .pagination>li>a, .pagination>li>span{padding:0;margin-left:19px}
-    .slick-prev, .slick-next{top: 45px!important;}
+    .slick-prev, .slick-next{top: 30px!important;}
     .slick-next{right:45px!important;}
     .slick-prev{right:70px!important;}
     .banr_link .col-md-6.col-sm-6.col-xs-12.pull-right.border-left{padding-left: 10px}
