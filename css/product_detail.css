@@ -812,7 +812,20 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
         margin-top: 50px;
     }
 }
-
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .mp_sec .dtl_img {
+        margin-top: 20px;
+        height: 240px;
+    }
+    .shop_review .shp_rview_sec {
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+    .specification-body span.left_spec {
+        width: 25%;
+        float: left;
+    }
+}
 @media screen and (min-width:768px) and (max-width:1024px) {
     .col-md-6.col-sm-6.col-xs-12.pics{width:100%;}
     .usr_dtl {
@@ -827,9 +840,6 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     .slick-prev{right:70px!important;}
     .banr_link .col-md-6.col-sm-6.col-xs-12.pull-right.border-left{padding-left: 10px}
     .prd_link span{margin-left: 0}
-    .dtl_img {
-        margin: 10px 30px;
-    }
     .mp_sec .dtl_img {
         margin:0;
     }

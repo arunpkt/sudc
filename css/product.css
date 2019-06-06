@@ -129,7 +129,7 @@ input[type=checkbox]:checked:disabled + label:before {
     padding: 5px 15px;
     font-size: 14px;
     position: relative;
-   /* width: 90%;*/
+    /* width: 90%;*/
 }
 
 .title {
@@ -297,7 +297,7 @@ li.vwmre a {
 
 /*sortby*/
 .sort select {
-/*    -webkit-appearance: none;
+    /*    -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin-left: 10px;
@@ -306,14 +306,14 @@ li.vwmre a {
     width: 63%;*/
 }
 .product_list_pod .sort select {
-  /*  width: 68%;*/
+    /*  width: 68%;*/
 }
 .sort select:before {
     /*content: "\f107";
     font-family: FontAwesome*/
 }
 .sort .cust-selc i {
-  display: none;
+    display: none;
 }
 
 .sort .icon-angle-down:before {
@@ -624,12 +624,17 @@ div#slider-range {
 
     .container .jumbotron,
     .container-fluid .jumbotron {
-        margin: 5px 16px;
+        margin: 5px 0px;
     }
 
     .cust-selc {
         width: 100%;
         max-width: 100%
+    }
+    .border-left.pad_l .cust-selc {
+        width: 50%;
+        max-width: 100%;
+        margin-right: 35x;
     }
 
     .mt100 {
@@ -664,6 +669,13 @@ div#slider-range {
         padding-right: 20px;
         margin-bottom: 60px;
     }
+    .dtl_img {
+        margin: 10px 0px;
+    }
+    p.shop_det_rat_spa {
+        margin-left: 32px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -681,12 +693,12 @@ div#slider-range {
         padding-right: 0;
         padding-left: 15px
     }
-/*    .product_list_pod .grid-arrival {
-        height: 125px;
-    }
+    /*    .product_list_pod .grid-arrival {
+    height: 125px;
+}
     .product_list_pod .grid-img {
-        height: 125px !important;
-    }*/
+    height: 125px !important;
+}*/
 
 
 }

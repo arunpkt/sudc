@@ -2406,6 +2406,7 @@ button.close{
 .signup-modal-head a {
     color: #3a99d9;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .signup-modal-head a:focus, .signup-modal-head a:hover {
     color: #2e81b7;
@@ -4016,9 +4017,6 @@ section.site_map_content {
         padding: 10px 10px;
     }
 
-    .grid-arrival {
-        height: 200px;
-    }
     .top_stores .grid-arrival {
         height: 100px;
     }
@@ -4219,6 +4217,13 @@ section.site_map_content {
     .where_in label {
         width: 30%;
     }
+    .menu_other_pages .where_in label {
+        width: 24%;
+    }
+    .menu_other_pages  .where_in .input-group {
+        width: 73%;
+        padding: 0px;
+    }
 
     .description {
         text-align: center;
@@ -4254,6 +4259,10 @@ section.site_map_content {
         min-height: 324px;
         max-height: 600px;
         border-radius: 0px;
+    }
+    .product_list_pod .grid-img {
+        min-height: 80px;
+        max-height: 80px;
     }
 }
 
