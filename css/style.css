@@ -4250,6 +4250,11 @@ section.site_map_content {
     .customer_speaks .col-md-4.col-sm-12.col-xs-12.text-center {
         margin-bottom: 20px;
     }
+    #loginModal .modal-content {
+        min-height: 324px;
+        max-height: 600px;
+        border-radius: 0px;
+    }
 }
 
 /*991*/
