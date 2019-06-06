@@ -4164,7 +4164,7 @@ section.site_map_content {
     }
 
     .where_in .input-group {
-        width: 75%;
+        width: 68%;
         padding: 0px;
     }
 
@@ -4217,7 +4217,7 @@ section.site_map_content {
     }
 
     .where_in label {
-        width: 24%;
+        width: 30%;
     }
 
     .description {
@@ -4246,6 +4246,9 @@ section.site_map_content {
     .top_category .header_title img {
         vertical-align: baseline;
         width: 15%;
+    }
+    .customer_speaks .col-md-4.col-sm-12.col-xs-12.text-center {
+        margin-bottom: 20px;
     }
 }
 
@@ -4280,6 +4283,8 @@ section.site_map_content {
 
     .directors .grid-img {
         height: 193px;
+        max-height: 200px;
+        min-height: 200px;
     }
     .looking label {
         padding: 0 10px 0 20px;
@@ -4323,6 +4328,9 @@ section.site_map_content {
     .product_list_pod .grid-img {
         min-height: 100px;
         max-height: 180px;
+    }
+    .news_filter .col-md-2.col-sm-12.col-xs-12 {
+        width: 24.9%;
     }
 }
 

@@ -842,12 +842,15 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
 
 }
 @media screen and (min-width : 992px) and (max-width: 1024px) and (orientation:landscape) {
-    
+
     .review_per .yesno {
         margin-top: 15px;
         padding: 0;
     }
     .hrs_sec, .more_business_info, .people_als_vewd, .other_items_nearby, .browse_nearby {
         margin-top: 20px!important;
+    }
+    .review_per .col-md-5.col-md-offset-1.col-sm-6.col-xs-12.no-padding.text-center {
+        width: 50%;
     }
 }
