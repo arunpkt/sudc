@@ -568,7 +568,8 @@ div#slider-range {
     }
 
     .adrs.mt10 {
-        margin-top: 0
+        margin-top: 0;
+        padding-top: 0;
     }
     .adrs .cate {
         margin-left: 0px;
@@ -599,6 +600,23 @@ div#slider-range {
     .prodt_page .grid-img {
         height: 125px!important;
     }
+    .product_list_pod .grid-img {
+        min-height: 125px;
+        max-height: 125px;
+    }
+    .product_list_pod .col-md-3.col-xs-12.mt40.sort.no-padding {
+        margin-top: 30px;
+    }
+    .shop_review {
+        margin-top: 10px;
+        margin-bottom: 35px;
+        /* padding-left: 20px; */
+    }
+    .description .block {
+        text-align: center;
+        margin-left: 70px;
+    }
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {

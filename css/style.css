@@ -248,7 +248,9 @@ img.img-responsive:hover {
     max-width: 490px;
     z-index: 999;
 }
-
+input[type='file'].form-control {
+    -webkit-box-shadow: none;
+}
 .search-filter-in input {
     border-radius: 0;
     border: 0;
@@ -3022,7 +3024,7 @@ section.site_map_content {
         padding: 20px 20px 30px 20px;
     }
     .border-or {
-        display: none;
+        display: block;
     }
     .modal-dialog {
         width: 100%;
@@ -3246,7 +3248,7 @@ section.site_map_content {
     }
 
     .top_header a {
-        font-size: 14px;
+        font-size: 13px;
     }
     .top_header a i {
         font-size: 20px;
@@ -3375,7 +3377,7 @@ section.site_map_content {
     }
 
     .app_store_pod {
-        height: 650px;
+        height: 580px;
     }
 
     .looking label {
@@ -3397,10 +3399,15 @@ section.site_map_content {
     }
 
     .mob_padding [class*="col-"] {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 10px;
+        /*      padding-bottom: 15px;*/
     }
-
+    .mob_padding  .mt10 {
+        margin-top: 0px;
+    }
+    .customer_speaks .col-md-4.col-sm-12.col-xs-12.text-center {
+        margin-bottom: 10px;
+    }
     .app_store_pod {
         background-image: none;
     }
@@ -3427,6 +3434,7 @@ section.site_map_content {
 
     ul.list-group.horizontal.category_list_hero {
         margin-top: 0px;
+        margin-left : 70px;
         float: left;
     }
 
@@ -3460,11 +3468,11 @@ section.site_map_content {
     }
 
     .app_logo_pod img {
-        margin: 25px auto 9px 0px;
+        margin: 10px auto 9px -10px;
     }
 
     .app_logo_pod {
-        padding: 15px;
+        padding: 2px;
     }
 
     .customer_pod {
@@ -3487,6 +3495,50 @@ section.site_map_content {
     }
     .advanced-modal-head.modal-header .close {
         right: 10px;
+    }
+    .advanced-modal-body .prc_rte {
+        width: 35%;
+    }
+    #loginModal .modal-content {
+        min-height: 520px;
+        max-height: 531px;
+        border-radius: 0px;
+    }
+    .login-modal {
+        border-right: 0px solid #dedede;
+        border-bottom: 0px solid #dedede!important;
+    }
+    .border-or {
+        position: absolute;
+        margin-left: -2%!important;
+        background: #fff;
+        top: 60%!important;
+    }
+    .sign-option .signup-other {
+        min-height: 230px;
+    }
+    .div-center-align {
+        vertical-align: middle;
+        display: block;
+    }
+    section.userprofile_section_page {
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    input[type='file'].form-control {
+        -webkit-box-shadow: none;
+    }
+    .userprofile_section_page .form-group input[type='file'] {
+        border: 0px solid #ccc;
+        padding-left: 0;
+    }
+    section.userprofile_section_page input.btn.btn-primary.btn-md {
+        width: 100%;
+        padding: 5px 30px;
+        margin: 0;
+    }
+    .pad_l .adrs p {
+        margin-bottom: 5px;
     }
 }
 
