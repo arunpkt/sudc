@@ -2011,8 +2011,10 @@ h2.text-center.alegreya::before {
     width: 100%;
 }
 .about_the_card .container{
+/*
     width: 100%;
-    max-width: none;
+    max-width: 1920px;
+*/
 }
 .about_the_card h1 {
     color: #FFFFFF;

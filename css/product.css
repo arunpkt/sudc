@@ -601,8 +601,8 @@ div#slider-range {
         height: 125px!important;
     }
     .product_list_pod .grid-img {
-        min-height: 125px;
-        max-height: 125px;
+        min-height: 150px;
+        max-height: 150px;
     }
     .product_list_pod .col-md-3.col-xs-12.mt40.sort.no-padding {
         margin-top: 30px;
