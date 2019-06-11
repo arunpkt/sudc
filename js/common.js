@@ -56,6 +56,13 @@ $(document).ready(function() {
         $('#loginModal').modal('hide')
     })
 
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+        event.preventDefault(); 
+        event.stopPropagation(); 
+        $(this).parent().siblings().removeClass('open');
+        $(this).parent().toggleClass('open');
+    });
+
 });
 //Toggle search terms
 function toggle(id){
@@ -70,21 +77,21 @@ function scrollToActiveSubmenu() {
 
 //Forgot password
 function openForgotPassword() {
-  $("#forgetModel").show();
-  $("#loginModel").hide();
+    $("#forgetModel").show();
+    $("#loginModel").hide();
 }
 function openLogin() {
-  $("#forgetModel").hide();
-  $("#loginModel").show();
+    $("#forgetModel").hide();
+    $("#loginModel").show();
 }
 //Function to load images for Ipad 
 function loadIpadImages() {
-  $('img.ipad').each(function(i, element) {
-    var width = $(this).width();
-    if(width > 767 && width <= 991 ) {
-        $(this).attr("src", $(this).attr("data-tablet-src"))
-    }
-  });
+    $('img.ipad').each(function(i, element) {
+        var width = $(this).width();
+        if(width > 767 && width <= 991 ) {
+            $(this).attr("src", $(this).attr("data-tablet-src"))
+        }
+    });
 } 
 //Open filetr
 function openFilter() {

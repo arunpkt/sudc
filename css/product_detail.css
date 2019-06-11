@@ -569,8 +569,11 @@ a.btn-det_link:hover {
 }
 .item_details {
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+.recentlyViewed.product_detls {
+    margin-top: 30px;
     margin-bottom: 70px;
-
 }
 .review_star h2 {
     margin-bottom: 20px;
