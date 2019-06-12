@@ -267,7 +267,7 @@ padding:0;
     padding-right: 20px;*/
 }
 .people_viewed .description h6 a {
-    color: #1f9cd7;
+    /*color: #1f9cd7;*/
     font-weight: 600;
 }
 .people_viewed .description .block span {
@@ -468,8 +468,9 @@ span.share {
     float: left;
     margin-left: 0;
 }
-ul.pdt_det_head {
+ul.pdt_det_head, .rcmd_for_u .jumbotron, .top_dscnts_fr_u .jumbotron{
    border-bottom: 2px solid #d0d0d0;
+    background-color: transparent;
 }
 .pdt_det_head li {
     font-size: 16px;
