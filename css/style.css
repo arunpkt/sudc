@@ -3036,6 +3036,14 @@ section.site_map_content {
     border: 0px solid #ccc;
 
 }
+.located select.custom-select.custom-select-xl.grey {
+    width: 100%;
+    overflow: hidden;
+}
+.miles select.custom-select.custom-select-xl.grey {
+    width: 100%;
+    overflow: hidden;
+}
 /* Device */
 @media screen and (max-width:480px) {
 

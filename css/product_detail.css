@@ -365,15 +365,24 @@ p.font-weight-bold.grey.review_ques {
 }
 .lk{margin:10px;float:left;width:100%;}
 
+
 .thumbnail_image_detail {
-    overflow-x: scroll;
-    display: flex;
     height: 100px;
 }
+.big_image_wraper{
+    width: 100%;
+}
 
+.big_image_wraper img{
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+}
 .thumbnail_image_detail img{
-    margin-left: 20px;
+    margin-left: 10px;
     float: left;
+    width: 100px;
+    height: 100px;
 }
 .thumbnail_image_detail .img_wrapper {
     margin-bottom: 15px;
@@ -460,7 +469,7 @@ span.share {
     margin-left: 0;
 }
 ul.pdt_det_head {
-    background-color: #d0d0d0;
+   border-bottom: 2px solid #d0d0d0;
 }
 .pdt_det_head li {
     font-size: 16px;

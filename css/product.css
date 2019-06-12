@@ -79,10 +79,17 @@ input[type=checkbox] + label {
     cursor: pointer;
     font-weight: normal;
     font-size: 18px;
-
-
 }
-
+input[type=radio] + label {
+    display: block;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 18px;
+}
+#filterDiscount input[type=radio], #productDiscount input[type=radio] {
+    float: left;
+    margin-right: 15px;
+}
 input[type=checkbox] {
     display: none;
 }
@@ -285,7 +292,9 @@ i {
     float: right;
     margin-right: 0px;
 }
-
+li.vwmre {
+    list-style-type: none;
+}
 li.vwmre a {
     text-align: center;
     width: 100%;
