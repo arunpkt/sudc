@@ -1595,6 +1595,14 @@ section.top_stores .grid-arr {
     color: #86b140;
 }
 
+.top_stores .description h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0.4em 0;
+    color: #86b140;
+}
+
+
 .top_stores .description a {
     font-size: 13px;
 }
@@ -3043,6 +3051,12 @@ section.site_map_content {
 .miles select.custom-select.custom-select-xl.grey {
     width: 100%;
     overflow: hidden;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+     -webkit-box-shadow: none; 
+     box-shadow: none; 
 }
 /* Device */
 @media screen and (max-width:480px) {
