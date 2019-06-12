@@ -50,12 +50,21 @@ $(document).ready(function() {
     });
     //modal
     $('#loginModal').on('shown.bs.modal', function () {	
-        $('#signUpModal').modal('hide')
+        $('#signUpModal').modal('hide');
     })
     $('#signUpModal').on('shown.bs.modal', function () {
-        $('#loginModal').modal('hide')
+        $('#loginModal').modal('hide');
     })
-
+    $('#loginModal').on('click', function () {
+        setTimeout(function(){
+          $('body').addClass("modal-open");
+        }, 1000);
+    });
+    $('#signUpModal').on('click', function () {
+         setTimeout(function(){
+          $('body').addClass("modal-open");
+        }, 1000);
+    });
     $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
         event.preventDefault(); 
         event.stopPropagation(); 
