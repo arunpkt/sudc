@@ -110,6 +110,9 @@
 .other_items_nearby, .browse_nearby,.people_als_vewd {
     margin-top: 40px;
 }
+.browse_nearby {
+    margin-bottom: 70px;
+}
 .more_business_info {
     margin-top: 30px;
 }

@@ -86,7 +86,7 @@ input[type=radio] + label {
     font-weight: normal;
     font-size: 18px;
 }
-#filterDiscount input[type=radio], #productDiscount input[type=radio] {
+#filterDiscount input[type=radio], #productDiscount input[type=radio], #searchFilterDiscount input[type=radio] {
     float: left;
     margin-right: 15px;
 }
@@ -298,7 +298,7 @@ li.vwmre {
 li.vwmre a {
     text-align: center;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 30px;
     text-decoration: underline;
     margin-top: 8px
