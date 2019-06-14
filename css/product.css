@@ -131,14 +131,6 @@ input[type=checkbox]:checked:disabled + label:before {
     border-color: #bfb;
 }
 
-.cust-selc {
-    border: 1px solid #ddd;
-    padding: 5px 15px;
-    font-size: 14px;
-    position: relative;
-    /* width: 90%;*/
-}
-
 .title {
     font-size: 24px;
     text-transform: uppercase;
@@ -313,6 +305,7 @@ li.vwmre a {
     padding-right: 15px;
     z-index: 1;
     width: 63%;*/
+    width: 60%;
 }
 .product_list_pod .sort select {
     /*  width: 68%;*/
@@ -322,7 +315,7 @@ li.vwmre a {
     font-family: FontAwesome*/
 }
 .sort .cust-selc i {
-    display: none;
+    display: block;
 }
 
 .sort .icon-angle-down:before {
