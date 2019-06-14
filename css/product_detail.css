@@ -472,7 +472,7 @@ span.share {
     margin-left: 0;
 }
 ul.pdt_det_head, .rcmd_for_u .jumbotron, .top_dscnts_fr_u .jumbotron{
-   border-bottom: 2px solid #d0d0d0;
+    border-bottom: 2px solid #d0d0d0;
     background-color: transparent;
 }
 .pdt_det_head li {
@@ -728,9 +728,16 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     font-size: 100%;
 }
 
-
-
-
+.people_viewed .grid-img {
+    min-height: 130px;
+    max-height: 150px;
+}
+.people_viewed .block {
+    display: none;
+}
+.people_viewed .fl.fw.rltiv {
+    margin-bottom: 35px;
+}
 
 
 
@@ -841,6 +848,9 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
         width: 25%;
         float: left;
     }
+    .shop_review .rc_drp {
+        padding-left: 5px;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .col-md-6.col-sm-6.col-xs-12.pics{width:100%;}
@@ -878,5 +888,8 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     }
     .review_per .col-md-5.col-md-offset-1.col-sm-6.col-xs-12.no-padding.text-center {
         width: 50%;
+    }
+    .shop_review .search_bar {
+        padding-left: 15px;
     }
 }
