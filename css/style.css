@@ -2364,7 +2364,8 @@ section.news_pod {
 
 .reviewPod .reviw_body{
     color: #7e8082;
-    margin-top: 15px;
+    margin: 10px 25px;
+    text-align: justify;
 }
 p.writtenBy {
     font-size: 16px;
@@ -3075,6 +3076,14 @@ select.custom-select:after {
     top: 0px;
     height: 34px;
     position: absolute;
+}
+.login_reg i.far.fa-user {
+    display: none;
+}
+.login_reg .fa-chevron-down {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
 }
 
 /* Device */
