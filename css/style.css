@@ -3237,7 +3237,7 @@ section.businss_login {
 .login_image {
     margin-top: 70px;
 }
- 
+
 .business_logged .navbar ul li a {
     color : #FFFFFF;
     font-size: 18px;
@@ -3833,6 +3833,18 @@ section.businss_login {
     }
     .pad_l .adrs p {
         margin-bottom: 5px;
+    }
+    .sudc_business_menu .navbar {
+        background-color: #2298d0;
+        border: 0;
+        margin: 10px 0 0px 0;
+        float: right;
+    }
+    .sudc_business_menu .navbar-default .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+    .sudc_business_menu .navbar-default .navbar-toggle:focus, .sudc_business_menu .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
     }
 
 }
