@@ -3098,12 +3098,12 @@ select.custom-select:after {
     margin: 40px 0 0px 0;
     float: right;
 }
-.sudc_business_menu .navbar ul li a {
+.sudc_business_menu .navbar> ul >li> a {
     color : #FFFFFF;
     font-size: 18px;
     font-weight: 500;
 }
-.sudc_business_menu .navbar ul li {
+.sudc_business_menu .navbar> ul> li {
     margin-left: 20px;
 }
 .sudc_business_menu .navbar-default .navbar-nav>.active > a, .sudc_business_menu .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -3122,7 +3122,7 @@ select.custom-select:after {
     background-color: #FFFFFF;
 }
 
-.sudc_business_menu .navbar ul li.phoneNumber {
+.sudc_business_menu .navbar ul > li.phoneNumber {
     color : #FFFFFF;
     font-size: 18px;
     font-weight: 500;
@@ -3238,12 +3238,12 @@ section.businss_login {
     margin-top: 70px;
 }
 
-.business_logged .navbar ul li a {
+.business_logged .navbar > ul >li > a {
     color : #FFFFFF;
     font-size: 18px;
     font-weight: 500;
 }
-.business_logged .navbar ul li {
+.business_logged .navbar > ul > li {
     margin-left: 20px;
 }
 .business_logged .navbar-default .navbar-nav>.active > a, .sudc_business_menu .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -3254,24 +3254,24 @@ section.businss_login {
     color: #2298d0;
     border: 0;
 }
-.sudc_business_menu .navbar .business_logged ul li>a {
-    padding: 5px 5px 5px 5px;
+.sudc_business_menu .navbar .business_logged > ul> li>a {
+    padding: 5px 5px 5px 10px;
 }
-.sudc_business_menu .navbar .business_logged ul li a {
+.sudc_business_menu .navbar .business_logged > ul> li:hover > a {
+    color: #FFF;
+    background-color: #2298d0;
+}
+.sudc_business_menu .navbar .business_logged > ul> li> a {
     color: #2298d0;
     font-size: 18px;
     font-weight: 500;
     border: 0 !important;
 }
-.business_logged ul li {
-    padding-left: 5px!important;
-    margin-left: 0 !important;
-}
 .business_logged a.dropdown-toggle.logged_user {
     color: #FFFFFF;
     border: 0px!important;
 }
-.sudc_business_menu .navbar .business_logged li>a:focus, .sudc_business_menu .navbar .business_logged li>a:hover {
+.sudc_business_menu .navbar .business_logged> li>a:focus, .sudc_business_menu .navbar .business_logged> li>a:hover {
     color: #FFFFFF;
     background-color: #2298d0;
     padding: 5px auto;
@@ -3285,6 +3285,46 @@ section.businss_login {
     height: 80px;
     cursor: pointer;
 }
+.businss_add_shop h3.title {
+    margin: 35px 15px 20px 15px;
+    border-bottom: 1p solid #000;
+}
+.add_shop_sub_title {
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
+}
+section.businss_add_shop {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+section.businss_add_shop .form-group {
+    margin-bottom: 20px;
+}
+section.businss_dashboard {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.businss_dashboard p.title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.sudc_business_menu .navbar-default .navbar-nav>li.business_logged>a:focus, .sudc_business_menu .navbar-default .navbar-nav>li.business_logged>a:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

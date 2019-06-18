@@ -56,288 +56,177 @@
         </header>
 
         <!-- Login -->
-        <section class="businss_login">
+        <section class="businss_add_shop">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-sm-12 col-xs-12">
-
-                        <div class="panel panel-bordered">
-                            <!-- form start -->
-                            <form role="form" class="form-edit-add" action="http://staging.sudc.co/admin/shop" method="POST" enctype="multipart/form-data">
-                                <!-- PUT Method if we are editing -->
-
-                                <!-- CSRF TOKEN -->
-                                <input type="hidden" name="_token" value="6OCSkYZebe2vbPoJRFgeVm9d0ZlG4ofQDbDyADsB">
-
-                                <div class="panel-body">
-
-
-                                    <!-- Adding / Editing -->
-
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-6">
-
-
-                                        <label for="name">Shop Name</label>
-                                        <input required="" type="text" class="form-control" name="shop_name" placeholder="Shop Name" value="">
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-6">
-
-
-                                        <label for="name">Shop Logo</label>
-                                        <input type="file" name="shop_logo" accept="image/*">
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-12">
-
-
-                                        <label for="name">About</label>
-                                        <textarea required="" class="form-control" name="about" rows="5"></textarea>
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-12">
-
-
-                                        <label for="name">Shop Banner</label>
-                                        <input required="" type="file" name="shop_banner" accept="image/*">
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-12">
-
-
-                                        <label for="name">Shop Gallery</label>
-                                        <input required="" type="file" name="shop_gallery" accept="image/*">
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-6">
-
-
-                                        <label for="name">Address</label>
-                                        <input required="" type="text" class="form-control" name="address_1" placeholder="Address" value="">
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-6">
-
-
-                                        <label for="name">Pincode</label>
-                                        <input type="number" class="form-control" name="pincode" required="" step="any" placeholder="Pincode" value="">
-
-
-                                    </div>
-                                    <!-- GET THE DISPLAY OPTIONS -->
-                                    <!--<div class="form-group  col-md-12" >-->
-                                    <div class="form-group  col-md-12">
-
-
-                                        <label for="name">Shop Map</label>
-
-
-
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Contact</label>
-                                            <input required="" type="text" class="form-control" name="contact" placeholder="Contact" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Website</label>
-                                            <input required="" type="text" class="form-control" name="website" placeholder="Website" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-12">
-
-
-                                            <label for="name">Locations</label>
-                                            <select class="form-control select2-ajax select2-hidden-accessible" name="location_id" data-get-items-route="http://staging.sudc.co/admin/shop/relation" data-get-items-field="shop_detail_belongsto_location_relationship" tabindex="-1" aria-hidden="true">
-
-                                                <option value="">None</option>
-
-                                            </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-location_id-8o-container"><span class="select2-selection__rendered" id="select2-location_id-8o-container" title="None">None</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-
-
-
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="col-md-12">
-                                            <br>   
-                                            <label for="name"><strong>Working Hours</strong>
-                                                <span><i class="fa fa-info-circle" title="Please provide valid working time (ex.10am - 08pm). If you are not enter time, its consider as Holiday."></i></span>
-                                            </label>
-                                            <br>   
-                                            <br>     
-                                        </div>
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Monday</label>
-                                            <input type="text" class="form-control" name="monday" placeholder="Monday" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Tuesday</label>
-                                            <input type="text" class="form-control" name="tuesday" placeholder="Tuesday" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Wednesday</label>
-                                            <input type="text" class="form-control" name="wednesday" placeholder="Wednesday" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Thursday</label>
-                                            <input type="text" class="form-control" name="thursday" placeholder="Thursday" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Friday</label>
-                                            <input type="text" class="form-control" name="friday" placeholder="Friday" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Saturday</label>
-                                            <input type="text" class="form-control" name="saturday" placeholder="Saturday" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group  col-md-6">
-
-
-                                            <label for="name">Sunday</label>
-                                            <input type="text" class="form-control" name="sunday" placeholder="Sunday" value="">
-
-
-                                        </div>
-
-                                    </div><!-- panel-body -->
-
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+
+
+                        <h3 class="title">Add shop details</h3>
+                        <form role="form" class="form-vertical" action="http://staging.sudc.co/admin/shop" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="_token" value="6OCSkYZebe2vbPoJRFgeVm9d0ZlG4ofQDbDyADsB">
+
+                            <div class="form-group col-md-6">
+                                <label for="name">Shop Name</label>
+                                <input required="" type="text" class="form-control" name="shop_name" placeholder="Shop Name" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Locations</label>
+                                <select class="form-control select2-ajax select2-hidden-accessible" name="location_id">
+                                    <option value="">Please select</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Address</label>
+                                <input required="" type="text" class="form-control" name="address_1" placeholder="Address" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Pincode</label>
+                                <input type="number" class="form-control" name="pincode" required="" step="any" placeholder="Pincode" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Contact</label>
+                                <input required="" type="text" class="form-control" name="contact" placeholder="Contact" value="" />
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Website</label>
+                                <input required="" type="text" class="form-control" name="website" placeholder="Website" value="">
+                            </div>
+                            <div class="form-group  col-md-12">
+                                <label for="name">About</label>
+                                <textarea required="" class="form-control" name="about" rows="5"></textarea>
+                            </div>
+                            <div class="form-group  col-md-6">
+                                <label for="name">Shop Logo</label>
+                                <input type="file" name="shop_logo" accept="image/*">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Shop Banner</label>
+                                <input required="" type="file" name="shop_banner" accept="image/*">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Shop Gallery</label>
+                                <input required="" type="file" name="shop_gallery" accept="image/*">
+                            </div>
+
+
+
+                            <div class="add_shop_sub_title col-md-12">
+                                <label for="name"><strong>Working Hours</strong>
+                                    <span><i class="fa fa-info-circle" title="Please provide valid working time (ex.10am - 08pm). If you are not enter time, its consider as Holiday."></i></span>
+                                </label>    
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Monday</label>
+                                <input type="text" class="form-control" name="monday" placeholder="Monday" value="">
+                            </div>
+
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Tuesday</label>
+                                <input type="text" class="form-control" name="tuesday" placeholder="Tuesday" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Wednesday</label>
+                                <input type="text" class="form-control" name="wednesday" placeholder="Wednesday" value="" />
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Thursday</label>
+                                <input type="text" class="form-control" name="thursday" placeholder="Thursday" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Friday</label>
+                                <input type="text" class="form-control" name="friday" placeholder="Friday" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Saturday</label>
+                                <input type="text" class="form-control" name="saturday" placeholder="Saturday" value="">
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label for="name">Sunday</label>
+                                <input type="text" class="form-control" name="sunday" placeholder="Sunday" value="">
+                            </div>
+                            <div class="form-group  col-md-12">
+                                <label for="name">Shop Map</label>
+                            </div>
+                            <div class="form-group submit_btn col-md-12">
+                                <button type="submit" class="btn btn-primary save btn-block">Save</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<<<<<<< HEAD
                                     <div class="panel-footer">
                                         <button type="submit" class="btn btn-primary btn-lg save center-block">Save</button>
                                     </div>
-                                    
-                            </form>
+                                    </form>
+=======
+        <!-- Footer -->
+        <footer class="footer_business footer_top">
+            <div class="container">
+                <div class="row">
+>>>>>>> 043206838609054930b80b819cba2c70304392bb
 
-                                <form id="my_form" action="http://staging.sudc.co/admin/upload" target="form_target" method="post" enctype="multipart/form-data" style="width:0;height:0;overflow:hidden">
-                                    <input name="image" id="upload_file" type="file" onchange="$('#my_form').submit();this.value='';">
-                                    <input type="hidden" name="type_slug" id="type_slug" value="shop">
-                                    <input type="hidden" name="_token" value="6OCSkYZebe2vbPoJRFgeVm9d0ZlG4ofQDbDyADsB">
-                                </form>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <img src="images/White%20SUDC%20Logo.png" alt="" class="img-responsive" />
+                    </div>
 
-                                </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12 login_image">
-                            <img src="images/signup_illustration.png" class="img-responsive" />
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="contact_info">
+                            <p class="business_footer_header">Contact Info</p>
+                            <p class="address">29, Mannar street, Chennai - 600017</p>
                         </div>
                     </div>
-                </div>
-                </section>
 
-            <!-- Footer -->
-            <footer class="footer_business footer_top">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <img src="images/White%20SUDC%20Logo.png" alt="" class="img-responsive" />
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="col-md-3 col-sm-6">
+                            <img src="images/Call%20icon.png" alt="" class="img-responsive" />
                         </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="contact_info">
-                                <p class="business_footer_header">Contact Info</p>
-                                <p class="address">29, Mannar street, Chennai - 600017</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <div class="col-md-3 col-sm-6">
-                                <img src="images/Call%20icon.png" alt="" class="img-responsive" />
-                            </div>
-                            <div class="col-md-9 col-sm-9">
-                                <p class="phone_ques">Got questions? Call us at 24/7!</p>
-                                <p class="phone">+123 4567 8901</p>                            
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <p class="business_footer_header">Share on</p>
-                            <div class="row social_icons">
-                                <div class="col-md-12 col-sm-12">
-                                    <a href="https://www.twitter.com"><img src="images/twitter.png" /></a>
-                                    <a href="https://plus.google.com"><img src="images/google_plus.png" /></a>
-                                    <a href="https://www.facebook.com"><img src="images/facebook.png" /></a>
-                                    <a href="https://www.youtube.com"><img src="images/youtube.png" /></a>
-                                </div>
-                            </div>
+                        <div class="col-md-9 col-sm-9">
+                            <p class="phone_ques">Got questions? Call us at 24/7!</p>
+                            <p class="phone">+123 4567 8901</p>                            
                         </div>
 
                     </div>
-                </div>
-            </footer>
-            <footer class="footer_bottom footer_business_bottom">
-                <div class="container">
-                    <p>&copy;Sams ultimate discount card - All rights reserved</p>
-                </div>
-            </footer>
-            <div class="upar"></div>
-            </body>
 
-        </html>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <p class="business_footer_header">Share on</p>
+                        <div class="row social_icons">
+                            <div class="col-md-12 col-sm-12">
+                                <a href="https://www.twitter.com"><img src="images/twitter.png" /></a>
+                                <a href="https://plus.google.com"><img src="images/google_plus.png" /></a>
+                                <a href="https://www.facebook.com"><img src="images/facebook.png" /></a>
+                                <a href="https://www.youtube.com"><img src="images/youtube.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <footer class="footer_bottom footer_business_bottom">
+            <div class="container">
+                <p>&copy;Sams ultimate discount card - All rights reserved</p>
+            </div>
+        </footer>
+        <div class="upar"></div>
+    </body>
+
+</html>
