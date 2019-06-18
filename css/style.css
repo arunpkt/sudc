@@ -3285,8 +3285,22 @@ section.businss_login {
     height: 80px;
     cursor: pointer;
 }
+.businss_add_shop h3.title {
+    margin: 35px 15px 20px 15px;
+    border-bottom: 1p solid #000;
+}
+.add_shop_sub_title {
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
+}
+section.businss_add_shop {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
 
-
+section.businss_add_shop .form-group {
+    margin-bottom: 20px;
+}
 
 
 
