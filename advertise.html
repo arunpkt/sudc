@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>SUDC - Home</title>
+        <title>SUDC Business - Advertise</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -29,7 +29,7 @@
                     <div class="col-md-6 col-md-offset-3 col-sm-9">
                         <div class="sudc_business_menu">
                             <nav class="navbar navbar-default">
-                                <div class="container">
+                                <div class="container no-padding">
                                     <div class="navbar-header"> 
                                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">	
                                             <span class="sr-only">Toggle navigation</span>	
@@ -38,7 +38,7 @@
                                             <span class="icon-bar"></span>						
                                         </button> 
                                     </div>
-                                    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                                    <div id="navbar" class="navbar-collapse collapse no-padding" aria-expanded="false" style="height: 1px;">
                                         <ul class="nav navbar-nav">
                                             <li class="phoneNumber">Need help : <span class="bold">+ 1234567890</span></li>
                                             <li class="active"><a href="business_login.html" class="btn btn-lg">LOG IN</a></li>
@@ -55,73 +55,60 @@
             </div>
         </header>
 
-        <!-- Login -->
-        <section class="businss_login">
+
+        <!-- Busniess submenu -->
+        <section class="business_submenu_sec">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
-                        <h3 class="mb_20">Sign up with SUDC</h3>
-                        <form class="form-vertical">
-                                
-                                <div class="form-group">
-                                    <label for="first_name">First Name</label>
-                                    <input required="" type="text" class="form-control" id="register_first_name" name="first_name" placeholder="First Name" value="">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="last_name">Last Name</label>
-                                    <input required="" type="text" class="form-control" id="register_last_name" name="last_name" placeholder="Last Name" value="">
-                                </div>
-                                
-                                <div class="form-group has-success">
-                                    <label for="email">Email</label>
-                                    <input required="" type="text" class="form-control" id="register_email" name="email" placeholder="Email" value="">
-                                    <div class="text-success">Email verified</div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input required="" type="password" class="form-control" id="register_password" name="password" placeholder="Password" value="">
-                                </div>	
-                                
-                                <div class="form-group">
-                                    <label for="dob">Date of Birth</label>
-                                    <input required="" type="date" class="form-control" id="register_dob" name="dob" placeholder="Date of Birth" value="">
-                                </div>		
-                                
-                                <div class="form-group has-error">
-                                    <label for="mobile">Mobile</label>
-                                    <input required="" type="text" class="form-control" id="register_mobile" name="mobile" placeholder="Mobile" value="">
-                                    <div class="text-danger">Mobile number not verified</div>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="avatar">Profile Pic</label>
-                                    <input type="file" id="avatar" name="avatar" accept="image/*">
-                                </div>
-                                
-                                <div>
-                                    <p class="signup-policy">By Signing up you will agree Privacy Policy and Terms of Conditions.</p>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <input type="button" onclick="register()" class="btn btn-block btn-primary padding_10" value="Register">
-                                </div>
-                        </form>
-                        
-                        <div class="business_or text-center">OR</div>
-                        
-                        <div class="signup-other-business">
-                            <a href="" class="btn btn-warning btn-block signup-g"><i class="fab fa-google"></i> Sign in with google</a>
-                            <a href="" class="btn btn-warning btn-block signup-fb"><i class="fab fa-facebook-f"></i> Sign in with facebook</a>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="business_submenu">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation"><a href="sell_on_sudc.html">SELL ON SUDC</a></li>
+                                <li role="presentation"  class="active"><a href="advertise.html">ADVERTISE ON SUDC</a></li>
+                                <li role="presentation"><a href="merchant_testimonials.html">MERCHANT'S TESTIMONIAL</a></li>
+                                <li role="presentation"><a href="merchant_benifits.html">MERCHANT'S BENIFITS</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 col-xs-12 login_image">
-                        <img src="images/signup_illustration.png" class="img-responsive" />
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Advertisement section -->
+        <section class="business-advertise-section"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                       
+                            <div class="col-md-8 col-sm-8 col-xs-12 box_white no-padding">
+                                <h2>INCREASE YOUR SALE AND VISIBILTY ON SUDC CARD</h2>
+                                <ul>
+                                    <li>Get your customer</li>
+                                    <li>Sell under your own private label or sell an existing brand</li>
+                                    <li>Order Packaging material from our website to start selling</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 box_grey no-padding">
+                                <h2>POPULAR STORIES</h2>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="business_sell text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                        <h1 class="alegreya text-center">WANT TO SELL ON SAMS ULTIMATE DISCOUNT CARD?</h1>
+                        <a href="business_add_shop.html" class="btn btn-lg btn-primary text-center">SELL NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
         <footer class="footer_business footer_top">

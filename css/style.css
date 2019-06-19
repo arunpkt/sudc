@@ -3397,8 +3397,27 @@ section.business_sell.text-center .btn {
     color: #726f6f;
     font-size: 16px;
 }
+.btn.padding_10 {
+    padding: 15px 0;
+}
+.business-advertise-section {
+    background-color: #e1e1e1;
+    background-image: url('../images/ss-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: auto;
+}
+.box_white {
+    background-color: #FFF;
+    height: 500px;
+    margin: 20px 0;
 
-
+}
+.box_grey {
+    background-color: #f3f3f3;
+    height: 500px;
+    margin: 20px 0;
+}
 
 
 
