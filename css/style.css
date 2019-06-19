@@ -3132,8 +3132,8 @@ select.custom-select:after {
     color: #000;
     background-color: rgba(255,255,255);
     border: 0;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
 }
 .business_submenu .nav-tabs > li:hover > a {
     color: #2298d0;
@@ -3149,7 +3149,7 @@ select.custom-select:after {
     background-color: rgba(255,255,255);
     border: 0;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-bottom-color: #2298d0;
 }
 .business_submenu {
@@ -3159,7 +3159,7 @@ select.custom-select:after {
 }
 .business_submenu .nav-tabs > li {
     float: left;
-    margin-bottom: -1px;
+    margin-bottom: 0px;
     width: auto;
 }
 .business_submenu .nav-tabs {
@@ -3285,7 +3285,7 @@ section.businss_login {
     height: 80px;
     cursor: pointer;
 }
-.businss_add_shop h3.title {
+.businss_add_shop h3.title, .businss_add_product h3.title {
     margin: 35px 15px 20px 15px;
     border-bottom: 1p solid #000;
 }
@@ -3298,7 +3298,7 @@ section.businss_add_shop {
     margin-bottom: 70px;
 }
 
-section.businss_add_shop .form-group {
+section.businss_add_shop .form-group, .businss_add_product  .form-group{
     margin-bottom: 20px;
 }
 section.businss_dashboard {
@@ -3314,19 +3314,89 @@ section.businss_dashboard {
     background-color: transparent;
 }
 .sudc_business_menu  ul.nav > li {
-  margin-left: 15px;    
+    margin-left: 15px;    
+}
+section.businss_add_product {
+    margin: 15px 0 70px 0;
+}
+section.business_submenu_sec {
+    background-color: #FFF;
+}
+.business-header-carousal {
+    position: relative;
+}
+.business-search-sec {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    border-radius: 0px;
+}
+section.business_product_count {
+    margin: 20px auto 55px auto;
+}
+.border_business_bottom {
+    border-bottom: solid 1px #d0d0d0;
+}
+.business_content_home .image {
+    padding: 20px 50px;
+}
+.business_content_home .content {
+    padding: 20px 50px;
+}
+.business_content_home .image img {
+    width: 300px;
+}
+.business_info_section {
+    background-color: #e1e1e1;
+}
+h2.step_head {
+    color: #2298d0;
+    font-weight: 600;
+}
+.business_content_home .content ul {
+    padding : 20px 0px 20px 0px;
+    list-style: none;
+}
+.business_content_home .content ul li {
+    color: #939598;
+    font-size: 16px;
+    line-height: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
+.business_content_home .content ul li::before {
+    content: "\2022";
+    color: #2298d0;
+    font-size: 25px;
+    font-weight: bold;
+    width: 16px;
+    margin-right: 20px;
+}
+section.business_content_home {
+    margin: 40px auto 40px auto;
+}
+.business_content_home h1.alegreya.text-center.title {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+section.business_sell.text-center {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+section.business_sell.text-center .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.business_sell.text-center .btn {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    background-color: #2298d0;
+}
+.business_info_section p.text-justify {
+    padding: 45px 45px;
+    color: #726f6f;
+    font-size: 16px;
+}
 
 
 

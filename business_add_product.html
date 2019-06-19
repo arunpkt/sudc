@@ -63,187 +63,92 @@
 
 
                         <h3 class="title">Add shop details</h3>
-                        <div class="col-md-12">
 
-                            <div class="panel panel-bordered">
-                                <!-- form start -->
-                                <form role="form" class="form-edit-add" action="http://staging.sudc.co/admin/products" method="POST" enctype="multipart/form-data">
-                                    <!-- PUT Method if we are editing -->
+                        <form role="form" class="form-edit-add" action="http://staging.sudc.co/admin/products" method="POST" enctype="multipart/form-data">
 
-                                    <!-- CSRF TOKEN -->
-                                    <input type="hidden" name="_token" value="NWlxMZSbSAVcabxHOvmbAHdBFYONME7A8m1uHCfQ">
+                            <input type="hidden" name="_token" value="NWlxMZSbSAVcabxHOvmbAHdBFYONME7A8m1uHCfQ">
 
-                                    <div class="panel-body">
-
-
-                                        <!-- Adding / Editing -->
-
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Name</strong></label>
-                                            <input required="" type="text" class="form-control" name="name" placeholder="Name" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Image</strong></label>
-                                            <input required="" type="file" name="image" accept="image/*">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-12">
-
-
-                                            <label for="name"><strong>Gallery</strong></label>
-                                            <br>
-                                            <div class="clearfix"></div>
-                                            <input type="file" name="gallery[]" multiple="multiple" accept="image/*">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-12">
-
-
-                                            <label for="name"><strong>Description</strong></label>
-                                            <textarea required="" class="form-control" name="description" rows="5"></textarea>
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Locations</strong></label>
-                                            <select class="form-control select2-ajax select2-hidden-accessible" name="location_id" data-get-items-route="http://staging.sudc.co/admin/products/relation" data-get-items-field="product_belongsto_location_relationship" tabindex="-1" aria-hidden="true">
-
-                                                <option value="">None</option>
-
-                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-location_id-xl-container"><span class="select2-selection__rendered" id="select2-location_id-xl-container" title="None">None</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-
-
-
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Category</strong></label>
-                                            <select class="form-control select2-ajax select2-hidden-accessible" name="category_id" data-get-items-route="http://staging.sudc.co/admin/products/relation" data-get-items-field="product_belongsto_category_relationship" tabindex="-1" aria-hidden="true">
-
-                                                <option value="">None</option>
-
-                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-category_id-g0-container"><span class="select2-selection__rendered" id="select2-category_id-g0-container" title="None">None</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-
-
-
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-4">
-
-
-                                            <label for="name"><strong>Price</strong></label>
-                                            <input type="number" class="form-control" name="price" required="" step="any" placeholder="Price" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-4">
-
-
-                                            <label for="name"><strong>Offer Price</strong></label>
-                                            <input type="number" class="form-control" name="offer_price" required="" step="any" placeholder="Offer Price" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-4">
-
-
-                                            <label for="name"><strong>Discount</strong></label>
-                                            <input type="number" class="form-control" name="discount" required="" step="any" placeholder="Discount" value="">
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>High Lights</strong></label>
-                                            <div id="mceu_17" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_17-body" class="mce-container-body mce-stack-layout"><div id="mceu_18" class="mce-top-part mce-container mce-stack-layout-item mce-first"><div id="mceu_18-body" class="mce-container-body"><div id="mceu_19" class="mce-toolbar-grp mce-container mce-panel mce-first mce-last" hidefocus="1" tabindex="-1" role="group"><div id="mceu_19-body" class="mce-container-body mce-stack-layout"><div id="mceu_20" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_20-body" class="mce-container-body mce-flow-layout"><div id="mceu_21" class="mce-container mce-flow-layout-item mce-first mce-btn-group" role="group"><div id="mceu_21-body"><div id="mceu_0" class="mce-widget mce-btn mce-menubtn mce-first mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_0" role="button" aria-haspopup="true"><button id="mceu_0-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Formats</span> <i class="mce-caret"></i></button></div><div id="mceu_1" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Bold"><button id="mceu_1-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_2" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Italic"><button id="mceu_2-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_3" class="mce-widget mce-btn mce-last" tabindex="-1" aria-pressed="false" role="button" aria-label="Underline"><button id="mceu_3-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div></div></div><div id="mceu_22" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_22-body"><div id="mceu_4" class="mce-widget mce-btn mce-splitbtn mce-colorbutton mce-first" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_4-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_5" class="mce-widget mce-btn mce-splitbtn mce-colorbutton mce-last" role="button" tabindex="-1" aria-haspopup="true" aria-label="Background color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-backcolor"></i><span id="mceu_5-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div></div></div><div id="mceu_23" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_23-body"><div id="mceu_6" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Align left"><button id="mceu_6-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_7" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Align center"><button id="mceu_7-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_8" class="mce-widget mce-btn mce-last" tabindex="-1" aria-pressed="false" role="button" aria-label="Align right"><button id="mceu_8-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div></div></div><div id="mceu_24" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_24-body"><div id="mceu_9" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Bullet list"><button id="mceu_9-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_10" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Numbered list"><button id="mceu_10-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mceu_11" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Decrease indent"><button id="mceu_11-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mceu_12" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Increase indent"><button id="mceu_12-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div></div></div><div id="mceu_25" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_25-body"><div id="mceu_13" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit link"><button id="mceu_13-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-link"></i></button></div><div id="mceu_14" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit image"><button id="mceu_14-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-image"></i></button></div><div id="mceu_15" class="mce-widget mce-btn mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_15" role="button" aria-label="Table" aria-haspopup="true"><button id="mceu_15-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-table"></i> <i class="mce-caret"></i></button></div></div></div><div id="mceu_26" class="mce-container mce-flow-layout-item mce-last mce-btn-group" role="group"><div id="mceu_26-body"><div id="mceu_16" class="mce-widget mce-btn mce-first mce-last" tabindex="-1" role="button" aria-label="Source code"><button id="mceu_16-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-code"></i></button></div></div></div></div></div></div></div></div></div><div id="mceu_27" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="richtexthigh_lights_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" style="width: 100%; height: 600px; display: block;"></iframe></div><div id="mceu_28" class="mce-statusbar mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_28-body" class="mce-container-body mce-flow-layout"><div id="mceu_29" class="mce-path mce-flow-layout-item mce-first"><div class="mce-path-item">&nbsp;</div></div><div id="mceu_30" class="mce-flow-layout-item mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div><span id="mceu_31" class="mce-branding mce-widget mce-label mce-flow-layout-item mce-last"> </span></div></div></div></div><textarea class="form-control richTextBox" name="high_lights" id="richtexthigh_lights" style="display: none;" aria-hidden="true">            
-                                            </textarea>
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Specification</strong></label>
-                                            <div id="mceu_49" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_49-body" class="mce-container-body mce-stack-layout"><div id="mceu_50" class="mce-top-part mce-container mce-stack-layout-item mce-first"><div id="mceu_50-body" class="mce-container-body"><div id="mceu_51" class="mce-toolbar-grp mce-container mce-panel mce-first mce-last" hidefocus="1" tabindex="-1" role="group"><div id="mceu_51-body" class="mce-container-body mce-stack-layout"><div id="mceu_52" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_52-body" class="mce-container-body mce-flow-layout"><div id="mceu_53" class="mce-container mce-flow-layout-item mce-first mce-btn-group" role="group"><div id="mceu_53-body"><div id="mceu_32" class="mce-widget mce-btn mce-menubtn mce-first mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_32" role="button" aria-haspopup="true"><button id="mceu_32-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Formats</span> <i class="mce-caret"></i></button></div><div id="mceu_33" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Bold"><button id="mceu_33-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_34" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Italic"><button id="mceu_34-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_35" class="mce-widget mce-btn mce-last" tabindex="-1" aria-pressed="false" role="button" aria-label="Underline"><button id="mceu_35-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div></div></div><div id="mceu_54" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_54-body"><div id="mceu_36" class="mce-widget mce-btn mce-splitbtn mce-colorbutton mce-first" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_36-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_37" class="mce-widget mce-btn mce-splitbtn mce-colorbutton mce-last" role="button" tabindex="-1" aria-haspopup="true" aria-label="Background color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-backcolor"></i><span id="mceu_37-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div></div></div><div id="mceu_55" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_55-body"><div id="mceu_38" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Align left"><button id="mceu_38-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_39" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Align center"><button id="mceu_39-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_40" class="mce-widget mce-btn mce-last" tabindex="-1" aria-pressed="false" role="button" aria-label="Align right"><button id="mceu_40-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div></div></div><div id="mceu_56" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_56-body"><div id="mceu_41" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Bullet list"><button id="mceu_41-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_42" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Numbered list"><button id="mceu_42-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mceu_43" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Decrease indent"><button id="mceu_43-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mceu_44" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Increase indent"><button id="mceu_44-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div></div></div><div id="mceu_57" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_57-body"><div id="mceu_45" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit link"><button id="mceu_45-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-link"></i></button></div><div id="mceu_46" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit image"><button id="mceu_46-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-image"></i></button></div><div id="mceu_47" class="mce-widget mce-btn mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_47" role="button" aria-label="Table" aria-haspopup="true"><button id="mceu_47-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-table"></i> <i class="mce-caret"></i></button></div></div></div><div id="mceu_58" class="mce-container mce-flow-layout-item mce-last mce-btn-group" role="group"><div id="mceu_58-body"><div id="mceu_48" class="mce-widget mce-btn mce-first mce-last" tabindex="-1" role="button" aria-label="Source code"><button id="mceu_48-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-code"></i></button></div></div></div></div></div></div></div></div></div><div id="mceu_59" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="richtextspecification_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" style="width: 100%; height: 600px; display: block;"></iframe></div><div id="mceu_60" class="mce-statusbar mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_60-body" class="mce-container-body mce-flow-layout"><div id="mceu_61" class="mce-path mce-flow-layout-item mce-first"><div class="mce-path-item">&nbsp;</div></div><div id="mceu_62" class="mce-flow-layout-item mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div><span id="mceu_63" class="mce-branding mce-widget mce-label mce-flow-layout-item mce-last"> </span></div></div></div></div><textarea class="form-control richTextBox" name="specification" id="richtextspecification" style="display: none;" aria-hidden="true">            
-                                            </textarea>
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Features</strong></label>
-                                            <div id="mceu_81" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_81-body" class="mce-container-body mce-stack-layout"><div id="mceu_82" class="mce-top-part mce-container mce-stack-layout-item mce-first"><div id="mceu_82-body" class="mce-container-body"><div id="mceu_83" class="mce-toolbar-grp mce-container mce-panel mce-first mce-last" hidefocus="1" tabindex="-1" role="group"><div id="mceu_83-body" class="mce-container-body mce-stack-layout"><div id="mceu_84" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_84-body" class="mce-container-body mce-flow-layout"><div id="mceu_85" class="mce-container mce-flow-layout-item mce-first mce-btn-group" role="group"><div id="mceu_85-body"><div id="mceu_64" class="mce-widget mce-btn mce-menubtn mce-first mce-btn-has-text" tabindex="-1" aria-labelledby="mceu_64" role="button" aria-haspopup="true"><button id="mceu_64-open" role="presentation" type="button" tabindex="-1"><span class="mce-txt">Formats</span> <i class="mce-caret"></i></button></div><div id="mceu_65" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Bold"><button id="mceu_65-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_66" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Italic"><button id="mceu_66-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_67" class="mce-widget mce-btn mce-last" tabindex="-1" aria-pressed="false" role="button" aria-label="Underline"><button id="mceu_67-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div></div></div><div id="mceu_86" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_86-body"><div id="mceu_68" class="mce-widget mce-btn mce-splitbtn mce-colorbutton mce-first" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_68-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_69" class="mce-widget mce-btn mce-splitbtn mce-colorbutton mce-last" role="button" tabindex="-1" aria-haspopup="true" aria-label="Background color"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-backcolor"></i><span id="mceu_69-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div></div></div><div id="mceu_87" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_87-body"><div id="mceu_70" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Align left"><button id="mceu_70-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_71" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Align center"><button id="mceu_71-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_72" class="mce-widget mce-btn mce-last" tabindex="-1" aria-pressed="false" role="button" aria-label="Align right"><button id="mceu_72-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div></div></div><div id="mceu_88" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_88-body"><div id="mceu_73" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Bullet list"><button id="mceu_73-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_74" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Numbered list"><button id="mceu_74-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div id="mceu_75" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Decrease indent"><button id="mceu_75-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mceu_76" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Increase indent"><button id="mceu_76-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div></div></div><div id="mceu_89" class="mce-container mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_89-body"><div id="mceu_77" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit link"><button id="mceu_77-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-link"></i></button></div><div id="mceu_78" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit image"><button id="mceu_78-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-image"></i></button></div><div id="mceu_79" class="mce-widget mce-btn mce-menubtn mce-last" tabindex="-1" aria-labelledby="mceu_79" role="button" aria-label="Table" aria-haspopup="true"><button id="mceu_79-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-table"></i> <i class="mce-caret"></i></button></div></div></div><div id="mceu_90" class="mce-container mce-flow-layout-item mce-last mce-btn-group" role="group"><div id="mceu_90-body"><div id="mceu_80" class="mce-widget mce-btn mce-first mce-last" tabindex="-1" role="button" aria-label="Source code"><button id="mceu_80-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-code"></i></button></div></div></div></div></div></div></div></div></div><div id="mceu_91" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="richtextfeatures_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" style="width: 100%; height: 600px; display: block;"></iframe></div><div id="mceu_92" class="mce-statusbar mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_92-body" class="mce-container-body mce-flow-layout"><div id="mceu_93" class="mce-path mce-flow-layout-item mce-first"><div class="mce-path-item">&nbsp;</div></div><div id="mceu_94" class="mce-flow-layout-item mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div><span id="mceu_95" class="mce-branding mce-widget mce-label mce-flow-layout-item mce-last"> </span></div></div></div></div><textarea class="form-control richTextBox" name="features" id="richtextfeatures" style="display: none;" aria-hidden="true">            
-                                            </textarea>
-
-
-                                        </div>
-                                        <!-- GET THE DISPLAY OPTIONS -->
-                                        <!--<div class="form-group  col-md-12" >-->
-                                        <div class="form-group col-md-6"> 
-
-
-                                            <label for="name"><strong>Terms Conditions</strong></label>
-                                            <input type="text" class="form-control" name="terms_conditions" placeholder="Terms Conditions" value="">
-
-
-                                        </div>
-
-                                    </div><!-- panel-body -->
-
-                                    <div class="panel-footer">
-                                        <button type="submit" class="btn btn-primary btn-lg save center-block">Save</button>
-                                    </div>
-                                </form>
-
-                                <iframe id="form_target" name="form_target" style="display:none"></iframe>
-                                <form id="my_form" action="http://staging.sudc.co/admin/upload" target="form_target" method="post" enctype="multipart/form-data" style="width:0;height:0;overflow:hidden">
-                                    <input name="image" id="upload_file" type="file" onchange="$('#my_form').submit();this.value='';">
-                                    <input type="hidden" name="type_slug" id="type_slug" value="products">
-                                    <input type="hidden" name="_token" value="NWlxMZSbSAVcabxHOvmbAHdBFYONME7A8m1uHCfQ">
-                                </form>
-
+                            <div class="form-group col-md-12"> 
+                                <label for="name"><strong>Name</strong></label>
+                                <input required="" type="text" class="form-control" name="name" placeholder="Name" value="">
                             </div>
-                        </div>
+
+                            
+                            
+                            <div class="form-group col-md-6"> 
+                                <label for="name"><strong>Locations</strong></label>
+                                <select class="form-control select2-ajax select2-hidden-accessible" name="location_id" data-get-items-route="http://staging.sudc.co/admin/products/relation" data-get-items-field="product_belongsto_location_relationship" tabindex="-1" aria-hidden="true">
+
+                                    <option value="">None</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6"> 
+
+                                <label for="name"><strong>Category</strong></label>
+                                <select class="form-control select2-ajax select2-hidden-accessible" name="category_id" data-get-items-route="http://staging.sudc.co/admin/products/relation" data-get-items-field="product_belongsto_category_relationship" tabindex="-1" aria-hidden="true">
+                                    <option value="">None</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="name"><strong>Price</strong></label>
+                                <input type="number" class="form-control" name="price" required="" step="any" placeholder="Price" value="">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="name"><strong>Offer Price</strong></label>
+                                <input type="number" class="form-control" name="offer_price" required="" step="any" placeholder="Offer Price" value="">
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label for="name"><strong>Discount</strong></label>
+                                <input type="number" class="form-control" name="discount" required="" step="any" placeholder="Discount" value="" />
+                            </div>
+                            
+                            <div class="form-group col-md-12">
+                                <label for="name"><strong>Description</strong></label>
+                                <textarea required="" class="form-control" name="description" rows="5"></textarea>
+                            </div>
+                            
+                             <div class="form-group col-md-6"> 
+                                <label for="name"><strong>Image</strong></label>
+                                <input required="" type="file" name="image" accept="image/*">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="name"><strong>Gallery</strong></label>
+                                <input type="file" name="gallery[]" multiple="multiple" accept="image/*">
+                            </div>
+
+
+                            <div class="form-group col-md-6"> 
+                                <label for="name"><strong>High Lights</strong></label>
+                                <textarea class="form-control" name="high_lights" id="richtexthigh_lights" aria-hidden="true">            
+                                </textarea>
+                            </div>
+
+                            <div class="form-group col-md-6"> 
+                                <label for="name"><strong>Specification</strong></label>
+                                <textarea class="form-control" name="specification" id="richtextspecification" aria-hidden="true">            
+                                </textarea>
+                            </div>
+
+                            <div class="form-group col-md-6"> 
+                                <label for="name"><strong>Features</strong></label>
+                                <textarea class="form-control" name="features" id="richtextfeatures" aria-hidden="true"></textarea>
+                            </div>
+                            <div class="form-group col-md-6"> 
+                                <label for="name"><strong>Terms Conditions</strong></label>
+                                <input type="text" class="form-control" name="terms_conditions" placeholder="Terms Conditions" value="">
+                            </div>
+
+
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary btn-lg save btn-block">Save</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
