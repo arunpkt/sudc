@@ -3400,7 +3400,7 @@ section.business_sell.text-center .btn {
 .btn.padding_10 {
     padding: 15px 0;
 }
-.business-advertise-section {
+.business-advertise-section, .business-merchant-section {
     background-color: #e1e1e1;
     background-image: url('../images/ss-bg.jpg');
     background-repeat: no-repeat;
