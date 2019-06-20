@@ -3405,21 +3405,75 @@ section.business_sell.text-center .btn {
     background-image: url('../images/ss-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: inherit;
+    background-position: top;
     background-size: auto;
 }
 .box_white {
     background-color: #FFF;
-    height: 500px;
+    height: 1065px;
     margin: 20px 0;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 45px;
 
 }
 .box_grey {
     background-color: #f3f3f3;
-    height: 500px;
+    height: 1065px;
     margin: 20px 0;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 30px;
 }
+ul.advertise_ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+ul.advertise_ul li {
+    background: url(../images/Icon%20Advertise.png) left center no-repeat;
+    padding: 0 10px 0 40px;
+    vertical-align: middle;
+    margin-top: 10px;
+    line-height: 2.2;
+}
+ul.advertise_ul li p {
+    font-size: 16px;
+    color: #7d8182;
+}
+h3.bold.head {
+    margin-top: 35px;
+}
+p.mercnt_talk {
+    margin-top: 15px;
+    color: #757e82;
+}
+a.merchan_tal_vemoew {
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 600
+}
+.business-merchant-section .box_white .row {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3433,6 +3487,9 @@ section.business_sell.text-center .btn {
 /* Device */
 @media screen and (max-width:480px) {
 
+    .hide_on_mobile {
+        display: none;
+    }
     .news_filter .cust-selc {
         width: 100%;
     }
@@ -3970,7 +4027,6 @@ section.business_sell.text-center .btn {
         background-color: #2298d0;
         border: 0;
         margin: 10px 0 0px 0;
-        float: right;
     }
     .sudc_business_menu .navbar-default .navbar-toggle .icon-bar {
         background-color: #FFF;
@@ -3978,11 +4034,29 @@ section.business_sell.text-center .btn {
     .sudc_business_menu .navbar-default .navbar-toggle:focus, .sudc_business_menu .navbar-default .navbar-toggle:hover {
         background-color: transparent;
     }
-
+    .sudc_business_menu .navbar {
+        background-color: #2298d0;
+        border: 0;
+        margin: 15px 0 0px 0;
+        float: none;
+    }
+    .sudc_business_menu .navbar-nav {
+        margin: 15px 15px;
+    }
+    .sudc_business_menu ul.nav > li {
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    .logo_business {
+        z-index: 2;
+    }
 }
 
 /*480px*/
 @media screen and (min-width : 481px) and (max-width: 767px) {
+    .hide_on_mobile {
+        display: none;
+    }
     .signup-other {
         padding: 0 20px 0 20px;
     }
@@ -4370,6 +4444,9 @@ section.business_sell.text-center .btn {
 
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
+    .hide_on_mobile {
+        display: none;
+    }
     .news_filter .input-group {
         margin-bottom: 20px;
     }
