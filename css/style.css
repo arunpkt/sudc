@@ -3140,7 +3140,7 @@ select.custom-select:after {
     background-color: rgba(255,255,255);
     border: 0;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-bottom-color: #2298d0;
     transition-delay: 0.5;
 }
@@ -3410,14 +3410,14 @@ section.business_sell.text-center .btn {
 }
 .box_white {
     background-color: #FFF;
-    height: 1065px;
+   /* height: 1065px;*/
     margin: 20px 0;
     padding: 30px 30px 30px 30px;
 
 }
 .box_grey {
     background-color: #f3f3f3;
-    height: 1065px;
+    /*height: 1065px;*/
     margin: 20px 0;
     padding: 10px 20px 20px 30px;
 }
@@ -3452,8 +3452,12 @@ a.merchan_tal_vemoew {
 .business-merchant-section .box_white .row {
     margin-bottom: 15px;
 }
-
-
+.mer_det_head {
+    margin-top: 20px;
+}
+.mer_det_para {
+    margin-top: 15px;
+}
 
 
 

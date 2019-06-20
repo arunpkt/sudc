@@ -70,7 +70,7 @@ $(document).ready(function() {
             $('body').removeClass("modal-open");
         }, 1100);
     });
-    
+
     $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
         event.preventDefault(); 
         event.stopPropagation(); 
@@ -88,6 +88,24 @@ function scrollToActiveSubmenu() {
     if(width <= 776) {
         $('.submenu ul.nav').animate({scrollLeft: $('.submenu li.active').position().left}, 500);  
     }
+}
+function setHightForBusiness() {
+    $(document).ready(function(){
+        var width = $(this).width();
+        if(width > 767 ) {
+            var box_white = $(".box_white").outerHeight(); 
+            var box_grey = $(".box_grey").outerHeight(); 
+            var whiteHei = parseInt(box_white) + 20; 
+            var greyHei = parseInt(box_grey) + 20; 
+            if(whiteHei < greyHei) {
+                $(".box_white").css("height", greyHei);
+                $(".box_grey").css("height", greyHei);
+            } else {
+                $(".box_white").css("height", whiteHei);
+                $(".box_grey").css("height", whiteHei);
+            }
+        }
+    });
 }
 
 //Forgot password
