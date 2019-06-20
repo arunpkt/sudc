@@ -429,8 +429,21 @@ section.shop_banner {
 div#slider-range {
     margin-top: 25px;
 }
-
-
+.shop_prd_nm {
+    font-size: 20px;
+}
+h3.prod_name {
+    margin-bottom: 10px;
+}
+.shop_prd_nm del {
+    color: #afa4a4;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.shop_prd_nm span.green.caps {
+    color: #99cc47;
+    font-weight: 600;
+}
 
 
 

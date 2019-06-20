@@ -1498,12 +1498,12 @@ main_search {
 
 .looking input {
     padding: 0px 0px 0px 10px;
-    width: 69% !important;
+    width: 59% !important;
 }
 
 .looking label {
     padding: 0 10px 0 20px;
-    width: 30% !important;
+    width: 40% !important;
 }
 
 .main_search .form-group {
@@ -3335,7 +3335,7 @@ section.business_product_count {
     margin: 20px auto 55px auto;
 }
 .border_business_bottom {
-    border-bottom: solid 1px #d0d0d0;
+    border-bottom: solid 1px #f5f3f3;
 }
 .business_content_home .image {
     padding: 20px 50px;
@@ -3392,7 +3392,7 @@ section.business_sell.text-center .btn {
     padding: 10px 40px;
     background-color: #2298d0;
 }
-.business_info_section p.text-justify {
+.business_info_section p {
     padding: 45px 45px;
     color: #726f6f;
     font-size: 16px;
@@ -3410,7 +3410,7 @@ section.business_sell.text-center .btn {
 }
 .box_white {
     background-color: #FFF;
-   /* height: 1065px;*/
+    /* height: 1065px;*/
     margin: 20px 0;
     padding: 30px 30px 30px 30px;
 
@@ -3419,7 +3419,7 @@ section.business_sell.text-center .btn {
     background-color: #f3f3f3;
     /*height: 1065px;*/
     margin: 20px 0;
-    padding: 10px 20px 20px 30px;
+    padding: 30px 30px 30px 30px;
 }
 ul.advertise_ul {
     list-style: none;
@@ -3459,9 +3459,19 @@ a.merchan_tal_vemoew {
     margin-top: 15px;
 }
 
-
-
-
+.product_count_wrapper p {
+    font-size: 18px;
+    padding: 10px 70px;
+}
+h4.bold.sell_on_head {
+    margin-top: 20px;
+}
+h4.bold.sell_on_head {
+    margin-top: 20px;
+}
+p.sell_on_content {
+    margin-top: 15px;
+}
 
 
 
@@ -4053,6 +4063,17 @@ a.merchan_tal_vemoew {
     }
     .logo_business {
         z-index: 2;
+    }
+    .business-header-carousal {
+        position: relative;
+        height: 300px;
+        background-color: #d0d0d0;
+    }
+    .business-search-sec {
+        position: absolute;
+        right: 0%;
+        top: 3%;
+        border-radius: 0px;
     }
 }
 
