@@ -93,10 +93,10 @@ function setHightForBusiness() {
     $(document).ready(function(){
         var width = $(this).width();
         if(width > 767 ) {
-            var box_white = $(".box_white").outerHeight(); 
-            var box_grey = $(".box_grey").outerHeight(); 
-            var whiteHei = parseInt(box_white) + 20; 
-            var greyHei = parseInt(box_grey) + 20; 
+            var box_white = $(".box_white").innerHeight(); 
+            var box_grey = $(".box_grey").innerHeight(); 
+            var whiteHei = parseInt(box_white); 
+            var greyHei = parseInt(box_grey); 
             if(whiteHei < greyHei) {
                 $(".box_white").css("height", greyHei);
                 $(".box_grey").css("height", greyHei);
