@@ -1498,12 +1498,13 @@ main_search {
 
 .looking input {
     padding: 0px 0px 0px 10px;
-    width: 59% !important;
+    width: 100% !important;
 }
 
-.looking label {
+.looking_select select {
     padding: 0 10px 0 20px;
-    width: 40% !important;
+    width: 100% !important;
+    border-radius: 0;
 }
 
 .main_search .form-group {
@@ -3472,7 +3473,13 @@ h4.bold.sell_on_head {
 p.sell_on_content {
     margin-top: 15px;
 }
-
+section.privacy_info {
+    margin: 30px auto 70px auto;
+}
+p.privacy_contet {
+    margin-top: 25px;
+    font-size: 16px;
+}
 
 
 
@@ -4074,6 +4081,9 @@ p.sell_on_content {
         right: 0%;
         top: 3%;
         border-radius: 0px;
+    }
+    .looking_select {
+        margin-bottom: 5px;
     }
 }
 
