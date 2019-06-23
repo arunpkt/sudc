@@ -1495,6 +1495,21 @@ main_search {
     -webkit-background-clip: content;
     background-clip: content-box;
 }
+.form-section .looking_select {
+    /*    border: 5px solid rgba(0, 0, 0, 0.3);*/
+    background: #FFFFFF;
+    box-shadow: 5px #cccccc;
+    -moz-background-clip: border;
+    -webkit-background-clip: border;
+    background-clip: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    background-clip: padding-box;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-clip: content-box;
+}
+
 
 .looking input {
     padding: 0px 0px 0px 10px;
@@ -1502,7 +1517,7 @@ main_search {
 }
 
 .looking_select select {
-    padding: 0 10px 0 20px;
+    padding: 0 0px 0 10px;
     width: 100% !important;
     border-radius: 0;
 }
