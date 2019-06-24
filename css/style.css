@@ -3495,8 +3495,15 @@ p.privacy_contet {
     margin-top: 25px;
     font-size: 16px;
 }
-
-
+.sarch_shop {
+    margin-bottom: 20px;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
+.pb0{
+    padding-bottom: 0px!important;
+}
 
 
 
