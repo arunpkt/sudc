@@ -4598,9 +4598,7 @@ p.privacy_contet {
 
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
-    .hide_on_mobile {
-        display: none;
-    }
+
     .news_filter .input-group {
         margin-bottom: 20px;
     }
@@ -5005,6 +5003,39 @@ p.privacy_contet {
     .product_list_pod .grid-img {
         min-height: 100px;
         max-height: 100px;
+    }
+    .sudc_business_menu .navbar {
+        background-color: #2298d0;
+        border: 0;
+        margin: 10px 0 0px 0;
+        float: right;
+    }
+    .business-search-sec {
+        position: absolute;
+        right: 3%;
+        top: 7%;
+        border-radius: 0px;
+        width: 426px;
+    }
+    .business .navbar-nav {
+        margin: 20.5px 0px;
+    }
+    .business .logo {
+        margin-top: 6px;
+        margin-left: 5px;
+    }
+    .product_count_wrapper p {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    section.business_product_count {
+        margin: 20px auto 20px auto;
+    }
+    section.business_content_home {
+        margin: 0px auto 0px auto;
+    }
+    .footer-phone {
+        clear: both;
     }
 }
 
