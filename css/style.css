@@ -3508,9 +3508,34 @@ p.privacy_contet {
 .logo_business {
     z-index: 2;
 }
-
-
-
+.menu_other_pages.business_shop .looking label {
+    width: 20% !important;
+}
+.menu_other_pages.business_shop .looking input {
+    padding: 0px 0px 0px 10px;
+    width: 79% !important;
+}
+.menu_other_pages.business_shop .where_in label {
+    width: 25%;
+    padding: 0 10px 0 20px;
+}
+.menu_other_pages.business_shop .where_in .input-group {
+    width: 74% !important;
+}
+.addEditView i {
+    margin-right: 20px;
+}
+.addEditView span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.addEditView a {
+   text-decoration: underline;
+    font-weight: 600;
+}
+section.business_shop_search {
+    margin-bottom: 70px;
+}
 
 
 
