@@ -577,6 +577,11 @@ h3.prod_name {
     h3.adrs.bold.title {
         font-size: 20px;
     }
+    .shop_prd_nm + h3.adrs.bold.title {
+        font-size: 15px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
     .shop_prd_nm {
         margin-top: 40px;
         padding: 0px 15px;
@@ -659,7 +664,7 @@ h3.prod_name {
         text-align: left!important;
         margin: 20px 0;
     }
-    
+
 
 }
 

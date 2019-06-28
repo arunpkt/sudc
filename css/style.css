@@ -2174,6 +2174,13 @@ section.news_filter {
     position: relative;
     width: 150px;
 }
+/*.rev_search_srt .cust-selc {
+    border: 0px solid #ddd;
+    padding: 5px 15px;
+    font-size: 14px;
+    position: relative;
+     width: 150px; 
+}*/
 .sort .cust-selc i {
     display: block;
 }
@@ -3082,7 +3089,7 @@ section.site_map_content {
 }
 select.custom-select {
     -webkit-appearance: none;
-    width: 60%;
+    width: 59%;
 }
 select.custom-select:after {
     content: 'V';
