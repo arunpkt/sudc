@@ -3536,9 +3536,23 @@ p.privacy_contet {
 section.business_shop_search {
     margin-bottom: 70px;
 }
-
-
-
+.recentlyViewed.user_dash_recent .grid-img {
+    min-height: 125px;
+    max-height: 130px;
+}
+section.businss_dashboard.user_dashboard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.recentlyViewed.user_dash_recent {
+    margin: 30px 0 50px 0;
+}
+.userprofile_orders img.img-responsive {
+    width: 75%;
+}
+.userprofile_details {
+    margin: 35px auto 20px auto;
+}
 
 
 
