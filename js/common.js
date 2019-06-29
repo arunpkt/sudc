@@ -92,7 +92,6 @@ function scrollToActiveSubmenu() {
 function setHightForBusiness() {
     $(document).ready(function(){
         var width = $(this).width();
-        console.log("Width"+width);
         if(width > 750 ) {
             var box_white = $(".box_white").innerHeight(); 
             var box_grey = $(".box_grey").innerHeight(); 
