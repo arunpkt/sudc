@@ -135,7 +135,7 @@ img.img-responsive:hover {
     opacity: 0.6;
     transition: opacity 0.3s ease-in-out;
 }
-.grid-arr .grid-arrival figure > a .grid-img img:hover, .header-carousal img:hover, .logo img:hover, footer_height img:hover {
+.grid-arr .grid-arrival figure > a .grid-img img:hover, .header-carousal img:hover, .logo img:hover, footer_height img:hover, .sudc_loader img:hover {
     opacity: 1;
 }
 .logo {
@@ -2175,11 +2175,11 @@ section.news_filter {
     width: 150px;
 }
 /*.rev_search_srt .cust-selc {
-    border: 0px solid #ddd;
-    padding: 5px 15px;
-    font-size: 14px;
-    position: relative;
-     width: 150px; 
+border: 0px solid #ddd;
+padding: 5px 15px;
+font-size: 14px;
+position: relative;
+width: 150px; 
 }*/
 .sort .cust-selc i {
     display: block;
@@ -3537,7 +3537,7 @@ p.privacy_contet {
     margin-right: 5px;
 }
 .addEditView a {
-   text-decoration: underline;
+    text-decoration: underline;
     font-weight: 600;
 }
 section.business_shop_search {
@@ -3560,9 +3560,35 @@ section.recentlyViewed.user_dash_recent {
 .userprofile_details {
     margin: 35px auto 20px auto;
 }
+.sudc_loader {
+    background: rgba(185, 186, 189, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+.sudc_loader img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-right: -50px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 
-
-
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 
 
