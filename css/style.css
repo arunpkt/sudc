@@ -3602,7 +3602,7 @@ section.recentlyViewed.user_dash_recent {
     }
 }
 .product_list_pod .addEditView {
-   text-align: center; 
+    text-align: center; 
 }    
 
 
@@ -3634,7 +3634,7 @@ section.recentlyViewed.user_dash_recent {
         float: left!important;
         padding-left: 18px;
     }
-    
+
 
 }
 
@@ -5149,6 +5149,13 @@ section.recentlyViewed.user_dash_recent {
     .footer-phone {
         clear: both;
     }
+    .col-md-3.col-sm-4.col-xs-12.mt40.sort.no-padding {
+        margin-top: 20px;
+    }
+    .business_pro_page .grid-img {
+        min-height: 150px;
+        max-height: 150px;
+    }
 }
 
 /*991*/
@@ -5230,6 +5237,12 @@ section.recentlyViewed.user_dash_recent {
     }
     .news_filter .col-md-2.col-sm-12.col-xs-12 {
         width: 24.9%;
+    }
+    .business-search-sec {
+        position: absolute;
+        right: 1%;
+        top: 25%;
+        border-radius: 0px;
     }
 }
 
