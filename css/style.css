@@ -3378,23 +3378,25 @@ h2.step_head {
     font-weight: 600;
 }
 .business_content_home .content ul {
-    padding : 20px 0px 20px 0px;
-    list-style: none;
+    padding : 20px 0px 20px 20px;
+    /*   list-style: none;*/
+    list-style-image: url('../images/list_style_blue.png');
 }
 .business_content_home .content ul li {
     color: #939598;
     font-size: 16px;
     line-height: 2;
+    padding-left: 10px;
 }
 
-.business_content_home .content ul li::before {
-    content: "\2022";
-    color: #2298d0;
-    font-size: 25px;
-    font-weight: bold;
-    width: 16px;
-    margin-right: 20px;
-}
+/*.business_content_home .content ul li::before {
+content: "\2022";
+color: #2298d0;
+font-size: 25px;
+font-weight: bold;
+width: 16px;
+margin-right: 20px;
+}*/
 section.business_content_home {
     margin: 40px auto 40px auto;
 }
@@ -3446,17 +3448,17 @@ section.business_sell.text-center .btn {
     padding: 30px 30px 30px 30px;
 }
 ul.advertise_ul {
-    list-style: none;
-    padding: 0;
     margin-top: 15px;
+    list-style-image: url('../images/Icon%20Advertise1.png');
+    padding-left: 25px;
 }
-ul.advertise_ul li {
-    background: url(../images/Icon%20Advertise.png) left center no-repeat;
-    padding: 0 10px 0 40px;
-    vertical-align: middle;
-    margin-top: 10px;
-    line-height: 2.2;
-}
+/*ul.advertise_ul li {
+background: url(../images/Icon%20Advertise.png) left center no-repeat;
+padding: 0 10px 0 40px;
+vertical-align: middle;
+margin-top: 10px;
+line-height: 2.2;
+}*/
 ul.advertise_ul li p {
     font-size: 16px;
     color: #7d8182;
@@ -3594,9 +3596,47 @@ section.recentlyViewed.user_dash_recent {
 
 
 
+@-moz-document url-prefix() {
+    input[type='date'].form-control {
+        padding: 0 12px;
+    }
+}
+.product_list_pod .addEditView {
+   text-align: center; 
+}    
 
 
 
+
+
+@media screen and (max-width: 767px) {
+    .business_content_home h1.alegreya.text-center.title {
+        margin-bottom: 25px;
+        margin-top: 60px;
+    }
+    section.business_sell.text-center {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .popular_image_link {
+        margin-top: 15px;
+    }
+    .menu_other_pages.business_shop .where_in .input-group {
+        width: 100% !important;
+    }
+    .business_shop_search .sort .cust-selc {
+        margin-right: 10px;
+    }
+    .addEditView i {
+        margin-right: 5px;
+    }
+    span.addEditView.pull-right {
+        float: left!important;
+        padding-left: 18px;
+    }
+    
+
+}
 
 
 
