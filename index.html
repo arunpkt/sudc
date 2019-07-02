@@ -685,7 +685,7 @@
                     <p>New deals of the day</p>
                 </div>
 
-                <h4 class="text-center ends_in">Ends in 58:26:52</h4>
+                <h4 class="text-center ends_in">Ends in <span id="timerTick">58:26:52</span></h4>
 
                 <div class="row">
                     <div class="arrivals-grids">
@@ -2049,6 +2049,23 @@
         }
 
         loadIpadImages();
+
+
+        var deadline = new Date("Jul 10, 2019").getTime(); 
+        var x = setInterval(function() { 
+            var now = new Date().getTime(); 
+            var t = deadline - now; 
+            var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+            var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+            var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+            document.getElementById("timerTick").innerHTML = days + "d "  
+                + hours + "h " + minutes + "m " + seconds + "s "; 
+            if (t < 0) { 
+                clearInterval(x); 
+                document.getElementById("demo").innerHTML = "EXPIRED"; 
+            } 
+        }, 1000); 
 
     </script>
 </html>

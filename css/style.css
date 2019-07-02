@@ -5267,8 +5267,12 @@ button.busi_sub_btn {
     .businss_dashboard .box {
         height: 90px;
     }
-}
-
+    .footer_business.footer_top .social_icons a {
+        margin-right: 0px;
+    }
+    input[type='file'].form-control {
+        padding: 0px 10px;
+    }
 }
 
 /* 1024 */
