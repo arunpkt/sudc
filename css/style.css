@@ -3449,7 +3449,7 @@ section.business_sell.text-center .btn {
 }
 ul.advertise_ul {
     margin-top: 15px;
-    list-style-image: url('../images/Icon%20Advertise1.png');
+    list-style-image: url('../images/Icon%20Advertise.png');
     padding-left: 25px;
 }
 /*ul.advertise_ul li {
@@ -5172,6 +5172,9 @@ button.busi_sub_btn {
     .business_pro_page .grid-img {
         min-height: 150px;
         max-height: 150px;
+    }
+    .popular_image_link {
+        margin-top: 15px;
     }
 }
 
