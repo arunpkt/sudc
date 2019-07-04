@@ -1521,6 +1521,8 @@ main_search {
     width: 100% !important;
     border-radius: 0;
     -webkit-appearance: none;
+    background: url('../images/down_arrow.png') no-repeat right;
+    background-position-x: 97%;
 }
 .looking_select  i.icon-angle-down {
     position: absolute;
