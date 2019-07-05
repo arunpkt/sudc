@@ -307,16 +307,68 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 no-padding">
-                        <iframe scrolling="no" frameborder="0" style="width:170px;height:315px;" src="https://images2.content-hci.com/widget-cont/html/iframe/270709/korea.html"></iframe>
+
+                        <div id='widgetWapper_DMW' style='font-family:Open sans;clear:both;width:100%;height:400px;overflow-y:auto;overflow-x:hidden;position:relative;'>
+                            <div id='widget_DMW' style='width:100%;background:#fff;overflow-y: auto; overflow-x: hidden; height: 100%;'>
+                                <div id='sfWrap_DMW' style='overflow:auto;*overflow-x:hidden;padding:15px 15px 40px;;position:relative;background:#fff;'>
+                                    <div id='keywordHolder_DMW' style='position:relative;'>
+                                        <span id='kwSpan_DMW' style='color:#000000;font-family:open sans;font-size:14px;display:block;padding:0 0 5px;font-weight:700;margin-top:-2px;'>전공 <span style='color:#ff0000;'> *</span></span><input id='kw_DMW' maxlength='200' onclick='clearDefault(this);' onkeyup='autocompleteKeyword("autocompleteKeyword", "kw_DMW", "keyword_prw_ajax_div","1",event);' onblur='setDefault(this);' style='width:99%;font-family:open sans;font-size:14px;color:#a9a9a9;font-weight:normal;border-color: #c9c9c9;border-style: solid;border-width: 0 0 1px 0;background:transparent;' value='전공 키워드 입력'/><input type='hidden' id='prwKeywordIdHidden' value='' /><input type='hidden' id='prwKeywordLevelHidden' value='' />
+                                        <div id='keyword_prw_ajax_div' style='border: 1px solid #c3c3c3; display: none; height: 120px; overflow-y: scroll; position: absolute; z-index: 2; background: #fff; width: 97%;'></div>
+                                    </div>
+                                    <div id='countryAjaxHolder_DMW' style='position:relative;'>
+                                        <span id='countrySpan_DMW' style='color:#000000;font-family:open sans;font-size:14px;display:block;padding:15px 0 5px;font-weight:700;margin-top:-2px;'>유학 국가 </span><input id='country_DMW' maxlength='200' onclick='clearDefault(this);' onkeyup='autocompleteCountry("autocompleteCountry", "country_DMW", "country_prw_ajax_div","1",event);' onblur='setDefault(this);' style='width:99%;font-family:open sans;font-size:14px;color:#a9a9a9;font-weight:normal;border-color: #c9c9c9;border-style: solid;border-width: 0 0 1px 0;background:transparent;' value='국가를 선택하세요'/><input type='hidden' id='prwContIdHidden' value='' /><input type='hidden' id='prwContinentIdHidden' value='' />
+                                        <div id='country_prw_ajax_div' style='border: 1px solid #c3c3c3; display: none; height: 120px; overflow-y: scroll; position: absolute; z-index: 2; background: #fff; width: 97%;'></div>
+                                    </div>
+                                    <div id='studymodeHolder_DMW'>
+                                        <span id='smSpan_DMW' style='color:#000000;font-family:open sans;font-size:14px;display:block;padding:15px 0 5px;font-weight:700;'>프로그램 타입</span><span id='spansm_DMW' style='color:#a9a9a9;cursor:pointer;font-weight:normal;font-family:open sans;font-size:14px;display:block;border-width: 0 0 1px 0; border-style: solid; border-color: #c9c9c9; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; width: 99%; margin-bottom: -23px; display: block;overflow: hidden;'> 풀 타임<span style='margin-left:10px;margin-right:10px;'>&darr;</span></span>
+                                        <select id='sm_DMW' style='width:99%;font-family:open sans;font-size:14px;display:block;opacity:0;background:#ebebeb;' onchange='manageCustomDropdown(this)'>
+                                            <option selected='selected' value='0000'>풀 타임</option>
+                                            <option value='3'>온라인</option>
+                                        </select>
+                                    </div>
+                                    <div id='qualificationHolder_DMW'>
+                                        <span id='qualSpan_DMW' style='color:#000000;font-family:open sans;font-size:14px;display:block;padding:15px 0 5px;font-weight:700;'>자격</span><span id='spanqual_DMW' style='font-family:open sans;font-size:14px;color:#a9a9a9;cursor:pointer;font-weight:normal;border-width: 0 0 1px 0; border-style: solid; border-color: #c9c9c9; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; width: 99%; margin-bottom: -23px; display: block;overflow: hidden;'>선택하세요.<span style='margin-left:10px;margin-right:10px;'>&darr;</span></span>
+                                        <select id='qual_DMW' style='width:99%;font-family:open sans;font-size:14px;opacity:0;background:#ebebeb;' onchange='manageCustomDropdown(this)'>
+                                            <option selected='selected' value='-999'>모든 레벨</option>
+                                            <option value='3'>석사과정</option>
+                                            <option value='2'>학사과정</option>
+                                            <option value='1'>직업/자격증 과정</option>
+                                        </select>
+                                    </div>
+                                    <div id='buttonHolder_DMW' style='width:100%;float:left;margin-top:18px;'><a id='btnSubmit_DMW' style='float: left; margin-bottom: 5px; background:#58519e;box-sizing:unset;width: 95%;max-width:266px; border-radius: 20px; margin-right: 15px; color: rgb(255, 255, 255); display: block; text-decoration: none; white-space: nowrap; font: bold 14px Open Sans,helevetica,sans-serif; text-align: center; cursor: pointer; padding-top: 12px; height: 32px;' href='javascript:void(0);' onclick='return SubmitWidget("SubmitWidget",1);' onmouseover="changeBtnColorOnOver(this, '443e79');" onmouseout="changeBtnColorOnOut(this, '58519e');"> 코스 검색</a><img id='btnLdr_DMW' width='15' height='15' style='width:15px;height:15px;display:none;margin-top:10px;float:left;' src='https://secure.hotcoursesabroad.com/widget-cont/dmw/img/loader_3.gif'/></div>
+                                </div>
+                                <div id='navWrap_DMW' style='width:100%;'>
+                                    <div id='srNav_DMW' style='display:table;overflow:hidden;background:#464646;clear:both;border-bottom:1px solid #fff;width:100%;display:none;'></div>
+                                    <div id='prNav_DMW' style='display:table;overflow:hidden;background:#464646;clear:both;border-bottom:1px solid #fff;width:100%;display:none;'></div>
+                                    <div id='cdNav_DMW' style='display:table;overflow:hidden;background:#464646;clear:both;border-bottom:1px solid #fff;width:100%;display:none;'></div>
+                                    <div id='dpNav_DMW' style='display:table;overflow:hidden;background:#464646;clear:both;border-bottom:1px solid #fff;width:100%;display:none;'></div>
+                                    <div id='emailNav_DMW' style='display:table;overflow:hidden;background:#464646;clear:both;border-bottom:1px solid #fff;width:100%;display:none;'></div>
+                                    <div id='mainLoader_DMW' style='display:none;padding:50px;text-align:center;'><img src='https://secure.hotcoursesabroad.com/widget-cont/dmw/img/loader_3.gif' alt='loading' title='loading' /></div>
+                                </div>
+                                <div id='srWrap_DMW' style='width:100%;padding-bottom: 30px; display: none;background:#fff;overflow-x:hidden;'></div>
+                                <div id='prWrap_DMW' style='width:100%;padding-bottom: 30px;display:none;background:#fff;overflow-x:hidden;'></div>
+                                <div id='cdWrap_DMW' style='width:100%;display:none;padding-bottom: 30px;background:#fff;overflow-x:hidden;'></div>
+                                <div id='cdWrap_DMW' style='width:100%;display:none;padding-bottom: 30px;background:#fff;overflow-x:hidden;'></div>
+                                <div id='dpWrap_DMW' style='width:100%;display:none;padding-bottom: 30px;background:#fff;overflow-x:hidden;'></div>
+                                <div id='emailWrap_DMW' style='width:100%;display:none;padding-bottom: 30px;background:#fff;overflow-x:hidden;'></div>
+                            </div>
+                            <div id='config_DMW' style='display:none;'><input type='hidden' id='ids_DMW' value='secure.hotcoursesabroad.com/270709/29825'/><input type='hidden' id='defaults_DMW' value='전공 키워드 입력/none/-1/0000/-999'/><input type='hidden' id='actualkw' value="전공 키워드 입력"/><input type='hidden' id='actualCountrykw' value="국가를 선택하세요"/><input type='hidden' id='dimension_DMW' value='300/400' /><input type='hidden' id='mainTitle_DMW' value='000000/open sans/16' /><input type='hidden' id='subTitle_DMW' value='000000/open sans/14' /><input type='hidden' id='bodyText_DMW' value='000000/open sans/12' /><input type='hidden' id='linkText_DMW' value='187ADB/open sans/12'/><input type='hidden' id='bgColor_DMW' value='fff/fff/fff'/><input type='hidden' id='visibility_DMW' value='true/false/10/true/true/true/true'/><input type='hidden' id='buttons_DMW' value='true/true/true/false'/><input type='hidden' id='orderBy_DMW' value='F'/><input type='hidden' id='excludeColleges_DMW' value='0'/><input type='hidden' id='errorMsg_DMW' value='Oops! 리스트에서 과목이름을 선택 [or] 키워드를 입력해주세요'/><input type='hidden' id='btnColor_DMW' value='대학 웹사이트 방문/b1,무료안내서 다운로드/b2, 코스 검색/b3, 대학에 연락하기/b14, Contact consultant/b6' /><input type='hidden' id='widgetID_Name' value=' HCKR Widget Naver partner blog ' /><input type='hidden' id='region_Switch_Off' value='false' /></div>
+                            <div id='copyright_DMW' style='position: absolute; display: block; background:#fff; bottom: 0px; width:90%;'>
+                                <div style='font-size: 12px; font-family: Open Sans;padding: 5px 15px;font-weight:normal;'>Powered by <a style="color:#0000ee;font-weight:normal;text-decoration:underline;" href="https://www.hotcourses.kr?campaign=29825" target="_blank" rel="">Hotcourses Korea</a></div>
+                            </div>
+                        </div>
+
+
+
                         <div class="about_the_card_wrapper">
                             <p class="about_card_head">
                                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
                             </p>
-                            
+
                             <p class="about_card_sub_head">
                                 Here are the 5 core values that we live by:
                             </p>
-                            
+
                             <ul class="customer_benifits_head">
                                 <li>
                                     <p class="benifit_item">
