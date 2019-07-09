@@ -1358,10 +1358,17 @@ a.fill-div {
     margin-top: 40px;
 }
 .slick-prev::before {
-    content: "<"!important;
+    content: url("../images/back-arrow-circular-symbol.png");
 }
 .slick-next::before {
-    content: ">"!important;
+    content: url("../images/right-arrow-circular-button.png");
+}
+.slick-prev {
+    right: 70px;
+    top: 20px;
+}
+.slick-next {
+    top: 20px;
 }
 
 .top_stores .grid-arr .grid-arrival figure > a .grid-img img {
@@ -2940,7 +2947,7 @@ p.signup-policy {
     width: 14px;
     height: 14px;
     transition-delay: 0.6s;
-   
+
 }
 .userprofile_section_page .form-group {
     border-bottom: 0px solid #dccdcd;
@@ -3595,7 +3602,11 @@ section.businss_dashboard.user_dashboard {
     margin-bottom: 20px;
 }
 section.recentlyViewed.user_dash_recent {
-    margin: 60px 0 50px 0;
+    margin: 50px 0 50px 0;
+}
+section.recentlyViewed.user_dash_recent .container .col-md-10 {
+    padding-top: 20px;
+    border-top: solid 1px #dddddd;
 }
 .userprofile_orders img.img-responsive {
     width: 75%;
@@ -3629,11 +3640,27 @@ button.busi_sub_btn {
 }
 
 
-
-
-
-
-
+.fa-chevron-circle-left:before{
+    content:url("../images/back-arrow-circular-symbol.png");
+}
+.fa-chevron-circle-right:before{
+    content:url("../images/right-arrow-circular-button.png");
+}
+.minheightfix {
+    height: 400px;
+}
+.quicklinks ul {
+    list-style: none;
+    padding-left: 5px;
+}
+.quicklinks ul li{
+    line-height: 2;
+}
+.quicklinks ul li a{
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 500;
+}
 
 
 
