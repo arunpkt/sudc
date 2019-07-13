@@ -49,26 +49,23 @@ $(document).ready(function() {
         }
     });
     //modal
-    $('#loginModal').on('shown.bs.modal', function () {	
+    $('#loginModal').on('show.bs.modal', function () {	
         $('#signUpModal').modal('hide');
-    })
-    $('#signUpModal').on('shown.bs.modal', function () {
+    });
+    $('#signUpModal').on('show.bs.modal', function () {
         $('#loginModal').modal('hide');
-    })
-    $('#loginModal').on('click', function () {
-        setTimeout(function(){
-            $('body').addClass("modal-open");
-        }, 1000);
     });
-    $('#signUpModal').on('click', function () {
-        setTimeout(function(){
-            $('body').addClass("modal-open");
-        }, 1000);
+    $('#loginModal').on('shown.bs.modal', function () {	
+       $('body').addClass("modal-open").css("padding-right","17px"); 
     });
-    $('.close').on('click', function () {
-        setTimeout(function(){
-            $('body').removeClass("modal-open");
-        }, 1100);
+    $('#signUpModal').on('shown.bs.modal', function () {
+        $('body').addClass("modal-open").css("padding-right","17px");
+    });
+     $('#loginModal').on('hide.bs.modal', function () {	
+        $('body').removeClass("modal-open").css("padding-right","0");
+    });
+    $('#signUpModal').on('hide.bs.modal', function () {
+        $('body').removeClass("modal-open").css("padding-right","0");
     });
 
     $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {

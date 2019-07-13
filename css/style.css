@@ -3667,12 +3667,12 @@ button.busi_sub_btn {
 .megamenu {
     width: 400px;
 }
-/*.megamenu_dropdown:hover > .megamenu_menu {
+.megamenu_dropdown:hover > .megamenu_menu {
     display: block;
 }
 .megamenu_subdrpdown:hover > .megamenu {
     display: block;
-}*/
+}
 .megamenu_menu > li a {
     padding: 5px 20px;
 }
