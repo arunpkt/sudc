@@ -194,7 +194,8 @@ span.rat_str {
 }
 
 .list_url .col-md-4 {
-    margin-right: 0px
+    margin-right: 0px;
+    margin-top: 15px;
 }
 
 
@@ -235,9 +236,24 @@ i.icon-twitter:before:hover {
 }
 
 
+.p5
+{
+    padding: 5px;
+}
+.business_logged i.fa-caret-down {
+    color: #fff;
+}
 
-i {
-    color: #8e8c8c;
+i.fa-rupee-sign {
+    color: inherit !important;
+}
+
+i.fa-rupee-sign {
+    color: inherit !important;
+}
+
+i.fa-facebook-f,i.fa-google {
+    color: #fff;
 }
 
 
@@ -373,7 +389,7 @@ h2.mt100.clk {
     margin: 30px 0 20px;
 }
 
-.list_url ul li a {
+.list_url a {
     text-decoration: underline;
     font-weight: 600
 }

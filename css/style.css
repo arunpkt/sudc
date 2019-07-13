@@ -1571,6 +1571,9 @@ main_search {
     padding: 0 10px 0 20px;
 }
 
+.minheightfix {
+    height : 700px;
+  }
 .form-section .sub_but {
     /* border: 5px solid rgba(0, 0, 0, 0.3);*/
     background: #FFFFFF;
@@ -2035,6 +2038,10 @@ section.recentlyViewed {
     margin: 50px 0 50px 0;
 }
 
+section.recentlyViewed .container .col-md-10 {
+    border-top: 1px solid #ddd;
+}
+
 section.top_category {
     margin-top: 50px;
 }
@@ -2402,7 +2409,7 @@ section.news_pod {
 .reviewPod .reviw_body{
     color: #7e8082;
     margin: 10px 25px;
-    text-align: justify;
+    text-align: center;
 }
 p.writtenBy {
     font-size: 16px;
@@ -2460,12 +2467,11 @@ button.close{
     width: 700px;	
 }
 .modal-content {
-    min-height: 400px;
+    
     border-radius: 0px;
 }
 #loginModal .modal-content {
-    min-height: 330px;
-    max-height: 350px;
+    
     border-radius: 0px;
 }
 .modal-header {    
@@ -2771,16 +2777,16 @@ p.signup-policy {
     transition: width 0.3s ease-in-out;
 }
 :-ms-input-placeholder {
-    color: #555 !important;
+    color: #b8b8b8 !important;
 }
 ::-moz-placeholder {
-    color: #555 !important;
+    color: #b8b8b8 !important;
 }
 :-moz-placeholder {
-    color: #555 !important;
+    color: #b8b8b8 !important;
 }
 ::-webkit-input-placeholder {
-    color: #555 !important;
+    color: #b8b8b8 !important;
 }
 
 .signup-modal-body .retrieve-password {
@@ -3486,8 +3492,14 @@ section.business_sell.text-center .btn {
     background-color: #FFF;
     /* height: 1065px;*/
     margin: 20px 0;
-    padding: 30px 30px 30px 30px;
+    padding: 45px 30px 30px 30px;
 
+}
+.box_white h2.bold {
+    margin-top: 0px;
+}
+.box_white h3 {
+    margin-top: 0px;
 }
 .box_grey {
     background-color: #f3f3f3;
@@ -3497,7 +3509,7 @@ section.business_sell.text-center .btn {
 }
 ul.advertise_ul {
     margin-top: 15px;
-    list-style-image: url('../images/Icon%20Advertise.png');
+    list-style-image: url('../images/list_style_blue.png');
     padding-left: 25px;
 }
 /*ul.advertise_ul li {
@@ -3662,7 +3674,31 @@ button.busi_sub_btn {
     font-weight: 500;
 }
 
+.typeahead.dropdown-menu {
+    padding: 0px 0;
+    margin: 0 0 0;
+    border-radius: 0px;
+}
+.shop_link {
+    font-size: 18px;
+}
 
+.customer_testimonial .view_more.text-center {
+    margin-bottom: 70px;
+}
+.mandatory
+    {
+        color:red;
+    }
+
+    section.brd_crmb {
+        padding: 10px 20px 0;
+    }
+    .brd_crmb .breadcrumb {
+        background: transparent;
+        padding: 10px 0px;
+        margin-bottom: 0px;
+    }
 
 .megamenu {
     width: 400px;
@@ -5399,16 +5435,16 @@ ul.megamenu_list li a {
         transition: none;
     }
     :-ms-input-placeholder {
-        color: #555 !important;
+        color: #b8b8b8 !important;
     }
     ::-moz-placeholder {
-        color: #555 !important;
+        color: #b8b8b8 !important;
     }
     :-moz-placeholder {
-        color: #555 !important;
+        color: #b8b8b8 !important;
     }
     ::-webkit-input-placeholder {
-        color: #555 !important;
+        color: #b8b8b8 !important;
     }
 }
 @media (min-width: 768px) and (max-width: 780px) {
