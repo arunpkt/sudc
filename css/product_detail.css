@@ -59,6 +59,8 @@
 .usr_dtl .pics a img {
     margin-left: 0;
     margin-right: 0;
+    max-width: 120px;
+    height: auto;
 }
 .row.rslt.fl .btn-default{
     color: #8e8c8c; 
@@ -738,11 +740,33 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
 .people_viewed .fl.fw.rltiv {
     margin-bottom: 35px;
 }
+.wrapper {
+    min-height: 100vh;
+}
 
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    flex-direction: column;
 
+    background-color: aliceblue;
+}
 
+.block__pic {
+    width: 300px;
+}
 
+.block__title {
+    margin-bottom: 30px;
 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
 
 @media screen and (max-width:767px){
     .banr_link .col-md-6.col-sm-4.col-xs-12.pull-right.border-left{ border:0!important;   }
