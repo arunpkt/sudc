@@ -1572,8 +1572,8 @@ main_search {
 }
 
 .minheightfix {
-    height : 700px;
-  }
+    height : 400px;
+}
 .form-section .sub_but {
     /* border: 5px solid rgba(0, 0, 0, 0.3);*/
     background: #FFFFFF;
@@ -2467,11 +2467,11 @@ button.close{
     width: 700px;	
 }
 .modal-content {
-    
+
     border-radius: 0px;
 }
 #loginModal .modal-content {
-    
+
     border-radius: 0px;
 }
 .modal-header {    
@@ -3687,27 +3687,27 @@ button.busi_sub_btn {
     margin-bottom: 70px;
 }
 .mandatory
-    {
-        color:red;
-    }
+{
+    color:red;
+}
 
-    section.brd_crmb {
-        padding: 10px 20px 0;
-    }
-    .brd_crmb .breadcrumb {
-        background: transparent;
-        padding: 10px 0px;
-        margin-bottom: 0px;
-    }
+section.brd_crmb {
+    padding: 10px 20px 0;
+}
+.brd_crmb .breadcrumb {
+    background: transparent;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+}
 
 .megamenu {
     width: 400px;
 }
 /*.megamenu_dropdown:hover > .megamenu_menu {
-    display: block;
+display: block;
 }
 .megamenu_subdrpdown:hover > .megamenu {
-    display: block;
+display: block;
 }*/
 .megamenu_menu > li a {
     padding: 5px 20px;
@@ -3725,6 +3725,36 @@ ul.megamenu_list li a {
 .megamenu h3 {
     margin-top: 5px;
     font-size: 20px;
+}
+.panel.panel-default.card {
+    width: 450px;
+    height: 250px;
+    margin: 55px 10px;;
+    position: relative;
+    background-color: #46a3d0;
+    border-radius: 20px;
+}
+.card p.card_no {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    top: 100px;
+    left: 90px;
+    color: #FFEEFF;
+}
+p.name {
+    position: absolute;
+    bottom: 15px;
+    left: 45px;
+    font-size: 15px;
+    color: #FFEEFF;
+}
+p.validity {
+    position: absolute;
+    color: #FFEEFF;
+    left: 50px;
+    top: 160px;
+    font-size: 14px;
 }
 
 
@@ -3755,6 +3785,8 @@ ul.megamenu_list li a {
 
 
 @media screen and (max-width: 767px) {
+
+
     .business_content_home h1.alegreya.text-center.title {
         margin-bottom: 25px;
         margin-top: 60px;
@@ -3791,7 +3823,29 @@ ul.megamenu_list li a {
 
 /* Device */
 @media screen and (max-width:480px) {
-
+    .panel.panel-default.card {
+        width: 330px;
+        height: 200px;
+        margin: 55px 10px;
+        position: relative;
+        background-color: #46a3d0;
+        border-radius: 20px;
+    }
+    .card p.card_no {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        top: 75px;
+        left: 36px;
+        color: #FFEEFF;
+    }
+    p.validity {
+        position: absolute;
+        color: #FFEEFF;
+        left: 40px;
+        top: 125px;
+        font-size: 14px;
+    }
     .hide_on_mobile {
         display: none;
     }
