@@ -425,7 +425,15 @@ section.shop_banner {
     top: -5px!important;
     margin-left: -.6em;
 }
-
+.shp_detl_se_more {
+    padding-right: 0;
+}
+span.shp_detl_se_more_wrapper {
+    float: right;
+}
+.prd_link span.text-left {
+    margin-right: 100px;
+}
 div#slider-range {
     margin-top: 25px;
 }
