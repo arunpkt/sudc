@@ -3844,6 +3844,10 @@ p.validity {
     .business_logged .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #FFFFFF;
     }
+    .navbar-collapse {
+        max-height: 500px;
+        overflow-y: auto;
+    }
 
 }
 
