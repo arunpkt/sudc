@@ -139,7 +139,7 @@ img.img-responsive:hover {
     opacity: 1;
 }
 .logo {
-    margin-top: 20px;
+    margin-top: -10px;
 }
 
 .logo a {
@@ -147,7 +147,7 @@ img.img-responsive:hover {
 }
 
 .logo img {
-    max-width: 75%;
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
 }
@@ -267,7 +267,7 @@ input[type='file'].form-control {
 /* Sayaputhiran Menu */
 
 .sudc_menu {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .sudc_menu .navbar {
@@ -299,10 +299,8 @@ input[type='file'].form-control {
     background-color: inherit;
 }
 
-.sudc_menu .navbar-collapse,
-.sudc_menu .container-fluid {
-    /*    padding-right: 0;
-    padding-left: 0;*/
+.sudc_menu .navbar-collapse{
+   text-align: right;
 }
 
 .sudc_menu .navbar-nav {
@@ -2447,6 +2445,7 @@ div#dealofdayviewmore {
 }
 .sudc_menu .navbar.navbar-default > .container{
     padding-right: 0px;
+    padding-left: 0px;
 }
 
 /* Modal */
@@ -3786,7 +3785,21 @@ p.validity {
 
 @media screen and (max-width: 767px) {
 
-
+    .sudc_menu .navbar.navbar-default > .container {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    .logo img {
+        max-width: 85%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sticky_header .navbar-toggle {
+        top: 10px;
+    }
+    header.sticky_header .logo_business .logo img {
+        margin-top: 5px;
+    }
     .business_content_home h1.alegreya.text-center.title {
         margin-bottom: 25px;
         margin-top: 60px;
@@ -3811,7 +3824,7 @@ p.validity {
         float: left!important;
         padding-left: 18px;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    .business_logged .navbar-default .navbar-nav .open .dropdown-menu>li>a {
         color: #FFFFFF;
     }
 
@@ -4114,7 +4127,7 @@ p.validity {
     }
 
     .logo img {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .banner img {
@@ -4408,6 +4421,7 @@ p.validity {
     }
     .logo_business {
         z-index: 2;
+        float: left;
     }
     .business-header-carousal {
         position: relative;
@@ -4980,7 +4994,7 @@ p.validity {
         font-size: 14px;
     }
     .sudc_menu .navbar-default {
-        float: right;
+        /*float: right;*/
     }
     .sudc_menu .navbar > .container-fluid {
         width: 100%;
@@ -5179,7 +5193,7 @@ p.validity {
     }
 
     .sudc_menu .navbar-nav {
-        float: left;
+        float: right;
     }
 
     .navbar-nav {
@@ -5209,12 +5223,12 @@ p.validity {
 
     .logo img {
         margin-bottom: 0px;
-        margin-top: 20px;
-        max-width: 100%;
+        margin-top: 0px;
+        width: 100%;
     }
 
     .sticky_header .logo img {
-        margin-top: 9px;
+        margin-top: 20px;
     }
 
     .sudc_menu {
@@ -5359,6 +5373,9 @@ p.validity {
     }
     .popular_image_link {
         margin-top: 15px;
+    }
+    .navbar-header {
+        width: 15%;
     }
 }
 
