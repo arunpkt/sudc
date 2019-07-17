@@ -3797,6 +3797,9 @@ p.validity {
 
 
 @media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav .business_logged.open .dropdown-menu>li>a {
+        color: #fff;
+    }
     .sudc_business_menu .logo img {
         margin-top: 15px;
         margin-left: 0px;
@@ -3858,8 +3861,8 @@ p.validity {
 /* Device */
 @media screen and (max-width:480px) {
     .panel.panel-default.card {
-        width: 330px;
-        height: 200px;
+        width: 270px;
+        height: 170px;
         margin: 55px 10px;
         position: relative;
         background-color: #46a3d0;
@@ -3867,18 +3870,25 @@ p.validity {
     }
     .card p.card_no {
         position: absolute;
-        font-size: 30px;
+        font-size: 23px;
         text-align: center;
-        top: 75px;
-        left: 36px;
+        top: 46px;
+        left: 35px;
         color: #FFEEFF;
     }
     p.validity {
         position: absolute;
         color: #FFEEFF;
-        left: 40px;
-        top: 125px;
+        left: 35px;
+        top: 90px;
         font-size: 14px;
+    }
+    p.name {
+        position: absolute;
+        bottom: 15px;
+        left: 35px;
+        font-size: 15px;
+        color: #FFEEFF;
     }
     .hide_on_mobile {
         display: none;
