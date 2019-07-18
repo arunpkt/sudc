@@ -130,6 +130,8 @@ a.viewall {
 }
 .admin_dashboard_filter {
     margin: 30px auto;
+    padding: 20px 20px;
+    background: linear-gradient(-158deg, #f3e9e9 12%, #1f3e73 11%);
 }
 .admin_dashboard_filter form-control {
     background-color: #FFF;
@@ -137,4 +139,37 @@ a.viewall {
 .admin_dashboard > .col-md-12 {
     padding: 0 0px 15px 25px;
     color: #000;
+}
+.admin_dashboard_filter .form-group.from {
+    width: 50%;
+}
+
+.admin_dashboard_filter .form-group.city {
+    width: 20%;
+
+}
+.admin_dashboard_filter .form-group.submit {
+    width: 15%;
+}
+.panel-widget .b-meta > span {
+    background: #e9e9e9;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    float: left;
+    height: 7px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+span.blue:before {
+    background: #04a9f5;
+}
+span.purpal:before {
+    background: #a389d4;
+}
+span.green:before {
+    background: #3de4ff;
 }
