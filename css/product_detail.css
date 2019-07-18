@@ -744,7 +744,7 @@ ul.a-unordered-list.a-vertical.a-spacing-none {
     min-height: 100vh;
 }
 
-.block {
+product_image_pod .block {
     display: flex;
     justify-content: center;
     align-items: center;
