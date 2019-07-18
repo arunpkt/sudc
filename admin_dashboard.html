@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>SUDC - Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+        <link rel="stylesheet" href="css/admin.css" />
+
+        <!-- Load c3.css -->
+        <link href="css/c3.min.css" rel="stylesheet">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/common.js"></script>
+
+        <!-- Load d3.js and c3.js -->
+        <script src="js/d3.min.js" charset="utf-8"></script>
+        <script src="js/c3.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <section class="admin_dashboard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="dash_title">Admin dash board</h2>
+                        <p class="dash_title"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia </p>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="panel-widget">
+                                    <div class="b-meta"> 
+                                        <i class="fas fa-users"></i>
+                                        <div class="info-meta">
+                                            <h4>5412</h4>
+                                            <p>70%</p>
+                                            <h5>Total Customers</h5> 
+                                        </div>
+                                        <span class="seventy blue"></span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="panel-widget">
+                                    <div class="b-meta"> 
+                                        <i class="fas fa-users"></i>
+                                        <div class="info-meta">
+                                            <h4>5412</h4>
+                                            <p>70%</p>
+                                            <h5>Total Business</h5> 
+                                        </div>
+                                        <span class="seventy blue"></span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="panel-widget">
+                                    <div class="b-meta"> 
+                                        <i class="fas fa-users"></i>
+                                        <div class="info-meta">
+                                            <h4>5412</h4>
+                                            <p>70%</p>
+                                            <h5>Total Products</h5> 
+                                        </div>
+                                        <span class="seventy blue"></span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="panel-widget">
+                                    <div class="b-meta"> 
+                                        <i class="fas fa-users"></i>
+                                        <div class="info-meta">
+                                            <h4>5412</h4>
+                                            <p>70%</p>
+                                            <h5>Total Users</h5> 
+                                        </div>
+                                        <span class="seventy blue"></span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line_cart_cus">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="panel-widget">
+                                        <h3  class="chart_head">Pending Customers</h3>
+                                        <div id="customer_chart">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="panel-widget">
+                                        <h3 class="chart_head">Pending Vendors</h3>
+                                        <div id="vendor_chart">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table_chart_cus">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="panel-widget">
+                                        <h3 class="chart_head">Pending Customers</h3>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sno</th>
+                                                        <th>Name</th>
+                                                        <th>Staus</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Doe</td>
+                                                        <td class="text-success">Active</td>
+                                                        <td><a href="#" class="btn btn-primary">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Ram mohan Rao</td>
+                                                        <td class="text-danger">Pending</td>
+                                                        <td><a href="#" class="btn btn-primary">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Rajesh kumar rathinama</td>
+                                                        <td>Active</td>
+                                                        <td><a href="#" class="btn btn-primary">Approve</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="viewall.html" class="viewall">View all</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="panel-widget">
+                                        <h3 class="chart_head">Pending Customers</h3>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sno</th>
+                                                        <th>Name</th>
+                                                        <th>Staus</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>John Doe</td>
+                                                        <td class="text-success">Active</td>
+                                                        <td><a href="#" class="btn btn-primary">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Abraham western</td>
+                                                        <td class="text-danger">Pending</td>
+                                                        <td><a href="#" class="btn btn-primary">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Thirumurugan subramani</td>
+                                                        <td>Active</td>
+                                                        <td><a href="#" class="btn btn-primary">Approve</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="viewall.html" class="viewall">View all</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="min-height: 200px"></section>
+
+        <script>
+            var chart = c3.generate({
+                bindto: '#customer_chart',
+                data: {
+                    x: 'x',
+                    //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+                    columns: [
+                        ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+                        //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+                        ['Active', 30, 200, 100, 400, 150, 250],
+                        ['Pending', 130, 340, 200, 500, 250, 350]
+                    ]
+                },
+                axis: {
+                    x: {
+                        type: 'timeseries',
+                        tick: {
+                            format: '%Y-%m-%d'
+                        }
+                    }
+                }
+            });
+
+            var vchart = c3.generate({
+                bindto: '#vendor_chart',
+                data: {
+                    x: 'x',
+                    //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+                    columns: [
+                        ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+                        //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+                        ['Active', 30, 200, 100, 400, 150, 250],
+                        ['Pending', 130, 340, 200, 500, 250, 350]
+                    ]
+                },
+                axis: {
+                    x: {
+                        type: 'timeseries',
+                        tick: {
+                            format: '%Y-%m-%d'
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

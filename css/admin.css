@@ -65,3 +65,65 @@ button.btn.btn-primary.btn-lg.save.center-block {
 .readmore img{
     margin-right: 5px;
 }
+
+
+/*Dash board*/
+.b-meta {
+    width: 100%;
+    padding: 23px 25px;
+}
+.b-meta > i {
+    color: #999;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+.info-meta {
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 15px;
+    vertical-align: middle;
+    width: 80%;
+}
+.info-meta > h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.info-meta > p {
+    float: right;
+    font-size: 14px;
+    margin-top: 10px;
+    width: auto;
+}
+.info-meta > h5 {
+    font-size: 18px;
+    margin-top: 10px;
+    width: auto;
+}
+h3.chart_head {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.panel-widget {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px 0px;
+    width: 100%;
+    background: none 0px 0px repeat scroll rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.line_cart_cus {
+    margin: 30px auto;
+}
+.table_chart_cus .table-responsive {
+    padding: 10px;
+}
+a.viewall {
+    text-align: right;
+    display: inherit;
+    padding: 5px 15px 10px 5px;
+    text-decoration: underline;
+    font-size: 16px;
+}
