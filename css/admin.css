@@ -134,3 +134,7 @@ a.viewall {
 .admin_dashboard_filter form-control {
     background-color: #FFF;
 }
+.admin_dashboard > .col-md-12 {
+    padding: 0 0px 15px 25px;
+    color: #000;
+}
