@@ -3736,7 +3736,7 @@ ul.megamenu_list li a {
     height: 250px;
     margin: 55px 10px;;
     position: relative;
-    background-color: #46a3d0;
+    background: rgba(241, 237, 237, 0) linear-gradient(-140deg, #2a1de9 61%, #3c42ff 0%) repeat scroll 0 0;
     border-radius: 20px;
 }
 .card p.card_no {

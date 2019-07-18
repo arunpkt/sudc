@@ -34,6 +34,34 @@
                         <h2 class="dash_title">Admin dash board</h2>
                         <p class="dash_title"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia </p>
 
+                        <div class="admin_dashboard_filter">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form form-inline">
+                                        <div class="form-group from">
+                                            <label for="from">From : </label>
+                                            <input type="date" id="from" placeholder="From" class="form-control" />
+                                        </div>
+                                        <div class="form-group to">
+                                            <label for="to">To : </label>
+                                            <input type="date" id="to" placeholder="To" class="form-control" />
+                                        </div>
+                                        <div class="form-group city">
+                                            <input type="text" placeholder="City" class="form-control" />
+
+                                        </div>
+                                        <div class="form-group submit">
+                                            <input type="submit" placeholder="City" class="form-control" />
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="panel-widget">
@@ -89,6 +117,7 @@
                             </div>
                         </div>
 
+                        <!-- Pending customer & vendors line chart-->
                         <div class="line_cart_cus">
                             <div class="row">
                                 <div class="col-md-6">
@@ -199,6 +228,108 @@
                             </div>
                         </div>
 
+                        <!-- Top category & shop line chart-->
+                        <div class="line_cart_cus">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="panel-widget">
+                                        <h3  class="chart_head">Top shop</h3>
+                                        <div id="top_shop_chart">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="panel-widget">
+                                        <h3 class="chart_head">Top category</h3>
+                                        <div id="top_category_chart">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Sales report-->
+                        <div class="table_chart_cus">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="panel-widget">
+                                        <h3 class="chart_head">Sales report</h3>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sno</th>
+                                                        <th>Product Name</th>
+                                                        <th>Seller</th>
+                                                        <th>Image</th>
+                                                        <th>Discount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Hush puppy</td>
+                                                        <td><a href="#" class="">Bata Tnagar</a></td>
+                                                        <td>
+                                                            <img width="50" height="50"  class="img-responsive" src="images/userpro.png"/>
+                                                        </td>
+                                                        <td>40%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Mobiles</td>
+                                                        <td><a href="#" class="">Chennai Tnagar</a></td>
+                                                        <td>
+                                                            <img width="50" height="50"  class="img-responsive" src="images/userpro.png"/>
+                                                        </td>
+                                                        <td>40%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Multi purpose towel</td>
+                                                        <td><a href="#" class="">SM Silks</a></td>
+                                                        <td>
+                                                            <img width="50" height="50"  class="img-responsive" src="images/userpro.png"/>
+                                                        </td>
+                                                        <td>60%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Diamond neclace</td>
+                                                        <td><a href="#" class="">GRT Jwellery</a></td>
+                                                        <td>
+                                                            <img width="50" height="50"  class="img-responsive" src="images/userpro.png"/>
+                                                        </td>
+                                                        <td>90%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Mini wan</td>
+                                                        <td><a href="#" class="">Tata motors</a></td>
+                                                        <td>
+                                                            <img width="50" height="50"  class="img-responsive" src="images/userpro.png"/>
+                                                        </td>
+                                                        <td>20%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a href="viewall.html" class="viewall">View all</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
 
                     </div>
                 </div>
@@ -207,6 +338,7 @@
         <section style="min-height: 200px"></section>
 
         <script>
+
             var chart = c3.generate({
                 bindto: '#customer_chart',
                 data: {
@@ -223,7 +355,7 @@
                     x: {
                         type: 'timeseries',
                         tick: {
-                            format: '%Y-%m-%d'
+                            format: '%d-%m-%Y'
                         }
                     }
                 }
@@ -245,7 +377,54 @@
                     x: {
                         type: 'timeseries',
                         tick: {
-                            format: '%Y-%m-%d'
+                            format: '%d-%m-%Y'
+                        }
+                    }
+                }
+            });
+
+            var chart3 = c3.generate({
+                bindto: '#top_shop_chart',
+                data: {
+                    x: 'x',
+                    //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+                    columns: [
+                        ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+                        //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+                        ['Chennai silks', 30, 200, 100, 400, 150, 250],
+                        ['Pothys', 130, 340, 200, 500, 250, 350],
+                    ],
+                    type : 'bar'
+                },
+                axis: {
+                    x: {
+                        type: 'timeseries',
+                        tick: {
+                            format: '%d-%m-%Y'
+                        }
+                    }
+                }
+            });
+
+            var chart4 = c3.generate({
+                bindto: '#top_category_chart',
+                data: {
+                    x: 'x',
+                    //        xFormat: '%Y%m%d', // 'xFormat' can be used as custom format of 'x'
+                    columns: [
+                        ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
+                        //            ['x', '20130101', '20130102', '20130103', '20130104', '20130105', '20130106'],
+                        ['Fashion', 30, 200, 100, 400, 150, 250],
+                        ['Electronic', 130, 340, 200, 500, 250, 350],
+                        ['Grocessories', 130, 340, 200, 500, 250, 350]
+                    ],
+                    type : 'bar'
+                },
+                axis: {
+                    x: {
+                        type: 'timeseries',
+                        tick: {
+                            format: '%d-%m-%Y'
                         }
                     }
                 }

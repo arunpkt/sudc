@@ -89,6 +89,7 @@ button.btn.btn-primary.btn-lg.save.center-block {
 .info-meta > h4 {
     font-size: 30px;
     margin-bottom: 5px;
+    margin-top: 0px;
     display: inline-block;
 }
 .info-meta > p {
@@ -109,7 +110,7 @@ h3.chart_head {
     border-bottom: 1px solid #d0d0d0;
 }
 .panel-widget {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 15px 0px;
     width: 100%;
     background: none 0px 0px repeat scroll rgb(255, 255, 255);
     border-radius: 5px;
@@ -126,4 +127,10 @@ a.viewall {
     padding: 5px 15px 10px 5px;
     text-decoration: underline;
     font-size: 16px;
+}
+.admin_dashboard_filter {
+    margin: 30px auto;
+}
+.admin_dashboard_filter form-control {
+    background-color: #FFF;
 }
