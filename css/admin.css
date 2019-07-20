@@ -131,7 +131,7 @@ a.viewall {
 .admin_dashboard_filter {
     margin: 30px auto;
     padding: 20px 20px;
-    background: linear-gradient(-158deg, #f3e9e9 12%, #1f3e73 11%);
+    background: linear-gradient(-17deg, #f3e9e9 17%, #1f3e73 11%);
 }
 .admin_dashboard_filter form-control {
     background-color: #FFF;
@@ -164,6 +164,29 @@ a.viewall {
     position: relative;
     width: 100%;
 }
+
+span.blue span.percentage {
+    background: #04a9f5;
+}
+span.purpal span.percentage {
+    background: #a389d4;
+}
+span.green span.percentage {
+    background: #26c70a;
+}
+span.maron span.percentage {
+    background: #d21c1c;
+}
+span.percentage {
+    display: inherit;
+    height: 7px;
+    background-color: purple;
+}
+.b-meta h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 span.blue:before {
     background: #04a9f5;
 }
@@ -172,4 +195,13 @@ span.purpal:before {
 }
 span.green:before {
     background: #3de4ff;
+}
+
+
+.admin_dashboard_filter .row>[class*=col-] {
+    margin-bottom: 0px;
+}
+
+.table a.btn {
+    text-decoration: none;
 }

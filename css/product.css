@@ -341,7 +341,14 @@ li.vwmre a {
 i.icon-angle-down {
     position: absolute;
     right: 15px;
-    top: 8px;
+    top: 11px;
+    z-index: -1;
+}
+
+.shp_rview_sec i.icon-angle-down {
+    position: absolute;
+    right: 15px;
+    top: 6px;
     z-index: -1;
 }
 
@@ -611,6 +618,11 @@ h3.prod_name {
         padding: 0px 15px;
     }
 
+    .shop_link {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    
     .mt25,
     .rttng {
         margin-top: 0
@@ -673,7 +685,7 @@ h3.prod_name {
     }
     .description .block {
         text-align: center;
-        margin-left: 70px;
+        margin-left: 0px;
     }
     .thumbnail_image_detail {
         height: 100px;

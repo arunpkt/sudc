@@ -1364,6 +1364,10 @@ max-height: 180px;
     margin: 0.9em 0;
 }
 
+.description {
+    text-align: center;
+}
+
 .description .block {
     margin-bottom: 20px;
     display: block;
@@ -3046,11 +3050,49 @@ section.userprofile_section_page {
 }
 .userprofile_section_page form.form {
     border: 1px solid #dccdcd;
-    border-radius: 5px;
+    padding: 20px 10px;
 }
+
+.account_verification form.form {
+    border: 1px solid #dccdcd;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.account_verification .form-group {
+    border-bottom: 0px solid #dccdcd;
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+
+.account_verification .form-group label {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+.align_lable.form-group label {
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 5px;
+}
+
+span.verified {
+    color: #32bb0f;
+    font-size: 20px;
+}
+span.verified i{
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+
 a.logged_user#submenuhead {
     border: 0px;
     padding-right: 5px;
+    margin-left: 90px;
 }
 a.logged_user img {
     width: 35px;
@@ -3183,6 +3225,12 @@ section.site_map_content {
     min-height: 150px;
     max-height: 180px;
 }
+
+.usr_prfl_recent_view.recentlyViewed .grid-img {
+    min-height: 110px;
+    max-height: 125px;
+}
+
 .product_list_pod .grid-img {
     min-height: 150px;
     max-height: 180px;
@@ -3566,6 +3614,18 @@ section.business_sell.text-center .btn {
     background-position: top;
     background-size: auto;
 }
+
+.edit_product_image {
+    
+    display: flex;
+    overflow-x: scroll;
+}
+
+.edit_product_image img {
+    width: 100px;
+    height: 80px;
+}
+
 .box_white {
     background-color: #FFF;
     /* height: 1065px;*/
@@ -3616,6 +3676,7 @@ a.merchan_tal_vemoew {
 .business-merchant-section .box_white .row {
     margin-bottom: 15px;
 }
+
 .mer_det_head {
     margin-top: 20px;
 }
@@ -3701,6 +3762,10 @@ section.recentlyViewed.user_dash_recent .container .col-md-10 {
 .userprofile_orders img.img-responsive {
     width: 75%;
 }
+.userprofile_orders .mt100 {
+    margin-top: 20px;
+}
+
 .userprofile_details {
     margin: 35px auto 20px auto;
 }
@@ -3948,6 +4013,9 @@ p.validity {
     .navbar-collapse {
         max-height: 500px;
         overflow-y: auto;
+    }
+    .account_verification .form-group label {
+        width: 100%;
     }
 
 }

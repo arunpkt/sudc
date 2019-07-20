@@ -34,3 +34,11 @@
 .mt30{
     margin-top: 30px;
 }
+
+.page-title>i {
+    font-size: 36px;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    margin-right: 10px;
+}
