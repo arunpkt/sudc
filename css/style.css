@@ -310,6 +310,9 @@ input[type='file'].form-control {
 .sudc_menu .nav > li:last-child > a {
     padding-right: 0;
 }
+.dropdown-menu {
+  font-size: 15px;
+}
 
 .dropdown-submenu{ position: relative; }
 .dropdown-submenu>.dropdown-menu{
@@ -336,6 +339,21 @@ input[type='file'].form-control {
 .dropdown-submenu:hover>a:after{
     border-left-color:#555;
 }
+.dropdown-submenu.open > a:after{
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 5px 5px 5px;
+    border-top-color:#cccccc;
+    margin-top:5px;margin-right:-10px;
+}
+.dropdown-submenu.open:hover > a:after{
+    border-top-color:#555;
+}
 .dropdown-submenu.pull-left{ float: none; }
 .dropdown-submenu.pull-left>.dropdown-menu{
     left: -100%;
@@ -345,6 +363,57 @@ input[type='file'].form-control {
     border-radius: 6px 0 6px 6px;
 }
 
+.megamenu_dropdown > a:after{
+    content: "";
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-color: #464343;
+    margin-left: 5px;
+}
+.megamenu_dropdown:hover > a:after{
+    border-color: #109fc6;
+}
+.megamenu_dropdown.open > a:after{
+    content: "";
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    border-color: #1f9bd7;
+    margin-left: 5px;
+    margin-bottom: -2px;
+}
+.megamenu_toggle > i {
+    display: none;
+}
+.dropdown > a.login_reg:after{
+    content: "";
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-color: #464343;
+    margin-left: 5px;
+    margin-bottom: 2px
+}
+.dropdown:hover > a.login_reg:after{
+    border-color: #109fc6;
+}
+.dropdown.open > a.login_reg:after{
+    content: "";
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    border-color: #1f9bd7;
+    margin-left: 5px;
+    margin-bottom: -2px;
+}
+.dropdown > a.login_reg i {
+    display: none;
+}
 
 .upar {
     background: #FFF url(../images/bk_tp.png)no-repeat center;
@@ -395,7 +464,7 @@ z-index: 100;
 }*/
 header.sticky_header .logo {
     width: 80%;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 
 .text_slideshow .carousel {
@@ -979,6 +1048,10 @@ ol.carousel-indicators {
 
 .dropdown-menu:hover {
     display: block;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 5px 20px;
 }
 
 #myCarousel .active > img {
@@ -3767,12 +3840,13 @@ p.validity {
 .navbar-collapse {
     text-align: left;
 }
-
-.open>.dropdown-menu {
-    animation: slideup 1s;
-}
 .dropdown-menu {
     border-radius: 0;
+    animation: slidedown 0.5s;
+}
+
+.open>.dropdown-menu {
+    animation: slideup 0.5s;
 }
 
 @keyframes spin {
@@ -3787,12 +3861,23 @@ p.validity {
 @keyframes slideup {
     from {
         transform:translateY(5px);
+        opacity: 0;
     }
     to {
         transform:translateY(0);
+        opacity: 1;
     }
 }
-
+@keyframes slidedown {
+    from {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform:translateY(5px);
+        opacity: 0;
+    }
+}
 
 
 
