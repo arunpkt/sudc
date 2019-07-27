@@ -311,7 +311,7 @@ input[type='file'].form-control {
     padding-right: 0;
 }
 .dropdown-menu {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .dropdown-submenu{ position: relative; }
@@ -1980,6 +1980,12 @@ section.top_stores .view_more {
 .footer_top .contact_info p i {
     margin-right: 20px;
 }
+.footer_top .contact_info p a {
+    color: #FFF;
+}
+.footer_top .contact_info p a:hover, .footer_top .contact_info p a:focus {
+    text-decoration: none;
+}
 .footer_top .social_icons {
     margin-top: 20px;
 }
@@ -3329,7 +3335,14 @@ header.sticky_header .sudc_business_menu .logo {
     color : #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    padding: 5px 0 5px 0;
+    padding: 5px 5px 5px 0;
+}
+header.business span.bold a {
+    color: #FFF;
+}
+header.business span.bold a:hover, header.business span.bold a:focus {
+    color: #FFF;
+    text-decoration: none;
 }
 .business_submenu .nav-tabs > li > a {
     color: #000;
@@ -3616,7 +3629,7 @@ section.business_sell.text-center .btn {
 }
 
 .edit_product_image {
-    
+
     display: flex;
     overflow-x: scroll;
 }
@@ -3803,6 +3816,39 @@ button.busi_sub_btn {
 }
 .minheightfix {
     height: 400px;
+}
+.userprofile_section_bill .bill_head {
+    margin-bottom: 25px;
+}
+.userprofile_section_bill .panel-default>.panel-heading {
+    color: #fff;
+    background-color: #1f9bd7;
+    border-color: #ddd;
+}
+.userprofile_section_bill .panel-heading {
+    padding: 5px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.userprofile_section_bill .panel-heading h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.userprofile_section_bill .height {
+    min-height: 185px;
+}
+
+.userprofile_section_bill .table > tbody > tr > .emptyrow {
+    border-top: none;
+}
+
+.userprofile_section_bill .table > thead > tr > .emptyrow {
+    border-bottom: none;
+}
+
+.userprofile_section_bill .table > tbody > tr > .highrow {
+    border-top: 1px solid #1f9bd7;
 }
 .quicklinks ul {
     list-style: none;
