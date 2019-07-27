@@ -131,7 +131,7 @@ a.viewall {
 .admin_dashboard_filter {
     margin: 30px auto;
     padding: 20px 20px;
-    background: linear-gradient(-17deg, #f3e9e9 17%, #1f3e73 11%);
+    background: #2298d0;
 }
 .admin_dashboard_filter form-control {
     background-color: #FFF;
@@ -150,6 +150,10 @@ a.viewall {
 }
 .admin_dashboard_filter .form-group.submit {
     width: 15%;
+}
+.admin_dashboard_filter .form-group.submit input{
+    background: #ffde01;
+    font-weight: 600;
 }
 .panel-widget .b-meta > span {
     background: #e9e9e9;
@@ -182,21 +186,28 @@ span.percentage {
     height: 7px;
     background-color: purple;
 }
+h5.blue {
+    color: #04a9f5;
+}
+h5.purpal {
+    color: #a389d4;
+}
+h5.green {
+    color: #26c70a;
+}
+h5.maron {
+    color: #d21c1c;
+}
+span.percentage {
+    display: inherit;
+    height: 7px;
+    background-color: purple;
+}
+
 .b-meta h5 {
     font-size: 18px;
     font-weight: 600;
 }
-
-span.blue:before {
-    background: #04a9f5;
-}
-span.purpal:before {
-    background: #a389d4;
-}
-span.green:before {
-    background: #3de4ff;
-}
-
 
 .admin_dashboard_filter .row>[class*=col-] {
     margin-bottom: 0px;
@@ -204,4 +215,10 @@ span.green:before {
 
 .table a.btn {
     text-decoration: none;
+}
+.c3chart {
+    padding: 10px 10px 10px 5px;
+}
+.voyager .navbar>.container-fluid {
+    border-bottom: 1px solid #635e5e;
 }
