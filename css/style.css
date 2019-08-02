@@ -62,7 +62,9 @@ p {
 .no-border {
     border: 0
 }
-
+.opacitypnt5{
+    opacity: 0.5;;
+}
 .pad_r_l {
     padding: 0 40px
 }
@@ -366,13 +368,14 @@ input[type='file'].form-control {
 .megamenu_dropdown > a:after{
     content: "";
     border: solid;
-    border-width: 0 2px 2px 0;
+    border-width: 0 1px 1px 0;
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-color: #464343;
     margin-left: 5px;
+    margin-bottom: 2px;
 }
 .megamenu_dropdown:hover > a:after{
     border-color: #109fc6;
@@ -3846,9 +3849,6 @@ button.busi_sub_btn {
 .userprofile_section_bill .table > thead > tr > .emptyrow {
     border-bottom: none;
 }
-.userprofile_section_bill .table > thead > tr > .emptyrow {
-    margin-left: auto;
-}
 .abcRioButtonBlue {
     background-color: #4285f4;
     border: none;
@@ -3898,8 +3898,15 @@ section.brd_crmb {
 }
 
 .megamenu {
-    width: 400px;
+    min-width: 270px;
 }
+
+
+.quicklinks ul li a i {
+    font-size: inherit;
+    margin-right: 15px;
+}
+
 /*.megamenu_dropdown:hover > .megamenu_menu {
 display: block;
 }
@@ -3966,6 +3973,10 @@ p.validity {
 
 .open>.dropdown-menu {
     animation: slideup 0.5s;
+}
+
+.abcRioButton.abcRioButtonBlue {
+    min-width: 100%;
 }
 
 @keyframes spin {
@@ -5206,6 +5217,9 @@ p.validity {
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
 
+    .hide_ipad {
+        display: none!important;
+    }
     .dropdown-submenu>.dropdown-menu {
         top: 0;
         left: -100%;
@@ -5689,6 +5703,9 @@ p.validity {
     }
     .form-section .looking_select {
         border: 5px solid rgba(0, 0, 0, 0.3);
+    }
+    .menu_other_pages .form-section .looking_select {
+        border: 0px ;
     }
 }
 
