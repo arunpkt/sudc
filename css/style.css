@@ -3846,6 +3846,9 @@ button.busi_sub_btn {
 .userprofile_section_bill .table > thead > tr > .emptyrow {
     border-bottom: none;
 }
+.userprofile_section_bill .table > thead > tr > .emptyrow {
+    margin-left: auto;
+}
 .abcRioButtonBlue {
     background-color: #4285f4;
     border: none;
