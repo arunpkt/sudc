@@ -62,7 +62,9 @@ p {
 .no-border {
     border: 0
 }
-
+.opacitypnt5{
+    opacity: 0.5;;
+}
 .pad_r_l {
     padding: 0 40px
 }
@@ -311,7 +313,7 @@ input[type='file'].form-control {
     padding-right: 0;
 }
 .dropdown-menu {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .dropdown-submenu{ position: relative; }
@@ -366,13 +368,14 @@ input[type='file'].form-control {
 .megamenu_dropdown > a:after{
     content: "";
     border: solid;
-    border-width: 0 2px 2px 0;
+    border-width: 0 1px 1px 0;
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-color: #464343;
     margin-left: 5px;
+    margin-bottom: 2px;
 }
 .megamenu_dropdown:hover > a:after{
     border-color: #109fc6;
@@ -1980,6 +1983,12 @@ section.top_stores .view_more {
 .footer_top .contact_info p i {
     margin-right: 20px;
 }
+.footer_top .contact_info p a {
+    color: #FFF;
+}
+.footer_top .contact_info p a:hover, .footer_top .contact_info p a:focus {
+    text-decoration: none;
+}
 .footer_top .social_icons {
     margin-top: 20px;
 }
@@ -3329,7 +3338,14 @@ header.sticky_header .sudc_business_menu .logo {
     color : #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    padding: 5px 0 5px 0;
+    padding: 5px 5px 5px 0;
+}
+header.business span.bold a {
+    color: #FFF;
+}
+header.business span.bold a:hover, header.business span.bold a:focus {
+    color: #FFF;
+    text-decoration: none;
 }
 .business_submenu .nav-tabs > li > a {
     color: #000;
@@ -3616,7 +3632,7 @@ section.business_sell.text-center .btn {
 }
 
 .edit_product_image {
-    
+
     display: flex;
     overflow-x: scroll;
 }
@@ -3731,7 +3747,8 @@ p.privacy_contet {
     width: 74% !important;
 }
 .addEditView i {
-    margin-right: 20px;
+    margin-right: 10px;
+    color: #84776b;
 }
 .addEditView span {
     margin-left: 5px;
@@ -3804,6 +3821,44 @@ button.busi_sub_btn {
 .minheightfix {
     height: 400px;
 }
+.userprofile_section_bill .bill_head {
+    margin-bottom: 25px;
+}
+.userprofile_section_bill .panel-default>.panel-heading {
+    color: #fff;
+    background-color: #1f9bd7;
+    border-color: #ddd;
+}
+.userprofile_section_bill .panel-heading {
+    padding: 5px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.userprofile_section_bill .panel-heading h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.userprofile_section_bill .height {
+    min-height: 185px;
+}
+
+.userprofile_section_bill .table > tbody > tr > .emptyrow {
+    border-top: none;
+}
+
+.userprofile_section_bill .table > thead > tr > .emptyrow {
+    border-bottom: none;
+}
+.abcRioButtonBlue {
+    background-color: #4285f4;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+.userprofile_section_bill .table > tbody > tr > .highrow {
+    border-top: 1px solid #1f9bd7;
+}
 .quicklinks ul {
     list-style: none;
     padding-left: 5px;
@@ -3813,8 +3868,36 @@ button.busi_sub_btn {
 }
 .quicklinks ul li a{
     font-size: 16px;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 500;
+}
+
+.quicklinks h3.mb_20 {
+    margin-top: 0px;
+}
+
+.bdr_lft {
+    border-left: solid 1px #ddd;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
 }
 
 .typeahead.dropdown-menu {
@@ -3844,8 +3927,15 @@ section.brd_crmb {
 }
 
 .megamenu {
-    width: 400px;
+    min-width: 270px;
 }
+
+
+.quicklinks ul li a i {
+    font-size: inherit;
+    margin-right: 15px;
+}
+
 /*.megamenu_dropdown:hover > .megamenu_menu {
 display: block;
 }
@@ -3914,6 +4004,19 @@ p.validity {
     animation: slideup 0.5s;
 }
 
+.abcRioButton.abcRioButtonBlue {
+    min-width: 100%;
+}
+
+.pac-container.pac-logo{
+    z-index: 99999;
+}
+
+img.img-responsive.qr {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
 @keyframes spin {
     from {
         transform:rotate(0deg);
@@ -5152,6 +5255,9 @@ p.validity {
 /*767*/
 @media screen and (min-width : 768px) and (max-width: 991px) {
 
+    .hide_ipad {
+        display: none!important;
+    }
     .dropdown-submenu>.dropdown-menu {
         top: 0;
         left: -100%;
@@ -5635,6 +5741,9 @@ p.validity {
     }
     .form-section .looking_select {
         border: 5px solid rgba(0, 0, 0, 0.3);
+    }
+    .menu_other_pages .form-section .looking_select {
+        border: 0px ;
     }
 }
 
