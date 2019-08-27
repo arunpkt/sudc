@@ -27,10 +27,51 @@
 
     <body>
 
+        <header>
+            <div class="nav nav-default">
+                <div class="container">
+                    <div class="nav-bar">
+                        <ul>
+                            <li>
+
+                            </li>
+                        </ul>  
+                    </div>
+                </div>  
+            </div>
+        </header>
         <section class="admin_dashboard">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <img src="..." class="rounded mr-2" alt="...">
+                                <strong class="mr-auto">Bootstrap</strong>
+                                <small class="text-muted">just now</small>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body">
+                                See? Just like this.
+                            </div>
+                        </div>
+
+                        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <img src="..." class="rounded mr-2" alt="...">
+                                <strong class="mr-auto">Bootstrap</strong>
+                                <small class="text-muted">2 seconds ago</small>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body">
+                                Heads up, toasts will stack automatically
+                            </div>
+                        </div>
+
                         <h2 class="dash_title">Admin dash board</h2>
                         <p class="dash_title"> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia </p>
 
@@ -49,7 +90,7 @@
 
                                         </div>
                                         <div class="form-group submit">
-                                            <input type="submit" placeholder="City" class="form-control" />
+                                            <input type="submit" placeholder="City" class="form-control" value="Submit" />
                                         </div>
 
                                     </form>
@@ -69,7 +110,7 @@
                                             <p>70%</p>
 
                                         </div>
-                                        <h5>Total Customers</h5> 
+                                        <h5 class="blue">Total Customers</h5> 
                                         <span class="blue"><span class="percentage" style="width: 20%"></span></span>
                                     </div>
                                 </div>
@@ -83,7 +124,7 @@
                                             <p>70%</p>
 
                                         </div>
-                                        <h5>Total Business</h5> 
+                                        <h5 class="purpal">Total Business</h5> 
                                         <span class="purpal"><span class="percentage" style="width: 90%"></span></span>
                                     </div>
                                 </div>
@@ -95,9 +136,9 @@
                                         <div class="info-meta">
                                             <h4>5412</h4>
                                             <p>70%</p>
-                                            
+
                                         </div>
-                                        <h5>Total Products</h5> 
+                                        <h5 class="green">Total Products</h5> 
                                         <span class="green"><span class="percentage" style="width: 30%"></span></span>
                                     </div>
                                 </div>
@@ -110,7 +151,7 @@
                                             <h4>5412</h4>
                                             <p>70%</p>
                                         </div>
-                                        <h5>Total Users</h5> 
+                                        <h5 class="maron">Total Users</h5> 
                                         <span class="maron"><span class="percentage" style="width: 70%"></span></span>
                                     </div>
                                 </div>
@@ -122,7 +163,7 @@
                             <div class="row">
                                 <div class="col-md-6">
 
-                                    <div class="panel-widget">
+                                    <div class="panel-widget c3chart">
                                         <h3  class="chart_head">Pending Customers</h3>
                                         <div id="customer_chart">
 
@@ -132,7 +173,7 @@
                                 </div>
                                 <div class="col-md-6">
 
-                                    <div class="panel-widget">
+                                    <div class="panel-widget c3chart">
                                         <h3 class="chart_head">Pending Vendors</h3>
                                         <div id="vendor_chart">
 
@@ -233,7 +274,7 @@
                             <div class="row">
                                 <div class="col-md-6">
 
-                                    <div class="panel-widget">
+                                    <div class="panel-widget c3chart">
                                         <h3  class="chart_head">Top shop</h3>
                                         <div id="top_shop_chart">
 
@@ -243,7 +284,7 @@
                                 </div>
                                 <div class="col-md-6">
 
-                                    <div class="panel-widget">
+                                    <div class="panel-widget c3chart">
                                         <h3 class="chart_head">Top category</h3>
                                         <div id="top_category_chart">
 
