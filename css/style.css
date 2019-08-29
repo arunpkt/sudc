@@ -3874,7 +3874,7 @@ button.busi_sub_btn {
 }
 
 .quicklinks h3.mb_20 {
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .bdr_lft {
@@ -4011,6 +4011,15 @@ p.validity {
 
 .pac-container.pac-logo{
     z-index: 99999;
+}
+.border_left.quicklinks ul > li > a {
+    color: #544f4f;
+    font-weight: 600;
+}
+.border_left.quicklinks ul > li > ul > li > a {
+    color: #908989;
+    font-weight:500;
+    margin-left : 10px;
 }
 
 img.img-responsive.qr {
