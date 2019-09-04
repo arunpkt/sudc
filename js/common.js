@@ -23,6 +23,9 @@ $(document).ready(function() {
         }
 
     }
+    $(document).on('click', '.dropdown-menu', function (e) {
+      e.stopPropagation();
+    });
     $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 700) {
